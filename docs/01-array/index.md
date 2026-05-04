@@ -6,4 +6,4 @@
 
 | #    | Title                          | Difficulty | Status | Reviewed |
 |------|--------------------------------|------------|--------|----------|
-| 0001 | [Two Sum / 两数之和](./0001-two-sum/README.md) | Easy · 简单 | ✅     | ☐ ☐ ☐    |
+| 0001 | [Two Sum / 两数之和](./0001-two-sum/README.md) | Easy | ✅ | ☐ ☐ ☐ |

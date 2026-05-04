@@ -1,10 +1,10 @@
 # NNNN. Title (English) / 中文标题
 
 !!! info "Meta"
-    - **Difficulty**: Easy/Medium/Hard · 简单/中等/困难
+    - **Difficulty**: Easy/Medium/Hard
     - **Tags**: Array, Hash Table · 数组, 哈希表
     - **Link**: [LeetCode](https://leetcode.com/problems/...) · [力扣](https://leetcode.cn/problems/...)
-    - **Status**: ✅ Solved · 已通过
+    - **Status**: ✅ Solved
     - **First solved**: YYYY-MM-DD
     - **Reviewed**: ☐ ☐ ☐
 

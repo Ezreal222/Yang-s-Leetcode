@@ -1,10 +1,10 @@
 # 0232. Implement Queue using Stacks / 用栈实现队列
 
 !!! info "Meta"
-    - **Difficulty**: Easy · 简单
+    - **Difficulty**: Easy
     - **Tags**: Stack, Queue, Design · 栈, 队列, 设计
     - **Link**: [LeetCode](https://leetcode.com/problems/implement-queue-using-stacks/) · [力扣](https://leetcode.cn/problems/implement-queue-using-stacks/)
-    - **Status**: ✅ Solved · 已通过
+    - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 

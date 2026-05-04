@@ -1,10 +1,10 @@
 # 0020. Valid Parentheses / 有效的括号
 
 !!! info "Meta"
-    - **Difficulty**: Easy · 简单
+    - **Difficulty**: Easy
     - **Tags**: Stack, String · 栈, 字符串
     - **Link**: [LeetCode](https://leetcode.com/problems/valid-parentheses/) · [力扣](https://leetcode.cn/problems/valid-parentheses/)
-    - **Status**: ✅ Solved · 已通过
+    - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 

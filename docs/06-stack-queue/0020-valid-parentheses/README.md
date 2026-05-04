@@ -106,5 +106,5 @@ graph LR
 ## Related / 相关题目
 
 - [0225. Implement Stack using Queues](../0225-implement-stack-using-queues/README.md) — 栈的基本设计
-- 1047. Remove All Adjacent Duplicates In String (待补) — 同样是"配对消除"模式
-- 0150. Evaluate Reverse Polish Notation (待补) — 栈处理表达式
+- [1047. Remove All Adjacent Duplicates In String / 删除字符串中的所有相邻重复项](../1047-remove-all-adjacent-duplicates-in-string/README.md) — 同样是"配对消除"模式
+- [0150. Evaluate Reverse Polish Notation / 逆波兰表达式求值](../0150-evaluate-reverse-polish-notation/README.md) — 栈处理表达式

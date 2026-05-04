@@ -206,4 +206,4 @@ Both variants:
 
 ## Related / 相关题目
 
-- [0232. Implement Queue using Stacks / 用栈实现队列](../0232-implement-queue-using-stacks/) — 反过来，用栈实现队列
+- [0232. Implement Queue using Stacks / 用栈实现队列](../0232-implement-queue-using-stacks/README.md) — 反过来，用栈实现队列

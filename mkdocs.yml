@@ -1,0 +1,53 @@
+site_name: LeetCode Roadmap (刷题手记)
+site_description: Bilingual LeetCode notes & solutions in Python, C++, Java
+site_url: https://Ezreal222.github.io/Yang-s-Leetcode/
+repo_url: https://github.com/Ezreal222/Yang-s-Leetcode
+repo_name: Ezreal222/Yang-s-Leetcode
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle: { icon: material/weather-night, name: Switch to dark mode }
+    - scheme: slate
+      primary: indigo
+      toggle: { icon: material/weather-sunny, name: Switch to light mode }
+
+plugins:
+  - search:
+      lang: [en, zh]
+  - awesome-pages
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed: { alternate_style: true }
+  - pymdownx.highlight: { anchor_linenums: true }
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex: { generic: true }
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js

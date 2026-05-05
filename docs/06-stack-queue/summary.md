@@ -1,8 +1,8 @@
 # 06 · Stack & Queue — Summary / 总结
 
-**EN**: Fast review for the 7 problems in this category. Each block: the *one* idea that unlocks the problem, plus a takeaway you can reuse on different problems with the same shape.
+**EN**: Fast review for the 8 problems in this category. Each block: the *one* idea that unlocks the problem, plus a takeaway you can reuse on different problems with the same shape.
 
-**中文**: 这一章 7 题的速复习. 每题两块: 一个能让你"啊就是这个"的核心 idea, 加上能搬到别的题上的套路.
+**中文**: 这一章 8 题的速复习. 每题两块: 一个能让你"啊就是这个"的核心 idea, 加上能搬到别的题上的套路.
 
 ---
 
@@ -27,6 +27,14 @@
 **Key idea / 核心**: 数字 push, 运算符 pop 两个再算. 操作数顺序: **先 pop = 右操作数 (num1)**, 后 pop = 左 (num2), 计算是 `num2 op num1`. RPN 的全部价值: 不用解析优先级, 不用括号.
 
 **Takeaway / 套路**: **Stack as evaluator** —— "push values, fold on operator". 一切后缀 / 树展开 / 编译器中间表示都是这个套路. 别忘了 Python 截断要 `int(a/b)` 不是 `//`.
+
+---
+
+## 0155. Min Stack / 最小栈
+
+**Key idea / 核心**: O(1) `getMin` 靠"在 push 时把当时的最小值缓存进节点"——空间换时间, 利用栈"pop 自动恢复历史快照"的特性. 优化版用辅助栈, 只在最小值真的变小时 push (`<=` 而不是 `<`), 这就接上单调栈思想了.
+
+**Takeaway / 套路**: **Cache aggregate at write-time** —— 看到"O(1) 查询某种聚合值 (min/max/sum/count)", 先想能不能在 insert 时顺手算好. 同款骨架: 前缀和、稀疏表、Trie 计数、并查集 size.
 
 ---
 
@@ -64,13 +72,14 @@
 
 ## Cross-cutting patterns / 跨题套路
 
-回头看, 这一章的招式就 5 种:
+回头看, 这一章的招式就 6 种:
 
 | 套路 | 长什么样 | 出现于 |
 |---|---|---|
 | **Stack as canceler** | push 期待 / 字符, 匹配就消 | 0020, 1047 |
 | **Stack as evaluator** | push 操作数, 运算符 fold 栈顶若干个 | 0150 |
 | **Stack/Queue adapter** | 容器互相模拟, 关键是懒搬运 / 轮转 | 0225, 0232 |
+| **Cache aggregate at write-time** | push 时把"当下的聚合值"存好, 查询 O(1) | 0155 |
 | **Monotonic deque** | 维护"还可能赢"的候选, 滑动极值 O(n) | 0239 |
 | **Bounded heap (size k)** | min-heap-of-k 取 top-largest, 反过来取 top-smallest | 0347 |
 
@@ -79,6 +88,7 @@
 - 看到"括号 / 配对 / 相邻消除" → Stack as canceler.
 - 看到"后缀表达式 / 表达式求值" → Stack as evaluator.
 - 看到"用 X 实现 Y, 而 X 和 Y 操作方向相反" → 找 lazy / 轮转.
+- 看到"O(1) 查询聚合值 (min/max/sum/...)" → 在 push 时把答案算好缓存.
 - 看到"滑动窗口 + 最大/最小" → Monotonic deque.
 - 看到"前 K 个 / 第 K 大" → Bounded heap. 频次/范围有界 → bucket sort 更快.
 

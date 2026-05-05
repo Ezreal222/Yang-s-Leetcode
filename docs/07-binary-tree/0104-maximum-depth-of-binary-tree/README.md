@@ -123,4 +123,4 @@
 
 - [0111. Minimum Depth of Binary Tree](../0111-minimum-depth-of-binary-tree/README.md) — 对称的"最小深度", 但有坑 (空子树不算)
 - [0102. Binary Tree Level Order Traversal](../0102-binary-tree-level-order-traversal/README.md) — BFS 模板
-- 0559. Maximum Depth of N-ary Tree (待补) — N 叉版
+- [0559. Maximum Depth of N-ary Tree / N 叉树的最大深度](../0559-maximum-depth-of-n-ary-tree/README.md) — N 叉版

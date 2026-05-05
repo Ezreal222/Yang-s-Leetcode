@@ -8,13 +8,13 @@
     - **First solved**: 2026-05-04
     - **Reviewed**: ☑ ☐ ☐
 
-## Problem / 题意
+## Problem
 
 **EN**: Repeatedly remove any two adjacent equal letters until no such pair remains, then return the resulting string. The deletions can cascade — removing one pair may bring a new pair together.
 
 **中文**: 反复删除字符串里相邻且相等的两个字母，直到没有这样的相邻对为止，返回最终字符串。删除会"连锁"——删完一对可能让新一对贴上。
 
-## Approach / 思路
+## 思路
 
 **EN**: Walk the string left-to-right and use a stack as a "rejection buffer":
 - 当前字符 `c` 跟栈顶相等？→ 抵消，pop。
@@ -30,7 +30,7 @@ EN summary: This is the same shape as **Valid Parentheses (0020)** — both use 
 
 中文小结: 套路 = **遇到匹配就消、不匹配就压**。能套用：括号匹配 (0020)、相邻消除、单调栈预备（数据结构一样，比较条件不同而已）。
 
-### Visual / 图解
+### 图解
 
 Trace `"abbaca"`:
 
@@ -45,7 +45,7 @@ graph LR
     style G fill:#c8e6c9
 ```
 
-## Solution / 题解
+## Solution
 
 ### Variant A — explicit stack / 显式栈（提交版本）
 
@@ -126,12 +126,12 @@ graph LR
     };
     ```
 
-## Complexity / 复杂度
+## Complexity
 
 - **Time**: O(n) — each char pushed and popped at most once.
 - **Space**: O(n) — output string / stack worst case (no cancellations).
 
-## Pitfalls / 易错点
+## 易错点
 
 - **C++ `stack::pop()` 不返回值** —— 必须 `top()` 拿到再 `pop()`，写成两行：
   ```cpp
@@ -143,7 +143,7 @@ graph LR
 - 用显式 `stack<char>` 时最后要 reverse —— 因为弹栈顺序是反的。改用 `string`/`list` 直接 push 就不用 reverse。这两个细节经常忘一个。
 - 不要用 `string::erase` 在原 string 上改，会变成 O(n²)（每次 erase 移动后续字符）。
 
-## Related / 相关题目
+## 相关题目
 
 - [0020. Valid Parentheses / 有效的括号](../0020-valid-parentheses/README.md) — 同样的"匹配就消，不匹配就压"套路，只是匹配条件不同
 - [0225. Implement Stack using Queues](../0225-implement-stack-using-queues/README.md) — 栈本身的实现

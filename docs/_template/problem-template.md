@@ -8,43 +8,43 @@
     - **First solved**: YYYY-MM-DD
     - **Reviewed**: ☐ ☐ ☐
 
-## Problem / 题意
+## Problem
 
 **EN**: Paraphrase in my own words. Do NOT copy LeetCode's wording — link only.
 
 **中文**: 用自己的话简述题意，不要复制原题面。
 
-## Approach / 思路
+## 思路
 
-### 核心思想 / Core idea
+### Core idea
 
 **EN**: One or two punch sentences — the "why this works", not the "what to do".
 
 **中文**: 一两句话讲清楚为什么这样做.
 
-### 关键洞察 / Key insights
+### 关键洞察
 
 1. **Insight name** — 1-3 sentence explanation of the non-obvious observation.
 2. **Insight name** — ...
 3. **Insight name** — ...
 
-### 可迁移思路 / Transferable thinking
+### 可迁移思路
 
 - **0XXX. Related Problem** — 一句话讲怎么把这个套路搬过去.
 - **Pattern name** — generalization (e.g. prefix sum, monotonic stack, sliding window).
 
-### 一句话总结 / One-liner
+### 一句话总结
 
 **EN**: The "if you only remember one thing" line.
 
-### Visual / 图解
+### 图解
 
 ```mermaid
 graph LR
     A[input] --> B[step] --> C[result]
 ```
 
-## Solution / 题解
+## Solution
 
 === "C++"
     ```cpp
@@ -84,15 +84,15 @@ graph LR
     };
     ```
 
-## Complexity / 复杂度
+## Complexity
 
 - **Time**: O(?)
 - **Space**: O(?)
 
-## Pitfalls / 易错点
+## 易错点
 
 - ...
 
-## Related / 相关题目
+## 相关题目
 
 - [NNNN. Title](../NNNN-slug/)

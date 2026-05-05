@@ -8,13 +8,13 @@
     - **First solved**: 2026-05-04
     - **Reviewed**: ☑ ☐ ☐
 
-## Problem / 题意
+## Problem
 
 **EN**: Given an integer array and window size `k`, slide the window from left to right and return the max of each window.
 
 **中文**: 给定数组和窗口大小 `k`, 窗口从左滑到右, 返回每个窗口的最大值数组.
 
-## Approach / 思路
+## 思路
 
 ### Why not brute / 暴力解为什么不行
 
@@ -60,7 +60,7 @@ Key invariant / 关键不变量: 任何时刻, deque 从 front 到 back **严格
 
 Final: `[3, 3, 5, 5, 6, 7]` ✓
 
-## Solution / 题解
+## Solution
 
 === "Python"
     Idiomatic Python: store **indices** in the deque (not values). Then "is the front out of window?" becomes a one-line index check, no need for the C++ value-equality dance.
@@ -131,12 +131,12 @@ Final: `[3, 3, 5, 5, 6, 7]` ✓
     // TBD
     ```
 
-## Complexity / 复杂度
+## Complexity
 
 - **Time**: O(n) — each element enters and leaves the deque at most once. 均摊 O(1) per step.
 - **Space**: O(k) — deque holds ≤ k elements at any time. Output O(n - k + 1) extra.
 
-## Pitfalls / 易错点
+## 易错点
 
 - **Python 存下标更顺**: 存值就要像 C++ 一样在 `pop` 时比较值, 一旦窗口里有重复值容易绕. 存下标后 "队头出窗口?" 就是 `dq[0] <= i - k`, 一行搞定.
 - **`while` not `if` in push**: 入队时要把队尾**所有**比新值小的都踢掉, 不是只踢一个. 写成 `if` 会留下不该留的.
@@ -145,7 +145,7 @@ Final: `[3, 3, 5, 5, 6, 7]` ✓
 - **一开始的填窗**: Python 版本用 `i >= k-1` 起步发结果, 不需要专门跑一遍前 k 个; C++ 版本分两段写 (Carl 风格) 也行, 看个人.
 - **不要用堆**: O(n log k), 删除老元素只能"懒删除"(top 是失效的就丢, 直到合法). 能写但慢且乱. 单调队列才是教科书答案.
 
-## Related / 相关题目
+## 相关题目
 
 - [0150. Evaluate Reverse Polish Notation / 逆波兰表达式求值](../0150-evaluate-reverse-polish-notation/README.md) — 栈/队列处理序列
 - 0496. Next Greater Element I (待补) — 单调**栈**入门

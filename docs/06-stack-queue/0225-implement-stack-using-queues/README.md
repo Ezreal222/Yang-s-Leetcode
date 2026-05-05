@@ -8,13 +8,13 @@
     - **First solved**: 2026-05-04
     - **Reviewed**: ☑ ☐ ☐
 
-## Problem / 题意
+## Problem
 
 **EN**: Build a LIFO stack (`push` / `pop` / `top` / `empty`) using only standard FIFO queue ops (push to back, pop from front, peek front, size, empty).
 
 **中文**: 只用 FIFO 队列的标准操作实现一个 LIFO 栈，要支持 `push` / `pop` / `top` / `empty`。
 
-## Approach / 思路
+## 思路
 
 ### Two queues — q2 做备份 / 双队列
 
@@ -34,7 +34,7 @@
 
 Key invariant / 关键不变量: 一次 push 只是入队；一次 pop 在弹出前把"老数据"轮转到尾巴，让"最新数据"暴露在队头。
 
-### Visual / 图解
+### 图解
 
 One-queue rotation, after `push 1,2,3` then `pop()`:
 
@@ -45,7 +45,7 @@ graph LR
     style C fill:#c8e6c9
 ```
 
-## Solution / 题解
+## Solution
 
 ### Variant A — two queues / 双队列（提交版本）
 
@@ -189,14 +189,14 @@ graph LR
     // TBD
     ```
 
-## Complexity / 复杂度
+## Complexity
 
 Both variants:
 
 - **Time**: `push` O(1), `pop` / `top` O(n), `empty` O(1).
 - **Space**: O(n) — total elements stored.
 
-## Pitfalls / 易错点
+## 易错点
 
 - 双队列版本里写了 `int size = q1.size(); size--;` 没问题，但更紧凑的是 `int size = q1.size() - 1;` —— 别在 `while(size--)` 之前再单独减一次。
 - `top()` 里用了 `int size = q1.size();` 但其实没用到，可以删掉 (dead code，不影响正确性).
@@ -204,6 +204,6 @@ Both variants:
 - 单队列方案的 `pop` 里要先存 `n = q.size()`，循环里别直接用 `q.size()`（会随 push/pop 变化）。
 - `top()` 不要直接 `return q.back()` —— STL `queue` 的 `back()` 是最后入队的元素，但这里"最后入队"已经不对应栈顶（因为 pop 之前要先轮转）。复用 `pop()` 再 push 回最干净。
 
-## Related / 相关题目
+## 相关题目
 
 - [0232. Implement Queue using Stacks / 用栈实现队列](../0232-implement-queue-using-stacks/README.md) — 反过来，用栈实现队列

@@ -8,13 +8,13 @@
     - **First solved**: 2026-05-04
     - **Reviewed**: ☑ ☐ ☐
 
-## Problem / 题意
+## Problem
 
 **EN**: Given tokens of an expression in Reverse Polish Notation (operands then operator, e.g. `["2","1","+","3","*"]` = `(2+1)*3`), evaluate and return the integer result. Division truncates toward zero.
 
 **中文**: 给一个逆波兰表达式（运算数在前、运算符在后，如 `["2","1","+","3","*"]` 表示 `(2+1)*3`），算出整数结果。除法向 0 截断。
 
-## Approach / 思路
+## 思路
 
 **EN**: One stack scan:
 - 遇到数字 → push.
@@ -31,7 +31,7 @@ EN: This is **why RPN exists** — operators only ever consume their two immedia
 
 Key invariant / 关键不变量: 任何时刻栈里只有"已计算但还没被消费的中间结果". 表达式合法时, 扫完恰好剩一个.
 
-### Visual / 图解
+### 图解
 
 Trace `["2","1","+","3","*"]`:
 
@@ -45,7 +45,7 @@ graph LR
     style F fill:#c8e6c9
 ```
 
-## Solution / 题解
+## Solution
 
 === "Python"
     ```python
@@ -100,12 +100,12 @@ graph LR
     // TBD
     ```
 
-## Complexity / 复杂度
+## Complexity
 
 - **Time**: O(n) — each token visited once.
 - **Space**: O(n) — stack holds up to ~n/2 numbers (all-numbers prefix).
 
-## Pitfalls / 易错点
+## 易错点
 
 - **操作数顺序**: 先 pop 出来的是**右**操作数 (`num1`), 后 pop 出来的才是**左** (`num2`). 所以是 `num2 - num1`, `num2 / num1`. `+` `*` 顺序无所谓, `-` `/` 错了立刻 WA.
 - **Python 除法截断**: 不要用 `a // b` —— 那是 floor division, 负数会朝 -∞ 走 (`-7 // 2 == -4`). 题目要求向 0 截断, 必须 `int(a / b)` (`int(-7 / 2) == -3`). C++ 的 `/` 对整型默认就是向 0 截断, 不用特殊处理.
@@ -113,7 +113,7 @@ graph LR
 - **token 自带正负号**: 像 `"-11"` 直接 `stoll` / `int()` 都能解析, 不用手写符号判断.
 - **C++ `stack::pop()` 不返回值**: 必须先 `top()` 拿值再 `pop()` —— 同 0020/1047, 老朋友了.
 
-## Related / 相关题目
+## 相关题目
 
 - [0020. Valid Parentheses / 有效的括号](../0020-valid-parentheses/README.md) — 栈处理符号匹配
 - [1047. Remove All Adjacent Duplicates In String / 删除字符串中的所有相邻重复项](../1047-remove-all-adjacent-duplicates-in-string/README.md) — 同样的"扫一遍栈"模式

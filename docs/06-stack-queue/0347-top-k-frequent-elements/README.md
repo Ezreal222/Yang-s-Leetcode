@@ -8,13 +8,13 @@
     - **First solved**: 2026-05-04
     - **Reviewed**: ☑ ☐ ☐
 
-## Problem / 题意
+## Problem
 
 **EN**: Given an array of integers and `k`, return the `k` most frequent values. Order of output doesn't matter.
 
 **中文**: 给数组和 `k`, 返回出现次数前 `k` 高的元素 (顺序无所谓).
 
-## Approach / 思路
+## 思路
 
 Step 1 同款: 用 `unordered_map<int,int>` / `Counter` 数频次. 之后选三种之一:
 
@@ -62,7 +62,7 @@ return heap contents    # the k largest
 
 为啥 min-heap 而不是 max-heap? 因为我们想**只保留前 k 个最大的**, 所以堆里要能快速找到"目前最差的一个"(也就是当前堆里最小的) 把它踢掉. min-heap 顶就是堆里最小, 一查 O(1), 一踢 O(log k).
 
-## Solution / 题解
+## Solution
 
 ### Variant A — max-heap, pop k 次
 
@@ -209,7 +209,7 @@ return heap contents    # the k largest
     // TBD
     ```
 
-## Complexity / 复杂度
+## Complexity
 
 | Variant | Time | Space |
 |---|---|---|
@@ -219,7 +219,7 @@ return heap contents    # the k largest
 
 A 写起来最快, B 是 Top-K 的通用招式 (适合流式 / k 远小于 n), C 在频次有上界时性能上限.
 
-## Pitfalls / 易错点
+## 易错点
 
 - **C++ comparator 反着写**: `priority_queue` 的 `Cmp(a,b) == true` 意思是 "**a 优先级低**", a 沉. 想 min-heap 写 `a > b`, 想 max-heap 写 `a < b`. 这和 `std::sort` 的语义相反, 翻车率高.
 - **`pair` 的默认顺序**: `priority_queue<pair<int,int>>` (无 comparator) 是按 `.first` 降序、再 `.second` 降序的 max-heap. Variant A 利用了这点把 `(count, value)` 直接压进去 → top 就是当前最高频. 如果是 `(value, count)` 顺序就反了.
@@ -228,7 +228,7 @@ A 写起来最快, B 是 Top-K 的通用招式 (适合流式 / k 远小于 n), C
 - **Python `heapq` 没有 max-heap**: 想要 max-heap 把值取负 (`heapq.heappush(h, -x)`) 或包成 `(-key, item)`. 但这题用 `nlargest` / `most_common` 直接就过了, 不用手搓.
 - **`Counter.most_common(k)` 是这题最短解**: 一行. 面试的时候手写要有, 但实际工程代码就是这一行.
 
-## Related / 相关题目
+## 相关题目
 
 - [0239. Sliding Window Maximum / 滑动窗口最大值](../0239-sliding-window-maximum/README.md) — 单调队列, 另一种"维护极值"的招式
 - 0703. Kth Largest Element in a Stream (待补) — 流式版本, min-heap of size k 的最直接应用

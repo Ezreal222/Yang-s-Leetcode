@@ -8,21 +8,21 @@
     - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
-## Problem / 题意
+## Problem
 
 **EN**: Given a Unix-style absolute path, return its canonical form. Treat `.` as "current dir", `..` as "go up one", `//` as a single `/`, and the result must start with `/` and have no trailing `/` (except the root itself).
 
 **中文**: 给一个 Unix 风格的绝对路径, 返回它的规范形式. `.` 是当前目录, `..` 是回上一级, `//` 折叠成一个 `/`, 结果以 `/` 开头, 末尾不能多 `/` (根目录除外).
 
-## Approach / 思路
+## 思路
 
-### 核心思想 / Core idea
+### Core idea
 
 **用栈模拟目录跳转**: 按 `/` 切成段, 遇到 `..` 就 pop, 遇到普通目录名就 push. 栈里剩下的从底到顶就是规范路径.
 
 栈的 LIFO 特性天然契合"返回上一级"的语义 —— 这是这题选栈的根本原因.
 
-### 关键洞察 / Key insights
+### 关键洞察
 
 1. **字符串处理两步走: 切分 + 处理 / Split then walk**
 
@@ -32,7 +32,7 @@
 
     最后要把栈内所有元素从底到顶拼起来 —— `std::stack` 不能遍历 (只能 `top()` / `pop()`), 所以这题直接用 `vector<string>` 当栈, 既有 push/pop, 又能 range-for 遍历.
 
-### 可迁移思路 / Transferable thinking
+### 可迁移思路
 
 **栈 = 模拟"可撤销操作"的天然结构.** 题目里只要有"返回 / 撤销 / 上一级 / 抵消 / 嵌套"语义, 先想栈:
 
@@ -50,7 +50,7 @@
 
 **字符串处理通用模板**: `split → 遍历每段处理 → join`. LC 0071 / 0468 (有效IP) / 0165 (版本号比较) 都套这个壳.
 
-### 一句话总结 / One-liner
+### 一句话总结
 
 **看到"路径 / 撤销 / 嵌套 / 抵消"语义 → 用栈; 切字符串 → C++ 用 `istringstream + getline`, Python/JS 直接 `split`; 要遍历栈内容 → 用 `vector` 当栈.**
 
@@ -89,7 +89,7 @@ for (const string& s : stk) ...  // ✅ 可遍历
 
 对比 `std::stack`: API 是 `push` / `top` / `pop`, 但**不能遍历** —— 这题最后要拼字符串, 所以选 `vector`.
 
-## Visual / 图解
+## 图解
 
 Trace `"/home//foo/../bar/./baz/"`:
 
@@ -106,7 +106,7 @@ graph LR
     style H fill:#c8e6c9
 ```
 
-## Solution / 题解
+## Solution
 
 === "C++"
     ```cpp
@@ -200,12 +200,12 @@ graph LR
     };
     ```
 
-## Complexity / 复杂度
+## Complexity
 
 - **Time**: O(n) — 字符串扫一遍.
 - **Space**: O(n) — 栈最坏存所有段.
 
-## Pitfalls / 易错点
+## 易错点
 
 1. **空串要跳过** —— `//` 之间会切出空 token.
 2. **`.` 要跳过** —— 表示当前目录, 不入栈.
@@ -215,7 +215,7 @@ graph LR
 6. **JS 判空数组别用 `!stack`** —— 空数组 `[]` 在 JS 里是 truthy, 必须 `stack.length > 0` 或 `stack.length === 0`.
 7. **C++ 中 `getline(ss, tok, '/')` 处理首字符 `/`** —— path 一定以 `/` 开头, 第一个 token 就是空串, 自然被 `if (tok == "")` 跳过. 不用特判.
 
-## Related / 相关题目
+## 相关题目
 
 - [0020. Valid Parentheses / 有效的括号](../0020-valid-parentheses/README.md) — 同款"撤销最近的"
 - [1047. Remove All Adjacent Duplicates In String / 删除字符串中的所有相邻重复项](../1047-remove-all-adjacent-duplicates-in-string/README.md) — 抵消模式

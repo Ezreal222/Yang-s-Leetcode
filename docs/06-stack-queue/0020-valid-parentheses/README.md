@@ -8,13 +8,13 @@
     - **First solved**: 2026-05-04
     - **Reviewed**: ☑ ☐ ☐
 
-## Problem / 题意
+## Problem
 
 **EN**: Given a string of `()`, `{}`, `[]`, decide if every opener is closed in the correct nesting order.
 
 **中文**: 给一串只包含 `()`, `{}`, `[]` 的字符串，判断括号是否成对、嵌套是否正确。
 
-## Approach / 思路
+## 思路
 
 **EN**: 三种 invalid 情况要 cover：
 1. 左括号多余（最后栈里还剩东西）
@@ -29,7 +29,7 @@
 
 Key invariant / 关键不变量: 栈里始终保存"目前还需要等什么右括号才能闭合"，按出现顺序排列。
 
-### Visual / 图解
+### 图解
 
 Trace `"({[]})"`:
 
@@ -45,7 +45,7 @@ graph LR
 
 如果中间任何一步遇到 `]` 而 `st.top() == }`，立即 false。
 
-## Solution / 题解
+## Solution
 
 === "Python"
     ```python
@@ -91,19 +91,19 @@ graph LR
     // TBD
     ```
 
-## Complexity / 复杂度
+## Complexity
 
 - **Time**: O(n).
 - **Space**: O(n) — 最坏情况全是左括号，全压栈。
 
-## Pitfalls / 易错点
+## 易错点
 
 - 顺序：先判 `st.empty()` 再判 `c != st.top()` —— 反过来对空栈调 `top()` 会 UB（C++）/ IndexError（Python）。`||` 短路救了你，但写法本身要清楚。
 - 别忘了最后 `return st.empty()` —— 全程没匹配错也可能是左括号有剩，比如 `"(("`。
 - 奇数长度的早退是 micro-opt，不写也对，但能省一遍循环。
 - "push 对应右括号"这个 trick 比"push 左括号、close 时映射回去"代码短一半，建议固化成肌肉记忆。
 
-## Related / 相关题目
+## 相关题目
 
 - [0225. Implement Stack using Queues](../0225-implement-stack-using-queues/README.md) — 栈的基本设计
 - [1047. Remove All Adjacent Duplicates In String / 删除字符串中的所有相邻重复项](../1047-remove-all-adjacent-duplicates-in-string/README.md) — 同样是"配对消除"模式

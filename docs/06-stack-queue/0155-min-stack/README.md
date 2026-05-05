@@ -8,21 +8,21 @@
     - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
-## Problem / 题意
+## Problem
 
 **EN**: Design a stack that supports `push` / `pop` / `top` / `getMin`, all in **O(1)**. The catch is `getMin` —— a vanilla stack would have to scan to find the minimum.
 
 **中文**: 设计一个支持 `push` / `pop` / `top` / `getMin` 的栈, 全部 O(1). 难点在 `getMin` —— 普通栈查最小要 O(n).
 
-## Approach / 思路
+## 思路
 
-### 核心思想 / Core idea
+### Core idea
 
 **空间换时间**: push 时把"那一刻的最小值"提前算好缓存起来, getMin 直接读 → O(1). 普通栈是"按需计算", 这里改成"提前缓存".
 
 **EN**: Trade space for time — pre-compute and cache "the min as of right now" on every push, so `getMin` just reads it.
 
-### 关键洞察 / Key insights
+### 关键洞察
 
 1. **栈的"历史快照"特性 / Stack's historical-snapshot property**
 
@@ -44,7 +44,7 @@
 
     优化版的辅助栈, 元素从底到顶是**单调非增**的 (相等可以保留, 后面会解释为什么必须保留). 这就接上了**单调栈**思想 —— 最小栈的优化版本本质上就是个为这道题量身定制的单调栈.
 
-### 可迁移思路 / Transferable thinking
+### 可迁移思路
 
 这道题的招式叫 **"在每个状态点缓存一个聚合信息, 把查询拍平到 O(1)"**, 在很多题里都能套:
 
@@ -56,11 +56,11 @@
 - **[0239. Sliding Window Maximum](../0239-sliding-window-maximum/README.md)** —— 进阶: 窗口两端都在变, 升级成单调队列. 最小栈是"只 push/pop 一端"的简化版.
 - **稀疏表 / 并查集 size / Trie 计数** —— 本质都是这个骨架: 在写入时顺手维护聚合信息.
 
-### 一句话总结 / One-liner
+### 一句话总结
 
 **EN**: 看到 "O(1) 查询某种聚合值"(min / max / sum / count / ...), 先想能不能在 push/insert 时**顺手把答案算好存起来** —— 这是空间换时间最朴素的形态.
 
-### Visual / 图解
+### 图解
 
 Trace `push 3, 5, 2, 2, getMin, pop, getMin`:
 
@@ -88,7 +88,7 @@ graph TD
 
 注意 push 第二个 2 时**必须**也压进辅助栈 —— 否则之后 pop 一个 2, 辅助栈也跟着 pop, 就把"原来那个 2 时的最小值"也丢了. 后面 Pitfalls 里展开.
 
-## Solution / 题解
+## Solution
 
 ### Variant A — pair stack (内嵌, Yang 的提交版本)
 
@@ -211,14 +211,14 @@ graph TD
     };
     ```
 
-## Complexity / 复杂度
+## Complexity
 
 All variants:
 
 - **Time**: `push` / `pop` / `top` / `getMin` 全部 **O(1)**.
 - **Space**: O(n) for Variant A and B (每个 push 都缓存一份 min). Variant C 最坏 O(n), 平均更省 (输入越"乱"省得越多).
 
-## Pitfalls / 易错点
+## 易错点
 
 1. **优化版 push 用 `<=` 不是 `<`** —— 否则**重复的最小值**只会进辅助栈一次, 之后多次 pop 那个值会让辅助栈过早弹空. 例: `push 2, push 2, pop, getMin` —— 没 `<=` 的话辅助栈只有一个 2, 第一次 pop 把它弹掉, getMin 就崩了.
 2. **优化版 pop 用 `==` 不是 `<` 或 `<=`** —— 我们要做的是"如果弹出去的恰好是当前最小, 顺手把辅助栈也弹一个". 写成 `<` 或 `<=` 会要么少弹要么多弹, 都不对.
@@ -226,7 +226,7 @@ All variants:
 4. **Variant A 的内存**: 每个 push 都存一份 min, 哪怕 min 没变. 如果数据极端 (所有元素都比初始最小大), Variant C 能省一半多内存.
 5. **`top()` 别返回 `getMin()`** —— 听起来傻, 但写双栈时手快真容易写错. 主栈顶才是 `top`, 辅助栈顶才是 `getMin`.
 
-## Related / 相关题目
+## 相关题目
 
 - [0225. Implement Stack using Queues / 用队列实现栈](../0225-implement-stack-using-queues/README.md) — 双结构互相模拟
 - [0232. Implement Queue using Stacks / 用栈实现队列](../0232-implement-queue-using-stacks/README.md) — 双栈思想的另一种用法

@@ -9,6 +9,7 @@
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
 | 0020 | [Valid Parentheses / 有效的括号](./0020-valid-parentheses/README.md) | Easy | ✅ | ☑ ☐ ☐ |
+| 0071 | [Simplify Path / 简化路径](./0071-simplify-path/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0150 | [Evaluate Reverse Polish Notation / 逆波兰表达式求值](./0150-evaluate-reverse-polish-notation/README.md) | Medium | ✅ | ☑ ☐ ☐ |
 | 0155 | [Min Stack / 最小栈](./0155-min-stack/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0225 | [Implement Stack using Queues / 用队列实现栈](./0225-implement-stack-using-queues/README.md) | Easy | ✅ | ☑ ☐ ☐ |

@@ -1,8 +1,8 @@
 # 06 · Stack & Queue — Summary / 总结
 
-**EN**: Fast review for the 8 problems in this category. Each block: the *one* idea that unlocks the problem, plus a takeaway you can reuse on different problems with the same shape.
+**EN**: Fast review for the 9 problems in this category. Each block: the *one* idea that unlocks the problem, plus a takeaway you can reuse on different problems with the same shape.
 
-**中文**: 这一章 8 题的速复习. 每题两块: 一个能让你"啊就是这个"的核心 idea, 加上能搬到别的题上的套路.
+**中文**: 这一章 9 题的速复习. 每题两块: 一个能让你"啊就是这个"的核心 idea, 加上能搬到别的题上的套路.
 
 ---
 
@@ -11,6 +11,14 @@
 **Key idea / 核心**: 看到左括号, push 它**对应的右括号**进栈. 之后碰到右括号直接和 `top()` 比 —— 不用分支 (`(↔)` / `{↔}` / `[↔]`), 不用映射表.
 
 **Takeaway / 套路**: **Stack as canceler** —— "push expectation, pop on match". 任何"配对消除"问题都是这个形状: 栈里维护"还没被满足的期待", 来一个能匹配的就消, 否则就压.
+
+---
+
+## 0071. Simplify Path / 简化路径
+
+**Key idea / 核心**: 把路径按 `/` 切段, 普通目录 push, `..` 时 pop (注意空栈别 pop), `.` / 空串跳过. 栈底到顶 join 起来加个前导 `/` 就是答案.
+
+**Takeaway / 套路**: **Stack as undoer** —— 凡是题目里出现"返回上一级 / 撤销 / 嵌套折叠"语义都是它 (路径、解码 0394、退格 0844). 配套技能: 字符串处理通用三步 `split → 逐段处理 → join`. C++ 没有原生 split, 用 `istringstream + getline`; Python/JS 直接 `.split('/')`.
 
 ---
 
@@ -76,7 +84,7 @@
 
 | 套路 | 长什么样 | 出现于 |
 |---|---|---|
-| **Stack as canceler** | push 期待 / 字符, 匹配就消 | 0020, 1047 |
+| **Stack as canceler / undoer** | push 期待 / 字符, 匹配或"撤销指令"出现就消 | 0020, 0071, 1047 |
 | **Stack as evaluator** | push 操作数, 运算符 fold 栈顶若干个 | 0150 |
 | **Stack/Queue adapter** | 容器互相模拟, 关键是懒搬运 / 轮转 | 0225, 0232 |
 | **Cache aggregate at write-time** | push 时把"当下的聚合值"存好, 查询 O(1) | 0155 |
@@ -85,7 +93,7 @@
 
 **遇到新题怎么先猜方向**:
 
-- 看到"括号 / 配对 / 相邻消除" → Stack as canceler.
+- 看到"括号 / 配对 / 相邻消除 / 撤销 / 上一级 / 嵌套" → Stack as canceler / undoer.
 - 看到"后缀表达式 / 表达式求值" → Stack as evaluator.
 - 看到"用 X 实现 Y, 而 X 和 Y 操作方向相反" → 找 lazy / 轮转.
 - 看到"O(1) 查询聚合值 (min/max/sum/...)" → 在 push 时把答案算好缓存.

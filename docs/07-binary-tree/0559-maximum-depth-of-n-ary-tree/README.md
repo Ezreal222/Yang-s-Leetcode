@@ -6,7 +6,7 @@
     - **Link**: [LeetCode](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)
     - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

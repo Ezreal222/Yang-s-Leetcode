@@ -20,6 +20,7 @@
 | 0199 | [Binary Tree Right Side View / 二叉树的右视图](./0199-binary-tree-right-side-view/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0222 | [Count Complete Tree Nodes / 完全二叉树的节点个数](./0222-count-complete-tree-nodes/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0226 | [Invert Binary Tree / 翻转二叉树](./0226-invert-binary-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0257 | [Binary Tree Paths / 二叉树的所有路径](./0257-binary-tree-paths/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0429 | [N-ary Tree Level Order Traversal / N 叉树的层序遍历](./0429-n-ary-tree-level-order-traversal/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0515 | [Find Largest Value in Each Tree Row / 在每个树行中找最大值](./0515-find-largest-value-in-each-tree-row/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0559 | [Maximum Depth of N-ary Tree / N 叉树的最大深度](./0559-maximum-depth-of-n-ary-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |

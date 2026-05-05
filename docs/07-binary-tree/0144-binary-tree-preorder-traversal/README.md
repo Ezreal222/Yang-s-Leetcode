@@ -23,7 +23,7 @@ DFS, 访问顺序 **根 → 左 → 右**. 两条路:
 - **递归**: 一行就是 `visit(root); recurse(left); recurse(right)`.
 - **迭代**: 用栈模拟递归. 关键是**先压右孩子, 再压左孩子** —— LIFO, 弹出时左先于右.
 
-### 关键洞察
+### Key Insights
 
 1. **迭代版的"右先压, 左后压" / Iterative push order**
 

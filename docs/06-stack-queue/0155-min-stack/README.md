@@ -22,7 +22,7 @@
 
 **EN**: Trade space for time — pre-compute and cache "the min as of right now" on every push, so `getMin` just reads it.
 
-### 关键洞察
+### Key Insights
 
 1. **栈的"历史快照"特性 / Stack's historical-snapshot property**
 

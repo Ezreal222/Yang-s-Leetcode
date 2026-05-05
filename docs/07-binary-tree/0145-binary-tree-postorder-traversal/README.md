@@ -20,7 +20,7 @@
 
 跟 [0144 preorder](../0144-binary-tree-preorder-traversal/README.md) 一模一样, 只是把 "访问 root" 这行从最前**挪到最后** —— 先递归左、再递归右、最后 push 当前节点.
 
-### 关键洞察
+### Key Insights
 
 **迭代版的小技巧**: postorder = "**根 → 右 → 左**" 然后**整体 reverse**. 因为根→右→左其实是 preorder 的镜像, 拿 0144 的迭代代码改两行 (左右 push 顺序对调) 跑出来再反转就是答案. 比直接写 postorder 迭代简单太多.
 

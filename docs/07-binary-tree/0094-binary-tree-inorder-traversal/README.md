@@ -20,7 +20,7 @@
 
 [0144](../0144-binary-tree-preorder-traversal/README.md) 同款, 把 "访问 root" 那行**挪到中间** —— 先递归左, 再 push 当前, 再递归右.
 
-### 关键洞察
+### Key Insights
 
 **迭代版独立一档**: 不像 pre/post 可以从 preorder 直接改, inorder 的迭代写法**自成一派** —— 必须先一路压入左子树到尽头, 再 pop 一个 visit, 然后转向 right 子树重复.
 

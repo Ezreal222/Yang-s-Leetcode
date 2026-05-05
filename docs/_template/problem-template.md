@@ -22,7 +22,7 @@
 
 **中文**: 一两句话讲清楚为什么这样做.
 
-### 关键洞察
+### Key Insights
 
 1. **Insight name** — 1-3 sentence explanation of the non-obvious observation.
 2. **Insight name** — ...

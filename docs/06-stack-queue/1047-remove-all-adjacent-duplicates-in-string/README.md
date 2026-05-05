@@ -6,7 +6,7 @@
     - **Link**: [LeetCode](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)
     - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem / 题意
 

@@ -8,10 +8,10 @@
 
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
-| 0020 | [Valid Parentheses / 有效的括号](./0020-valid-parentheses/README.md) | Easy | ✅ | ☐ ☐ ☐ |
-| 0150 | [Evaluate Reverse Polish Notation / 逆波兰表达式求值](./0150-evaluate-reverse-polish-notation/README.md) | Medium | ✅ | ☐ ☐ ☐ |
-| 0225 | [Implement Stack using Queues / 用队列实现栈](./0225-implement-stack-using-queues/README.md) | Easy | ✅ | ☐ ☐ ☐ |
-| 0232 | [Implement Queue using Stacks / 用栈实现队列](./0232-implement-queue-using-stacks/README.md) | Easy | ✅ | ☐ ☐ ☐ |
-| 0239 | [Sliding Window Maximum / 滑动窗口最大值](./0239-sliding-window-maximum/README.md) | Hard | ✅ | ☐ ☐ ☐ |
-| 0347 | [Top K Frequent Elements / 前 K 个高频元素](./0347-top-k-frequent-elements/README.md) | Medium | ✅ | ☐ ☐ ☐ |
-| 1047 | [Remove All Adjacent Duplicates In String / 删除字符串中的所有相邻重复项](./1047-remove-all-adjacent-duplicates-in-string/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0020 | [Valid Parentheses / 有效的括号](./0020-valid-parentheses/README.md) | Easy | ✅ | ☑ ☐ ☐ |
+| 0150 | [Evaluate Reverse Polish Notation / 逆波兰表达式求值](./0150-evaluate-reverse-polish-notation/README.md) | Medium | ✅ | ☑ ☐ ☐ |
+| 0225 | [Implement Stack using Queues / 用队列实现栈](./0225-implement-stack-using-queues/README.md) | Easy | ✅ | ☑ ☐ ☐ |
+| 0232 | [Implement Queue using Stacks / 用栈实现队列](./0232-implement-queue-using-stacks/README.md) | Easy | ✅ | ☑ ☐ ☐ |
+| 0239 | [Sliding Window Maximum / 滑动窗口最大值](./0239-sliding-window-maximum/README.md) | Hard | ✅ | ☑ ☐ ☐ |
+| 0347 | [Top K Frequent Elements / 前 K 个高频元素](./0347-top-k-frequent-elements/README.md) | Medium | ✅ | ☑ ☐ ☐ |
+| 1047 | [Remove All Adjacent Duplicates In String / 删除字符串中的所有相邻重复项](./1047-remove-all-adjacent-duplicates-in-string/README.md) | Easy | ✅ | ☑ ☐ ☐ |

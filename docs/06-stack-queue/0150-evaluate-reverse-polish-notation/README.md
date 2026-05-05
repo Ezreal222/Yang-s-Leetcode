@@ -6,7 +6,7 @@
     - **Link**: [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
     - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem / 题意
 

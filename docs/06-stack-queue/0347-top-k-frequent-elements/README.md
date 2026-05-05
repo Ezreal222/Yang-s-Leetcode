@@ -3,7 +3,7 @@
 !!! info "Meta"
     - **Difficulty**: Medium
     - **Tags**: Heap, Hash Map, Bucket Sort, Priority Queue · 堆, 哈希表, 桶排序, 优先队列
-    - **Link**: [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/) · [力扣](https://leetcode.cn/problems/top-k-frequent-elements/)
+    - **Link**: [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/)
     - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐

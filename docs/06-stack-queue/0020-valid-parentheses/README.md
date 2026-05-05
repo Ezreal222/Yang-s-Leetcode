@@ -3,7 +3,7 @@
 !!! info "Meta"
     - **Difficulty**: Easy
     - **Tags**: Stack, String · 栈, 字符串
-    - **Link**: [LeetCode](https://leetcode.com/problems/valid-parentheses/) · [力扣](https://leetcode.cn/problems/valid-parentheses/)
+    - **Link**: [LeetCode](https://leetcode.com/problems/valid-parentheses/)
     - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐

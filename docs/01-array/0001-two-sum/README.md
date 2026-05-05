@@ -3,7 +3,7 @@
 !!! info "Meta"
     - **Difficulty**: Easy
     - **Tags**: Array, Hash Table · 数组, 哈希表
-    - **Link**: [LeetCode](https://leetcode.com/problems/two-sum/) · [力扣](https://leetcode.cn/problems/two-sum/)
+    - **Link**: [LeetCode](https://leetcode.com/problems/two-sum/)
     - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐

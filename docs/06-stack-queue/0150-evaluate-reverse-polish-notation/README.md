@@ -3,7 +3,7 @@
 !!! info "Meta"
     - **Difficulty**: Medium
     - **Tags**: Stack, Math, Array · 栈, 数学, 数组
-    - **Link**: [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/) · [力扣](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
+    - **Link**: [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
     - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐

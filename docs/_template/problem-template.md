@@ -3,7 +3,7 @@
 !!! info "Meta"
     - **Difficulty**: Easy/Medium/Hard
     - **Tags**: Array, Hash Table · 数组, 哈希表
-    - **Link**: [LeetCode](https://leetcode.com/problems/...) · [力扣](https://leetcode.cn/problems/...)
+    - **Link**: [LeetCode](https://leetcode.com/problems/...)
     - **Status**: ✅ Solved
     - **First solved**: YYYY-MM-DD
     - **Reviewed**: ☐ ☐ ☐

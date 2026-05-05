@@ -3,7 +3,7 @@
 !!! info "Meta"
     - **Difficulty**: Easy
     - **Tags**: Stack, Queue, Design · 栈, 队列, 设计
-    - **Link**: [LeetCode](https://leetcode.com/problems/implement-stack-using-queues/) · [力扣](https://leetcode.cn/problems/implement-stack-using-queues/)
+    - **Link**: [LeetCode](https://leetcode.com/problems/implement-stack-using-queues/)
     - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐

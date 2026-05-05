@@ -81,6 +81,6 @@
 
 ## 相关题目
 
-- 0101. Symmetric Tree (待补) — "翻转后是否相等" 的判定问题
+- [0101. Symmetric Tree / 对称二叉树](../0101-symmetric-tree/README.md) — "翻转后是否相等" 的判定问题
 - [0104. Maximum Depth of Binary Tree](../0104-maximum-depth-of-binary-tree/README.md) — 同款递归骨架
 - [0144. Binary Tree Preorder Traversal](../0144-binary-tree-preorder-traversal/README.md) — 这里的 swap+递归 就是前序的"访问→左→右"

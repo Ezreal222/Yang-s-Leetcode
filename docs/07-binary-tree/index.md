@@ -16,6 +16,7 @@
 | 0144 | [Binary Tree Preorder Traversal / 二叉树的前序遍历](./0144-binary-tree-preorder-traversal/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0145 | [Binary Tree Postorder Traversal / 二叉树的后序遍历](./0145-binary-tree-postorder-traversal/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0199 | [Binary Tree Right Side View / 二叉树的右视图](./0199-binary-tree-right-side-view/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0226 | [Invert Binary Tree / 翻转二叉树](./0226-invert-binary-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0429 | [N-ary Tree Level Order Traversal / N 叉树的层序遍历](./0429-n-ary-tree-level-order-traversal/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0515 | [Find Largest Value in Each Tree Row / 在每个树行中找最大值](./0515-find-largest-value-in-each-tree-row/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0637 | [Average of Levels in Binary Tree / 二叉树的层平均值](./0637-average-of-levels-in-binary-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |

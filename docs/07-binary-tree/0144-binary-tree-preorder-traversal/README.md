@@ -228,8 +228,8 @@ graph LR
 
 ## Related / 相关题目
 
-- 0094. Binary Tree Inorder Traversal (待补) — 中序: 左 → 根 → 右
-- 0145. Binary Tree Postorder Traversal (待补) — 后序: 左 → 右 → 根
+- [0094. Binary Tree Inorder Traversal / 二叉树的中序遍历](../0094-binary-tree-inorder-traversal/README.md) — 中序: 左 → 根 → 右
+- [0145. Binary Tree Postorder Traversal / 二叉树的后序遍历](../0145-binary-tree-postorder-traversal/README.md) — 后序: 左 → 右 → 根
 - 0102. Binary Tree Level Order Traversal (待补) — BFS, 栈换队列
 - [0020. Valid Parentheses](../../06-stack-queue/0020-valid-parentheses/README.md) — 同样的"用栈做 DFS-style 处理"模式
 - [0071. Simplify Path](../../06-stack-queue/0071-simplify-path/README.md) — 栈模拟另一种"层级"

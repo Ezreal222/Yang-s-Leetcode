@@ -32,6 +32,8 @@ C++ helper 的 `vector<int>&` 引用传递坑跟 0144 一样, 见那边讨论.
 
 ## Solution / 题解
 
+### Variant A — recursion / 递归
+
 === "C++"
     ```cpp
     class Solution {
@@ -81,6 +83,74 @@ C++ helper 的 `vector<int>&` 引用传递坑跟 0144 一样, 见那边讨论.
         };
         dfs(root);
         return res;
+    };
+    ```
+
+### Variant B — iterative (preorder mirror + reverse) / 迭代
+
+跑一遍"根 → 右 → 左"的伪 preorder, 最后整体 reverse —— 答案就是 postorder. 比直接写 postorder 迭代省脑子.
+
+=== "C++"
+    ```cpp
+    class Solution {
+    public:
+        vector<int> postorderTraversal(TreeNode* root) {
+            vector<int> res;
+            if (!root) return res;
+            stack<TreeNode*> stk;
+            stk.push(root);
+            while (!stk.empty()) {
+                TreeNode* cur = stk.top(); stk.pop();
+                res.push_back(cur->val);
+                // 跟 0144 preorder 反过来: 左先压, 右后压 → 弹出顺序是"根 右 左"
+                if (cur->left)  stk.push(cur->left);
+                if (cur->right) stk.push(cur->right);
+            }
+            // "根 右 左" 反转之后正好是"左 右 根" → postorder
+            reverse(res.begin(), res.end());
+            return res;
+        }
+    };
+    ```
+
+=== "Python"
+    ```python
+    class Solution:
+        def postorderTraversal(self, root: 'TreeNode | None') -> list[int]:
+            if not root:
+                return []
+            res: list[int] = []
+            stack = [root]
+            while stack:
+                cur = stack.pop()
+                res.append(cur.val)
+                # 左先压, 右后压 → 弹出 "根 右 左"
+                if cur.left:
+                    stack.append(cur.left)
+                if cur.right:
+                    stack.append(cur.right)
+            # res[::-1]: slicing trick —— 步长 -1 从尾到头取一遍, 等价于一份反转的拷贝.
+            #   C++ 等价: 复制再 reverse, 或直接对 res 调用 reverse().
+            #   in-place 版本: res.reverse() 然后 return res.
+            return res[::-1]
+    ```
+
+=== "JavaScript"
+    ```javascript
+    var postorderTraversal = function(root) {
+        if (!root) return [];
+        const res = [];
+        const stack = [root];
+        while (stack.length > 0) {
+            const cur = stack.pop();
+            res.push(cur.val);
+            // 左先压, 右后压
+            if (cur.left)  stack.push(cur.left);
+            if (cur.right) stack.push(cur.right);
+        }
+        // arr.reverse() 原地反转, 同时返回反转后的数组本身 (chainable).
+        // 跟 C++ std::reverse 等价, 只是 JS 这个返回值用起来更顺手.
+        return res.reverse();
     };
     ```
 

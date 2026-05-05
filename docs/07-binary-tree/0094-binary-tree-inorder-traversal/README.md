@@ -42,6 +42,8 @@ while node or stack:
 
 ## Solution / 题解
 
+### Variant A — recursion / 递归
+
 === "C++"
     ```cpp
     class Solution {
@@ -90,6 +92,69 @@ while node or stack:
             dfs(node.right);
         };
         dfs(root);
+        return res;
+    };
+    ```
+
+### Variant B — iterative (press-left, pop, go-right) / 迭代
+
+跟 pre/post 的"push children"模板不一样, inorder 迭代要用**两层循环**: 外层游标 `cur` 控制方向, 内层循环把 cur 一路向左压栈到底; 然后 pop 一个 visit, 转 `cur->right` 重复. 直到 `cur` 和栈都空.
+
+=== "C++"
+    ```cpp
+    class Solution {
+    public:
+        vector<int> inorderTraversal(TreeNode* root) {
+            vector<int> res;
+            stack<TreeNode*> stk;
+            TreeNode* cur = root;
+            while (cur || !stk.empty()) {
+                while (cur) {
+                    stk.push(cur);
+                    cur = cur->left;            // left: 一路压到最左
+                }
+                cur = stk.top(); stk.pop();
+                res.push_back(cur->val);        // mid: 弹出来的那个就是当前最左未访问
+                cur = cur->right;               // right: 转向右子树, 重新进入外层 while
+            }
+            return res;
+        }
+    };
+    ```
+
+=== "Python"
+    ```python
+    class Solution:
+        def inorderTraversal(self, root: 'TreeNode | None') -> list[int]:
+            res: list[int] = []
+            stack: list = []
+            cur = root
+            # 外层: cur 还能走 OR 栈里还有未访问的祖先, 就继续
+            while cur or stack:
+                while cur:
+                    stack.append(cur)
+                    cur = cur.left          # left
+                cur = stack.pop()
+                res.append(cur.val)         # mid
+                cur = cur.right             # right
+            return res
+    ```
+
+=== "JavaScript"
+    ```javascript
+    var inorderTraversal = function(root) {
+        const res = [];
+        const stack = [];
+        let cur = root;
+        while (cur || stack.length > 0) {
+            while (cur) {
+                stack.push(cur);
+                cur = cur.left;             // left
+            }
+            cur = stack.pop();
+            res.push(cur.val);              // mid
+            cur = cur.right;                // right
+        }
         return res;
     };
     ```

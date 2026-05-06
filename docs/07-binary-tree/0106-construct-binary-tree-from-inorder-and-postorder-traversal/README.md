@@ -168,7 +168,7 @@
 
 ## 相关题目
 
-- 0105. Construct Binary Tree from Preorder and Inorder Traversal (待补) — 对偶版, 把 postorder 换成 preorder
+- [0105. Construct Binary Tree from Preorder and Inorder Traversal / 从前序与中序遍历序列构造二叉树](../0105-construct-binary-tree-from-preorder-and-inorder-traversal/README.md) — 对偶版, 把 postorder 换成 preorder
 - 0654. Maximum Binary Tree (待补) — 同款"找一个特殊位置切两半递归构造"
 - 0617. Merge Two Binary Trees (待补) — 同款双递归同步处理两棵树
 - [0144. Binary Tree Preorder Traversal](../0144-binary-tree-preorder-traversal/README.md) — 这题反向操作: 已知树求遍历

@@ -13,6 +13,7 @@
 | 0107 | [Binary Tree Level Order Traversal II / 二叉树的层序遍历 II](./0107-binary-tree-level-order-traversal-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0110 | [Balanced Binary Tree / 平衡二叉树](./0110-balanced-binary-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0111 | [Minimum Depth of Binary Tree / 二叉树的最小深度](./0111-minimum-depth-of-binary-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |
+| 0112 | [Path Sum / 路径总和](./0112-path-sum/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0116 | [Populating Next Right Pointers in Each Node / 填充每个节点的下一个右侧节点指针](./0116-populating-next-right-pointers-in-each-node/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0117 | [Populating Next Right Pointers in Each Node II / 填充每个节点的下一个右侧节点指针 II](./0117-populating-next-right-pointers-in-each-node-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0144 | [Binary Tree Preorder Traversal / 二叉树的前序遍历](./0144-binary-tree-preorder-traversal/README.md) | Easy | ✅ | ☐ ☐ ☐ |

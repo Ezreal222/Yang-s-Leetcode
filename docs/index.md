@@ -15,13 +15,13 @@
 | [04 · String / 字符串](./04-string/index.md) | 0 | 0 | 0 | 0 |
 | [05 · Two Pointers / 双指针法](./05-two-pointers/index.md) | 0 | 0 | 0 | 0 |
 | [06 · Stack & Queue / 栈与队列](./06-stack-queue/index.md) | 9 | 4 | 4 | 1 |
-| [07 · Binary Tree / 二叉树](./07-binary-tree/index.md) | 21 | 13 | 8 | 0 |
+| [07 · Binary Tree / 二叉树](./07-binary-tree/index.md) | 22 | 14 | 8 | 0 |
 | [08 · Backtracking / 回溯算法](./08-backtracking/index.md) | 0 | 0 | 0 | 0 |
 | [09 · Greedy / 贪心算法](./09-greedy/index.md) | 0 | 0 | 0 | 0 |
 | [10 · DP / 动态规划](./10-dp/index.md) | 0 | 0 | 0 | 0 |
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 0 | 0 | 0 | 0 |
 | [12 · Graph / 图论](./12-graph/index.md) | 0 | 0 | 0 | 0 |
-| **Total / 合计** | **31** | **18** | **12** | **1** |
+| **Total / 合计** | **32** | **19** | **12** | **1** |
 
 ## How to navigate / 如何使用
 

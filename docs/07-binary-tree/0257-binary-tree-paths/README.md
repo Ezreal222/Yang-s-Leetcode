@@ -107,7 +107,7 @@
 
 - [0144. Binary Tree Preorder Traversal](../0144-binary-tree-preorder-traversal/README.md) — 同款前序骨架
 - [0104. Maximum Depth of Binary Tree](../0104-maximum-depth-of-binary-tree/README.md) — 同款 root-to-leaf 递归
-- 0112. Path Sum (待补) — 把"收集字符串"换成"判和是否等于目标"
+- [0112. Path Sum / 路径总和](../0112-path-sum/README.md) — 把"收集字符串"换成"判和是否等于目标"
 - 0113. Path Sum II (待补) — 收集所有"和等于目标"的路径, 这里就要用显式回溯了
 - 0129. Sum Root to Leaf Numbers (待补) — 把路径当数字累加
 - 回溯系列 (子集 0078 / 排列 0046 / 组合 0077) 待补 —— 显式回溯的经典训练场

@@ -10,6 +10,7 @@
 | 0101 | [Symmetric Tree / 对称二叉树](./0101-symmetric-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0102 | [Binary Tree Level Order Traversal / 二叉树的层序遍历](./0102-binary-tree-level-order-traversal/README.md) | Medium | ✅ | ☑ ☐ ☐ |
 | 0104 | [Maximum Depth of Binary Tree / 二叉树的最大深度](./0104-maximum-depth-of-binary-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |
+| 0106 | [Construct Binary Tree from Inorder and Postorder Traversal / 从中序与后序遍历序列构造二叉树](./0106-construct-binary-tree-from-inorder-and-postorder-traversal/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0107 | [Binary Tree Level Order Traversal II / 二叉树的层序遍历 II](./0107-binary-tree-level-order-traversal-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0110 | [Balanced Binary Tree / 平衡二叉树](./0110-balanced-binary-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0111 | [Minimum Depth of Binary Tree / 二叉树的最小深度](./0111-minimum-depth-of-binary-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |

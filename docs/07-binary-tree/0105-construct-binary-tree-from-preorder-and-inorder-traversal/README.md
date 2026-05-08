@@ -140,5 +140,5 @@
 ## 相关题目
 
 - [0106. Construct Binary Tree from Inorder and Postorder Traversal](../0106-construct-binary-tree-from-inorder-and-postorder-traversal/README.md) — 对偶版, 完整讨论在那边
-- 0654. Maximum Binary Tree (待补) — 同款"找根 + 切两半递归"
+- [0654. Maximum Binary Tree / 最大二叉树](../0654-maximum-binary-tree/README.md) — 同款"找根 + 切两半递归"
 - 0617. Merge Two Binary Trees (待补) — 同款双递归同步

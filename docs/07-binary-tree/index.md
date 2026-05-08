@@ -30,3 +30,4 @@
 | 0515 | [Find Largest Value in Each Tree Row / 在每个树行中找最大值](./0515-find-largest-value-in-each-tree-row/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0559 | [Maximum Depth of N-ary Tree / N 叉树的最大深度](./0559-maximum-depth-of-n-ary-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |
 | 0637 | [Average of Levels in Binary Tree / 二叉树的层平均值](./0637-average-of-levels-in-binary-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0654 | [Maximum Binary Tree / 最大二叉树](./0654-maximum-binary-tree/README.md) | Medium | ✅ | ☐ ☐ ☐ |

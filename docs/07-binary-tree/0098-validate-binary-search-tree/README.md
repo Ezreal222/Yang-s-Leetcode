@@ -174,6 +174,6 @@
 - [0094. Binary Tree Inorder Traversal](../0094-binary-tree-inorder-traversal/README.md) — 提供 inorder 模板; 这题就在它的访问位置加判断
 - 0230. Kth Smallest Element in a BST (待补) — inorder 数到第 k 个
 - 0501. Find Mode in BST (待补) — inorder 上做众数计数
-- 0530. Minimum Absolute Difference in BST (待补) — inorder 相邻对差的最小值
+- [0530. Minimum Absolute Difference in BST / 二叉搜索树的最小绝对差](../0530-minimum-absolute-difference-in-bst/README.md) — inorder 相邻对差的最小值
 - 0701. Insert into a BST (待补) — 用 BST 性质找插入位置
 - 0450. Delete Node in a BST (待补) — 用 BST 性质找删除点

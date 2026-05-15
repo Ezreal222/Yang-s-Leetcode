@@ -29,8 +29,9 @@
 | 0429 | [N-ary Tree Level Order Traversal / N 叉树的层序遍历](./0429-n-ary-tree-level-order-traversal/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0513 | [Find Bottom Left Tree Value / 找树左下角的值](./0513-find-bottom-left-tree-value/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0515 | [Find Largest Value in Each Tree Row / 在每个树行中找最大值](./0515-find-largest-value-in-each-tree-row/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0530 | [Minimum Absolute Difference in BST / 二叉搜索树的最小绝对差](./0530-minimum-absolute-difference-in-bst/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0559 | [Maximum Depth of N-ary Tree / N 叉树的最大深度](./0559-maximum-depth-of-n-ary-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |
 | 0617 | [Merge Two Binary Trees / 合并二叉树](./0617-merge-two-binary-trees/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0637 | [Average of Levels in Binary Tree / 二叉树的层平均值](./0637-average-of-levels-in-binary-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0654 | [Maximum Binary Tree / 最大二叉树](./0654-maximum-binary-tree/README.md) | Medium | ✅ | ☐ ☐ ☐ |
-| 0700 | [Search in a Binary Search Tree / 二叉搜索树中的搜索](./0700-search-in-a-binary-search-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0700 | [Search in a Binary Search Tree / 二叉搜索树中的搜索](./0700-search-in-a-binary-search-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |

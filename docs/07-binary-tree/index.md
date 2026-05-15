@@ -7,6 +7,7 @@
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
 | 0094 | [Binary Tree Inorder Traversal / 二叉树的中序遍历](./0094-binary-tree-inorder-traversal/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0098 | [Validate Binary Search Tree / 验证二叉搜索树](./0098-validate-binary-search-tree/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0101 | [Symmetric Tree / 对称二叉树](./0101-symmetric-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0102 | [Binary Tree Level Order Traversal / 二叉树的层序遍历](./0102-binary-tree-level-order-traversal/README.md) | Medium | ✅ | ☑ ☐ ☐ |
 | 0104 | [Maximum Depth of Binary Tree / 二叉树的最大深度](./0104-maximum-depth-of-binary-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |

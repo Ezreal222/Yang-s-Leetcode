@@ -121,7 +121,7 @@ BST 搜索是**单向**的, 所以不像一般二叉树迭代要用栈 —— �
 
 ## 相关题目
 
-- 0098. Validate Binary Search Tree (待补) — 用 BST 性质判合法 (inorder 升序 / 区间约束两种思路)
+- [0098. Validate Binary Search Tree / 验证二叉搜索树](../0098-validate-binary-search-tree/README.md) — 用 BST 性质判合法 (inorder 升序 / 区间约束两种思路)
 - 0230. Kth Smallest Element in a BST (待补) — inorder 第 k 个
 - 0501. Find Mode in BST (待补) — inorder 上找众数
 - 0701. Insert into a BST (待补) — 同款单向走, 找空位插入

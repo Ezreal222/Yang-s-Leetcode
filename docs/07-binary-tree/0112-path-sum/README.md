@@ -104,4 +104,4 @@ DFS 一路下走, 每到一个节点就把 `targetSum -= node.val`; 到叶子时
 - 0113. Path Sum II (待补) — 收集**所有**符合的路径, void 递归 + 显式回溯
 - 0129. Sum Root to Leaf Numbers (待补) — 路径累乘积当数字
 - 0437. Path Sum III (待补) — 任意起点终点, 双重 DFS 或前缀和
-- 0236. Lowest Common Ancestor (待补) — Key Insight 表里的"返回值要处理"那种递归
+- [0236. Lowest Common Ancestor of a Binary Tree / 二叉树的最近公共祖先](../0236-lowest-common-ancestor-of-a-binary-tree/README.md) — Key Insight 表里的"返回值要处理"那种递归

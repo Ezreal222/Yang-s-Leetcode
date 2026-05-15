@@ -24,11 +24,12 @@
 | 0199 | [Binary Tree Right Side View / 二叉树的右视图](./0199-binary-tree-right-side-view/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0222 | [Count Complete Tree Nodes / 完全二叉树的节点个数](./0222-count-complete-tree-nodes/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0226 | [Invert Binary Tree / 翻转二叉树](./0226-invert-binary-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0236 | [Lowest Common Ancestor of a Binary Tree / 二叉树的最近公共祖先](./0236-lowest-common-ancestor-of-a-binary-tree/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0257 | [Binary Tree Paths / 二叉树的所有路径](./0257-binary-tree-paths/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0404 | [Sum of Left Leaves / 左叶子之和](./0404-sum-of-left-leaves/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0429 | [N-ary Tree Level Order Traversal / N 叉树的层序遍历](./0429-n-ary-tree-level-order-traversal/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0513 | [Find Bottom Left Tree Value / 找树左下角的值](./0513-find-bottom-left-tree-value/README.md) | Medium | ✅ | ☐ ☐ ☐ |
-| 0501 | [Find Mode in Binary Search Tree / 二叉搜索树中的众数](./0501-find-mode-in-binary-search-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0501 | [Find Mode in Binary Search Tree / 二叉搜索树中的众数](./0501-find-mode-in-binary-search-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |
 | 0515 | [Find Largest Value in Each Tree Row / 在每个树行中找最大值](./0515-find-largest-value-in-each-tree-row/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0530 | [Minimum Absolute Difference in BST / 二叉搜索树的最小绝对差](./0530-minimum-absolute-difference-in-bst/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0559 | [Maximum Depth of N-ary Tree / N 叉树的最大深度](./0559-maximum-depth-of-n-ary-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |

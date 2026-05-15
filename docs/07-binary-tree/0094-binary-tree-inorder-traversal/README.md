@@ -175,4 +175,4 @@ while node or stack:
 - [0145. Binary Tree Postorder Traversal](../0145-binary-tree-postorder-traversal/README.md) — 三兄弟之老幺
 - [0098. Validate Binary Search Tree / 验证二叉搜索树](../0098-validate-binary-search-tree/README.md) — inorder 升序判 BST
 - 0230. Kth Smallest Element in a BST (待补) — inorder 第 k 个
-- 0501. Find Mode in BST (待补) — inorder 上做众数计数
+- [0501. Find Mode in BST / 二叉搜索树中的众数](../0501-find-mode-in-binary-search-tree/README.md) — inorder 上做众数计数

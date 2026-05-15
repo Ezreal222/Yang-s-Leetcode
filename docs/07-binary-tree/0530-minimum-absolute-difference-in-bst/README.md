@@ -121,6 +121,6 @@
 - [0098. Validate Binary Search Tree](../0098-validate-binary-search-tree/README.md) — 同款 inorder + pre 骨架, 改"min" 为"是否严格递增"
 - [0094. Binary Tree Inorder Traversal](../0094-binary-tree-inorder-traversal/README.md) — 提供 inorder 模板
 - [0700. Search in a Binary Search Tree](../0700-search-in-a-binary-search-tree/README.md) — BST 性质入门
-- 0501. Find Mode in BST (待补) — 同款 inorder + 相邻对处理 (这里换成众数计数)
+- [0501. Find Mode in BST / 二叉搜索树中的众数](../0501-find-mode-in-binary-search-tree/README.md) — 同款 inorder + 相邻对处理 (这里换成众数计数)
 - 0230. Kth Smallest Element in a BST (待补) — 同款 inorder, 数到第 k 个就 return
 - 0783. Minimum Distance Between BST Nodes (待补) — 跟本题完全一样, 只是题面换了句话

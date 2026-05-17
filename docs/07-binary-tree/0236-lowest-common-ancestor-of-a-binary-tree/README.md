@@ -6,7 +6,7 @@
     - **Link**: [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
     - **Status**: ✅ Solved
     - **First solved**: 2026-05-04
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 
@@ -122,7 +122,7 @@
 
 ## 相关题目
 
-- 0235. Lowest Common Ancestor of a Binary Search Tree (待补) — BST 版, 用大小性质单向走, 不需要后序合并
+- [0235. Lowest Common Ancestor of a Binary Search Tree / 二叉搜索树的最近公共祖先](../0235-lowest-common-ancestor-of-a-binary-search-tree/README.md) — BST 版, 用大小性质单向走, 不需要后序合并
 - [0112. Path Sum](../0112-path-sum/README.md) — Carl 框架第三种 (找一条路径短路); 0236 是第二种 (走整棵 + 合并返回)
 - [0098. Validate Binary Search Tree](../0098-validate-binary-search-tree/README.md) — 也是"后序 + 处理返回值"模式
 - [0110. Balanced Binary Tree](../0110-balanced-binary-tree/README.md) — 同款后序 + 返回值短路 (用 -1 哨兵)

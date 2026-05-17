@@ -125,5 +125,5 @@ BST 搜索是**单向**的, 所以不像一般二叉树迭代要用栈 —— �
 - 0230. Kth Smallest Element in a BST (待补) — inorder 第 k 个
 - 0501. Find Mode in BST (待补) — inorder 上找众数
 - [0701. Insert into a BST / 二叉搜索树中的插入操作](../0701-insert-into-a-binary-search-tree/README.md) — 同款单向走, 找空位插入
-- 0450. Delete Node in a BST (待补) — 同款单向走, 找节点删除 (重组子树)
+- [0450. Delete Node in a BST / 删除二叉搜索树中的节点](../0450-delete-node-in-a-bst/README.md) — 同款单向走, 找节点删除 (重组子树)
 - [0094. Binary Tree Inorder Traversal](../0094-binary-tree-inorder-traversal/README.md) — BST inorder 出来就是升序, 后续题反复用

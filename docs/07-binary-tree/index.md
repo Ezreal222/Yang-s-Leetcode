@@ -14,6 +14,7 @@
 | 0105 | [Construct Binary Tree from Preorder and Inorder Traversal / 从前序与中序遍历序列构造二叉树](./0105-construct-binary-tree-from-preorder-and-inorder-traversal/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0106 | [Construct Binary Tree from Inorder and Postorder Traversal / 从中序与后序遍历序列构造二叉树](./0106-construct-binary-tree-from-inorder-and-postorder-traversal/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0107 | [Binary Tree Level Order Traversal II / 二叉树的层序遍历 II](./0107-binary-tree-level-order-traversal-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0108 | [Convert Sorted Array to Binary Search Tree / 将有序数组转换为二叉搜索树](./0108-convert-sorted-array-to-binary-search-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0110 | [Balanced Binary Tree / 平衡二叉树](./0110-balanced-binary-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0111 | [Minimum Depth of Binary Tree / 二叉树的最小深度](./0111-minimum-depth-of-binary-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |
 | 0112 | [Path Sum / 路径总和](./0112-path-sum/README.md) | Easy | ✅ | ☐ ☐ ☐ |

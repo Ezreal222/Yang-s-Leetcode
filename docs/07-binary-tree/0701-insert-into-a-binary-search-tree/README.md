@@ -144,4 +144,4 @@ BST 走一条路径, 维护 `cur` 和 `parent`, 走到空就在 `parent` 上挂�
 - [0235. Lowest Common Ancestor of a BST](../0235-lowest-common-ancestor-of-a-binary-search-tree/README.md) — 同款单向走 + 三种比较情况
 - [0098. Validate Binary Search Tree](../0098-validate-binary-search-tree/README.md) — BST 性质入门
 - [0450. Delete Node in a BST / 删除二叉搜索树中的节点](../0450-delete-node-in-a-bst/README.md) — 同款 child-assignment 递归模式, 但删除时要重组子树
-- 0108. Convert Sorted Array to BST (待补) — 反向: 从数组构造平衡 BST
+- [0108. Convert Sorted Array to Binary Search Tree / 将有序数组转换为二叉搜索树](../0108-convert-sorted-array-to-binary-search-tree/README.md) — 反向: 从数组构造平衡 BST

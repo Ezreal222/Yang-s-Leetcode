@@ -131,4 +131,4 @@ BST 操作三件套 ([0700](../0700-search-in-a-binary-search-tree/README.md) �
 - [0700. Search in a Binary Search Tree](../0700-search-in-a-binary-search-tree/README.md) — BST 单向走入门
 - [0235. Lowest Common Ancestor of a BST](../0235-lowest-common-ancestor-of-a-binary-search-tree/README.md) — 同款单向走
 - [0098. Validate Binary Search Tree](../0098-validate-binary-search-tree/README.md) — BST 性质入门
-- 0669. Trim a Binary Search Tree (待补) — 同款 child-assignment 递归, 但目标是删一整段超界节点
+- [0669. Trim a Binary Search Tree / 修剪二叉搜索树](../0669-trim-a-binary-search-tree/README.md) — 同款 child-assignment 递归, 但目标是删一整段超界节点

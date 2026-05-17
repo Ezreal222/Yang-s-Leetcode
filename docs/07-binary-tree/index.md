@@ -38,5 +38,6 @@
 | 0617 | [Merge Two Binary Trees / 合并二叉树](./0617-merge-two-binary-trees/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0637 | [Average of Levels in Binary Tree / 二叉树的层平均值](./0637-average-of-levels-in-binary-tree/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0654 | [Maximum Binary Tree / 最大二叉树](./0654-maximum-binary-tree/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0669 | [Trim a Binary Search Tree / 修剪二叉搜索树](./0669-trim-a-binary-search-tree/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0700 | [Search in a Binary Search Tree / 二叉搜索树中的搜索](./0700-search-in-a-binary-search-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |
 | 0701 | [Insert into a Binary Search Tree / 二叉搜索树中的插入操作](./0701-insert-into-a-binary-search-tree/README.md) | Medium | ✅ | ☐ ☐ ☐ |

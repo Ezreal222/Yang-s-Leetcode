@@ -132,5 +132,5 @@ BST 搜索是单向的, 直接 while 循环就够, 不用栈.
 - [0236. Lowest Common Ancestor of a Binary Tree](../0236-lowest-common-ancestor-of-a-binary-tree/README.md) — 普通树版, 必须两边都跑 + 后序合并
 - [0700. Search in a Binary Search Tree](../0700-search-in-a-binary-search-tree/README.md) — 同款"BST 单向走"骨架
 - [0098. Validate Binary Search Tree](../0098-validate-binary-search-tree/README.md) — BST 性质入门讨论
-- 0701. Insert into a BST (待补) — 同款单向走找空位
+- [0701. Insert into a BST / 二叉搜索树中的插入操作](../0701-insert-into-a-binary-search-tree/README.md) — 同款单向走找空位
 - 0450. Delete Node in a BST (待补) — 同款单向走找节点

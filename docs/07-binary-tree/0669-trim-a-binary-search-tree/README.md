@@ -126,5 +126,5 @@
 - [0701. Insert into a BST](../0701-insert-into-a-binary-search-tree/README.md) — 同款 child-assignment 模板, 反向: 增节点
 - [0700. Search in a BST](../0700-search-in-a-binary-search-tree/README.md) — BST 单向走入门
 - [0098. Validate BST](../0098-validate-binary-search-tree/README.md) — BST 性质入门
-- 0814. Binary Tree Pruning (待补) — 普通树版本删全 0 子树, 用后序判删
+- [0814. Binary Tree Pruning / 二叉树剪枝](../0814-binary-tree-pruning/README.md) — 普通树版本删全 0 子树, 用后序判删
 - 0108. Convert Sorted Array to BST (待补) — 反向: 由数组造平衡 BST

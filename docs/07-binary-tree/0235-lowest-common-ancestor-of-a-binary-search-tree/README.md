@@ -5,7 +5,6 @@
     - **Tags**: Tree, BST, DFS, Recursion, LCA · 二叉树, 二叉搜索树, 深度优先搜索, 递归, 最近公共祖先
     - **Link**: [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
 ## Problem

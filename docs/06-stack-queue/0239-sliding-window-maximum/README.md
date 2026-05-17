@@ -5,7 +5,6 @@
     - **Tags**: Monotonic Queue, Sliding Window, Deque · 单调队列, 滑动窗口, 双端队列
     - **Link**: [LeetCode](https://leetcode.com/problems/sliding-window-maximum/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☑ ☐ ☐
 
 ## Problem

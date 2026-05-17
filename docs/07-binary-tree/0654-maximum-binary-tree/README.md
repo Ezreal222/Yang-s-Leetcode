@@ -5,7 +5,6 @@
     - **Tags**: Tree, DFS, Recursion, Divide and Conquer, Monotonic Stack · 二叉树, 深度优先搜索, 递归, 分治, 单调栈
     - **Link**: [LeetCode](https://leetcode.com/problems/maximum-binary-tree/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
 ## Problem

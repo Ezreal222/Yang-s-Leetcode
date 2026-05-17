@@ -5,7 +5,6 @@
     - **Tags**: Array, Hash Table · 数组, 哈希表
     - **Link**: [LeetCode](https://leetcode.com/problems/...)
     - **Status**: ✅ Solved
-    - **First solved**: YYYY-MM-DD
     - **Reviewed**: ☐ ☐ ☐
 
 ## Problem

@@ -5,7 +5,6 @@
     - **Tags**: Tree, BFS, Linked List · 二叉树, 广度优先搜索, 链表
     - **Link**: [LeetCode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
 ## Problem

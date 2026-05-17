@@ -5,7 +5,6 @@
     - **Tags**: Stack, Design · 栈, 设计
     - **Link**: [LeetCode](https://leetcode.com/problems/min-stack/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
 ## Problem

@@ -5,7 +5,6 @@
     - **Tags**: Tree, N-ary Tree, BFS, DFS, Recursion · N 叉树, 广度优先搜索, 深度优先搜索, 递归
     - **Link**: [LeetCode](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☑ ☐ ☐
 
 ## Problem

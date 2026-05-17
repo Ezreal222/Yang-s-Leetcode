@@ -5,7 +5,6 @@
     - **Tags**: Tree, DFS, Recursion · 二叉树, 深度优先搜索, 递归
     - **Link**: [LeetCode](https://leetcode.com/problems/balanced-binary-tree/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
 ## Problem

@@ -5,7 +5,6 @@
     - **Tags**: Tree, BFS, Queue · 二叉树, 广度优先搜索, 队列
     - **Link**: [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
 ## Problem

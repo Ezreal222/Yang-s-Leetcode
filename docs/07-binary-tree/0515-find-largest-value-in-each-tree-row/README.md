@@ -5,7 +5,6 @@
     - **Tags**: Tree, BFS · 二叉树, 广度优先搜索
     - **Link**: [LeetCode](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
 ## Problem

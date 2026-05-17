@@ -5,7 +5,6 @@
     - **Tags**: Tree, DFS, BFS, Recursion · 二叉树, 深度优先搜索, 广度优先搜索, 递归
     - **Link**: [LeetCode](https://leetcode.com/problems/merge-two-binary-trees/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
 ## Problem

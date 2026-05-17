@@ -5,7 +5,6 @@
     - **Tags**: Tree, DFS, Binary Search · 二叉树, 深度优先搜索, 二分查找
     - **Link**: [LeetCode](https://leetcode.com/problems/count-complete-tree-nodes/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☐ ☐ ☐
 
 ## Problem

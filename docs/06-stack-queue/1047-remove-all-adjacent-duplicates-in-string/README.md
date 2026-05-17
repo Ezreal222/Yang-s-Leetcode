@@ -5,7 +5,6 @@
     - **Tags**: Stack, String · 栈, 字符串
     - **Link**: [LeetCode](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)
     - **Status**: ✅ Solved
-    - **First solved**: 2026-05-04
     - **Reviewed**: ☑ ☐ ☐
 
 ## Problem

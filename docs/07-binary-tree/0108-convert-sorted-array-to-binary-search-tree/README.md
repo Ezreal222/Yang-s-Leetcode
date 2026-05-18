@@ -125,5 +125,5 @@
 - [0106. Construct Binary Tree from Inorder and Postorder](../0106-construct-binary-tree-from-inorder-and-postorder-traversal/README.md) — 同款分治, 切分点用 postorder 尾
 - [0654. Maximum Binary Tree](../0654-maximum-binary-tree/README.md) — 同款分治, 切分点用 argmax
 - [0700. Search in a BST](../0700-search-in-a-binary-search-tree/README.md) — BST 性质入门
-- 0109. Convert Sorted List to BST (待补) — 进阶: 输入是链表, 取中点是 O(n) 不再是 O(1), 总 O(n log n)
+- [0109. Convert Sorted List to Binary Search Tree / 有序链表转换二叉搜索树](../0109-convert-sorted-list-to-binary-search-tree/README.md) — 进阶: 输入是链表, 取中点是 O(n) 不再是 O(1); 三个变体 O(n) → O(n log n) → O(n)
 - 1382. Balance a BST (待补) — 先把 BST 转成 sorted array (inorder), 然后用 0108 重建

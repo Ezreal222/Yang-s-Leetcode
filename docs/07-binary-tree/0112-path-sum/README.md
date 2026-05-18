@@ -101,6 +101,6 @@ DFS 一路下走, 每到一个节点就把 `targetSum -= node.val`; 到叶子时
 - [0257. Binary Tree Paths](../0257-binary-tree-paths/README.md) — 同款"根到叶子 DFS", 收集字符串
 - [0104. Maximum Depth of Binary Tree](../0104-maximum-depth-of-binary-tree/README.md) — 同款 root-to-leaf 递归
 - 0113. Path Sum II (待补) — 收集**所有**符合的路径, void 递归 + 显式回溯
-- 0129. Sum Root to Leaf Numbers (待补) — 路径累乘积当数字
+- [0129. Sum Root to Leaf Numbers](../0129-sum-root-to-leaf-numbers/README.md) — 路径当十进制数累加, 同款参数传递骨架
 - 0437. Path Sum III (待补) — 任意起点终点, 双重 DFS 或前缀和
 - [0236. Lowest Common Ancestor of a Binary Tree / 二叉树的最近公共祖先](../0236-lowest-common-ancestor-of-a-binary-tree/README.md) — Key Insight 表里的"返回值要处理"那种递归

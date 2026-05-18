@@ -38,6 +38,7 @@ Compute/check structural properties of a binary tree — depth, balance, symmetr
 | 0404 | [Sum of Left Leaves / 左叶子之和](./0404-sum-of-left-leaves/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0513 | [Find Bottom Left Tree Value / 找树左下角的值](./0513-find-bottom-left-tree-value/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0112 | [Path Sum / 路径总和](./0112-path-sum/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0129 | [Sum Root to Leaf Numbers / 求根节点到叶节点数字之和](./0129-sum-root-to-leaf-numbers/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 
 ## 3 · 修改与构造 / Modification & Construction
 

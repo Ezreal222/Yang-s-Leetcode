@@ -5,7 +5,7 @@
     - **Tags**: Tree, DFS, Stack · 二叉树, 深度优先搜索, 栈
     - **Link**: [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

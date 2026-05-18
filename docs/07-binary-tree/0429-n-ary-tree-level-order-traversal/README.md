@@ -5,7 +5,7 @@
     - **Tags**: Tree, BFS, N-ary Tree · N 叉树, 广度优先搜索
     - **Link**: [LeetCode](https://leetcode.com/problems/n-ary-tree-level-order-traversal/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

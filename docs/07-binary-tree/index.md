@@ -67,6 +67,7 @@ Use BST's inorder = sorted property to extract aggregates (min diff, mode, great
 | 0530 | [Minimum Absolute Difference in BST / 二叉搜索树的最小绝对差](./0530-minimum-absolute-difference-in-bst/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0501 | [Find Mode in Binary Search Tree / 二叉搜索树中的众数](./0501-find-mode-in-binary-search-tree/README.md) | Easy | ✅ | ☑ ☐ ☐ |
 | 0538 | [Convert BST to Greater Tree / 把二叉搜索树转换为累加树](./0538-convert-bst-to-greater-tree/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0230 | [Kth Smallest Element in a BST / 二叉搜索树中第 K 小的元素](./0230-kth-smallest-element-in-a-bst/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 
 ## 5 · 公共祖先问题 / LCA
 

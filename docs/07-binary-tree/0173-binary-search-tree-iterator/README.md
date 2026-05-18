@@ -193,5 +193,5 @@ graph TD
 - [0144. Binary Tree Preorder Traversal](../0144-binary-tree-preorder-traversal/README.md) — 同款 iterative DFS, 不同顺序
 - [0098. Validate BST](../0098-validate-binary-search-tree/README.md) — 也用 inorder + prev 节点的模式 (那题 prev 是单变量, 这题 prev 是栈)
 - [0530. Minimum Absolute Difference in BST](../0530-minimum-absolute-difference-in-bst/README.md) — inorder aggregate, 可以改成"用 0173 iterator + 单 prev"
-- 0230. Kth Smallest Element in a BST (待补) — 直接 `for i in range(k): it.next()` 就完了
+- [0230. Kth Smallest Element in a BST](../0230-kth-smallest-element-in-a-bst/README.md) — 直接 `for i in range(k): it.next()` 就完了, 或把这题逻辑内联展开
 - 0341. Flatten Nested List Iterator (待补) — 同款"递归遍历 → 用栈拆成 iterator"

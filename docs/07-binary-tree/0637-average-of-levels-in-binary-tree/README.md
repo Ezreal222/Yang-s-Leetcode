@@ -5,7 +5,7 @@
     - **Tags**: Tree, BFS · 二叉树, 广度优先搜索
     - **Link**: [LeetCode](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☑ ☐ ☐
+    - **Reviewed**: ☑ ☑ ☐
 
 ## Problem
 

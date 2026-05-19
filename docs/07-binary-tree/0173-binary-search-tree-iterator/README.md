@@ -5,7 +5,7 @@
     - **Tags**: Tree, BST, Stack, Iterator, Design · 二叉树, 二叉搜索树, 栈, 迭代器, 设计
     - **Link**: [LeetCode](https://leetcode.com/problems/binary-search-tree-iterator/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

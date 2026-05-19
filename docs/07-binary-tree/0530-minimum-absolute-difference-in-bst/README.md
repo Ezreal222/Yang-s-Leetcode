@@ -5,7 +5,7 @@
     - **Tags**: Tree, BST, DFS, Recursion · 二叉树, 二叉搜索树, 深度优先搜索, 递归
     - **Link**: [LeetCode](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

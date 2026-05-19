@@ -5,7 +5,7 @@
     - **Tags**: Tree, BFS, DFS · 二叉树, 广度优先搜索, 深度优先搜索
     - **Link**: [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☑ ☐ ☐
+    - **Reviewed**: ☑ ☑ ☐
 
 ## Problem
 

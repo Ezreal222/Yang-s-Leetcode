@@ -5,7 +5,7 @@
     - **Tags**: Tree, BST, Linked List, Recursion, Divide and Conquer · 二叉树, 二叉搜索树, 链表, 递归, 分治
     - **Link**: [LeetCode](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

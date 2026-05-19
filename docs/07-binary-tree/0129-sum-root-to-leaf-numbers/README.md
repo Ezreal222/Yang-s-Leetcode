@@ -5,7 +5,7 @@
     - **Tags**: Tree, DFS, Recursion · 二叉树, 深度优先搜索, 递归
     - **Link**: [LeetCode](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

@@ -5,7 +5,7 @@
     - **Tags**: Tree, DFS, BFS, Recursion · 二叉树, 深度优先搜索, 广度优先搜索, 递归
     - **Link**: [LeetCode](https://leetcode.com/problems/symmetric-tree/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

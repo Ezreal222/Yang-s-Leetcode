@@ -5,7 +5,7 @@
     - **Tags**: Tree, DFS, Hash Set, Recursion · 二叉树, 深度优先搜索, 哈希表, 递归
     - **Link**: [LeetCode](https://leetcode.com/problems/delete-nodes-and-return-forest/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

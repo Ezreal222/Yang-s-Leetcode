@@ -5,7 +5,7 @@
     - **Tags**: Tree, BFS, DFS, Recursion · 二叉树, 广度优先搜索, 深度优先搜索, 递归
     - **Link**: [LeetCode](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☑ ☐ ☐
+    - **Reviewed**: ☑ ☑ ☐
 
 ## Problem
 

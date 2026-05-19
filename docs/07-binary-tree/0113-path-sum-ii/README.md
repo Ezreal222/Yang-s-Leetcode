@@ -5,7 +5,7 @@
     - **Tags**: Tree, DFS, Backtracking · 二叉树, 深度优先搜索, 回溯
     - **Link**: [LeetCode](https://leetcode.com/problems/path-sum-ii/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

@@ -5,7 +5,7 @@
     - **Tags**: Tree, DFS, Backtracking, String · 二叉树, 深度优先搜索, 回溯, 字符串
     - **Link**: [LeetCode](https://leetcode.com/problems/binary-tree-paths/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

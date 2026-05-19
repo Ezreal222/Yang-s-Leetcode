@@ -5,7 +5,7 @@
     - **Tags**: Tree, DFS, Recursion, Divide and Conquer, Hash Map · 二叉树, 深度优先搜索, 递归, 分治, 哈希表
     - **Link**: [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

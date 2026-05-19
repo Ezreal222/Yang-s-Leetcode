@@ -5,7 +5,7 @@
     - **Tags**: Tree, BST, DFS, Stack, Inorder · 二叉树, 二叉搜索树, 深度优先搜索, 栈, 中序遍历
     - **Link**: [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 

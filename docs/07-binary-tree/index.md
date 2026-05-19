@@ -22,6 +22,7 @@ DFS three orders + BFS level-order. The whole BFS family (right view, row max/av
 | 0116 | [Populating Next Right Pointers in Each Node / 填充每个节点的下一个右侧节点指针](./0116-populating-next-right-pointers-in-each-node/README.md) | Medium | ✅ | ☑ ☐ ☐ |
 | 0117 | [Populating Next Right Pointers in Each Node II / 填充每个节点的下一个右侧节点指针 II](./0117-populating-next-right-pointers-in-each-node-ii/README.md) | Medium | ✅ | ☑ ☐ ☐ |
 | 0173 | [Binary Search Tree Iterator / 二叉搜索树迭代器](./0173-binary-search-tree-iterator/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0103 | [Binary Tree Zigzag Level Order Traversal / 二叉树的锯齿形层序遍历](./0103-binary-tree-zigzag-level-order-traversal/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 
 ## 2 · 属性 / Tree Properties
 
@@ -40,6 +41,7 @@ Compute/check structural properties of a binary tree — depth, balance, symmetr
 | 0513 | [Find Bottom Left Tree Value / 找树左下角的值](./0513-find-bottom-left-tree-value/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0112 | [Path Sum / 路径总和](./0112-path-sum/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0129 | [Sum Root to Leaf Numbers / 求根节点到叶节点数字之和](./0129-sum-root-to-leaf-numbers/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0113 | [Path Sum II / 路径总和 II](./0113-path-sum-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 
 ## 3 · 修改与构造 / Modification & Construction
 

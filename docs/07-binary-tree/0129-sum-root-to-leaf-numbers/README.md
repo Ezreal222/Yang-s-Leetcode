@@ -144,5 +144,5 @@ void dfs(TreeNode* cur, string curSum) {
 - [0257. Binary Tree Paths](../0257-binary-tree-paths/README.md) — 同款"路径状态作参数", 收集成字符串 list (本题的字符串版思路就是从它来的)
 - [0112. Path Sum](../0112-path-sum/README.md) — 同款 root→leaf 累加, 只是答案是 bool 不是 sum
 - [0404. Sum of Left Leaves](../0404-sum-of-left-leaves/README.md) — 同款"叶子聚合", 但只挑左叶子
-- 0113. Path Sum II (待补) — 0112 的进阶, 收集所有满足和的完整路径
+- [0113. Path Sum II](../0113-path-sum-ii/README.md) — 0112 的进阶, 收集所有满足和的完整路径, 用显式回溯
 - 0988. Smallest String Starting From Leaf (待补) — 反向版: 叶子→根拼字符串, 取字典序最小

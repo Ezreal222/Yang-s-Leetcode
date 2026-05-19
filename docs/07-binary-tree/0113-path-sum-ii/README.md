@@ -141,4 +141,5 @@ DFS, 一路 `targetSum -= cur->val`. 进入节点先把它 push 到 `path`, 到�
 - [0257. Binary Tree Paths](../0257-binary-tree-paths/README.md) — 同款收集路径, 但用 string + 隐式回溯
 - [0129. Sum Root to Leaf Numbers](../0129-sum-root-to-leaf-numbers/README.md) — 同款 root→leaf, 累加成数字
 - 0437. Path Sum III (待补) — 任意起点/终点的路径和, 前缀和 + 哈希
-- 0078/0046/0077. Subsets / Permutations / Combinations (待补) — 显式回溯模板的经典训练场, 跟本题完全一个套路
+- [0077. Combinations](../../08-backtracking/0077-combinations/README.md) — 显式回溯模板的入门题, 跟本题完全一个套路 (path push/pop)
+- 0078/0046. Subsets / Permutations (待补) — 回溯系列其它经典训练场

@@ -181,7 +181,7 @@ graph TD
 
 - [0113. Path Sum II](../../07-binary-tree/0113-path-sum-ii/README.md) — 同款显式回溯模板, 走在真二叉树上 (本题走在虚拟决策树上)
 - [0257. Binary Tree Paths](../../07-binary-tree/0257-binary-tree-paths/README.md) — 同款收集路径, 但用隐式回溯 (string 按值传)
-- 0216. Combination Sum III (待补) — 0077 + 和等于 target 的约束
+- [0216. Combination Sum III](../0216-combination-sum-iii/README.md) — 0077 + 和等于 target 的约束, 范围固定 [1,9]
 - 0046. Permutations (待补) — 排列版, 用 `used[]` 代替 `startIndex`
 - 0078. Subsets (待补) — 子集版, 每个节点都收果实 (不只是 `size == k` 才收)
 - 0039. Combination Sum (待补) — 允许重复选, `recurse(i)` 不是 `recurse(i+1)`

@@ -194,6 +194,6 @@ graph TD
 - [0039. Combination Sum](../0039-combination-sum/README.md) — 直接前置, 元素唯一 + 允许重复用
 - [0077. Combinations](../0077-combinations/README.md) — 基础组合, 无 sum 约束
 - [0216. Combination Sum III](../0216-combination-sum-iii/README.md) — sum + 个数固定的版本
-- 0090. Subsets II (待补) — 子集版本的同层去重, 套路完全一样
-- 0047. Permutations II (待补) — 排列版本的同层去重, 用 `used[]` 而非 startIndex
-- 0491. Non-decreasing Subsequences (待补) — 不能 sort (会破坏 subsequence 顺序), 用 set 同层去重
+- 0090\. Subsets II (待补) — 子集版本的同层去重, 套路完全一样
+- 0047\. Permutations II (待补) — 排列版本的同层去重, 用 `used[]` 而非 startIndex
+- 0491\. Non-decreasing Subsequences (待补) — 不能 sort (会破坏 subsequence 顺序), 用 set 同层去重

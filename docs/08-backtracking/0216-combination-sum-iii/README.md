@@ -152,5 +152,5 @@
 - [0113. Path Sum II](../../07-binary-tree/0113-path-sum-ii/README.md) — 同款"路径 + 和"约束, 但走的是真二叉树
 - [0129. Sum Root to Leaf Numbers](../../07-binary-tree/0129-sum-root-to-leaf-numbers/README.md) — 同款"累加参数传值" 隐式回溯
 - [0039. Combination Sum](../0039-combination-sum/README.md) — 允许重复选同一数, `recurse(i)` 不是 `recurse(i+1)`
-- 0040. Combination Sum II (待补) — 输入有重复, 需要同层去重
-- 0017. Letter Combinations of a Phone Number (待补) — 不同集合每位选一个的回溯入门
+- 0040\. Combination Sum II (待补) — 输入有重复, 需要同层去重
+- 0017\. Letter Combinations of a Phone Number (待补) — 不同集合每位选一个的回溯入门

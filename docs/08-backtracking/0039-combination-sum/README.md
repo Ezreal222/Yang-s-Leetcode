@@ -168,5 +168,5 @@ path.pop_back();
 - [0216. Combination Sum III](../0216-combination-sum-iii/README.md) — 同款 sum 约束, 但不允许重复 + 范围固定 [1,9]
 - [0017. Letter Combinations of a Phone Number](../0017-letter-combinations-of-a-phone-number/README.md) — 同回溯模板, 不同形态 (多集合每位一选)
 - [0040. Combination Sum II](../0040-combination-sum-ii/README.md) — candidates 有重复值, 需要**同层去重**, 是这题的"反向"难点
-- 0377. Combination Sum IV (待补) — 求**数量**不求列表 → DP 才合适, 不要再回溯
-- 0322. Coin Change (待补) — 同款"无限次重复 + 凑 target", 但求最少数量 → DP
+- 0377\. Combination Sum IV (待补) — 求**数量**不求列表 → DP 才合适, 不要再回溯
+- 0322\. Coin Change (待补) — 同款"无限次重复 + 凑 target", 但求最少数量 → DP

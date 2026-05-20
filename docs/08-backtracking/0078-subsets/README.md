@@ -150,6 +150,6 @@ graph TD
 - [0077. Combinations](../0077-combinations/README.md) — 同 startIndex 模板, 但只收 `size == k` 那层
 - [0040. Combination Sum II](../0040-combination-sum-ii/README.md) — 同层去重思路, 0090 子集 II 直接套
 - [0017. Letter Combinations of a Phone Number](../0017-letter-combinations-of-a-phone-number/README.md) — 同回溯模板, 不同决策树形态
-- 0090. Subsets II (待补) — nums 有重复, 加同层去重 (套 0040 思路)
-- 0491. Non-decreasing Subsequences (待补) — 类似子集, 但不能 sort → 用 unordered_set 同层去重
-- 0784. Letter Case Permutation (待补) — 同款"每层一个二选一", 每个节点都是答案
+- 0090\. Subsets II (待补) — nums 有重复, 加同层去重 (套 0040 思路)
+- 0491\. Non-decreasing Subsequences (待补) — 类似子集, 但不能 sort → 用 unordered_set 同层去重
+- 0784\. Letter Case Permutation (待补) — 同款"每层一个二选一", 每个节点都是答案

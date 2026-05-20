@@ -225,6 +225,6 @@ for (int l = n - 1; l >= 0; --l) {
 - [0040. Combination Sum II](../0040-combination-sum-ii/README.md) — 同款回溯, 候选有重复要去重
 - [0017. Letter Combinations of a Phone Number](../0017-letter-combinations-of-a-phone-number/README.md) — 同回溯模板, 不同形态 (多集合每位一选)
 - [0093. Restore IP Addresses](../0093-restore-ip-addresses/README.md) — 切割问题同模板, 每段有更严的合法性约束 (IP 段 + 必须 4 段)
-- 0132. Palindrome Partitioning II (待补) — 求最少切几刀, 必须上 DP
-- 0647. Palindromic Substrings (待补) — 数有多少回文子串, 同款回文检测但不切
-- 0005. Longest Palindromic Substring (待补) — 最长回文子串, 经典 DP / 中心扩散
+- 0132\. Palindrome Partitioning II (待补) — 求最少切几刀, 必须上 DP
+- 0647\. Palindromic Substrings (待补) — 数有多少回文子串, 同款回文检测但不切
+- 0005\. Longest Palindromic Substring (待补) — 最长回文子串, 经典 DP / 中心扩散

@@ -12,3 +12,4 @@
 | 0039 | [Combination Sum / 组合总和](./0039-combination-sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0040 | [Combination Sum II / 组合总和 II](./0040-combination-sum-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0131 | [Palindrome Partitioning / 分割回文串](./0131-palindrome-partitioning/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0093 | [Restore IP Addresses / 复原 IP 地址](./0093-restore-ip-addresses/README.md) | Medium | ✅ | ☐ ☐ ☐ |

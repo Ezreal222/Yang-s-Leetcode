@@ -198,5 +198,5 @@ graph TD
 - [0113. Path Sum II](../../07-binary-tree/0113-path-sum-ii/README.md) — 同款显式 push/pop, 走二叉树
 - [0039. Combination Sum](../0039-combination-sum/README.md) — 允许同元素重复, recurse(i)
 - 0046. Permutations (待补) — 同集合 + 顺序敏感, 用 `used[]`
-- 0093. Restore IP Addresses (待补) — 字符串切分 + 每段约束, 同款 idx 推进
+- [0093. Restore IP Addresses](../0093-restore-ip-addresses/README.md) — 字符串切分 + 每段约束, 同款 idx 推进
 - 0784. Letter Case Permutation (待补) — 同款每位选一个 (大小写两种), 简化版

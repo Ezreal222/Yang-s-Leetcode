@@ -190,7 +190,7 @@
 
 - [0131. Palindrome Partitioning](../0131-palindrome-partitioning/README.md) — 切割回溯, 段内约束 (回文)
 - [0093. Restore IP Addresses](../0093-restore-ip-addresses/README.md) — 切割回溯, 段内约束 (IP) + 固定段数
-- 0415. Add Strings (待补) — 纯大数加法模板题, 复用本题的 addStrings
+- [0415. Add Strings](../../04-string/0415-add-strings/README.md) — 纯大数加法模板题, 这题的 addStrings 就是本题
 - 0067. Add Binary (待补) — 大数加法的 base-2 版本
 - 0989. Add to Array-Form of Integer (待补) — 大数加法但一边是 int, 一边是 vector<int>
 - 0842. Split Array into Fibonacci Sequence (待补) — 几乎是本题, 但要求返回切法不是判定; 同款模板

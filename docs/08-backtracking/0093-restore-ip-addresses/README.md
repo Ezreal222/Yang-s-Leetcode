@@ -197,5 +197,5 @@
 - [0077. Combinations](../0077-combinations/README.md) — 同款 startIndex 推进
 - [0017. Letter Combinations of a Phone Number](../0017-letter-combinations-of-a-phone-number/README.md) — 同回溯模板, 但多集合每位一选 (非切割)
 - 0468. Validate IP Address (待补) — 只判合法性, 不分段; 这题的 `isValidIP` 的扩展版 (IPv4 + IPv6)
-- 0306. Additive Number (待补) — 同款切割但每段要满足斐波那契式约束
+- [0306. Additive Number](../0306-additive-number/README.md) — 同款切割但每段要满足斐波那契式约束 + 大数加法
 - 0282. Expression Add Operators (待补) — 数字串里插运算符, 同切割回溯 + 表达式求值

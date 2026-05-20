@@ -183,6 +183,6 @@ graph TD
 - [0257. Binary Tree Paths](../../07-binary-tree/0257-binary-tree-paths/README.md) — 同款收集路径, 但用隐式回溯 (string 按值传)
 - [0216. Combination Sum III](../0216-combination-sum-iii/README.md) — 0077 + 和等于 target 的约束, 范围固定 [1,9]
 - 0046. Permutations (待补) — 排列版, 用 `used[]` 代替 `startIndex`
-- 0078. Subsets (待补) — 子集版, 每个节点都收果实 (不只是 `size == k` 才收)
+- [0078. Subsets](../0078-subsets/README.md) — 子集版, 每个节点都收果实 (不只是 `size == k` 才收)
 - [0039. Combination Sum](../0039-combination-sum/README.md) — 允许重复选, `recurse(i)` 不是 `recurse(i+1)`
 - 0040. Combination Sum II (待补) — 同一层去重的经典坑

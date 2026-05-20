@@ -14,3 +14,4 @@
 | 0131 | [Palindrome Partitioning / 分割回文串](./0131-palindrome-partitioning/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0093 | [Restore IP Addresses / 复原 IP 地址](./0093-restore-ip-addresses/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0306 | [Additive Number / 累加数](./0306-additive-number/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0078 | [Subsets / 子集](./0078-subsets/README.md) | Medium | ✅ | ☐ ☐ ☐ |

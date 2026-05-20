@@ -15,3 +15,4 @@
 | 0093 | [Restore IP Addresses / 复原 IP 地址](./0093-restore-ip-addresses/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0306 | [Additive Number / 累加数](./0306-additive-number/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0078 | [Subsets / 子集](./0078-subsets/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0090 | [Subsets II / 子集 II](./0090-subsets-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |

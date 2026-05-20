@@ -11,3 +11,4 @@
 | 0017 | [Letter Combinations of a Phone Number / 电话号码的字母组合](./0017-letter-combinations-of-a-phone-number/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0039 | [Combination Sum / 组合总和](./0039-combination-sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0040 | [Combination Sum II / 组合总和 II](./0040-combination-sum-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0131 | [Palindrome Partitioning / 分割回文串](./0131-palindrome-partitioning/README.md) | Medium | ✅ | ☐ ☐ ☐ |

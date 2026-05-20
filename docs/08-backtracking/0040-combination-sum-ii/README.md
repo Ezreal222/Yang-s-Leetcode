@@ -196,4 +196,4 @@ graph TD
 - [0216. Combination Sum III](../0216-combination-sum-iii/README.md) — sum + 个数固定的版本
 - [0090. Subsets II](../0090-subsets-ii/README.md) — 子集版本的同层去重, 套路完全一样
 - 0047\. Permutations II (待补) — 排列版本的同层去重, 用 `used[]` 而非 startIndex
-- 0491\. Non-decreasing Subsequences (待补) — 不能 sort (会破坏 subsequence 顺序), 用 set 同层去重
+- [0491. Non-decreasing Subsequences](../0491-non-decreasing-subsequences/README.md) — 不能 sort (会破坏 subsequence 顺序), 用 set 同层去重

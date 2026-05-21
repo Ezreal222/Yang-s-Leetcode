@@ -175,6 +175,6 @@ graph TD
 - [0078. Subsets](../0078-subsets/README.md) — 子集基础, 本题去掉非降和去重就是它
 - [0090. Subsets II](../0090-subsets-ii/README.md) — 可 sort 时的同层去重模板, 跟本题刚好对比
 - [0040. Combination Sum II](../0040-combination-sum-ii/README.md) — 同款"可 sort 时的同层去重"
-- 0046\. Permutations (待补) — 排列基础, 用 `used[]` 数组
+- [0046. Permutations](../0046-permutations/README.md) — 排列基础, 用 `used[]` 数组
 - 0047\. Permutations II (待补) — 排列 + 同层去重 (sort + `used[i-1] == false`), 跟本题对比可 sort vs 不可 sort
 - 0300\. Longest Increasing Subsequence (待补) — 同款保序约束, 但只求最长, DP 才合适不是回溯

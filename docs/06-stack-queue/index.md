@@ -18,3 +18,4 @@
 | 0347 | [Top K Frequent Elements / 前 K 个高频元素](./0347-top-k-frequent-elements/README.md) | Medium | ✅ | ☑ ☐ ☐ |
 | 1047 | [Remove All Adjacent Duplicates In String / 删除字符串中的所有相邻重复项](./1047-remove-all-adjacent-duplicates-in-string/README.md) | Easy | ✅ | ☑ ☐ ☐ |
 | 1249 | [Minimum Remove to Make Valid Parentheses / 移除无效的括号](./1249-minimum-remove-to-make-valid-parentheses/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0856 | [Score of Parentheses / 括号的分数](./0856-score-of-parentheses/README.md) | Medium | ✅ | ☐ ☐ ☐ |

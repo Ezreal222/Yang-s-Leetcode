@@ -7,3 +7,4 @@
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
 | 0415 | [Add Strings / 字符串相加](./0415-add-strings/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0067 | [Add Binary / 二进制求和](./0067-add-binary/README.md) | Easy | ✅ | ☐ ☐ ☐ |

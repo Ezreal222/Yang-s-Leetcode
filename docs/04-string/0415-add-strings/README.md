@@ -135,7 +135,7 @@
 ## 相关题目
 
 - [0306. Additive Number](../../08-backtracking/0306-additive-number/README.md) — 把这题的 addStrings 当子例程用
-- 0067. Add Binary (待补) — 同模板, base 2
+- [0067. Add Binary](../0067-add-binary/README.md) — 同模板, base 2
 - 0989. Add to Array-Form of Integer (待补) — 一边换成 vector<int>
 - 0043. Multiply Strings (待补) — 大数乘法, 用大数加法当子例程
 - 0002. Add Two Numbers (待补) — 链表版的大数加法

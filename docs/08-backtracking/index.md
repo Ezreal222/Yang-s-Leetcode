@@ -20,3 +20,4 @@
 | 0046 | [Permutations / 全排列](./0046-permutations/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0047 | [Permutations II / 全排列 II](./0047-permutations-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0051 | [N-Queens / N 皇后](./0051-n-queens/README.md) | Hard | ✅ | ☐ ☐ ☐ |
+| 0037 | [Sudoku Solver / 解数独](./0037-sudoku-solver/README.md) | Hard | ✅ | ☐ ☐ ☐ |

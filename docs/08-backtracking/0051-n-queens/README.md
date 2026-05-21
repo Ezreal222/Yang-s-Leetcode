@@ -226,6 +226,6 @@ N ≤ 9 用不上, 但更大棋盘 (变体题) 必须. **N-Queens 面试常见 f
 - [0040. Combination Sum II](../0040-combination-sum-ii/README.md) — 同款显式回溯 + 进入/退出对偶
 - [0078. Subsets](../0078-subsets/README.md) — 回溯模板基础
 - 0052\. N-Queens II (待补) — 只数解的版本, 改 `int count` 累加
-- 0037\. Sudoku Solver (待补) — 9×9 棋盘填数, 同款"逐格 + 三方向冲突检查 + 显式回溯"
+- [0037. Sudoku Solver](../0037-sudoku-solver/README.md) — 9×9 棋盘填数, 同款"逐格 + 三方向冲突检查 + 显式回溯"; 输出语义对照 (void vs bool 短路)
 - 0301\. Remove Invalid Parentheses (待补) — 字符串版回溯 + 剪枝
 - 0079\. Word Search (待补) — 2D 棋盘搜索字符串, 同款 visited[][] + 4 方向 dfs

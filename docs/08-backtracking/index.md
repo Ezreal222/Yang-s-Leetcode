@@ -21,3 +21,5 @@
 | 0047 | [Permutations II / 全排列 II](./0047-permutations-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0051 | [N-Queens / N 皇后](./0051-n-queens/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0037 | [Sudoku Solver / 解数独](./0037-sudoku-solver/README.md) | Hard | ✅ | ☐ ☐ ☐ |
+| 0052 | [N-Queens II / N 皇后 II](./0052-n-queens-ii/README.md) | Hard | ✅ | ☐ ☐ ☐ |
+| 0301 | [Remove Invalid Parentheses / 删除无效的括号](./0301-remove-invalid-parentheses/README.md) | Hard | ✅ | ☐ ☐ ☐ |

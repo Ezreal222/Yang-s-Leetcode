@@ -173,4 +173,4 @@ if (row == n) { res++; return; }
 - [0051. N-Queens](../0051-n-queens/README.md) — 收集所有解的版本, 本题去掉 push_back 改成 `res++`
 - [0037. Sudoku Solver](../0037-sudoku-solver/README.md) — 同款棋盘 + isValid, 但 bool 短路求任一解
 - [0046. Permutations](../0046-permutations/README.md) — N-Queens 也可看作"列的排列, 加对角线约束"
-- 0473\. Matchsticks to Square (待补) — 经典回溯 + 4-way 分桶, 同款"求是否能 + 回溯"
+- [0473. Matchsticks to Square](../0473-matchsticks-to-square/README.md) — 经典回溯 + 4-way 分桶, 同款"求是否能 + 回溯"

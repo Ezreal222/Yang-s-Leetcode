@@ -23,3 +23,4 @@
 | 0037 | [Sudoku Solver / 解数独](./0037-sudoku-solver/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0052 | [N-Queens II / N 皇后 II](./0052-n-queens-ii/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0301 | [Remove Invalid Parentheses / 删除无效的括号](./0301-remove-invalid-parentheses/README.md) | Hard | ✅ | ☐ ☐ ☐ |
+| 0473 | [Matchsticks to Square / 火柴拼正方形](./0473-matchsticks-to-square/README.md) | Hard | ✅ | ☐ ☐ ☐ |

@@ -190,4 +190,4 @@
 - [0046. Permutations](../0046-permutations/README.md) — 同款 `used[]` 思路的源头, 数独的 bitmask 优化就是它的扩展
 - [0040. Combination Sum II](../0040-combination-sum-ii/README.md) — 同款显式回溯进入/退出对偶
 - 0036\. Valid Sudoku (待补) — 只判合法性不填空, 这题 isValid 的扩展版
-- 0079\. Word Search (待补) — 2D 棋盘搜索字符串, 同款 visited + 4 方向 dfs + bool 短路
+- [0079. Word Search](../0079-word-search/README.md) — 2D 棋盘搜索字符串, 同款 4 方向 dfs + bool 短路 + in-place 标记

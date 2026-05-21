@@ -24,3 +24,4 @@
 | 0052 | [N-Queens II / N 皇后 II](./0052-n-queens-ii/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0301 | [Remove Invalid Parentheses / 删除无效的括号](./0301-remove-invalid-parentheses/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0473 | [Matchsticks to Square / 火柴拼正方形](./0473-matchsticks-to-square/README.md) | Hard | ✅ | ☐ ☐ ☐ |
+| 0079 | [Word Search / 单词搜索](./0079-word-search/README.md) | Medium | ✅ | ☐ ☐ ☐ |

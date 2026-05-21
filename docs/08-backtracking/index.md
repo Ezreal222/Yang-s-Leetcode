@@ -18,3 +18,4 @@
 | 0090 | [Subsets II / 子集 II](./0090-subsets-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0491 | [Non-decreasing Subsequences / 递增子序列](./0491-non-decreasing-subsequences/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0046 | [Permutations / 全排列](./0046-permutations/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0047 | [Permutations II / 全排列 II](./0047-permutations-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |

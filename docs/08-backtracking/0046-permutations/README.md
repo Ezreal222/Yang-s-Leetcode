@@ -185,7 +185,7 @@ graph TD
 - [0077. Combinations](../0077-combinations/README.md) — 组合的对照: startIndex 单向防顺序重复
 - [0078. Subsets](../0078-subsets/README.md) — 同款 startIndex 系列
 - [0040. Combination Sum II](../0040-combination-sum-ii/README.md) — sort + 相邻去重的模板, 0047 排列 II 会借鉴
-- 0047\. Permutations II (待补) — 排列版的同层去重 (sort + `used[i-1] == false`)
+- [0047. Permutations II](../0047-permutations-ii/README.md) — 排列版的同层去重 (sort + `used[i-1] == false`)
 - 0031\. Next Permutation (待补) — 不枚举所有, 只算下一个; O(n) 数论
 - 0060\. Permutation Sequence (待补) — 第 k 个排列, 用阶乘进制直接定位, 不暴力枚举
 - 0784\. Letter Case Permutation (待补) — 每位选大小写, 形态更像 0017 (多集合)

@@ -153,4 +153,4 @@ graph TD
 - [0077. Combinations](../0077-combinations/README.md) — 子集系列的"size==k 限制版"
 - [0491. Non-decreasing Subsequences](../0491-non-decreasing-subsequences/README.md) — 不能 sort (会破坏 subsequence 顺序) → 用 unordered_set 同层去重
 - [0046. Permutations](../0046-permutations/README.md) — 排列版的基础, 用 `used[]` 代替 startIndex
-- 0047\. Permutations II (待补) — 排列 + 同层去重, `used[i-1] == false` 形式的另一种写法
+- [0047. Permutations II](../0047-permutations-ii/README.md) — 排列 + 同层去重, `used[i-1] == false` 形式的另一种写法

@@ -14,14 +14,14 @@
 | [03 · Hash Table / 哈希表](./03-hash-table/index.md) | 0 | 0 | 0 | 0 |
 | [04 · String / 字符串](./04-string/index.md) | 1 | 1 | 0 | 0 |
 | [05 · Two Pointers / 双指针法](./05-two-pointers/index.md) | 0 | 0 | 0 | 0 |
-| [06 · Stack & Queue / 栈与队列](./06-stack-queue/index.md) | 9 | 4 | 4 | 1 |
+| [06 · Stack & Queue / 栈与队列](./06-stack-queue/index.md) | 10 | 4 | 5 | 1 |
 | [07 · Binary Tree / 二叉树](./07-binary-tree/index.md) | 46 | 19 | 27 | 0 |
 | [08 · Backtracking / 回溯算法](./08-backtracking/index.md) | 17 | 0 | 13 | 4 |
 | [09 · Greedy / 贪心算法](./09-greedy/index.md) | 0 | 0 | 0 | 0 |
 | [10 · DP / 动态规划](./10-dp/index.md) | 0 | 0 | 0 | 0 |
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 0 | 0 | 0 | 0 |
 | [12 · Graph / 图论](./12-graph/index.md) | 0 | 0 | 0 | 0 |
-| **Total / 合计** | **74** | **25** | **44** | **5** |
+| **Total / 合计** | **75** | **25** | **45** | **5** |
 
 ## How to navigate / 如何使用
 

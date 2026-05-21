@@ -8,3 +8,4 @@
 |------|-------|------------|--------|----------|
 | 0455 | [Assign Cookies / 分发饼干](./0455-assign-cookies/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0376 | [Wiggle Subsequence / 摆动序列](./0376-wiggle-subsequence/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0053 | [Maximum Subarray / 最大子数组和](./0053-maximum-subarray/README.md) | Medium | ✅ | ☐ ☐ ☐ |

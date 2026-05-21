@@ -171,6 +171,6 @@ int wiggleMaxLength(vector<int>& nums) {
 
 - [0455. Assign Cookies](../0455-assign-cookies/README.md) — 贪心入门, 双 sort + 双指针
 - 0300\. Longest Increasing Subsequence (待补) — 同款"子序列长度", 但单调递增, 贪心 + 二分 / DP
-- 0053\. Maximum Subarray (待补) — 同款一遍贪心, 累加子段和
+- [0053. Maximum Subarray](../0053-maximum-subarray/README.md) — 同款一遍贪心, 累加子段和 (Kadane's)
 - 0738\. Monotone Increasing Digits (待补) — 贪心遇平台需要回退处理, 跟本题"平台" 思想呼应
 - 0978\. Longest Turbulent Subarray (待补) — 摆动的"子数组" 版 (连续), 同 DP 思路

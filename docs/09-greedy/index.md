@@ -7,3 +7,4 @@
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
 | 0455 | [Assign Cookies / 分发饼干](./0455-assign-cookies/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0376 | [Wiggle Subsequence / 摆动序列](./0376-wiggle-subsequence/README.md) | Medium | ✅ | ☐ ☐ ☐ |

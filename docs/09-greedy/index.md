@@ -10,3 +10,4 @@
 | 0376 | [Wiggle Subsequence / 摆动序列](./0376-wiggle-subsequence/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0053 | [Maximum Subarray / 最大子数组和](./0053-maximum-subarray/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0122 | [Best Time to Buy and Sell Stock II / 买卖股票的最佳时机 II](./0122-best-time-to-buy-and-sell-stock-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0055 | [Jump Game / 跳跃游戏](./0055-jump-game/README.md) | Medium | ✅ | ☐ ☐ ☐ |

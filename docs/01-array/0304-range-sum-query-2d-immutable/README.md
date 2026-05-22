@@ -144,7 +144,7 @@
 ## 相关题目
 
 - [0303. Range Sum Query - Immutable](../0303-range-sum-query-immutable/README.md) — 一维前缀和, 本题基础
-- [1094. Car Pooling](../../09-greedy/1094-car-pooling/README.md) — 一维差分 (前缀和的对偶)
+- [1094. Car Pooling](../1094-car-pooling/README.md) — 一维差分 (前缀和的对偶)
 - 0308\. Range Sum Query 2D - Mutable (待补) — 二维可变 → 二维树状数组
 - 0363\. Max Sum of Rectangle No Larger Than K (待补) — 二维前缀和 + 子矩阵和
 - 1314\. Matrix Block Sum (待补) — 二维前缀和应用

@@ -9,7 +9,7 @@
 | Category / 分类 | Total | Easy | Medium | Hard |
 |---|---|---|---|---|
 | [00 · Prelude / 前序·打基础](./00-prelude/index.md) | 0 | 0 | 0 | 0 |
-| [01 · Array / 数组](./01-array/index.md) | 3 | 2 | 1 | 0 |
+| [01 · Array / 数组](./01-array/index.md) | 4 | 2 | 2 | 0 |
 | [02 · Linked List / 链表](./02-linked-list/index.md) | 0 | 0 | 0 | 0 |
 | [03 · Hash Table / 哈希表](./03-hash-table/index.md) | 0 | 0 | 0 | 0 |
 | [04 · String / 字符串](./04-string/index.md) | 2 | 2 | 0 | 0 |
@@ -17,7 +17,7 @@
 | [06 · Stack & Queue / 栈与队列](./06-stack-queue/index.md) | 11 | 4 | 6 | 1 |
 | [07 · Binary Tree / 二叉树](./07-binary-tree/index.md) | 46 | 19 | 27 | 0 |
 | [08 · Backtracking / 回溯算法](./08-backtracking/index.md) | 19 | 0 | 14 | 5 |
-| [09 · Greedy / 贪心算法](./09-greedy/index.md) | 21 | 3 | 16 | 2 |
+| [09 · Greedy / 贪心算法](./09-greedy/index.md) | 20 | 3 | 15 | 2 |
 | [10 · DP / 动态规划](./10-dp/index.md) | 0 | 0 | 0 | 0 |
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 0 | 0 | 0 | 0 |
 | [12 · Graph / 图论](./12-graph/index.md) | 0 | 0 | 0 | 0 |

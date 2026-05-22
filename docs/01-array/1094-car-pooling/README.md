@@ -2,7 +2,7 @@
 
 !!! info "Meta"
     - **Difficulty**: Medium
-    - **Tags**: Greedy, Array, Prefix Sum, Sweep Line · 贪心, 数组, 前缀和, 扫描线
+    - **Tags**: Array, Prefix Sum, Sweep Line · 数组, 前缀和, 扫描线 (差分数组)
     - **Link**: [LeetCode](https://leetcode.com/problems/car-pooling/)
     - **Status**: ✅ Solved
     - **Reviewed**: ☐ ☐ ☐
@@ -17,7 +17,7 @@
 
 1. **差分数组 (diff array) + 前缀和 / Diff array + prefix sum**
 
-    跟 [0253 Meeting Rooms II](../0253-meeting-rooms-ii/README.md) 是同款"任意时刻最大并发数" 的问题, 不过这里**坐标是位置, 不是时间**, 而且坐标已经离散化在 `[0, 1000]` (LC 约束).
+    跟 [0253 Meeting Rooms II](../../09-greedy/0253-meeting-rooms-ii/README.md) 是同款"任意时刻最大并发数" 的问题, 不过这里**坐标是位置, 不是时间**, 而且坐标已经离散化在 `[0, 1000]` (LC 约束).
 
     模板:
 
@@ -40,7 +40,7 @@
 
     若题目改成"到 `to` 点还在车上, 之后才下", 应写 `diff[to+1] -= people`.
 
-3. **跟 [0253](../0253-meeting-rooms-ii/README.md) 的对比 / vs Meeting Rooms II**
+3. **跟 [0253](../../09-greedy/0253-meeting-rooms-ii/README.md) 的对比 / vs Meeting Rooms II**
 
     | 题 | 坐标 | 求什么 | 选哪个解 |
     |---|---|---|---|
@@ -131,10 +131,10 @@
 
 ## 相关题目
 
-- [0253. Meeting Rooms II](../0253-meeting-rooms-ii/README.md) — 同款"任意时刻最大并发", 用 heap / 扫描线 (坐标无界版)
+- [0253. Meeting Rooms II](../../09-greedy/0253-meeting-rooms-ii/README.md) — 同款"任意时刻最大并发", 用 heap / 扫描线 (坐标无界版)
 - 0218\. The Skyline Problem (待补) — 扫描线 + heap 经典
 - 0732\. My Calendar III (待补) — 同款"任意时刻并发数"
 - 0598\. Range Addition II (待补) — 二维差分入门
 - 0370\. Range Addition (待补) — 一维差分模板题
 - 1109\. Corporate Flight Bookings (待补) — 同款差分数组
-- [0303. Range Sum Query - Immutable](../../01-array/0303-range-sum-query-immutable/README.md) — 对偶: 前缀和模板 (差分的逆运算)
+- [0303. Range Sum Query - Immutable](../0303-range-sum-query-immutable/README.md) — 对偶: 前缀和模板 (差分的逆运算)

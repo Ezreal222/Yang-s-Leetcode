@@ -137,3 +137,4 @@
 - 0598\. Range Addition II (待补) — 二维差分入门
 - 0370\. Range Addition (待补) — 一维差分模板题
 - 1109\. Corporate Flight Bookings (待补) — 同款差分数组
+- [0303. Range Sum Query - Immutable](../../01-array/0303-range-sum-query-immutable/README.md) — 对偶: 前缀和模板 (差分的逆运算)

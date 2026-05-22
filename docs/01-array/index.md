@@ -7,3 +7,4 @@
 | #    | Title                          | Difficulty | Status | Reviewed |
 |------|--------------------------------|------------|--------|----------|
 | 0001 | [Two Sum / 两数之和](./0001-two-sum/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0303 | [Range Sum Query - Immutable / 区域和检索 - 数组不可变](./0303-range-sum-query-immutable/README.md) | Easy | ✅ | ☐ ☐ ☐ |

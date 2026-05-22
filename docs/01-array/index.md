@@ -10,3 +10,4 @@
 | 0303 | [Range Sum Query - Immutable / 区域和检索 - 数组不可变](./0303-range-sum-query-immutable/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0304 | [Range Sum Query 2D - Immutable / 二维区域和检索 - 矩阵不可变](./0304-range-sum-query-2d-immutable/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1094 | [Car Pooling / 拼车](./1094-car-pooling/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0370 | [Range Addition / 区间加法](./0370-range-addition/README.md) | Medium | ✅ | ☐ ☐ ☐ |

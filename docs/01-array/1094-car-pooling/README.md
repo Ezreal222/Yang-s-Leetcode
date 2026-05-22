@@ -135,6 +135,6 @@
 - 0218\. The Skyline Problem (待补) — 扫描线 + heap 经典
 - 0732\. My Calendar III (待补) — 同款"任意时刻并发数"
 - 0598\. Range Addition II (待补) — 二维差分入门
-- 0370\. Range Addition (待补) — 一维差分模板题
+- [0370. Range Addition](../0370-range-addition/README.md) — 一维差分模板题, 闭区间版
 - 1109\. Corporate Flight Bookings (待补) — 同款差分数组
 - [0303. Range Sum Query - Immutable](../0303-range-sum-query-immutable/README.md) — 对偶: 前缀和模板 (差分的逆运算)

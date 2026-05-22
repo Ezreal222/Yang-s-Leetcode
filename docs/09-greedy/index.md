@@ -23,3 +23,4 @@
 | 0763 | [Partition Labels / 划分字母区间](./0763-partition-labels/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0056 | [Merge Intervals / 合并区间](./0056-merge-intervals/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0738 | [Monotone Increasing Digits / 单调递增的数字](./0738-monotone-increasing-digits/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0968 | [Binary Tree Cameras / 监控二叉树](./0968-binary-tree-cameras/README.md) | Hard | ✅ | ☐ ☐ ☐ |

@@ -16,3 +16,4 @@
 | 0134 | [Gas Station / 加油站](./0134-gas-station/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0135 | [Candy / 分发糖果](./0135-candy/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0860 | [Lemonade Change / 柠檬水找零](./0860-lemonade-change/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0406 | [Queue Reconstruction by Height / 根据身高重建队列](./0406-queue-reconstruction-by-height/README.md) | Medium | ✅ | ☐ ☐ ☐ |

@@ -18,3 +18,4 @@
 | 0860 | [Lemonade Change / 柠檬水找零](./0860-lemonade-change/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0406 | [Queue Reconstruction by Height / 根据身高重建队列](./0406-queue-reconstruction-by-height/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0452 | [Minimum Number of Arrows to Burst Balloons / 用最少数量的箭引爆气球](./0452-minimum-number-of-arrows-to-burst-balloons/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0435 | [Non-overlapping Intervals / 无重叠区间](./0435-non-overlapping-intervals/README.md) | Medium | ✅ | ☐ ☐ ☐ |

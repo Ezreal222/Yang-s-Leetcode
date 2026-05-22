@@ -26,3 +26,4 @@
 | 0968 | [Binary Tree Cameras / 监控二叉树](./0968-binary-tree-cameras/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0280 | [Wiggle Sort / 摆动排序](./0280-wiggle-sort/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0253 | [Meeting Rooms II / 会议室 II](./0253-meeting-rooms-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 1094 | [Car Pooling / 拼车](./1094-car-pooling/README.md) | Medium | ✅ | ☐ ☐ ☐ |

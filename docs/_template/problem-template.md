@@ -13,35 +13,11 @@
 
 **中文**: 用自己的话简述题意，不要复制原题面。
 
-## 思路
+## Key Insights
 
-### Core idea
-
-**EN**: One or two punch sentences — the "why this works", not the "what to do".
-
-**中文**: 一两句话讲清楚为什么这样做.
-
-### Key Insights
-
-1. **Insight name** — 1-3 sentence explanation of the non-obvious observation.
+1. **Insight name** — Yang 提供核心观察, 我 summarize + extend 一点点.
 2. **Insight name** — ...
 3. **Insight name** — ...
-
-### 可迁移思路
-
-- **0XXX. Related Problem** — 一句话讲怎么把这个套路搬过去.
-- **Pattern name** — generalization (e.g. prefix sum, monotonic stack, sliding window).
-
-### 一句话总结
-
-**EN**: The "if you only remember one thing" line.
-
-### 图解
-
-```mermaid
-graph LR
-    A[input] --> B[step] --> C[result]
-```
 
 ## Solution
 
@@ -60,12 +36,9 @@ graph LR
     ```python
     class Solution:
         def method(self, ...):
-            # If this is a direct port of the C++ logic, keep comments minimal.
-            # If it uses a Python-specific idiom (Counter, heapq, bisect, comprehension,
-            # @lru_cache, slicing trick, etc.), explain:
-            #   - what it does
-            #   - why it fits here
-            #   - rough C++ equivalent
+            # If direct port of C++, keep comments minimal.
+            # If using a Python idiom (Counter, heapq, bisect, comprehension, @lru_cache, etc.):
+            # explain what + why + rough C++ equivalent.
             ...
     ```
 
@@ -77,8 +50,7 @@ graph LR
      */
     var method = function(...) {
         // If direct port of C++, keep comments minimal.
-        // If using a JS idiom (Map/Set, spread, destructuring, Array.from, reduce,
-        // optional chaining, BigInt, etc.), explain what + why + C++ equivalent.
+        // If using a JS idiom (Map/Set, spread, reduce, BigInt, etc.): explain what + why + C++ equivalent.
         ...
     };
     ```
@@ -87,10 +59,6 @@ graph LR
 
 - **Time**: O(?)
 - **Space**: O(?)
-
-## 易错点
-
-- ...
 
 ## 相关题目
 

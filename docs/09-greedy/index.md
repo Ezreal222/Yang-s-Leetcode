@@ -13,3 +13,4 @@
 | 0055 | [Jump Game / 跳跃游戏](./0055-jump-game/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0045 | [Jump Game II / 跳跃游戏 II](./0045-jump-game-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1005 | [Maximize Sum Of Array After K Negations / K 次取反后最大化的数组和](./1005-maximize-sum-of-array-after-k-negations/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0134 | [Gas Station / 加油站](./0134-gas-station/README.md) | Medium | ✅ | ☐ ☐ ☐ |

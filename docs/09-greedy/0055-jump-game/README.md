@@ -134,6 +134,6 @@ i=4 出界 (i > cover=3) → 循环结束 → false
 
 - [0455. Assign Cookies](../0455-assign-cookies/README.md) — 贪心入门
 - [0053. Maximum Subarray](../0053-maximum-subarray/README.md) / [0376](../0376-wiggle-subsequence/README.md) — 同款一遍贪心
-- 0045\. Jump Game II (待补) — 求**最少**跳几步, 加一层"当前层最远" 跟踪
+- [0045. Jump Game II](../0045-jump-game-ii/README.md) — 求**最少**跳几步, 加一层"当前层最远" 跟踪
 - 1306\. Jump Game III (待补) — 双向跳, BFS / DFS
 - 0871\. Minimum Number of Refueling Stops (待补) — 贪心 + heap, 同思路 ("尽量晚加油")

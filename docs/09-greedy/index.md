@@ -12,3 +12,4 @@
 | 0122 | [Best Time to Buy and Sell Stock II / 买卖股票的最佳时机 II](./0122-best-time-to-buy-and-sell-stock-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0055 | [Jump Game / 跳跃游戏](./0055-jump-game/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0045 | [Jump Game II / 跳跃游戏 II](./0045-jump-game-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 1005 | [Maximize Sum Of Array After K Negations / K 次取反后最大化的数组和](./1005-maximize-sum-of-array-after-k-negations/README.md) | Easy | ✅ | ☐ ☐ ☐ |

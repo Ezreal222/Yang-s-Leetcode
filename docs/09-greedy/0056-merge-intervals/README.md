@@ -121,5 +121,5 @@
 - [0452. Minimum Number of Arrows to Burst Balloons](../0452-minimum-number-of-arrows-to-burst-balloons/README.md) — 按右端排 + 计数
 - [0435. Non-overlapping Intervals](../0435-non-overlapping-intervals/README.md) — 按右端排 + 删除
 - 0057\. Insert Interval (待补) — 本题变种, 插入新区间后合并
-- 0253\. Meeting Rooms II (待补) — 区间最少会议室, heap / 差分
+- [0253. Meeting Rooms II](../0253-meeting-rooms-ii/README.md) — 区间最少会议室, heap / 扫描线
 - 0986\. Interval List Intersections (待补) — 两组有序区间求交, 双指针

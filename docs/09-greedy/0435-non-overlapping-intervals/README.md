@@ -114,7 +114,7 @@
 
 - [0452. Minimum Number of Arrows to Burst Balloons](../0452-minimum-number-of-arrows-to-burst-balloons/README.md) — 直接对偶题, 同模板, 判定差一个等号
 - [0406. Queue Reconstruction by Height](../0406-queue-reconstruction-by-height/README.md) — 同款 sort-first 贪心
-- 0056\. Merge Intervals (待补) — 区间合并, 按**左边界**排
-- 0763\. Partition Labels (待补) — 同款"维护当前组右端" 贪心
-- 0253\. Meeting Rooms II (待补) — 区间最少会议室, heap / 差分
+- [0056. Merge Intervals](../0056-merge-intervals/README.md) — 区间合并, 按**左边界**排
+- [0763. Partition Labels](../0763-partition-labels/README.md) — 同款"维护当前组右端" 贪心
+- [0253. Meeting Rooms II](../0253-meeting-rooms-ii/README.md) — 区间最少会议室, heap / 扫描线
 - 0646\. Maximum Length of Pair Chain (待补) — 等价"最大不重叠数" = `n - 0435`

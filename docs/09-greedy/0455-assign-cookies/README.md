@@ -131,4 +131,4 @@
 - 0392\. Is Subsequence (待补) — 同款两指针扫两数组
 - 0860\. Lemonade Change (待补) — 贪心模板入门
 - 0135\. Candy (待补) — 双向贪心扫两遍, 经典进阶
-- 1029\. Two City Scheduling (待补) — 按 (costA - costB) 排序的贪心
+- [1029. Two City Scheduling](../1029-two-city-scheduling/README.md) — 按 (costA - costB) 排序的贪心

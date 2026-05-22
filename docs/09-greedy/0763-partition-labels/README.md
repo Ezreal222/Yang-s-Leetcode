@@ -121,6 +121,6 @@
 
 - [0452. Minimum Number of Arrows to Burst Balloons](../0452-minimum-number-of-arrows-to-burst-balloons/README.md) — 同款"维护当前组右端" 贪心 (sort 后)
 - [0435. Non-overlapping Intervals](../0435-non-overlapping-intervals/README.md) — 同款"右端 + 切分" 区间贪心
-- 0056\. Merge Intervals (待补) — 区间合并版, 按左端 sort + 维护右端
+- [0056. Merge Intervals](../0056-merge-intervals/README.md) — 区间合并版, 按左端 sort + 维护右端
 - 0758\. Bold Words in String (待补) — 同款"合并被覆盖的区间"
 - 1024\. Video Stitching (待补) — 区间覆盖 + 贪心

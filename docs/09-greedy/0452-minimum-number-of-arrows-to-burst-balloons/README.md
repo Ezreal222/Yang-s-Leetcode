@@ -121,6 +121,6 @@
 - [0406. Queue Reconstruction by Height](../0406-queue-reconstruction-by-height/README.md) — 同款 sort + 按规则处理
 - [0455. Assign Cookies](../0455-assign-cookies/README.md) — sort + 配对贪心
 - [0435. Non-overlapping Intervals](../0435-non-overlapping-intervals/README.md) — 同款"按右端排 + 不重叠分组", 直接对照题 (判定差一个等号)
-- 0056\. Merge Intervals (待补) — 区间合并, 按**左端**排 + 累积
+- [0056. Merge Intervals](../0056-merge-intervals/README.md) — 区间合并, 按**左端**排 + 累积右端
 - [0763. Partition Labels](../0763-partition-labels/README.md) — 同款"维护当前组右端" 贪心 (lastPos 代替 sort)
 - 0253\. Meeting Rooms II (待补) — 区间最少会议室, heap / 差分

@@ -21,3 +21,4 @@
 | 0435 | [Non-overlapping Intervals / 无重叠区间](./0435-non-overlapping-intervals/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1029 | [Two City Scheduling / 两地调度](./1029-two-city-scheduling/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0763 | [Partition Labels / 划分字母区间](./0763-partition-labels/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0056 | [Merge Intervals / 合并区间](./0056-merge-intervals/README.md) | Medium | ✅ | ☐ ☐ ☐ |

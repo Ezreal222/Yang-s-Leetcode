@@ -24,3 +24,4 @@
 | 0056 | [Merge Intervals / 合并区间](./0056-merge-intervals/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0738 | [Monotone Increasing Digits / 单调递增的数字](./0738-monotone-increasing-digits/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0968 | [Binary Tree Cameras / 监控二叉树](./0968-binary-tree-cameras/README.md) | Hard | ✅ | ☐ ☐ ☐ |
+| 0280 | [Wiggle Sort / 摆动排序](./0280-wiggle-sort/README.md) | Medium | ✅ | ☐ ☐ ☐ |

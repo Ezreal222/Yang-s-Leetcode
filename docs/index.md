@@ -17,11 +17,11 @@
 | [06 · Stack & Queue / 栈与队列](./06-stack-queue/index.md) | 11 | 4 | 6 | 1 |
 | [07 · Binary Tree / 二叉树](./07-binary-tree/index.md) | 46 | 19 | 27 | 0 |
 | [08 · Backtracking / 回溯算法](./08-backtracking/index.md) | 19 | 0 | 14 | 5 |
-| [09 · Greedy / 贪心算法](./09-greedy/index.md) | 20 | 3 | 15 | 2 |
+| [09 · Greedy / 贪心算法](./09-greedy/index.md) | 21 | 3 | 16 | 2 |
 | [10 · DP / 动态规划](./10-dp/index.md) | 0 | 0 | 0 | 0 |
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 1 | 0 | 1 | 0 |
 | [12 · Graph / 图论](./12-graph/index.md) | 0 | 0 | 0 | 0 |
-| **Total / 合计** | **107** | **31** | **68** | **8** |
+| **Total / 合计** | **108** | **31** | **69** | **8** |
 
 ## How to navigate / 如何使用
 

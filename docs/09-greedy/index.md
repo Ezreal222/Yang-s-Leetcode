@@ -26,3 +26,4 @@
 | 0968 | [Binary Tree Cameras / 监控二叉树](./0968-binary-tree-cameras/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0280 | [Wiggle Sort / 摆动排序](./0280-wiggle-sort/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0253 | [Meeting Rooms II / 会议室 II](./0253-meeting-rooms-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0659 | [Split Array into Consecutive Subsequences / 分割数组为连续子序列](./0659-split-array-into-consecutive-subsequences/README.md) | Medium | ✅ | ☐ ☐ ☐ |

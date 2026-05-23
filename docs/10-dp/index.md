@@ -6,4 +6,5 @@
 
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
-| —    | —     | —          | —      | —        |
+| 0509 | [Fibonacci Number / 斐波那契数](./0509-fibonacci-number/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0070 | [Climbing Stairs / 爬楼梯](./0070-climbing-stairs/README.md) | Easy | ✅ | ☐ ☐ ☐ |

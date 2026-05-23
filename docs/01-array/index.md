@@ -12,3 +12,4 @@
 | 1094 | [Car Pooling / 拼车](./1094-car-pooling/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0370 | [Range Addition / 区间加法](./0370-range-addition/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1109 | [Corporate Flight Bookings / 航班预订统计](./1109-corporate-flight-bookings/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0528 | [Random Pick with Weight / 按权重随机选择](./0528-random-pick-with-weight/README.md) | Medium | ✅ | ☐ ☐ ☐ |

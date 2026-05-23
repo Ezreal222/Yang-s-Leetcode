@@ -6,4 +6,4 @@
 
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
-| —    | —     | —          | —      | —        |
+| 0316 | [Remove Duplicate Letters / 去除重复字母](./0316-remove-duplicate-letters/README.md) | Medium | ✅ | ☐ ☐ ☐ |

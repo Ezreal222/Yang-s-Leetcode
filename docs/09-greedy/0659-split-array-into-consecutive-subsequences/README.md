@@ -170,7 +170,7 @@
 - [0055. Jump Game](../0055-jump-game/README.md) — 同框架: 单点决策 + 维护"目前最远"
 - [0056. Merge Intervals](../0056-merge-intervals/README.md) — 同框架: 单区间决策 + 维护"上一段右端"
 - [0455. Assign Cookies](../0455-assign-cookies/README.md) — 同框架: 单点配对 + 两数组贪心
-- 0846\. Hand of Straights (待补) — 几乎同款"连续序列分组"
+- [0846. Hand of Straights](../0846-hand-of-straights/README.md) — 段长固定版, 决策被锁死, 一个 map 搞定
 - 1296\. Divide Array in Sets of K Consecutive Numbers (待补) — 0846 重复题
 - 1029\. Reordered Power of 2 (待补) — 另一类"重排判定"
 - [0763. Partition Labels](../0763-partition-labels/README.md) — 同款"前置预处理 + 单点贪心" 套路

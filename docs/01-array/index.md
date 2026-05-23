@@ -13,3 +13,4 @@
 | 0370 | [Range Addition / 区间加法](./0370-range-addition/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1109 | [Corporate Flight Bookings / 航班预订统计](./1109-corporate-flight-bookings/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0528 | [Random Pick with Weight / 按权重随机选择](./0528-random-pick-with-weight/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 1854 | [Maximum Population Year / 人口最多的年份](./1854-maximum-population-year/README.md) | Easy | ✅ | ☐ ☐ ☐ |

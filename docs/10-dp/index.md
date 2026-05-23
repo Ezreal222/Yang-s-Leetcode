@@ -4,6 +4,12 @@
 
 **中文**: 状态设计、转移方程、滚动数组优化。
 
+## 技巧 / Topics
+
+- [折半搜索 (Meet in the Middle)](./topic-meet-in-the-middle.md) — 把 `2^n` 暴力枚举开方成 `2^(n/2)`, 背包不适用时的备选
+
+## 题目 / Problems
+
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
 | 0509 | [Fibonacci Number / 斐波那契数](./0509-fibonacci-number/README.md) | Easy | ✅ | ☐ ☐ ☐ |
@@ -14,3 +20,4 @@
 | 0343 | [Integer Break / 整数拆分](./0343-integer-break/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0096 | [Unique Binary Search Trees / 不同的二叉搜索树](./0096-unique-binary-search-trees/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0416 | [Partition Equal Subset Sum / 分割等和子集](./0416-partition-equal-subset-sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 1049 | [Last Stone Weight II / 最后一块石头的重量 II](./1049-last-stone-weight-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |

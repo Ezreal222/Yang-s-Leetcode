@@ -13,3 +13,4 @@
 | 0063 | [Unique Paths II / 不同路径 II](./0063-unique-paths-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0343 | [Integer Break / 整数拆分](./0343-integer-break/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0096 | [Unique Binary Search Trees / 不同的二叉搜索树](./0096-unique-binary-search-trees/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0416 | [Partition Equal Subset Sum / 分割等和子集](./0416-partition-equal-subset-sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |

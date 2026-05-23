@@ -12,3 +12,4 @@
 | 0062 | [Unique Paths / 不同路径](./0062-unique-paths/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0063 | [Unique Paths II / 不同路径 II](./0063-unique-paths-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0343 | [Integer Break / 整数拆分](./0343-integer-break/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0096 | [Unique Binary Search Trees / 不同的二叉搜索树](./0096-unique-binary-search-trees/README.md) | Medium | ✅ | ☐ ☐ ☐ |

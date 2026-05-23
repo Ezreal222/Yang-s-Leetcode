@@ -137,7 +137,7 @@
 - [1094. Car Pooling](../1094-car-pooling/README.md) — 同款差分数组, 半开区间版
 - [0303. Range Sum Query - Immutable](../0303-range-sum-query-immutable/README.md) — 对偶: 前缀和模板 (差分的逆运算)
 - [0304. Range Sum Query 2D - Immutable](../0304-range-sum-query-2d-immutable/README.md) — 二维前缀和
-- 1109\. Corporate Flight Bookings (待补) — 同款差分数组直接套
+- [1109. Corporate Flight Bookings](../1109-corporate-flight-bookings/README.md) — 同款差分数组, 1-indexed 包装
 - 1893\. Check if All the Integers in a Range Are Covered (待补) — 差分 + 区间覆盖判定
 - 0598\. Range Addition II (待补) — 二维差分简化版 (只关心左上角)
 - 0307\. Range Sum Query - Mutable (待补) — 单点改 + 区间求和 → 树状数组 / 线段树

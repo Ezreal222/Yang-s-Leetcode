@@ -9,7 +9,7 @@
 | Category / 分类 | Total | Easy | Medium | Hard |
 |---|---|---|---|---|
 | [00 · Prelude / 前序·打基础](./00-prelude/index.md) | 0 | 0 | 0 | 0 |
-| [01 · Array / 数组](./01-array/index.md) | 5 | 2 | 3 | 0 |
+| [01 · Array / 数组](./01-array/index.md) | 6 | 2 | 4 | 0 |
 | [02 · Linked List / 链表](./02-linked-list/index.md) | 0 | 0 | 0 | 0 |
 | [03 · Hash Table / 哈希表](./03-hash-table/index.md) | 0 | 0 | 0 | 0 |
 | [04 · String / 字符串](./04-string/index.md) | 2 | 2 | 0 | 0 |
@@ -21,7 +21,7 @@
 | [10 · DP / 动态规划](./10-dp/index.md) | 0 | 0 | 0 | 0 |
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 0 | 0 | 0 | 0 |
 | [12 · Graph / 图论](./12-graph/index.md) | 0 | 0 | 0 | 0 |
-| **Total / 合计** | **103** | **30** | **65** | **8** |
+| **Total / 合计** | **104** | **30** | **66** | **8** |
 
 ## How to navigate / 如何使用
 

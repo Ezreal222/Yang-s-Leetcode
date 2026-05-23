@@ -11,3 +11,4 @@
 | 0304 | [Range Sum Query 2D - Immutable / 二维区域和检索 - 矩阵不可变](./0304-range-sum-query-2d-immutable/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1094 | [Car Pooling / 拼车](./1094-car-pooling/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0370 | [Range Addition / 区间加法](./0370-range-addition/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 1109 | [Corporate Flight Bookings / 航班预订统计](./1109-corporate-flight-bookings/README.md) | Medium | ✅ | ☐ ☐ ☐ |

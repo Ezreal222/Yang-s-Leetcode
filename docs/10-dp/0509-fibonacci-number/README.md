@@ -119,5 +119,5 @@
 ## 相关题目
 
 - 0070\. Climbing Stairs (待补) — 同滚动 DP, `dp[i] = dp[i-1] + dp[i-2]` 一模一样, 只是初值不同
-- 0746\. Min Cost Climbing Stairs (待补) — 同模板, 转移多一个 min
+- [0746. Min Cost Climbing Stairs](../0746-min-cost-climbing-stairs/README.md) — 同模板, 转移多一个 min
 - 1137\. N-th Tribonacci Number (待补) — 滚动三变量

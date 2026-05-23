@@ -101,6 +101,6 @@
 ## 相关题目
 
 - [0509. Fibonacci Number](../0509-fibonacci-number/README.md) — 同递推, 不同初值
-- 0746\. Min Cost Climbing Stairs (待补) — 加权版, `dp[i] = min(dp[i-1], dp[i-2]) + cost[i]`
+- [0746. Min Cost Climbing Stairs](../0746-min-cost-climbing-stairs/README.md) — 加权版, `dp[i] = min(dp[i-1]+cost[i-1], dp[i-2]+cost[i-2])`
 - 1137\. N-th Tribonacci Number (待补) — 三步滚动
 - 0377\. Combination Sum IV (待补) — 完全背包视角的"爬楼梯进阶 (步长 1..m)"

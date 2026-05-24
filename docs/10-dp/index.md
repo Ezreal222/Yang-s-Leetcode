@@ -34,3 +34,4 @@
 | 0198 | [House Robber / 打家劫舍](./0198-house-robber/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0213 | [House Robber II / 打家劫舍 II](./0213-house-robber-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0337 | [House Robber III / 打家劫舍 III](./0337-house-robber-iii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 3840 | [House Robber V / 打家劫舍 V](./3840-house-robber-v/README.md) | Medium | ✅ | ☐ ☐ ☐ |

@@ -112,5 +112,6 @@
 - [0213. House Robber II](../0213-house-robber-ii/README.md) — 环形版, 拆成两条线性跑 0198
 - [0337. House Robber III](../0337-house-robber-iii/README.md) — 树形版, 后序 DFS + 双状态
 - [2560. House Robber IV](../../13-binary-search/2560-house-robber-iv/README.md) — 题名同系列但解法换轨: 二分答案 + 贪心 (放在 §13)
+- [3840. House Robber V](../3840-house-robber-v/README.md) — 颜色约束版: 只有同色相邻不能同偷
 - 0740\. Delete and Earn (待补) — 转化版: 按值分桶 + 0198
 - [§10 DP 思维流程 — 选/不选 + 最后一步](../topic-dp-thinking-process.md) — 本题就是这两个模式的合体

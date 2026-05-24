@@ -130,4 +130,4 @@
 - [0377. Combination Sum IV](../0377-combination-sum-iv/README.md) — 完全背包排列数版本
 - 1449\. Form Largest Integer With Digits That Add up to Target (待补) — 完全背包 + 字典序最大字符串
 - 0983\. Minimum Cost For Tickets (待补) — 完全背包 min 变体
-- 0139\. Word Break (待补) — 完全背包判定 (能否拼接出字符串)
+- [0139. Word Break](../0139-word-break/README.md) — 完全背包判定 (能否拼接出字符串)

@@ -123,4 +123,4 @@
 - [0322. Coin Change](../0322-coin-change/README.md) — 完全背包求**最少硬币数** (min 取代 +=)
 - 0070\. Climbing Stairs — 把"步长 1 或 2" 当 nums, 就是本题特例: 排列数 = 走法数 → [Climbing Stairs](../0070-climbing-stairs/README.md) 的完全背包视角
 - [0279. Perfect Squares](../0279-perfect-squares/README.md) — 完全背包: 平方数当物品, 求最少个数
-- 0139\. Word Break (待补) — 完全背包变体 (字符串拼接)
+- [0139. Word Break](../0139-word-break/README.md) — 完全背包判定 (字符串拼接), 同款"外 j" 排列顺序

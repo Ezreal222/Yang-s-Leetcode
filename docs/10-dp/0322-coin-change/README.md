@@ -148,4 +148,4 @@
 - [0377. Combination Sum IV](../0377-combination-sum-iv/README.md) — 同模板, 求**排列数** (外 j / 内 nums)
 - [0279. Perfect Squares](../0279-perfect-squares/README.md) — 完全背包 min 变体: 平方数当硬币, 求最少个数, 跟本题代码几乎一致
 - 0983\. Minimum Cost For Tickets (待补) — 完全背包变体, 按日期分桶
-- 0139\. Word Break (待补) — 完全背包判定 (能否拼接出字符串)
+- [0139. Word Break](../0139-word-break/README.md) — 完全背包判定 (能否拼接出字符串)

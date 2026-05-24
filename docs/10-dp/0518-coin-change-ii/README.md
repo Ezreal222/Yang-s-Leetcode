@@ -118,6 +118,6 @@
 - [0416. Partition Equal Subset Sum](../0416-partition-equal-subset-sum/README.md) — 0/1 背包母题, 对比"倒序 j"
 - [0494. Target Sum](../0494-target-sum/README.md) — 0/1 背包计数版, 跟本题转移式一样但 j 方向相反
 - 0322\. Coin Change (待补) — 完全背包求**最少硬币数** (`min` 取代 `+=`)
-- 0377\. Combination Sum IV (待补) — 完全背包排列数 — 对照本题"外 coin / 内 j" 换成"外 j / 内 coin"
+- [0377. Combination Sum IV](../0377-combination-sum-iv/README.md) — 完全背包排列数 — 对照本题"外 coin / 内 j" 换成"外 j / 内 coin"
 - 0279\. Perfect Squares (待补) — 完全背包: 平方数当硬币, 求最少个数
 - 0139\. Word Break (待补) — 完全背包变体 (字符串拼接)

@@ -111,5 +111,5 @@
 
 - [0070. Climbing Stairs](../0070-climbing-stairs/README.md) — 计数版, 同递推结构
 - [0509. Fibonacci Number](../0509-fibonacci-number/README.md) — 滚动 DP 母题
-- 0198\. House Robber (待补) — 同模板: `dp[i] = max(dp[i-1], dp[i-2] + nums[i])`, 选不选当前元素
+- [0198. House Robber](../0198-house-robber/README.md) — 同模板: `dp[i] = max(dp[i-1], dp[i-2] + nums[i])`, 选不选当前元素
 - 0213\. House Robber II (待补) — 环形版, 拆两次跑 0198

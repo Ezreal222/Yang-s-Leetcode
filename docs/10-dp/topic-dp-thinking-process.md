@@ -126,7 +126,7 @@
 
 ---
 
-## 走流程示范: LC 198 House Robber / 打家劫舍
+## 走流程示范: [0198 House Robber](./0198-house-robber/README.md) / 打家劫舍
 
 **题目**: 一排房子, 每个有钱 `nums[i]`, 不能偷相邻的, 求最多偷多少.
 

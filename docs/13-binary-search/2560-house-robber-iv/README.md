@@ -188,6 +188,7 @@
 
 - [0198. House Robber](../../10-dp/0198-house-robber/README.md) / [0213](../../10-dp/0213-house-robber-ii/README.md) / [0337](../../10-dp/0337-house-robber-iii/README.md) — 系列前三, DP 求最大金额
 - [1011. Capacity To Ship Packages Within D Days](../1011-capacity-to-ship-packages-within-d-days/README.md) — 同 BSA 模板, 二分船载 + 贪心模拟
+- [1231. Divide Chocolate](../1231-divide-chocolate/README.md) — **镜像模板**: "最大化最小值", 找最后一个 true (mid 向上取整)
 - 0410\. Split Array Largest Sum (待补) — 同模板"最小化最大值" BSA
 - 0875\. Koko Eating Bananas (待补) — 同模板, 二分速度 + 贪心检查
 - 1011\. Capacity To Ship Packages Within D Days (待补) — 同模板, 二分容量

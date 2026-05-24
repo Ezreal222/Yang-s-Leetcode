@@ -21,8 +21,8 @@
 | [10 · DP / 动态规划](./10-dp/index.md) | 21 | 3 | 16 | 2 |
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 1 | 0 | 1 | 0 |
 | [12 · Graph / 图论](./12-graph/index.md) | 0 | 0 | 0 | 0 |
-| [13 · Binary Search / 二分查找](./13-binary-search/index.md) | 2 | 0 | 2 | 0 |
-| **Total / 合计** | **132** | **34** | **88** | **10** |
+| [13 · Binary Search / 二分查找](./13-binary-search/index.md) | 3 | 0 | 2 | 1 |
+| **Total / 合计** | **133** | **34** | **88** | **11** |
 
 ## How to navigate / 如何使用
 

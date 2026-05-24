@@ -157,6 +157,7 @@
 ## 相关题目
 
 - [2560. House Robber IV](../2560-house-robber-iv/README.md) — 同 BSA 模板 (二分能力 + 贪心)
+- [1231. Divide Chocolate](../1231-divide-chocolate/README.md) — **镜像模板**: "最大化最小值", 找最后一个 true (mid 向上取整)
 - 0410\. Split Array Largest Sum (待补) — 跟本题完全等价, 同代码一份过两题
 - 0875\. Koko Eating Bananas (待补) — 同模板, 二分吃速 + 贪心算时间
 - 1482\. Minimum Number of Days to Make m Bouquets (待补) — 同模板, 二分天数

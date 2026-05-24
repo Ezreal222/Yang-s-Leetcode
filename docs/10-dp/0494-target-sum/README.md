@@ -128,5 +128,5 @@
 - [0416. Partition Equal Subset Sum](../0416-partition-equal-subset-sum/README.md) — 同 0/1 背包, 求"能否凑到 target"
 - [1049. Last Stone Weight II](../1049-last-stone-weight-ii/README.md) — 同 "分 ± 号" 模型, 求最小差
 - [0096. Unique Binary Search Trees](../0096-unique-binary-search-trees/README.md) — 同款"空集算一种" 的计数 DP 初始化
-- 0474\. Ones and Zeroes (待补) — 二维容量 0/1 背包
+- [0474. Ones and Zeroes](../0474-ones-and-zeroes/README.md) — 二维容量 0/1 背包
 - 0518\. Coin Change II (待补) — 完全背包计数 (正序 j) — 对比本题"倒序 j" 的 0/1 计数

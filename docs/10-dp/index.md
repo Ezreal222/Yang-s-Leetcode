@@ -24,3 +24,4 @@
 | 2035 | [Partition Array Into Two Arrays to Minimize Sum Difference / 将数组分成两个数组并最小化和的差](./2035-partition-array-into-two-arrays-to-minimize-sum-difference/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 1755 | [Closest Subsequence Sum / 最接近目标值的子序列和](./1755-closest-subsequence-sum/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0494 | [Target Sum / 目标和](./0494-target-sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0474 | [Ones and Zeroes / 一和零](./0474-ones-and-zeroes/README.md) | Medium | ✅ | ☐ ☐ ☐ |

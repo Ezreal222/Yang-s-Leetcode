@@ -17,7 +17,7 @@
 
 1. **⚠ 这题不是 DP, 是"二分答案 + 贪心" / Despite the name, this is BSA + greedy, not DP**
 
-    系列前三 ([0198](../0198-house-robber/README.md) / [0213](../0213-house-robber-ii/README.md) / [0337](../0337-house-robber-iii/README.md)) 都是 DP 求"最大金额", 本题问的是 **"最小化最大值"**, 解法完全换轨道. 放在 §10 DP 只是为了跟系列同框.
+    系列前三 ([0198](../../10-dp/0198-house-robber/README.md) / [0213](../../10-dp/0213-house-robber-ii/README.md) / [0337](../../10-dp/0337-house-robber-iii/README.md)) 都是 DP 求"最大金额", 本题问的是 **"最小化最大值"**, 解法完全换轨道. 所以独立出 §13 Binary Search 这个分类.
 
     > LC 命名容易误导. **看"求什么"** (最大金额 vs 最小化最大值) 比题目名更准.
 
@@ -186,7 +186,8 @@
 
 ## 相关题目
 
-- [0198. House Robber](../0198-house-robber/README.md) / [0213](../0213-house-robber-ii/README.md) / [0337](../0337-house-robber-iii/README.md) — 系列前三, DP 求最大金额
+- [0198. House Robber](../../10-dp/0198-house-robber/README.md) / [0213](../../10-dp/0213-house-robber-ii/README.md) / [0337](../../10-dp/0337-house-robber-iii/README.md) — 系列前三, DP 求最大金额
+- [1011. Capacity To Ship Packages Within D Days](../1011-capacity-to-ship-packages-within-d-days/README.md) — 同 BSA 模板, 二分船载 + 贪心模拟
 - 0410\. Split Array Largest Sum (待补) — 同模板"最小化最大值" BSA
 - 0875\. Koko Eating Bananas (待补) — 同模板, 二分速度 + 贪心检查
 - 1011\. Capacity To Ship Packages Within D Days (待补) — 同模板, 二分容量

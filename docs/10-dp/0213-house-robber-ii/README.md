@@ -127,7 +127,7 @@
 ## 相关题目
 
 - [0198. House Robber](../0198-house-robber/README.md) — 线性母题, 本题复用
-- 0337\. House Robber III (待补) — 树形版, 树形 DP + 三状态
+- [0337. House Robber III](../0337-house-robber-iii/README.md) — 树形版, 后序 DFS + 双状态
 - 0740\. Delete and Earn (待补) — 转化版: 按值分桶 + 0198
 - 0918\. Maximum Sum Circular Subarray (待补) — 同款"环形 → 拆线性" 思路, 应用在最大子数组和
 - [§10 DP 思维流程](../topic-dp-thinking-process.md) — 拆解约束 + 复用子问题的典型例子

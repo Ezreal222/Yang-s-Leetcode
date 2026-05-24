@@ -110,6 +110,7 @@
 - [0070. Climbing Stairs](../0070-climbing-stairs/README.md) — 同滚动 DP 结构, 计数版
 - [0746. Min Cost Climbing Stairs](../0746-min-cost-climbing-stairs/README.md) — 同 `dp[i] = f(dp[i-1], dp[i-2])` 模板
 - [0213. House Robber II](../0213-house-robber-ii/README.md) — 环形版, 拆成两条线性跑 0198
-- 0337\. House Robber III (待补) — 树形版, 树形 DP + 三状态
+- [0337. House Robber III](../0337-house-robber-iii/README.md) — 树形版, 后序 DFS + 双状态
+- [2560. House Robber IV](../2560-house-robber-iv/README.md) — 题名同系列但解法换轨: 二分答案 + 贪心
 - 0740\. Delete and Earn (待补) — 转化版: 按值分桶 + 0198
 - [§10 DP 思维流程 — 选/不选 + 最后一步](../topic-dp-thinking-process.md) — 本题就是这两个模式的合体

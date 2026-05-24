@@ -33,3 +33,5 @@
 | 0139 | [Word Break / 单词拆分](./0139-word-break/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0198 | [House Robber / 打家劫舍](./0198-house-robber/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0213 | [House Robber II / 打家劫舍 II](./0213-house-robber-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0337 | [House Robber III / 打家劫舍 III](./0337-house-robber-iii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 2560 | [House Robber IV / 打家劫舍 IV](./2560-house-robber-iv/README.md) | Medium | ✅ | ☐ ☐ ☐ |

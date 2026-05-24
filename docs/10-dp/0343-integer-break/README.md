@@ -140,5 +140,5 @@
 ## 相关题目
 
 - [0096. Unique Binary Search Trees](../0096-unique-binary-search-trees/README.md) — 同"枚举切点 + 子问题相乘" 结构 (卡特兰数)
-- 0279\. Perfect Squares (待补) — 类似"拆 n 求最优", 但拆成平方数之和求最少个数
+- [0279. Perfect Squares](../0279-perfect-squares/README.md) — 类似"拆 n 求最优", 但拆成平方数之和求最少个数
 - 0264\. Ugly Number II (待补) — 数学贪心 + 多指针

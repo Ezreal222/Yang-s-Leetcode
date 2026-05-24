@@ -35,7 +35,7 @@
 
     | 题 | 限制 | 解法 |
     |---|---|---|
-    | 0121 (待补) | 只能买卖 1 次 | 维护 minPrice + 最大 (prices[i] - min) |
+    | [0121](../../10-dp/0121-best-time-to-buy-and-sell-stock/README.md) | 只能买卖 1 次 | 维护 minPrice + 最大 (prices[i] - min), 或状态机 DP |
     | **0122 (本题)** | 不限次数, 无手续费/冷冻 | **贪心: 累加正差** |
     | 0309 (待补) | 不限 + **冷冻 1 天** | DP 状态机 (持 / 不持 / 冷冻) |
     | 0714 (待补) | 不限 + **手续费** | DP 状态机, 卖时扣 fee |
@@ -44,18 +44,18 @@
 
     **加任一额外约束 (冷冻/手续费/次数) 贪心立刻失效, 必须上 DP**. 0122 是这家族里唯一一个可以贪心一行解决的.
 
-3. **DP 解法 (统一框架) / DP for completeness**
+3. **DP 解法 (跟 [0121](../../10-dp/0121-best-time-to-buy-and-sell-stock/README.md) 一字之差) / DP — one-line diff from 0121**
 
-    ```cpp
-    int hold = -prices[0], cash = 0;
-    for (int i = 1; i < n; i++) {
-        int new_cash = max(cash, hold + prices[i]);   // 不持: 保持 or 今天卖
-        int new_hold = max(hold, cash - prices[i]);   // 持: 保持 or 今天买
-        cash = new_cash; hold = new_hold;
-    }
-    return cash;
-    ```
-    `cash` 不持股最大利润, `hold` 持股最大利润. 结果等于贪心, 但能扩展到 0309/0714.
+    跟 0121 的状态机 DP 同骨架, **只差一行** — 买入那行用 `dp[i-1][0] - prices[i]` 替代 0121 的 `-prices[i]`:
+
+    | 行 | 0121 (一次交易) | **0122 (本题, 无限次)** |
+    |---|---|---|
+    | 卖出 | `dp[i][0] = max(dp[i-1][0], dp[i-1][1] + prices[i])` | **完全一样** |
+    | 买入 | `dp[i][1] = max(dp[i-1][1], -prices[i])` | `dp[i][1] = max(dp[i-1][1], dp[i-1][0] - prices[i])` |
+
+    **为什么差这一行?** 0121 买入前利润必为 0 (只准一次交易, 买前没卖过); 0122 买入前可以已经买卖很多轮 → 用 `dp[i-1][0]` (昨天不持股的累计利润) 当起点. 把这一行改了, 模板就支持无限次交易.
+
+    > 见下 Solution v2 完整代码. 贪心更短, DP 更通用 — **加任何额外约束 (冷冻/手续费/次数) 都从 DP 版改, 不从贪心版改**.
 
 4. **不要找精确 buy/sell pair / Don't bother identifying trades**
 
@@ -79,32 +79,67 @@ res = 7
 ## Solution
 
 === "C++"
-    ```cpp
-    class Solution {
-    public:
-        int maxProfit(vector<int>& prices) {
-            int res = 0;
-            for (int i = 1; i < (int)prices.size(); i++) {
-                if (prices[i] > prices[i - 1]) res += prices[i] - prices[i - 1];
+    === "v1 贪心: 累加正差 (最短)"
+        ```cpp
+        class Solution {
+        public:
+            int maxProfit(vector<int>& prices) {
+                int res = 0;
+                for (int i = 1; i < (int)prices.size(); i++) {
+                    if (prices[i] > prices[i - 1]) res += prices[i] - prices[i - 1];
+                }
+                return res;
             }
-            return res;
-        }
-    };
-    ```
+        };
+        ```
+
+    === "v2 状态机 DP (跟 0121 一字之差)"
+        ```cpp
+        class Solution {
+        public:
+            int maxProfit(vector<int>& prices) {
+                int n = prices.size();
+                vector<vector<int>> dp(n, vector<int>(2));
+                dp[0][0] = 0;
+                dp[0][1] = -prices[0];
+                for (int i = 1; i < n; i++) {
+                    dp[i][0] = max(dp[i - 1][0], dp[i - 1][1] + prices[i]);    // 卖
+                    dp[i][1] = max(dp[i - 1][1], dp[i - 1][0] - prices[i]);    // 买 (跟 0121 的 -prices[i] 不同)
+                }
+                return dp[n - 1][0];
+            }
+        };
+        ```
+
+    === "v3 状态机 DP + 滚动 O(1)"
+        ```cpp
+        class Solution {
+        public:
+            int maxProfit(vector<int>& prices) {
+                int hold = -prices[0], cash = 0;
+                for (int i = 1; i < (int)prices.size(); i++) {
+                    int newCash = max(cash, hold + prices[i]);                 // 卖
+                    int newHold = max(hold, cash - prices[i]);                 // 买
+                    cash = newCash; hold = newHold;
+                }
+                return cash;
+            }
+        };
+        ```
 
 === "Python"
     ```python
     class Solution:
         def maxProfit(self, prices: list[int]) -> int:
-            # 一行 Pythonic: sum 生成器 + max 隔离正差
-            # max(0, x) 把负差替成 0, 等价 C++ 的 if 过滤
+            # v1 贪心: 一行 Pythonic, sum 生成器 + max 隔离正差
+            # max(0, x) 把负差替成 0, 等价 C++ if 过滤
             return sum(max(0, prices[i] - prices[i - 1]) for i in range(1, len(prices)))
-            # 等价手写循环:
-            # res = 0
-            # for i in range(1, len(prices)):
-            #     if prices[i] > prices[i - 1]:
-            #         res += prices[i] - prices[i - 1]
-            # return res
+
+            # v3 DP 滚动版 (扩展性强, 加约束就从这里改):
+            # hold, cash = -prices[0], 0
+            # for p in prices[1:]:
+            #     cash, hold = max(cash, hold + p), max(hold, cash - p)
+            # return cash
     ```
 
 === "JavaScript"
@@ -114,27 +149,15 @@ res = 7
      * @return {number}
      */
     var maxProfit = function(prices) {
+        // v1 贪心
         let res = 0;
         for (let i = 1; i < prices.length; i++) {
             if (prices[i] > prices[i - 1]) res += prices[i] - prices[i - 1];
         }
         return res;
+        // v3 DP 滚动: hold = -prices[0], cash = 0; 同 C++ v3
     };
     ```
-
-### 替代: DP 状态机版
-
-```cpp
-int maxProfit(vector<int>& prices) {
-    int hold = -prices[0], cash = 0;
-    for (int i = 1; i < (int)prices.size(); i++) {
-        cash = max(cash, hold + prices[i]);                 // 卖
-        hold = max(hold, cash - prices[i]);                 // 买
-    }
-    return cash;
-}
-```
-适合作为统一框架: 加冷冻就多一个 "cooldown" 状态, 加手续费就在卖时减 fee.
 
 ## Complexity
 
@@ -150,7 +173,7 @@ int maxProfit(vector<int>& prices) {
 
 - [0455. Assign Cookies](../0455-assign-cookies/README.md) — 贪心入门
 - [0053. Maximum Subarray](../0053-maximum-subarray/README.md) — 同款一遍贪心
-- 0121\. Best Time to Buy and Sell Stock (待补) — 只能 1 次, 维护 minPrice
+- [0121. Best Time to Buy and Sell Stock](../../10-dp/0121-best-time-to-buy-and-sell-stock/README.md) — 只能 1 次, 维护 minPrice 或状态机 DP (在 §10)
 - 0309\. Best Time to Buy and Sell Stock with Cooldown (待补) — 加 1 天冷冻, DP 三状态
 - 0714\. Best Time to Buy and Sell Stock with Transaction Fee (待补) — 加手续费, DP 状态机
 - 0123\. Best Time to Buy and Sell Stock III (待补) — 最多 2 次, DP 五状态

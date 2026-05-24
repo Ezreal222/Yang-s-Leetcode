@@ -116,6 +116,6 @@
 ## 相关题目
 
 - [0416. Partition Equal Subset Sum](../0416-partition-equal-subset-sum/README.md) — 同模板, 判定相等; 本题求最小差
-- 0494\. Target Sum (待补) — 同"分 ± 号" 模型, 求方案数 (背包计数版)
+- [0494. Target Sum](../0494-target-sum/README.md) — 同"分 ± 号" 模型, 求方案数 (背包计数版)
 - 0474\. Ones and Zeroes (待补) — 二维容量 0/1 背包
 - 1046\. Last Stone Weight (待补) — 简单版, 堆 + 模拟 (跟 1049 思路完全不一样, 注意区分)

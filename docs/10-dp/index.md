@@ -23,3 +23,4 @@
 | 1049 | [Last Stone Weight II / 最后一块石头的重量 II](./1049-last-stone-weight-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 2035 | [Partition Array Into Two Arrays to Minimize Sum Difference / 将数组分成两个数组并最小化和的差](./2035-partition-array-into-two-arrays-to-minimize-sum-difference/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 1755 | [Closest Subsequence Sum / 最接近目标值的子序列和](./1755-closest-subsequence-sum/README.md) | Hard | ✅ | ☐ ☐ ☐ |
+| 0494 | [Target Sum / 目标和](./0494-target-sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |

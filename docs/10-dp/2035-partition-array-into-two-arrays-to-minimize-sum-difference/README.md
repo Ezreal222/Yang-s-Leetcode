@@ -236,7 +236,7 @@
 ## 相关题目
 
 - [§10 DP · 折半搜索 (Meet in the Middle) 技巧总结](../topic-meet-in-the-middle.md) — 母方法
-- 1755\. Closest Subsequence Sum (待补) — 折半纯模板, 不带"个数约束", 比本题简单
+- [1755. Closest Subsequence Sum](../1755-closest-subsequence-sum/README.md) — 折半纯模板, 不带"个数约束", 比本题简单
 - [1049. Last Stone Weight II](../1049-last-stone-weight-ii/README.md) — 同 "分两堆最小差", 但用 0/1 背包路线 (值小 n 大)
 - [0416. Partition Equal Subset Sum](../0416-partition-equal-subset-sum/README.md) — 同模型, 判定相等
 - 956\. Tallest Billboard (待补) — 同 "分两堆" 思想, 三状态 DP 或折半

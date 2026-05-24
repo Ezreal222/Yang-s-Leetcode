@@ -131,4 +131,4 @@
 - [1049. Last Stone Weight II](../1049-last-stone-weight-ii/README.md) — 同 0/1 背包, 求最小差
 - [0494. Target Sum](../0494-target-sum/README.md) — 0/1 背包计数变体
 - 0879\. Profitable Schemes (待补) — 二维 0/1 背包 + 计数, 本题的"双胞胎升级"
-- 0322\. Coin Change (待补) — 完全背包对照 (正序 vs 本题倒序)
+- [0322. Coin Change](../0322-coin-change/README.md) — 完全背包对照 (正序 vs 本题倒序)

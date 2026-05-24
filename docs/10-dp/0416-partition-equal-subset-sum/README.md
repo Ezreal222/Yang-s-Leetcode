@@ -154,5 +154,5 @@
 - [1049. Last Stone Weight II](../1049-last-stone-weight-ii/README.md) — 同 0/1 背包套娃: 求两堆差最小, 等价"凑最接近 total/2 的子集"
 - [0494. Target Sum](../0494-target-sum/README.md) — 加减号配方案数, 转化为 0/1 背包计数
 - [0474. Ones and Zeroes](../0474-ones-and-zeroes/README.md) — 二维容量 0/1 背包 (m 个 0 + n 个 1)
-- 0322\. Coin Change (待补) — 完全背包 (硬币可重复用) — 对照"正序" vs 本题"倒序"
+- [0322. Coin Change](../0322-coin-change/README.md) — 完全背包 (硬币可重复用) — 对照"正序" vs 本题"倒序"
 - [0518. Coin Change II](../0518-coin-change-ii/README.md) — 完全背包计数, 同样是正序

@@ -120,7 +120,7 @@
 - [0518. Coin Change II](../0518-coin-change-ii/README.md) — 完全背包**组合数** (外 coin/内 j), 跟本题就是循环顺序之差
 - [0416. Partition Equal Subset Sum](../0416-partition-equal-subset-sum/README.md) — 0/1 背包母题, 对比"倒序 j"
 - [0494. Target Sum](../0494-target-sum/README.md) — 0/1 背包计数
-- 0322\. Coin Change (待补) — 完全背包求**最少硬币数** (min 取代 +=)
+- [0322. Coin Change](../0322-coin-change/README.md) — 完全背包求**最少硬币数** (min 取代 +=)
 - 0070\. Climbing Stairs — 把"步长 1 或 2" 当 nums, 就是本题特例: 排列数 = 走法数 → [Climbing Stairs](../0070-climbing-stairs/README.md) 的完全背包视角
 - 0279\. Perfect Squares (待补) — 完全背包: 平方数当物品, 求最少个数
 - 0139\. Word Break (待补) — 完全背包变体 (字符串拼接)

@@ -25,3 +25,4 @@
 | 1755 | [Closest Subsequence Sum / 最接近目标值的子序列和](./1755-closest-subsequence-sum/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0494 | [Target Sum / 目标和](./0494-target-sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0474 | [Ones and Zeroes / 一和零](./0474-ones-and-zeroes/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0518 | [Coin Change II / 零钱兑换 II](./0518-coin-change-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |

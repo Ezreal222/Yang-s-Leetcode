@@ -6,6 +6,7 @@
 
 ## 技巧 / Topics
 
+- [DP 通用思维流程 (Thinking Process)](./topic-dp-thinking-process.md) — 看到 DP 题该怎么想: 识别 → 三要素 (状态/转移/初始) → 遍历 → 优化, 核心是"最后一步" 思维
 - [折半搜索 (Meet in the Middle)](./topic-meet-in-the-middle.md) — 把 `2^n` 暴力枚举开方成 `2^(n/2)`, 背包不适用时的备选
 
 ## 题目 / Problems

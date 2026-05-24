@@ -21,3 +21,4 @@
 | 0096 | [Unique Binary Search Trees / 不同的二叉搜索树](./0096-unique-binary-search-trees/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0416 | [Partition Equal Subset Sum / 分割等和子集](./0416-partition-equal-subset-sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1049 | [Last Stone Weight II / 最后一块石头的重量 II](./1049-last-stone-weight-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 2035 | [Partition Array Into Two Arrays to Minimize Sum Difference / 将数组分成两个数组并最小化和的差](./2035-partition-array-into-two-arrays-to-minimize-sum-difference/README.md) | Hard | ✅ | ☐ ☐ ☐ |

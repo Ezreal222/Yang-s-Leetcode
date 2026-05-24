@@ -191,7 +191,7 @@ for (int k = 0; k <= half; k++) {
 | 题号 | 题目 | 折半用法 | 状态 |
 |---|---|---|---|
 | 1755 | Closest Subsequence Sum / 最接近目标值的子序列和 | 折半 + 排序二分 (纯模板) | (待补) |
-| 2035 | Partition Array Into Two Arrays to Minimize Sum Diff / 将数组分成两个数组并最小化和的差 | 折半 + 个数分桶 + 二分 | (待补) |
+| [2035](./2035-partition-array-into-two-arrays-to-minimize-sum-difference/README.md) | Partition Array Into Two Arrays to Minimize Sum Diff / 将数组分成两个数组并最小化和的差 | 折半 + 个数分桶 + 二分 | ✅ |
 | 956 | Tallest Billboard / 最高的广告牌 | 折半 (或 三状态 DP) | (待补) |
 | 1170+ | 子集和 (n ≤ 40 经典) | 折半 + 查找 | — |
 

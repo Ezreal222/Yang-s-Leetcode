@@ -40,7 +40,7 @@
     | 0309 (待补) | 不限 + **冷冻 1 天** | DP 状态机 (持 / 不持 / 冷冻) |
     | 0714 (待补) | 不限 + **手续费** | DP 状态机, 卖时扣 fee |
     | [0123](../../10-dp/0123-best-time-to-buy-and-sell-stock-iii/README.md) | **最多 2 次** | DP 五状态 |
-    | 0188 (待补) | **最多 k 次** | DP k×2 状态 |
+    | [0188](../../10-dp/0188-best-time-to-buy-and-sell-stock-iv/README.md) | **最多 k 次** | DP k×2 状态 |
 
     **加任一额外约束 (冷冻/手续费/次数) 贪心立刻失效, 必须上 DP**. 0122 是这家族里唯一一个可以贪心一行解决的.
 
@@ -177,4 +177,4 @@ res = 7
 - 0309\. Best Time to Buy and Sell Stock with Cooldown (待补) — 加 1 天冷冻, DP 三状态
 - 0714\. Best Time to Buy and Sell Stock with Transaction Fee (待补) — 加手续费, DP 状态机
 - [0123. Best Time to Buy and Sell Stock III](../../10-dp/0123-best-time-to-buy-and-sell-stock-iii/README.md) — 最多 2 次, DP 五状态 (在 §10)
-- 0188\. Best Time to Buy and Sell Stock IV (待补) — 最多 k 次, DP k×2 状态
+- [0188. Best Time to Buy and Sell Stock IV](../../10-dp/0188-best-time-to-buy-and-sell-stock-iv/README.md) — 最多 k 次, DP k×2 状态 (在 §10)

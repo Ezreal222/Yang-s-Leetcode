@@ -164,4 +164,5 @@
 - [1143. Longest Common Subsequence](../1143-longest-common-subsequence/README.md) — **子序列版**, 双序列 DP 的兄弟; 不匹配时 `dp[i][j] = max(dp[i-1][j], dp[i][j-1])`
 - 0583\. Delete Operation for Two Strings (待补) — LCS 的应用
 - [0072. Edit Distance](../0072-edit-distance/README.md) — 双序列 DP 终极版, 三种操作的最少代价
+- [0647. Palindromic Substrings](../0647-palindromic-substrings/README.md) — 单序列子串 + 回文判定 (区间 DP)
 - 0005\. Longest Palindromic Substring (待补) — 单序列"子数组" 但要回文

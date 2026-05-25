@@ -49,3 +49,4 @@
 | 0115 | [Distinct Subsequences / 不同的子序列](./0115-distinct-subsequences/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0583 | [Delete Operation for Two Strings / 两个字符串的删除操作](./0583-delete-operation-for-two-strings/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0072 | [Edit Distance / 编辑距离](./0072-edit-distance/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0647 | [Palindromic Substrings / 回文子串](./0647-palindromic-substrings/README.md) | Medium | ✅ | ☐ ☐ ☐ |

@@ -152,7 +152,7 @@ int maxSubArray(vector<int>& nums) {
 
 - [0455. Assign Cookies](../0455-assign-cookies/README.md) — 贪心入门
 - [0376. Wiggle Subsequence](../0376-wiggle-subsequence/README.md) — 同款一遍扫贪心
-- 0152\. Maximum Product Subarray (待补) — 乘积版, 维护 max/min 两个值
+- [0152. Maximum Product Subarray](../../10-dp/0152-maximum-product-subarray/README.md) — 乘积版, 维护 max/min 两个值 (在 §10)
 - 0918\. Maximum Sum Circular Subarray (待补) — 环形版, 拆成"普通最大" + "总和 - 最小"
 - 0978\. Longest Turbulent Subarray (待补) — 同款一遍扫, 状态是"上升/下降" 翻转
 - 1567\. Maximum Length of Subarray With Positive Product (待补) — 一遍扫维护正负长度

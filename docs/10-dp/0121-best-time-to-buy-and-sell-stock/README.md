@@ -154,7 +154,7 @@
 ## 相关题目
 
 - [0122. Best Time to Buy and Sell Stock II](../../09-greedy/0122-best-time-to-buy-and-sell-stock-ii/README.md) — **无限次交易**, `dp[i][1] = max(dp[i-1][1], dp[i-1][0] - prices[i])` (在 §09, 可贪心)
-- 0123\. Best Time to Buy and Sell Stock III (待补) — **最多 2 次交易**, 加交易次数轴
+- [0123. Best Time to Buy and Sell Stock III](../0123-best-time-to-buy-and-sell-stock-iii/README.md) — **最多 2 次交易**, 加交易次数轴 (5 状态 DP)
 - 0188\. Best Time to Buy and Sell Stock IV (待补) — **最多 k 次**, 0123 的泛化
 - 0309\. Best Time to Buy and Sell Stock with Cooldown (待补) — **加冷冻期** 一天
 - 0714\. Best Time to Buy and Sell Stock with Transaction Fee (待补) — **加手续费**

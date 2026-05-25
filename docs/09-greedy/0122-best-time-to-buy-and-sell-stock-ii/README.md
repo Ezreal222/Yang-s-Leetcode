@@ -38,7 +38,7 @@
     | [0121](../../10-dp/0121-best-time-to-buy-and-sell-stock/README.md) | 只能买卖 1 次 | 维护 minPrice + 最大 (prices[i] - min), 或状态机 DP |
     | **0122 (本题)** | 不限次数, 无手续费/冷冻 | **贪心: 累加正差** |
     | [0309](../../10-dp/0309-best-time-to-buy-and-sell-stock-with-cooldown/README.md) | 不限 + **冷冻 1 天** | DP 状态机 (持 / 不持 / 冷冻) |
-    | 0714 (待补) | 不限 + **手续费** | DP 状态机, 卖时扣 fee |
+    | [0714](../../10-dp/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/README.md) | 不限 + **手续费** | DP 状态机, 卖时扣 fee |
     | [0123](../../10-dp/0123-best-time-to-buy-and-sell-stock-iii/README.md) | **最多 2 次** | DP 五状态 |
     | [0188](../../10-dp/0188-best-time-to-buy-and-sell-stock-iv/README.md) | **最多 k 次** | DP k×2 状态 |
 
@@ -175,6 +175,6 @@ res = 7
 - [0053. Maximum Subarray](../0053-maximum-subarray/README.md) — 同款一遍贪心
 - [0121. Best Time to Buy and Sell Stock](../../10-dp/0121-best-time-to-buy-and-sell-stock/README.md) — 只能 1 次, 维护 minPrice 或状态机 DP (在 §10)
 - [0309. Best Time to Buy and Sell Stock with Cooldown](../../10-dp/0309-best-time-to-buy-and-sell-stock-with-cooldown/README.md) — 加 1 天冷冻, DP 三状态 (在 §10)
-- 0714\. Best Time to Buy and Sell Stock with Transaction Fee (待补) — 加手续费, DP 状态机
+- [0714. Best Time to Buy and Sell Stock with Transaction Fee](../../10-dp/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/README.md) — 加手续费, DP 状态机 (在 §10)
 - [0123. Best Time to Buy and Sell Stock III](../../10-dp/0123-best-time-to-buy-and-sell-stock-iii/README.md) — 最多 2 次, DP 五状态 (在 §10)
 - [0188. Best Time to Buy and Sell Stock IV](../../10-dp/0188-best-time-to-buy-and-sell-stock-iv/README.md) — 最多 k 次, DP k×2 状态 (在 §10)

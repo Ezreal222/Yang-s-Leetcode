@@ -165,5 +165,5 @@
 - [0122. Best Time to Buy and Sell Stock II](../../09-greedy/0122-best-time-to-buy-and-sell-stock-ii/README.md) — 无限次, 贪心或 2 状态 DP
 - [0188. Best Time to Buy and Sell Stock IV](../0188-best-time-to-buy-and-sell-stock-iv/README.md) — **最多 k 次**, 本题泛化 (`k=2` 即本题)
 - [0309. Best Time to Buy and Sell Stock with Cooldown](../0309-best-time-to-buy-and-sell-stock-with-cooldown/README.md) — 无限次 + 冷冻期, 3 状态
-- 0714\. Best Time to Buy and Sell Stock with Transaction Fee (待补) — 无限次 + 手续费
+- [0714. Best Time to Buy and Sell Stock with Transaction Fee](../0714-best-time-to-buy-and-sell-stock-with-transaction-fee/README.md) — 无限次 + 手续费
 - [§10 DP 思维流程 — 状态机 DP](../topic-dp-thinking-process.md) — 多状态 DP 模板的典型

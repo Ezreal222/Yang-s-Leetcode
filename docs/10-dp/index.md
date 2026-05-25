@@ -39,3 +39,4 @@
 | 0123 | [Best Time to Buy and Sell Stock III / 买卖股票的最佳时机 III](./0123-best-time-to-buy-and-sell-stock-iii/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0188 | [Best Time to Buy and Sell Stock IV / 买卖股票的最佳时机 IV](./0188-best-time-to-buy-and-sell-stock-iv/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0309 | [Best Time to Buy and Sell Stock with Cooldown / 最佳买卖股票时机含冷冻期](./0309-best-time-to-buy-and-sell-stock-with-cooldown/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0714 | [Best Time to Buy and Sell Stock with Transaction Fee / 买卖股票的最佳时机含手续费](./0714-best-time-to-buy-and-sell-stock-with-transaction-fee/README.md) | Medium | ✅ | ☐ ☐ ☐ |

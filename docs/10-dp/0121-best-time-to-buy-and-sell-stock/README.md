@@ -157,5 +157,5 @@
 - [0123. Best Time to Buy and Sell Stock III](../0123-best-time-to-buy-and-sell-stock-iii/README.md) — **最多 2 次交易**, 加交易次数轴 (5 状态 DP)
 - [0188. Best Time to Buy and Sell Stock IV](../0188-best-time-to-buy-and-sell-stock-iv/README.md) — **最多 k 次**, 0123 的泛化
 - [0309. Best Time to Buy and Sell Stock with Cooldown](../0309-best-time-to-buy-and-sell-stock-with-cooldown/README.md) — **加冷冻期** 一天, 3 状态
-- 0714\. Best Time to Buy and Sell Stock with Transaction Fee (待补) — **加手续费**
+- [0714. Best Time to Buy and Sell Stock with Transaction Fee](../0714-best-time-to-buy-and-sell-stock-with-transaction-fee/README.md) — **加手续费**, 卖出行 -fee
 - [§10 DP 思维流程 — 状态机 DP](../topic-dp-thinking-process.md) — 本题是入门, 多状态转移的典型例子

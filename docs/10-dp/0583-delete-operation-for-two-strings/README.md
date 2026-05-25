@@ -150,6 +150,6 @@
 - [1143. Longest Common Subsequence](../1143-longest-common-subsequence/README.md) — **本题就是它**, 加一行公式
 - [1035. Uncrossed Lines](../1035-uncrossed-lines/README.md) — 同 LCS 应用 (变形)
 - [0115. Distinct Subsequences](../0115-distinct-subsequences/README.md) — 双序列 DP 计数版
-- 0072\. Edit Distance (待补) — **加 2 种操作** (插入 / 替换) 的终极版, 本题是它的特例 (只删)
+- [0072. Edit Distance](../0072-edit-distance/README.md) — **加 2 种操作** (插入 / 替换) 的终极版, 本题是它的特例 (只删)
 - 0712\. Minimum ASCII Delete Sum for Two Strings (待补) — 本题加权版, 按 ASCII 计代价
 - 0392\. Is Subsequence (待补) — 判定 t 是否 s 的子序列, LCS 退化版

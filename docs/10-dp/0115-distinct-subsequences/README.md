@@ -145,4 +145,4 @@
 - [0377. Combination Sum IV](../0377-combination-sum-iv/README.md) — 同款"计数 DP + 中间溢出" 陷阱
 - 0392\. Is Subsequence (待补) — 判定 t 是不是 s 的子序列 (双指针即可)
 - 0583\. Delete Operation for Two Strings (待补) — 最少删除次数, LCS 应用
-- 0072\. Edit Distance (待补) — 双序列 DP 终极版, 三种操作
+- [0072. Edit Distance](../0072-edit-distance/README.md) — 双序列 DP 终极版, 三种操作

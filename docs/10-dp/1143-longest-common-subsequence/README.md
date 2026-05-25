@@ -170,5 +170,5 @@
 - 0583\. Delete Operation for Two Strings (待补) — `min ops = n + m - 2 × LCS`, 直接套本题
 - 0072\. Edit Distance (待补) — 双序列 DP 终极版, 三种操作
 - 0392\. Is Subsequence (待补) — 判定版, `dp` 可省, 双指针即可
-- 1035\. Uncrossed Lines (待补) — 题面变形, 本质完全等价 LCS
+- [1035. Uncrossed Lines](../1035-uncrossed-lines/README.md) — 题面变形, 本质完全等价 LCS
 - 0712\. Minimum ASCII Delete Sum for Two Strings (待补) — LCS 变体, 按 ASCII 权重

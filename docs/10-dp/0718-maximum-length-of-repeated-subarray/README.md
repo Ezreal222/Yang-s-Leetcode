@@ -28,7 +28,7 @@
     - **连续约束** 自动成立 (前一对必须是 `i-1, j-1` 同时往前一步).
     - **不匹配时 `dp[i][j] = 0`** (不能跳过当前元素, 段直接断).
 
-    > **强制结尾** 是子数组 / 公共子数组 DP 的标志. 后面 1143 LCS (待补) 求子序列就不强制结尾, 转移完全不同.
+    > **强制结尾** 是子数组 / 公共子数组 DP 的标志. 后面 [1143 LCS](../1143-longest-common-subsequence/README.md) 求子序列就不强制结尾, 转移完全不同.
 
 3. **🔑 哨兵技巧: dp 开 `(n+1) × (m+1)`, 索引 i, j 从 1 开始 / Sentinel row+col simplifies boundary**
 
@@ -161,7 +161,7 @@
 
 - [0300. Longest Increasing Subsequence](../0300-longest-increasing-subsequence/README.md) — 单序列"以 i 结尾", 本题的"双序列升级版"
 - [0674. Longest Continuous Increasing Subsequence](../0674-longest-continuous-increasing-subsequence/README.md) — 同款"子数组 + 强制结尾"
-- 1143\. Longest Common Subsequence (待补) — **子序列版**, 双序列 DP 的兄弟; 不匹配时 `dp[i][j] = max(dp[i-1][j], dp[i][j-1])`
+- [1143. Longest Common Subsequence](../1143-longest-common-subsequence/README.md) — **子序列版**, 双序列 DP 的兄弟; 不匹配时 `dp[i][j] = max(dp[i-1][j], dp[i][j-1])`
 - 0583\. Delete Operation for Two Strings (待补) — LCS 的应用
 - 0072\. Edit Distance (待补) — 双序列 DP 终极版, 三种操作的最少代价
 - 0005\. Longest Palindromic Substring (待补) — 单序列"子数组" 但要回文

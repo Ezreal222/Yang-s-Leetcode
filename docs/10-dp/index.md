@@ -43,3 +43,4 @@
 | 0300 | [Longest Increasing Subsequence / 最长递增子序列](./0300-longest-increasing-subsequence/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0674 | [Longest Continuous Increasing Subsequence / 最长连续递增序列](./0674-longest-continuous-increasing-subsequence/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0718 | [Maximum Length of Repeated Subarray / 最长重复子数组](./0718-maximum-length-of-repeated-subarray/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 1143 | [Longest Common Subsequence / 最长公共子序列](./1143-longest-common-subsequence/README.md) | Medium | ✅ | ☐ ☐ ☐ |

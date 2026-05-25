@@ -154,7 +154,7 @@
 - 0673\. Number of Longest Increasing Subsequence (待补) — LIS 个数 (DP + 计数)
 - 0354\. Russian Doll Envelopes (待补) — 二维 LIS, 先按宽排序再对高跑 LIS
 - 0334\. Increasing Triplet Subsequence (待补) — 简化版"长度 ≥ 3 的 LIS 存在?", 一遍扫
-- 0674\. Longest Continuous Increasing Subsequence (待补) — 连续版, 一遍扫
+- [0674. Longest Continuous Increasing Subsequence](../0674-longest-continuous-increasing-subsequence/README.md) — 连续版, 一遍扫
 - 0053\. Maximum Subarray — 子数组连续版 → [§09 0053](../../09-greedy/0053-maximum-subarray/README.md)
 - 1143\. Longest Common Subsequence (待补) — 双序列 DP, LIS 的"两数组" 兄弟
 - [§10 DP 思维流程 — "以 i 结尾" 状态模式](../topic-dp-thinking-process.md)

@@ -47,3 +47,4 @@
 | 1035 | [Uncrossed Lines / 不相交的线](./1035-uncrossed-lines/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0152 | [Maximum Product Subarray / 乘积最大子数组](./0152-maximum-product-subarray/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0115 | [Distinct Subsequences / 不同的子序列](./0115-distinct-subsequences/README.md) | Hard | ✅ | ☐ ☐ ☐ |
+| 0583 | [Delete Operation for Two Strings / 两个字符串的删除操作](./0583-delete-operation-for-two-strings/README.md) | Medium | ✅ | ☐ ☐ ☐ |

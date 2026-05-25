@@ -119,5 +119,5 @@
 - [1143. Longest Common Subsequence](../1143-longest-common-subsequence/README.md) — **本题就是它**, 仅输入类型不同
 - [0718. Maximum Length of Repeated Subarray](../0718-maximum-length-of-repeated-subarray/README.md) — 子数组版本 (强制连续)
 - [0300. Longest Increasing Subsequence](../0300-longest-increasing-subsequence/README.md) — 单序列子序列
-- 0583\. Delete Operation for Two Strings (待补) — LCS 的应用 (`n + m - 2 × LCS`)
+- [0583. Delete Operation for Two Strings](../0583-delete-operation-for-two-strings/README.md) — LCS 的应用 (`n + m - 2 × LCS`)
 - 0712\. Minimum ASCII Delete Sum for Two Strings (待补) — LCS 变体, 按 ASCII 权重

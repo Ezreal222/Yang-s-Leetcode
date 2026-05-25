@@ -167,7 +167,7 @@
 
 - [0718. Maximum Length of Repeated Subarray](../0718-maximum-length-of-repeated-subarray/README.md) — 子数组版, 强制双端结尾
 - [0300. Longest Increasing Subsequence](../0300-longest-increasing-subsequence/README.md) — 单序列"子序列" 母题
-- 0583\. Delete Operation for Two Strings (待补) — `min ops = n + m - 2 × LCS`, 直接套本题
+- [0583. Delete Operation for Two Strings](../0583-delete-operation-for-two-strings/README.md) — `min ops = n + m - 2 × LCS`, 直接套本题
 - 0072\. Edit Distance (待补) — 双序列 DP 终极版, 三种操作
 - 0392\. Is Subsequence (待补) — 判定版, `dp` 可省, 双指针即可
 - [1035. Uncrossed Lines](../1035-uncrossed-lines/README.md) — 题面变形, 本质完全等价 LCS

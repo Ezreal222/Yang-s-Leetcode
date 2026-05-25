@@ -50,3 +50,4 @@
 | 0583 | [Delete Operation for Two Strings / 两个字符串的删除操作](./0583-delete-operation-for-two-strings/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0072 | [Edit Distance / 编辑距离](./0072-edit-distance/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0647 | [Palindromic Substrings / 回文子串](./0647-palindromic-substrings/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0516 | [Longest Palindromic Subsequence / 最长回文子序列](./0516-longest-palindromic-subsequence/README.md) | Medium | ✅ | ☐ ☐ ☐ |

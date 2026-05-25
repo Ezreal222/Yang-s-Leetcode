@@ -161,7 +161,7 @@
 ## 相关题目
 
 - 0005\. Longest Palindromic Substring (待补) — 同 dp / 扩散, 求最长回文子串
-- 0516\. Longest Palindromic Subsequence (待补) — 子序列版, 同区间 DP 但允许跳
+- [0516. Longest Palindromic Subsequence](../0516-longest-palindromic-subsequence/README.md) — 子序列版, 同区间 DP 但允许跳
 - 0131\. Palindrome Partitioning (待补) — 回文 + 回溯
 - 0132\. Palindrome Partitioning II (待补) — 最少分割, 区间 DP
 - 0125\. Valid Palindrome (待补) — 判定单串是否回文 (双指针)

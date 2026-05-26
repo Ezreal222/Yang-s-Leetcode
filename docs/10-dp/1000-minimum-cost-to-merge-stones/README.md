@@ -198,4 +198,4 @@
 - [0516. Longest Palindromic Subsequence](../0516-longest-palindromic-subsequence/README.md) — 区间 DP 子序列
 - 0664\. Strange Printer (待补) — 区间 DP, 同款"分段合并"
 - [1547. Minimum Cost to Cut a Stick](../1547-minimum-cost-to-cut-a-stick/README.md) — 区间 DP, 同款"枚举切点"
-- 0375\. Guess Number Higher or Lower II (待补) — 区间 DP, min-max 博弈
+- [0375. Guess Number Higher or Lower II](../0375-guess-number-higher-or-lower-ii/README.md) — 区间 DP, min-max 博弈

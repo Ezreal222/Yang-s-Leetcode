@@ -115,6 +115,7 @@
 | 1547 | [Minimum Cost to Cut a Stick / 切棍子的最小成本](./1547-minimum-cost-to-cut-a-stick/README.md) (哨兵 + 排序 + 切点) | Hard | ✅ | ☐ ☐ ☐ |
 | 0730 | [Count Different Palindromic Subsequences / 统计不同回文子序列](./0730-count-different-palindromic-subsequences/README.md) (容斥去重) | Hard | ✅ | ☐ ☐ ☐ |
 | 1771 | [Maximize Palindrome Length From Subsequences / 由子序列构造的最长回文串的长度](./1771-maximize-palindrome-length-from-subsequences/README.md) (LPS + 端点跨界约束) | Hard | ✅ | ☐ ☐ ☐ |
+| 0375 | [Guess Number Higher or Lower II / 猜数字大小 II](./0375-guess-number-higher-or-lower-ii/README.md) (min-max 博弈) | Medium | ✅ | ☐ ☐ ☐ |
 
 ### 折半搜索 / Meet in the Middle
 

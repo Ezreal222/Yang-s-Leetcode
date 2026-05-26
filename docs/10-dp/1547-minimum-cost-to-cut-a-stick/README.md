@@ -145,4 +145,4 @@
 - [1000. Minimum Cost to Merge Stones](../1000-minimum-cost-to-merge-stones/README.md) — 区间 DP 进阶, 3D 状态
 - [0647. Palindromic Substrings](../0647-palindromic-substrings/README.md) / [0516](../0516-longest-palindromic-subsequence/README.md) — 区间 DP 入门
 - 0664\. Strange Printer (待补) — 区间 DP, 同款"分段处理"
-- 0375\. Guess Number Higher or Lower II (待补) — 区间 DP, min-max 博弈
+- [0375. Guess Number Higher or Lower II](../0375-guess-number-higher-or-lower-ii/README.md) — 区间 DP, min-max 博弈

@@ -135,7 +135,7 @@
 
 - [0647. Palindromic Substrings](../0647-palindromic-substrings/README.md) — 区间 DP 入门
 - [0516. Longest Palindromic Subsequence](../0516-longest-palindromic-subsequence/README.md) — 区间 DP 子序列版
-- 0375\. Guess Number Higher or Lower II (待补) — 同款"枚举区间内最后一个动作", min-max 博弈
+- [0375. Guess Number Higher or Lower II](../0375-guess-number-higher-or-lower-ii/README.md) — 同款区间 DP + min-max 博弈
 - [1547. Minimum Cost to Cut a Stick](../1547-minimum-cost-to-cut-a-stick/README.md) — 同款"枚举切点", 区间 DP + 哨兵 + 排序
 - 0664\. Strange Printer (待补) — 同款区间合并 DP
 - [1000. Minimum Cost to Merge Stones](../1000-minimum-cost-to-merge-stones/README.md) — 区间 DP 进阶, 三维状态 + 可行性约束

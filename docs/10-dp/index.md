@@ -109,6 +109,7 @@
 | 0647 | [Palindromic Substrings / 回文子串](./0647-palindromic-substrings/README.md) (子串判定) | Medium | ✅ | ☐ ☐ ☐ |
 | 0516 | [Longest Palindromic Subsequence / 最长回文子序列](./0516-longest-palindromic-subsequence/README.md) (子序列) | Medium | ✅ | ☐ ☐ ☐ |
 | 0312 | [Burst Balloons / 戳气球](./0312-burst-balloons/README.md) ("枚举最后破" 经典) | Hard | ✅ | ☐ ☐ ☐ |
+| 1000 | [Minimum Cost to Merge Stones / 合并石头的最低成本](./1000-minimum-cost-to-merge-stones/README.md) (3D 区间 DP) | Hard | ✅ | ☐ ☐ ☐ |
 
 ### 折半搜索 / Meet in the Middle
 

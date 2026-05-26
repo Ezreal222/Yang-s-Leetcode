@@ -138,4 +138,4 @@
 - 0375\. Guess Number Higher or Lower II (待补) — 同款"枚举区间内最后一个动作", min-max 博弈
 - 1547\. Minimum Cost to Cut a Stick (待补) — 同款"枚举最后一刀"
 - 0664\. Strange Printer (待补) — 同款区间合并 DP
-- 1000\. Minimum Cost to Merge Stones (待补) — 区间 DP 进阶
+- [1000. Minimum Cost to Merge Stones](../1000-minimum-cost-to-merge-stones/README.md) — 区间 DP 进阶, 三维状态 + 可行性约束

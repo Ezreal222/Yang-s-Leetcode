@@ -149,5 +149,5 @@
 - [1143. Longest Common Subsequence](../1143-longest-common-subsequence/README.md) — `LPS(s) ≡ LCS(s, reverse(s))`, 等价解法
 - 0005\. Longest Palindromic Substring (待补) — 求最长回文**子串**, 跟 0647 同套路
 - 0132\. Palindrome Partitioning II (待补) — 最少分割使每段回文, 区间 DP
-- 0730\. Count Different Palindromic Subsequences (待补) — 进阶: 数不同回文子序列个数
+- [0730. Count Different Palindromic Subsequences](../0730-count-different-palindromic-subsequences/README.md) — 进阶: 数**不同** (distinct) 回文子序列, 用容斥去重
 - [0312. Burst Balloons](../0312-burst-balloons/README.md) — 区间 DP 进阶, "枚举最后破" 经典

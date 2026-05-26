@@ -110,6 +110,7 @@
 | 0516 | [Longest Palindromic Subsequence / 最长回文子序列](./0516-longest-palindromic-subsequence/README.md) (子序列) | Medium | ✅ | ☐ ☐ ☐ |
 | 0312 | [Burst Balloons / 戳气球](./0312-burst-balloons/README.md) ("枚举最后破" 经典) | Hard | ✅ | ☐ ☐ ☐ |
 | 1000 | [Minimum Cost to Merge Stones / 合并石头的最低成本](./1000-minimum-cost-to-merge-stones/README.md) (3D 区间 DP) | Hard | ✅ | ☐ ☐ ☐ |
+| 1312 | [Minimum Insertion Steps to Make a String Palindrome / 让字符串成为回文串的最少插入次数](./1312-minimum-insertion-steps-to-make-a-string-palindrome/README.md) (LPS 镜像) | Hard | ✅ | ☐ ☐ ☐ |
 
 ### 折半搜索 / Meet in the Middle
 

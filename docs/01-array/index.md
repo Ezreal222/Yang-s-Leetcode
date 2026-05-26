@@ -14,3 +14,4 @@
 | 1109 | [Corporate Flight Bookings / 航班预订统计](./1109-corporate-flight-bookings/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0528 | [Random Pick with Weight / 按权重随机选择](./0528-random-pick-with-weight/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1854 | [Maximum Population Year / 人口最多的年份](./1854-maximum-population-year/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 3942 | [Minimum Operations to Sort a Permutation / 排序排列的最少操作](./3942-minimum-operations-to-sort-a-permutation/README.md) | Medium | ✅ | ☐ ☐ ☐ |

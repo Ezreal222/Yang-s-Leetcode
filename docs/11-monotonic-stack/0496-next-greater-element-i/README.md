@@ -137,7 +137,7 @@
 ## 相关题目
 
 - [0739. Daily Temperatures](../0739-daily-temperatures/README.md) — 同模板, 栈存索引求距离
-- 0503\. Next Greater Element II (待补) — 循环数组版, 扫 `2n` 遍处理环
+- [0503. Next Greater Element II](../0503-next-greater-element-ii/README.md) — 循环数组版, "走两圈" 处理环
 - 0556\. Next Greater Element III (待补) — 数字字典序下一个更大, 不是数组
 - 0901\. Online Stock Span (待补) — 流式数据 + 单调栈
 - [0316. Remove Duplicate Letters](../0316-remove-duplicate-letters/README.md) — 单调栈 + 贪心字典序

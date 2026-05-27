@@ -10,3 +10,4 @@
 | 1130 | [Minimum Cost Tree From Leaf Values / 叶值的最小代价生成树 (单调栈解法)](./1130-minimum-cost-tree-from-leaf-values/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0739 | [Daily Temperatures / 每日温度](./0739-daily-temperatures/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0496 | [Next Greater Element I / 下一个更大元素 I](./0496-next-greater-element-i/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0503 | [Next Greater Element II / 下一个更大元素 II](./0503-next-greater-element-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |

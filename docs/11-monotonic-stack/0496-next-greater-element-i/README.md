@@ -141,4 +141,4 @@
 - 0556\. Next Greater Element III (待补) — 数字字典序下一个更大, 不是数组
 - 0901\. Online Stock Span (待补) — 流式数据 + 单调栈
 - [0316. Remove Duplicate Letters](../0316-remove-duplicate-letters/README.md) — 单调栈 + 贪心字典序
-- 0084\. Largest Rectangle in Histogram (待补) — 单调栈经典进阶
+- [0084. Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/README.md) — 单调栈经典进阶

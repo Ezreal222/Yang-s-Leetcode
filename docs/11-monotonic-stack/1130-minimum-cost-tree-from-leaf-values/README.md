@@ -144,5 +144,5 @@
 - [0316. Remove Duplicate Letters](../0316-remove-duplicate-letters/README.md) — 单调栈 + 贪心 + 字典序
 - 0496\. Next Greater Element I (待补) — 单调栈最基础
 - 0739\. Daily Temperatures (待补) — 单调栈找下一个更大
-- 0084\. Largest Rectangle in Histogram (待补) — 单调栈经典进阶
+- [0084. Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/README.md) — 单调栈经典进阶
 - 0962\. Maximum Width Ramp (待补) — 单调栈 + 双指针

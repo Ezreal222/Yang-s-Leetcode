@@ -131,7 +131,7 @@
 
 - [0496. Next Greater Element I](../0496-next-greater-element-i/README.md) — 同模板, 栈存值 + map 映射
 - [0503. Next Greater Element II](../0503-next-greater-element-ii/README.md) — 循环数组, 扫 `2n` 遍处理环
-- 0901\. Online Stock Span (待补) — 流式数据 + 单调栈
+- [0901. Online Stock Span](../0901-online-stock-span/README.md) — 流式数据 + 单调栈 (栈存 `(price, span)` 块)
 - [0316. Remove Duplicate Letters](../0316-remove-duplicate-letters/README.md) — 单调栈 + 贪心字典序
 - [1130. Minimum Cost Tree From Leaf Values (单调栈解法)](../1130-minimum-cost-tree-from-leaf-values/README.md) — 单调栈进阶应用
 - [0084. Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/README.md) — 单调栈经典进阶

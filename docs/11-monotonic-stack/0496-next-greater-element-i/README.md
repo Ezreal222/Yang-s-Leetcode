@@ -139,6 +139,6 @@
 - [0739. Daily Temperatures](../0739-daily-temperatures/README.md) — 同模板, 栈存索引求距离
 - [0503. Next Greater Element II](../0503-next-greater-element-ii/README.md) — 循环数组版, "走两圈" 处理环
 - 0556\. Next Greater Element III (待补) — 数字字典序下一个更大, 不是数组
-- 0901\. Online Stock Span (待补) — 流式数据 + 单调栈
+- [0901. Online Stock Span](../0901-online-stock-span/README.md) — 流式版单调栈, 栈存 (price, span) 块
 - [0316. Remove Duplicate Letters](../0316-remove-duplicate-letters/README.md) — 单调栈 + 贪心字典序
 - [0084. Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/README.md) — 单调栈经典进阶

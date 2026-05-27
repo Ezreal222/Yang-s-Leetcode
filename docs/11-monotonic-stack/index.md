@@ -14,3 +14,4 @@
 | 0042 | [Trapping Rain Water / 接雨水](./0042-trapping-rain-water/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0084 | [Largest Rectangle in Histogram / 柱状图中最大的矩形](./0084-largest-rectangle-in-histogram/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0085 | [Maximal Rectangle / 最大矩形](./0085-maximal-rectangle/README.md) | Hard | ✅ | ☐ ☐ ☐ |
+| 0901 | [Online Stock Span / 股票价格跨度](./0901-online-stock-span/README.md) | Medium | ✅ | ☐ ☐ ☐ |

@@ -117,6 +117,6 @@
 - [0496. Next Greater Element I](../0496-next-greater-element-i/README.md) — 单向数组 + 子集查询
 - [0739. Daily Temperatures](../0739-daily-temperatures/README.md) — 单向数组 + 距离
 - 0556\. Next Greater Element III (待补) — 数字字典序下一个更大
-- 0901\. Online Stock Span (待补) — 流式数据 + 单调栈
+- [0901. Online Stock Span](../0901-online-stock-span/README.md) — 流式版单调栈
 - 0918\. Maximum Sum Circular Subarray (待补) — 循环数组 + Kadane, 同款"走两圈/拆环为链" 思路
 - 0084\. Largest Rectangle in Histogram (待补) — 单调栈经典进阶

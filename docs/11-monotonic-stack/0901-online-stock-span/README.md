@@ -115,4 +115,4 @@
 - [0503. Next Greater Element II](../0503-next-greater-element-ii/README.md) — 循环数组版
 - [0084. Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/README.md) — 单调栈经典 Hard
 - 0496\. (重复) Next Greater Element II — already linked
-- 1019\. Next Greater Node In Linked List (待补) — 链表上的 NGE, 同款单调栈
+- [1019. Next Greater Node In Linked List](../1019-next-greater-node-in-linked-list/README.md) — 链表上的 NGE, 同款单调栈

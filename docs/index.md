@@ -19,10 +19,10 @@
 | [08 · Backtracking / 回溯算法](./08-backtracking/index.md) | 19 | 0 | 14 | 5 |
 | [09 · Greedy / 贪心算法](./09-greedy/index.md) | 22 | 3 | 17 | 2 |
 | [10 · DP / 动态规划](./10-dp/index.md) | 47 | 5 | 31 | 11 |
-| [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 11 | 1 | 7 | 3 |
+| [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 12 | 2 | 7 | 3 |
 | [12 · Graph / 图论](./12-graph/index.md) | 0 | 0 | 0 | 0 |
 | [13 · Binary Search / 二分查找](./13-binary-search/index.md) | 3 | 0 | 2 | 1 |
-| **Total / 合计** | **170** | **37** | **110** | **23** |
+| **Total / 合计** | **171** | **38** | **110** | **23** |
 
 ## How to navigate / 如何使用
 

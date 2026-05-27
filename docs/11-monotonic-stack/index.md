@@ -17,3 +17,4 @@
 | 0901 | [Online Stock Span / 股票价格跨度](./0901-online-stock-span/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1019 | [Next Greater Node In Linked List / 链表中的下一个更大节点](./1019-next-greater-node-in-linked-list/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0853 | [Car Fleet / 车队](./0853-car-fleet/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 1475 | [Final Prices With a Special Discount in a Shop / 商品折扣后的最终价格](./1475-final-prices-with-a-special-discount-in-a-shop/README.md) | Easy | ✅ | ☐ ☐ ☐ |

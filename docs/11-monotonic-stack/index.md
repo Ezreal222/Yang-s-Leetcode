@@ -8,3 +8,4 @@
 |------|-------|------------|--------|----------|
 | 0316 | [Remove Duplicate Letters / 去除重复字母](./0316-remove-duplicate-letters/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1130 | [Minimum Cost Tree From Leaf Values / 叶值的最小代价生成树 (单调栈解法)](./1130-minimum-cost-tree-from-leaf-values/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0739 | [Daily Temperatures / 每日温度](./0739-daily-temperatures/README.md) | Medium | ✅ | ☐ ☐ ☐ |

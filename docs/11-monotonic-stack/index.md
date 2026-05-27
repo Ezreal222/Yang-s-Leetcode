@@ -13,3 +13,4 @@
 | 0503 | [Next Greater Element II / 下一个更大元素 II](./0503-next-greater-element-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0042 | [Trapping Rain Water / 接雨水](./0042-trapping-rain-water/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0084 | [Largest Rectangle in Histogram / 柱状图中最大的矩形](./0084-largest-rectangle-in-histogram/README.md) | Hard | ✅ | ☐ ☐ ☐ |
+| 0085 | [Maximal Rectangle / 最大矩形](./0085-maximal-rectangle/README.md) | Hard | ✅ | ☐ ☐ ☐ |

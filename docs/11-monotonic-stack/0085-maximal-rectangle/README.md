@@ -171,6 +171,6 @@
 - [0084. Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/README.md) — **本题的一维子问题**, 必先掌握
 - [0042. Trapping Rain Water](../0042-trapping-rain-water/README.md) — 单调栈经典 Hard
 - 0221\. Maximal Square (待补) — 同款"全 1 子矩形" 但求正方形, 用二维 DP 更优
-- 1504\. Count Submatrices With All Ones (待补) — 同款 histogram 思想, 用单调栈计数
+- [1504. Count Submatrices With All Ones](../1504-count-submatrices-with-all-ones/README.md) — 同款 histogram 思想, 求**子矩形个数** 而非最大面积
 - 1727\. Largest Submatrix With Rearrangements (待补) — 0085 进阶, 允许列重排
 - 0407\. Trapping Rain Water II (待补) — 二维接雨水, 用最小堆

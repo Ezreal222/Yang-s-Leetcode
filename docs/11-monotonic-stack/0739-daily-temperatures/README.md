@@ -129,7 +129,7 @@
 
 ## 相关题目
 
-- 0496\. Next Greater Element I (待补) — 同款模板, 更基础
+- [0496. Next Greater Element I](../0496-next-greater-element-i/README.md) — 同模板, 栈存值 + map 映射
 - 0503\. Next Greater Element II (待补) — 循环数组, 扫 `2n` 遍
 - 0901\. Online Stock Span (待补) — 流式数据 + 单调栈
 - [0316. Remove Duplicate Letters](../0316-remove-duplicate-letters/README.md) — 单调栈 + 贪心字典序

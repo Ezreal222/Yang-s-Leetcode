@@ -169,4 +169,4 @@
 - 0033\. Search in Rotated Sorted Array (待补) — 循环移位数组的二分搜索
 - 0153\. Find Minimum in Rotated Sorted Array (待补) — 循环移位数组找最小, 二分
 - 0541\. Reverse String II (待补) — 字符串分段反转
-- 0042\. Trapping Rain Water (待补) — 同款"双策略对称取 min" 思想
+- [0042. Trapping Rain Water](../../11-monotonic-stack/0042-trapping-rain-water/README.md) — 同款"双策略对称取 min" 思想 (双指针解法)

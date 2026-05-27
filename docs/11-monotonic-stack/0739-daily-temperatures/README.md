@@ -135,4 +135,4 @@
 - [0316. Remove Duplicate Letters](../0316-remove-duplicate-letters/README.md) — 单调栈 + 贪心字典序
 - [1130. Minimum Cost Tree From Leaf Values (单调栈解法)](../1130-minimum-cost-tree-from-leaf-values/README.md) — 单调栈进阶应用
 - 0084\. Largest Rectangle in Histogram (待补) — 单调栈经典进阶
-- 0042\. Trapping Rain Water (待补) — 单调栈或双指针
+- [0042. Trapping Rain Water](../0042-trapping-rain-water/README.md) — 单调栈或双指针 (经典 Hard)

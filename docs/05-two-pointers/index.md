@@ -6,4 +6,4 @@
 
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
-| —    | —     | —          | —      | —        |
+| 0027 | [Remove Element / 移除元素](./0027-remove-element/README.md) | Easy | ✅ | ☐ ☐ ☐ |

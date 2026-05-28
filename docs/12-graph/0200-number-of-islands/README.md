@@ -199,7 +199,7 @@
 ## 相关题目
 
 - [0797. All Paths From Source to Target](../0797-all-paths-from-source-to-target/README.md) — DFS 显式图
-- 0695\. Max Area of Island (待补) — 同模板, 改成数最大岛面积
+- [0695. Max Area of Island](../0695-max-area-of-island/README.md) — 同模板, DFS 返回面积取 max
 - 0463\. Island Perimeter (待补) — 数岛屿周长, 不用 flood fill
 - 1254\. Number of Closed Islands (待补) — 同模板, 过滤"挨边" 岛
 - 0130\. Surrounded Regions (待补) — 反向 flood fill, 从边界出发标记安全区

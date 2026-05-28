@@ -8,6 +8,7 @@
 
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
+| 0704 | [Binary Search / 二分查找](./0704-binary-search/README.md) (母题) | Easy | ✅ | ☐ ☐ ☐ |
 | 2560 | [House Robber IV / 打家劫舍 IV](./2560-house-robber-iv/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1011 | [Capacity To Ship Packages Within D Days / 在 D 天内送达包裹的能力](./1011-capacity-to-ship-packages-within-d-days/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1231 | [Divide Chocolate / 分享巧克力](./1231-divide-chocolate/README.md) | Hard | ✅ | ☐ ☐ ☐ |

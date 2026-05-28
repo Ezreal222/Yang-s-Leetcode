@@ -172,6 +172,6 @@
 
 - [0084. Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/README.md) — 一维 histogram 最大矩形
 - [0085. Maximal Rectangle](../0085-maximal-rectangle/README.md) — 同款"二维 → histogram 降维", 求**最大** 而非**个数**
-- 0907\. Sum of Subarray Minimums (待补) — v2 的核心子问题, 单调栈算每个位置作最小的贡献
+- [0907. Sum of Subarray Minimums](../0907-sum-of-subarray-minimums/README.md) — v2 的核心子问题, 单调栈算每个位置作最小的贡献
 - 0221\. Maximal Square (待补) — 求最大全 1 正方形, 二维 DP 更优
 - 1727\. Largest Submatrix With Rearrangements (待补) — 0085 进阶, 允许列重排

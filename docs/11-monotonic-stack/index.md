@@ -19,3 +19,4 @@
 | 0853 | [Car Fleet / 车队](./0853-car-fleet/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1475 | [Final Prices With a Special Discount in a Shop / 商品折扣后的最终价格](./1475-final-prices-with-a-special-discount-in-a-shop/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 1504 | [Count Submatrices With All Ones / 统计全 1 子矩形](./1504-count-submatrices-with-all-ones/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0907 | [Sum of Subarray Minimums / 子数组的最小值之和](./0907-sum-of-subarray-minimums/README.md) | Medium | ✅ | ☐ ☐ ☐ |

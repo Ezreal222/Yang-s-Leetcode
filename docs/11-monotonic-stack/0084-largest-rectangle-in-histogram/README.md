@@ -133,5 +133,5 @@
 - [0739. Daily Temperatures](../0739-daily-temperatures/README.md) — 单调栈最基础, 单向"找右边更大"
 - [0496. Next Greater Element I](../0496-next-greater-element-i/README.md) — NGE 模板
 - [0085. Maximal Rectangle](../0085-maximal-rectangle/README.md) — 二维, 把每行当 histogram 跑 0084
-- 0907\. Sum of Subarray Minimums (待补) — 同款"以每元素为最小" + 单调栈
+- [0907. Sum of Subarray Minimums](../0907-sum-of-subarray-minimums/README.md) — 同款"以每元素为最小" + 单调栈贡献法
 - 1856\. Maximum Subarray Min-Product (待补) — 同款思想, 跟前缀和组合

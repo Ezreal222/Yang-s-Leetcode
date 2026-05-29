@@ -14,3 +14,4 @@
 | 0417 | [Pacific Atlantic Water Flow / 太平洋大西洋水流问题](./0417-pacific-atlantic-water-flow/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0827 | [Making A Large Island / 最大人工岛](./0827-making-a-large-island/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0463 | [Island Perimeter / 岛屿的周长](./0463-island-perimeter/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0127 | [Word Ladder / 单词接龙](./0127-word-ladder/README.md) | Hard | ✅ | ☐ ☐ ☐ |

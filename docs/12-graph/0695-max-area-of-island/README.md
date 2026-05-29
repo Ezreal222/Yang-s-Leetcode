@@ -139,7 +139,7 @@
 
 - [0200. Number of Islands](../0200-number-of-islands/README.md) — 母题, 数岛屿个数 (DFS 不返回值)
 - [0797. All Paths From Source to Target](../0797-all-paths-from-source-to-target/README.md) — DFS 显式图
-- 0463\. Island Perimeter (待补) — 数岛屿周长, 边界 + 水的贡献
+- [0463. Island Perimeter](../0463-island-perimeter/README.md) — 数岛屿周长, 局部统计不用 flood fill
 - 1254\. Number of Closed Islands (待补) — 过滤"挨边" 岛
 - [0827. Making A Large Island](../0827-making-a-large-island/README.md) — 0695 进阶, 允许翻一块水 (标 ID + 查表)
 - [0130. Surrounded Regions](../0130-surrounded-regions/README.md) — 反向 flood fill, 从边界出发标记

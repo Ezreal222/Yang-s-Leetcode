@@ -185,4 +185,4 @@
 - [0130. Surrounded Regions](../0130-surrounded-regions/README.md) — 单次反向 flood fill, 翻 X
 - 1254\. Number of Closed Islands (待补) — 封闭岛计数
 - 0286\. Walls and Gates (待补) — 多源 BFS, 从所有门出发
-- 0463\. Island Perimeter (待补) — 岛屿周长, 4-邻居贡献法
+- [0463. Island Perimeter](../0463-island-perimeter/README.md) — 岛屿周长, 4-邻居贡献法

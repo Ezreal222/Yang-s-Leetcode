@@ -186,7 +186,7 @@
 
 - [0200. Number of Islands](../0200-number-of-islands/README.md) — 数岛屿个数
 - [0695. Max Area of Island](../0695-max-area-of-island/README.md) — 最大岛屿面积
-- 0130\. Surrounded Regions (待补) — 同款"反向 flood fill", 从边界出发标记
-- 0417\. Pacific Atlantic Water Flow (待补) — 反向 flood fill 进阶, 两次出发
+- [0130. Surrounded Regions](../0130-surrounded-regions/README.md) — 同款反向 flood fill, 翻"被围 O" 为 X
+- [0417. Pacific Atlantic Water Flow](../0417-pacific-atlantic-water-flow/README.md) — 反向 flood fill 进阶: 两次出发 + 取交集
 - 1254\. Number of Closed Islands (待补) — 数封闭岛 (不挨边)
 - 1905\. Count Sub Islands (待补) — 子岛屿计数

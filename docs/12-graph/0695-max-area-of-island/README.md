@@ -142,4 +142,4 @@
 - 0463\. Island Perimeter (待补) — 数岛屿周长, 边界 + 水的贡献
 - 1254\. Number of Closed Islands (待补) — 过滤"挨边" 岛
 - 0827\. Making A Large Island (待补) — 0695 进阶, 允许翻一块水
-- 0130\. Surrounded Regions (待补) — 反向 flood fill, 从边界出发标记
+- [0130. Surrounded Regions](../0130-surrounded-regions/README.md) — 反向 flood fill, 从边界出发标记

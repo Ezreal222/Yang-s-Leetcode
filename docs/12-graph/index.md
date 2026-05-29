@@ -10,3 +10,5 @@
 | 0200 | [Number of Islands / 岛屿数量](./0200-number-of-islands/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0695 | [Max Area of Island / 岛屿的最大面积](./0695-max-area-of-island/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1020 | [Number of Enclaves / 飞地的数量](./1020-number-of-enclaves/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0130 | [Surrounded Regions / 被围绕的区域](./0130-surrounded-regions/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0417 | [Pacific Atlantic Water Flow / 太平洋大西洋水流问题](./0417-pacific-atlantic-water-flow/README.md) | Medium | ✅ | ☐ ☐ ☐ |

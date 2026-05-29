@@ -12,3 +12,4 @@
 | 1020 | [Number of Enclaves / 飞地的数量](./1020-number-of-enclaves/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0130 | [Surrounded Regions / 被围绕的区域](./0130-surrounded-regions/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0417 | [Pacific Atlantic Water Flow / 太平洋大西洋水流问题](./0417-pacific-atlantic-water-flow/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0827 | [Making A Large Island / 最大人工岛](./0827-making-a-large-island/README.md) | Hard | ✅ | ☐ ☐ ☐ |

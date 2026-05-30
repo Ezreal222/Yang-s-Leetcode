@@ -199,7 +199,7 @@
 
 - [§12 Graph 主页](../index.md) — 图论所有题
 - 0547\. Number of Provinces (待补) — UF 数连通块个数
-- 0684\. Redundant Connection (待补) — UF 找成环边
+- [0684. Redundant Connection](../0684-redundant-connection/README.md) — UF 找成环边
 - 0721\. Accounts Merge (待补) — UF + 哈希做账户合并
 - 0305\. Number of Islands II (待补) — 动态加岛, UF 经典
 - 1319\. Number of Operations to Make Network Connected (待补) — UF + 计数

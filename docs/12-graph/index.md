@@ -16,3 +16,4 @@
 | 0463 | [Island Perimeter / 岛屿的周长](./0463-island-perimeter/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0127 | [Word Ladder / 单词接龙](./0127-word-ladder/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 1971 | [Find if Path Exists in Graph / 寻找图中是否存在路径](./1971-find-if-path-exists-in-graph/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0684 | [Redundant Connection / 冗余连接](./0684-redundant-connection/README.md) | Medium | ✅ | ☐ ☐ ☐ |

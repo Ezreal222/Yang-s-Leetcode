@@ -17,3 +17,4 @@
 | 0127 | [Word Ladder / 单词接龙](./0127-word-ladder/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 1971 | [Find if Path Exists in Graph / 寻找图中是否存在路径](./1971-find-if-path-exists-in-graph/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0684 | [Redundant Connection / 冗余连接](./0684-redundant-connection/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0685 | [Redundant Connection II / 冗余连接 II](./0685-redundant-connection-ii/README.md) | Hard | ✅ | ☐ ☐ ☐ |

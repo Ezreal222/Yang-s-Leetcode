@@ -180,6 +180,6 @@
 - [1971. Find if Path Exists in Graph](../1971-find-if-path-exists-in-graph/README.md) — UF 判连通母题
 - 0547\. Number of Provinces (待补) — UF 数连通块个数
 - 0721\. Accounts Merge (待补) — UF + 哈希做账户合并
-- 0685\. Redundant Connection II (待补) — 本题有向图版, 更难, 要先判入度再 UF
+- [0685. Redundant Connection II](../0685-redundant-connection-ii/README.md) — 有向图版 (Hard), 三种情况, 入度 + UF
 - 1319\. Number of Operations to Make Network Connected (待补) — UF + 数额外边/缺失连接
 - 1631\. Path With Minimum Effort (待补) — UF 按边权排序 (Kruskal 思想)

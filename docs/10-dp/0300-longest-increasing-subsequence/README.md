@@ -158,4 +158,5 @@
 - 0053\. Maximum Subarray — 子数组连续版 → [§09 0053](../../09-greedy/0053-maximum-subarray/README.md)
 - [0718. Maximum Length of Repeated Subarray](../0718-maximum-length-of-repeated-subarray/README.md) — 双序列 DP 入门 (子数组版)
 - [1143. Longest Common Subsequence](../1143-longest-common-subsequence/README.md) — 双序列 DP, LIS 的"两数组" 兄弟 (子序列版)
+- [0446. Arithmetic Slices II - Subsequence](../0446-arithmetic-slices-ii-subsequence/README.md) — 序列 DP 进阶: 状态从一维升级到"数组 × 哈希表"
 - [§10 DP 思维流程 — "以 i 结尾" 状态模式](../topic-dp-thinking-process.md)

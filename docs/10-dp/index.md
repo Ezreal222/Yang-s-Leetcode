@@ -84,6 +84,7 @@
 | 0300 | [Longest Increasing Subsequence / 最长递增子序列](./0300-longest-increasing-subsequence/README.md) (LIS, 含 O(n log n) 二分) | Medium | ✅ | ☐ ☐ ☐ |
 | 0674 | [Longest Continuous Increasing Subsequence / 最长连续递增序列](./0674-longest-continuous-increasing-subsequence/README.md) (LIS 连续版) | Easy | ✅ | ☐ ☐ ☐ |
 | 0152 | [Maximum Product Subarray / 乘积最大子数组](./0152-maximum-product-subarray/README.md) (Kadane 乘积版) | Medium | ✅ | ☐ ☐ ☐ |
+| 0446 | [Arithmetic Slices II - Subsequence / 等差数列划分 II - 子序列](./0446-arithmetic-slices-ii-subsequence/README.md) (DP + 哈希, 计数) | Hard | ✅ | ☐ ☐ ☐ |
 
 > Kadane 母题 0053 在 [§09 贪心](../09-greedy/0053-maximum-subarray/README.md).
 

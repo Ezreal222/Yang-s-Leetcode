@@ -140,7 +140,7 @@
 
 - [§08 回溯算法](../../08-backtracking/index.md) — DFS + 回溯模板的大本营
 - 0207\. Course Schedule (待补) — DAG + 拓扑排序判环
-- 0210\. Course Schedule II (待补) — 拓扑排序输出顺序
+- [0210. Course Schedule II](../0210-course-schedule-ii/README.md) — 拓扑排序输出顺序 (Kahn 算法)
 - 0133\. Clone Graph (待补) — 图的 DFS / BFS 深拷贝
 - 0200\. Number of Islands (待补) — 二维网格 DFS / BFS
 - 0399\. Evaluate Division (待补) — 带权图 + DFS

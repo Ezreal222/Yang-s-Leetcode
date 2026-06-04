@@ -253,6 +253,6 @@
 - [0684. Redundant Connection](../0684-redundant-connection/README.md) — 无向图版, 本题简化
 - [1971. Find if Path Exists in Graph](../1971-find-if-path-exists-in-graph/README.md) — UF 判连通母题
 - 0207\. Course Schedule (待补) — 有向图 + 拓扑排序判环
-- 0210\. Course Schedule II (待补) — 输出拓扑序
+- [0210. Course Schedule II](../0210-course-schedule-ii/README.md) — 输出拓扑序 (Kahn 算法)
 - 0261\. Graph Valid Tree (待补) — 判定无向图是否为树
 - 1192\. Critical Connections in a Network (待补) — Tarjan 找桥

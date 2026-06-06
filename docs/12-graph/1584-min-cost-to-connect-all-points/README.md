@@ -216,5 +216,5 @@
 - 1135\. Connecting Cities With Minimum Cost (待补) — 同款 MST, 给的就是图
 - 1168\. Optimize Water Distribution in a Village (待补) — MST + 虚拟超级源点
 - 1489\. Find Critical and Pseudo-Critical Edges in MST (待补) — MST 上找关键边
-- 0743\. Network Delay Time (待补) — Dijkstra 最短路径
+- [0743. Network Delay Time](../0743-network-delay-time/README.md) — Dijkstra 单源最短路径, 跟 Prim's 同款"挑最小 + 松弛"
 - 0787\. Cheapest Flights Within K Stops (待补) — 带步数限制的最短路

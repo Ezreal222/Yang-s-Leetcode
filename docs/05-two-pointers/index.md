@@ -7,3 +7,4 @@
 | #    | Title | Difficulty | Status | Reviewed |
 |------|-------|------------|--------|----------|
 | 0027 | [Remove Element / 移除元素](./0027-remove-element/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0727 | [Minimum Window Subsequence / 最小窗口子序列](./0727-minimum-window-subsequence/README.md) | Hard | ✅ | ☐ ☐ ☐ |

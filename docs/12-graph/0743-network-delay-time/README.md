@@ -231,7 +231,7 @@
 - [1584. Min Cost to Connect All Points](../1584-min-cost-to-connect-all-points/README.md) — Prim's MST, 同款"挑最小 + 松弛"
 - [0127. Word Ladder](../0127-word-ladder/README.md) — BFS 最短路 (无权图)
 - [KC-94. 城市间货物运输 I](../kc-94-city-cargo-transport-i/README.md) — Bellman-Ford 入门 (可处理负边权)
-- 0787\. Cheapest Flights Within K Stops (待补) — 带步数限制的 Dijkstra / Bellman-Ford
+- [0787. Cheapest Flights Within K Stops](../0787-cheapest-flights-within-k-stops/README.md) — 带步数限制的 BF (快照防超边)
 - 1631\. Path With Minimum Effort (待补) — 网格 Dijkstra (边权 = 高度差)
 - 1976\. Number of Ways to Arrive at Destination (待补) — Dijkstra + 计数路径
 - 0207\. Course Schedule (待补) — 拓扑排序判环 (DAG)

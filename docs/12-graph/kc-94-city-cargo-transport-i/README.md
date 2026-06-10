@@ -179,7 +179,7 @@
 
 - [0743. Network Delay Time](../0743-network-delay-time/README.md) — LC 版本的 Dijkstra (非负边权)
 - [1584. Min Cost to Connect All Points](../1584-min-cost-to-connect-all-points/README.md) — Prim's MST, 同款"挑最小 + 松弛"
-- 0787\. Cheapest Flights Within K Stops (待补) — **Bellman-Ford LC 经典应用**, 加步数限制
+- [0787. Cheapest Flights Within K Stops](../0787-cheapest-flights-within-k-stops/README.md) — **BF LC 经典应用**, 加步数限制 + 快照
 - 0743\. Network Delay Time — 同款单源最短路, 但非负边权用 Dijkstra
 - 1334\. Find the City With the Smallest Number of Neighbors at a Threshold Distance (待补) — Floyd-Warshall 全源最短路
 - [KC-95. 城市间货物运输 II](../kc-95-city-cargo-transport-ii/README.md) — 本题加**负环判定** (跑第 n 轮看是否还能松弛)

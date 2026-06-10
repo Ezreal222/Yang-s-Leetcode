@@ -197,6 +197,6 @@
 
 - [KC-94. 城市间货物运输 I](../kc-94-city-cargo-transport-i/README.md) — 本题母题, BF 不判负环版
 - [0743. Network Delay Time](../0743-network-delay-time/README.md) — Dijkstra (非负边权)
-- 0787\. Cheapest Flights Within K Stops (待补) — BF + 步数限制
+- [0787. Cheapest Flights Within K Stops](../0787-cheapest-flights-within-k-stops/README.md) — BF + 步数限制 (快照防超边)
 - KC-96\. 城市间货物运输 III (待补) — SPFA 队列优化版
 - 1334\. Find the City With the Smallest Number of Neighbors at a Threshold Distance (待补) — Floyd-Warshall 全源

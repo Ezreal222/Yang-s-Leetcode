@@ -21,3 +21,4 @@
 | 1584 | [Min Cost to Connect All Points / 连接所有点的最小费用](./1584-min-cost-to-connect-all-points/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0210 | [Course Schedule II / 课程表 II](./0210-course-schedule-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0743 | [Network Delay Time / 网络延迟时间](./0743-network-delay-time/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| KC-94 | [城市间货物运输 I / City Cargo Transport I](./kc-94-city-cargo-transport-i/README.md) (Bellman-Ford) | Medium | ✅ | ☐ ☐ ☐ |

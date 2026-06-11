@@ -199,4 +199,5 @@
 - [0743. Network Delay Time](../0743-network-delay-time/README.md) — Dijkstra (非负边权)
 - [0787. Cheapest Flights Within K Stops](../0787-cheapest-flights-within-k-stops/README.md) — BF + 步数限制 (快照防超边)
 - KC-96\. 城市间货物运输 III (待补) — SPFA 队列优化版
-- 1334\. Find the City With the Smallest Number of Neighbors at a Threshold Distance (待补) — Floyd-Warshall 全源
+- [KC-97. 小明逛公园 (Floyd)](../kc-97-floyd-park/README.md) — 全源最短路, Floyd-Warshall
+- 1334\. Find the City With the Smallest Number of Neighbors at a Threshold Distance (待补) — LC 版 Floyd

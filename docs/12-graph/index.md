@@ -24,3 +24,4 @@
 | KC-94 | [城市间货物运输 I / City Cargo Transport I](./kc-94-city-cargo-transport-i/README.md) (Bellman-Ford) | Medium | ✅ | ☐ ☐ ☐ |
 | KC-95 | [城市间货物运输 II / City Cargo Transport II](./kc-95-city-cargo-transport-ii/README.md) (BF + 负环判定) | Medium | ✅ | ☐ ☐ ☐ |
 | 0787 | [Cheapest Flights Within K Stops / K 站中转内最便宜的航班](./0787-cheapest-flights-within-k-stops/README.md) (BF + 边数限制) | Medium | ✅ | ☐ ☐ ☐ |
+| KC-97 | [小明逛公园 / Floyd Park](./kc-97-floyd-park/README.md) (Floyd-Warshall 全源最短路) | Medium | ✅ | ☐ ☐ ☐ |

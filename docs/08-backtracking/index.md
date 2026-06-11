@@ -25,3 +25,4 @@
 | 0301 | [Remove Invalid Parentheses / 删除无效的括号](./0301-remove-invalid-parentheses/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0473 | [Matchsticks to Square / 火柴拼正方形](./0473-matchsticks-to-square/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0079 | [Word Search / 单词搜索](./0079-word-search/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 3955 | [Valid Binary Strings With Cost Limit / 满足代价限制的有效二进制字符串](./3955-valid-binary-strings-with-cost-limit/README.md) | Medium | ✅ | ☐ ☐ ☐ |

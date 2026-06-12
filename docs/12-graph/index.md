@@ -25,3 +25,4 @@
 | KC-95 | [城市间货物运输 II / City Cargo Transport II](./kc-95-city-cargo-transport-ii/README.md) (BF + 负环判定) | Medium | ✅ | ☐ ☐ ☐ |
 | 0787 | [Cheapest Flights Within K Stops / K 站中转内最便宜的航班](./0787-cheapest-flights-within-k-stops/README.md) (BF + 边数限制) | Medium | ✅ | ☐ ☐ ☐ |
 | KC-97 | [小明逛公园 / Floyd Park](./kc-97-floyd-park/README.md) (Floyd-Warshall 全源最短路) | Medium | ✅ | ☐ ☐ ☐ |
+| 1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance / 阈值距离内邻居最少的城市](./1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/README.md) (Floyd LC 经典) | Medium | ✅ | ☐ ☐ ☐ |

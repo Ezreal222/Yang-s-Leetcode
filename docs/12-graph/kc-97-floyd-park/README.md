@@ -189,6 +189,6 @@
 - [KC-94. 城市间货物运输 I](../kc-94-city-cargo-transport-i/README.md) — BF 单源最短路
 - [KC-95. 城市间货物运输 II](../kc-95-city-cargo-transport-ii/README.md) — BF + 负环判定
 - [0787. Cheapest Flights Within K Stops](../0787-cheapest-flights-within-k-stops/README.md) — BF + 步数限制
-- 1334\. Find the City With the Smallest Number of Neighbors at a Threshold Distance (待补) — **LC 版 Floyd** 经典应用
+- [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](../1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/README.md) — **LC 版 Floyd 经典应用** (Floyd + 后处理)
 - 0399\. Evaluate Division (待补) — 带权图 + DFS / 并查集 / Floyd 都行
 - 2642\. Design Graph With Shortest Path Calculator (待补) — 设计题, 适合 Floyd

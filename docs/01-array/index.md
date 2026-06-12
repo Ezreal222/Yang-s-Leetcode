@@ -15,3 +15,4 @@
 | 0528 | [Random Pick with Weight / 按权重随机选择](./0528-random-pick-with-weight/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1854 | [Maximum Population Year / 人口最多的年份](./1854-maximum-population-year/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 3942 | [Minimum Operations to Sort a Permutation / 排序排列的最少操作](./3942-minimum-operations-to-sort-a-permutation/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 3954 | [Sum of Compatible Numbers in Range I / 范围内兼容数字的和 I](./3954-sum-of-compatible-numbers-in-range-i/README.md) | Easy | ✅ | ☐ ☐ ☐ |

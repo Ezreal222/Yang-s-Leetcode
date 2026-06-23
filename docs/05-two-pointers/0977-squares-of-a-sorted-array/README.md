@@ -7,6 +7,14 @@
     - **Status**: ✅ Solved
     - **Reviewed**: ☐ ☐ ☐
 
+## TL;DR / 一句话
+
+> **EN**: Sorted array with negatives squared → max values are at **both ends** → opposite-direction two pointers compare `|abs|`, larger goes to result tail.
+>
+> **中文**: 升序 (含负) 平方后, **最大值在两端** → 对撞双指针比绝对值, 大的塞结果末尾.
+>
+> *Template / 模版*: **Structure observation → Algorithm choice → Key operation** (结构观察 → 算法决策 → 关键操作).
+
 ## Problem
 
 **EN**: 给**非递减** 数组 `nums` (可能含**负数**). 返回**每个元素平方后** 的**非递减** 数组.

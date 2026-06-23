@@ -9,11 +9,11 @@
 | Category / 分类 | Total | Easy | Medium | Hard |
 |---|---|---|---|---|
 | [00 · Prelude / 前序·打基础](./00-prelude/index.md) | 0 | 0 | 0 | 0 |
-| [01 · Array / 数组](./01-array/index.md) | 10 | 4 | 6 | 0 |
+| [01 · Array / 数组](./01-array/index.md) | 11 | 4 | 7 | 0 |
 | [02 · Linked List / 链表](./02-linked-list/index.md) | 0 | 0 | 0 | 0 |
-| [03 · Hash Table / 哈希表](./03-hash-table/index.md) | 0 | 0 | 0 | 0 |
+| [03 · Hash Table / 哈希表](./03-hash-table/index.md) | 2 | 1 | 1 | 0 |
 | [04 · String / 字符串](./04-string/index.md) | 2 | 2 | 0 | 0 |
-| [05 · Two Pointers / 双指针法](./05-two-pointers/index.md) | 3 | 2 | 0 | 1 |
+| [05 · Two Pointers / 双指针法](./05-two-pointers/index.md) | 4 | 2 | 1 | 1 |
 | [06 · Stack & Queue / 栈与队列](./06-stack-queue/index.md) | 11 | 4 | 6 | 1 |
 | [07 · Binary Tree / 二叉树](./07-binary-tree/index.md) | 46 | 19 | 27 | 0 |
 | [08 · Backtracking / 回溯算法](./08-backtracking/index.md) | 20 | 0 | 15 | 5 |
@@ -22,7 +22,7 @@
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 14 | 2 | 9 | 3 |
 | [12 · Graph / 图论](./12-graph/index.md) | 20 | 2 | 15 | 3 |
 | [13 · Binary Search / 二分查找](./13-binary-search/index.md) | 4 | 1 | 2 | 1 |
-| **Total / 合计** | **200** | **44** | **128** | **28** |
+| **Total / 合计** | **204** | **45** | **131** | **28** |
 
 ## How to navigate / 如何使用
 

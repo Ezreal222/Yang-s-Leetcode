@@ -17,3 +17,4 @@
 | 3942 | [Minimum Operations to Sort a Permutation / 排序排列的最少操作](./3942-minimum-operations-to-sort-a-permutation/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 3954 | [Sum of Compatible Numbers in Range I / 范围内兼容数字的和 I](./3954-sum-of-compatible-numbers-in-range-i/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0059 | [Spiral Matrix II / 螺旋矩阵 II](./0059-spiral-matrix-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0238 | [Product of Array Except Self / 除自身以外数组的乘积](./0238-product-of-array-except-self/README.md) | Medium | ✅ | ☐ ☐ ☐ |

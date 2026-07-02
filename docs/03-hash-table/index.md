@@ -9,3 +9,4 @@
 | 0242 | [Valid Anagram / 有效的字母异位词](./0242-valid-anagram/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0049 | [Group Anagrams / 字母异位词分组](./0049-group-anagrams/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0036 | [Valid Sudoku / 有效的数独](./0036-valid-sudoku/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0128 | [Longest Consecutive Sequence / 最长连续序列](./0128-longest-consecutive-sequence/README.md) | Medium | ✅ | ☐ ☐ ☐ |

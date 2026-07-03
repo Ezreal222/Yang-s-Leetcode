@@ -176,5 +176,5 @@
 - [0025. Reverse Nodes in k-Group](../0025-reverse-nodes-in-k-group/README.md) — 快慢 gap 定位 + 反转
 - 0876\. Middle of the Linked List (待补) — fast 2× slow, 找中点
 - 0141\. Linked List Cycle (待补) — fast/slow 判环
-- 0142\. Linked List Cycle II (待补) — Floyd 找环入口
+- [0142. Linked List Cycle II](../0142-linked-list-cycle-ii/README.md) — Floyd 找环入口
 - 0061\. Rotate List (待补) — 类似"倒数第 k" 定位

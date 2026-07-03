@@ -10,3 +10,4 @@
 | 0707 | [Design Linked List / 设计链表](./0707-design-linked-list/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0206 | [Reverse Linked List / 反转链表](./0206-reverse-linked-list/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0024 | [Swap Nodes in Pairs / 两两交换链表节点](./0024-swap-nodes-in-pairs/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0025 | [Reverse Nodes in k-Group / K 个一组翻转链表](./0025-reverse-nodes-in-k-group/README.md) | Hard | ✅ | ☐ ☐ ☐ |

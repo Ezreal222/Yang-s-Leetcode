@@ -213,7 +213,7 @@
 - [0203. Remove Linked List Elements](../0203-remove-linked-list-elements/README.md) — 链表基础, dummy head 母题
 - [0707. Design Linked List](../0707-design-linked-list/README.md) — API 设计, 组合插/删
 - 0092\. Reverse Linked List II (待补) — 部分反转 (给区间), 三指针 + dummy
-- 0025\. Reverse Nodes in k-Group (待补) — 每 k 个一组反转, Hard
+- [0025. Reverse Nodes in k-Group](../0025-reverse-nodes-in-k-group/README.md) — 每 k 个一组反转, Hard
 - [0024. Swap Nodes in Pairs](../0024-swap-nodes-in-pairs/README.md) — 每两个一组交换 = k=2 版
 - 0234\. Palindrome Linked List (待补) — 快慢找中点 + 后半反转 + 比较
 - 0143\. Reorder List (待补) — 快慢找中点 + 后半反转 + 双端 merge

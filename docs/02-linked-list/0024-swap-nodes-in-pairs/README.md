@@ -169,7 +169,7 @@
 ## 相关题目
 
 - [0206. Reverse Linked List](../0206-reverse-linked-list/README.md) — 反转全链, 迭代母模板
-- 0025\. Reverse Nodes in k-Group (待补, Hard) — 本题的推广: k=k 组反转
+- [0025. Reverse Nodes in k-Group](../0025-reverse-nodes-in-k-group/README.md) — 本题的推广: k=k 组反转, Hard
 - [0203. Remove Linked List Elements](../0203-remove-linked-list-elements/README.md) — dummy head 母题
 - [0707. Design Linked List](../0707-design-linked-list/README.md) — dummy + 指针综合
 - 0086\. Partition List (待补) — dummy × 2 拆链再合并

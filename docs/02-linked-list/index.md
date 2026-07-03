@@ -8,3 +8,5 @@
 |------|-------|------------|--------|----------|
 | 0203 | [Remove Linked List Elements / 移除链表元素](./0203-remove-linked-list-elements/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0707 | [Design Linked List / 设计链表](./0707-design-linked-list/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0206 | [Reverse Linked List / 反转链表](./0206-reverse-linked-list/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0024 | [Swap Nodes in Pairs / 两两交换链表节点](./0024-swap-nodes-in-pairs/README.md) | Medium | ✅ | ☐ ☐ ☐ |

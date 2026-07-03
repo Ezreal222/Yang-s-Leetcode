@@ -179,7 +179,7 @@
 
 ## 相关题目
 
-- 0206\. Reverse Linked List (待补) — 链表反转, 指针操作母题
+- [0206. Reverse Linked List](../0206-reverse-linked-list/README.md) — 链表反转, 迭代三指针母题
 - [0707. Design Linked List](../0707-design-linked-list/README.md) — 自己实现链表, dummy + size 组合拳
 - 0019\. Remove Nth Node From End of List (待补) — 快慢指针 + dummy
 - 0021\. Merge Two Sorted Lists (待补) — dummy head 经典

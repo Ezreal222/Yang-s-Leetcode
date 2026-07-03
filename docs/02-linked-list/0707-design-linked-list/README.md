@@ -260,7 +260,7 @@
 ## 相关题目
 
 - [0203. Remove Linked List Elements](../0203-remove-linked-list-elements/README.md) — dummy head 母题
-- 0206\. Reverse Linked List (待补) — 指针操作母题
+- [0206. Reverse Linked List](../0206-reverse-linked-list/README.md) — 迭代三指针母题
 - 0146\. LRU Cache (待补) — 设计题, 双向链表 + 哈希, 更复杂的 API 设计
 - 0460\. LFU Cache (待补) — 双哈希 + 频次链表
 - 0432\. All O`one Data Structure (待补) — 频次桶 + 双向链表, API 设计考察

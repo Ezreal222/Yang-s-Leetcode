@@ -10,3 +10,4 @@
 | 0049 | [Group Anagrams / 字母异位词分组](./0049-group-anagrams/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0036 | [Valid Sudoku / 有效的数独](./0036-valid-sudoku/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0128 | [Longest Consecutive Sequence / 最长连续序列](./0128-longest-consecutive-sequence/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 1002 | [Find Common Characters / 查找共用字符](./1002-find-common-characters/README.md) | Easy | ✅ | ☐ ☐ ☐ |

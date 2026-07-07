@@ -11,3 +11,5 @@
 | 0036 | [Valid Sudoku / 有效的数独](./0036-valid-sudoku/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0128 | [Longest Consecutive Sequence / 最长连续序列](./0128-longest-consecutive-sequence/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1002 | [Find Common Characters / 查找共用字符](./1002-find-common-characters/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0349 | [Intersection of Two Arrays / 两个数组的交集](./0349-intersection-of-two-arrays/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0202 | [Happy Number / 快乐数](./0202-happy-number/README.md) | Easy | ✅ | ☐ ☐ ☐ |

@@ -212,6 +212,6 @@
 - 0141\. Linked List Cycle (待补) — 只判是否有环 (Phase 1 就够)
 - 0876\. Middle of the Linked List (待补) — 2×/1× 找中点
 - 0287\. Find the Duplicate Number (待补) — **Floyd 判环用在数组上** — 神应用
-- 0202\. Happy Number (待补) — Floyd 判"数字循环"
+- [0202. Happy Number](../../03-hash-table/0202-happy-number/README.md) — Floyd 判"数字循环"
 - [0206. Reverse Linked List](../0206-reverse-linked-list/README.md) — 反转母题
 - 0234\. Palindrome Linked List (待补) — 快慢找中点 + 后半反转

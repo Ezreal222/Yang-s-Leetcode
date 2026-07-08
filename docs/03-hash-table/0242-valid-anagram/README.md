@@ -144,7 +144,7 @@
 
 ## 相关题目
 
-- 0383\. Ransom Note (待补) — 同款计数数组, "subset" 而非 "equal"
+- [0383. Ransom Note](../0383-ransom-note/README.md) — 同款计数数组, "subset" 而非 "equal"
 - [0049. Group Anagrams](../0049-group-anagrams/README.md) — 频次签名 / 排序签名当 hash key 分组
 - 0438\. Find All Anagrams in a String (待补) — 滑窗 + 计数数组, 实时维护 anagram
 - 0567\. Permutation in String (待补) — 滑窗 + 计数

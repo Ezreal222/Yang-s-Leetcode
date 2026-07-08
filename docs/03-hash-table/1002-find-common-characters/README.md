@@ -168,7 +168,7 @@
 - [0049. Group Anagrams](../0049-group-anagrams/README.md) — 频次签名分桶
 - [0036. Valid Sudoku](../0036-valid-sudoku/README.md) — bool 数组判见过
 - [0128. Longest Consecutive Sequence](../0128-longest-consecutive-sequence/README.md) — hash set 序列
-- 0383\. Ransom Note (待补) — 计数数组 "subset" 判定
+- [0383. Ransom Note](../0383-ransom-note/README.md) — 计数数组 "subset" 判定
 - 1160\. Find Words That Can Be Formed by Characters (待补) — 用"字母表" 拼词, 逐词判 subset
 - 0387\. First Unique Character in a String (待补) — 计数数组 + 一次扫
 - 0451\. Sort Characters By Frequency (待补) — 按频次排序

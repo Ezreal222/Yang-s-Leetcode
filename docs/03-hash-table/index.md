@@ -14,3 +14,4 @@
 | 0349 | [Intersection of Two Arrays / 两个数组的交集](./0349-intersection-of-two-arrays/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0202 | [Happy Number / 快乐数](./0202-happy-number/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0454 | [4Sum II / 四数相加 II](./0454-4sum-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0383 | [Ransom Note / 赎金信](./0383-ransom-note/README.md) | Easy | ✅ | ☐ ☐ ☐ |

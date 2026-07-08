@@ -159,5 +159,5 @@
 - 0653\. Two Sum IV - Input is a BST (待补) — BST + 中序 or hash
 - 0015\. 3Sum (待补) — 排序 + 对撞双指针 + 去重
 - 0018\. 4Sum (待补) — 二层枚举 + 3Sum
-- 0454\. 4Sum II (待补) — 双 hash 分组, 拆解 4 数为 (2 + 2)
+- [0454. 4Sum II](../../03-hash-table/0454-4sum-ii/README.md) — 拆 4 → 2+2, 分组哈希
 - 0170\. Two Sum III - Data structure design (待补) — 设计题

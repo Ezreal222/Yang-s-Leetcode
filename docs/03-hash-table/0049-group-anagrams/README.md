@@ -195,5 +195,5 @@
 - 0438\. Find All Anagrams in a String (待补) — 滑窗 + 频次签名
 - 0567\. Permutation in String (待补) — 同款滑窗
 - [0383. Ransom Note](../0383-ransom-note/README.md) — 计数数组 "subset"
-- 0249\. Group Shifted Strings (待补) — 同款"分桶 by canonical key", canonical 改为"差分签名"
+- [0249. Group Shifted Strings](../0249-group-shifted-strings/README.md) — 同款"分桶 by canonical key", canonical 改为"差分签名"
 - 0451\. Sort Characters By Frequency (待补) — 计数 + 按频次排序

@@ -226,7 +226,7 @@
 - [0027. Remove Element](../0027-remove-element/README.md) — 同向双指针
 - [0454. 4Sum II](../../03-hash-table/0454-4sum-ii/README.md) — 4 数组各选一, 分组哈希
 - 0016\. 3Sum Closest (待补) — 找最接近 target 的三数之和
-- 0018\. 4Sum (待补) — 4 数版, 双层 for + 双指针 + 4 层去重
+- [0018. 4Sum](../0018-4sum/README.md) — 4 数版, 双层 for + 双指针 + 4 层去重 + 防溢出
 - 0167\. Two Sum II - Input Array Is Sorted (待补) — 有序 2Sum, 对撞双指针
 - 0259\. 3Sum Smaller (待补) — 三数之和 < target 的**计数**
 - 0011\. Container With Most Water (待补) — 对撞双指针 + 贪心

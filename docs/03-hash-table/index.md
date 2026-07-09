@@ -15,3 +15,4 @@
 | 0202 | [Happy Number / 快乐数](./0202-happy-number/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0454 | [4Sum II / 四数相加 II](./0454-4sum-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0383 | [Ransom Note / 赎金信](./0383-ransom-note/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0249 | [Group Shifted Strings / 移位字符串分组](./0249-group-shifted-strings/README.md) | Medium | ✅ | ☐ ☐ ☐ |

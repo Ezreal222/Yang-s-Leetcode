@@ -157,7 +157,7 @@
 - [0202. Happy Number](../../03-hash-table/0202-happy-number/README.md) — hash set 判循环
 - 0167\. Two Sum II - Input Array Is Sorted (待补) — 对撞双指针, O(1) 空间
 - 0653\. Two Sum IV - Input is a BST (待补) — BST + 中序 or hash
-- 0015\. 3Sum (待补) — 排序 + 对撞双指针 + 去重
+- [0015. 3Sum](../../05-two-pointers/0015-3sum/README.md) — 排序 + 对撞双指针 + 3 层去重
 - 0018\. 4Sum (待补) — 二层枚举 + 3Sum
 - [0454. 4Sum II](../../03-hash-table/0454-4sum-ii/README.md) — 拆 4 → 2+2, 分组哈希
 - 0170\. Two Sum III - Data structure design (待补) — 设计题

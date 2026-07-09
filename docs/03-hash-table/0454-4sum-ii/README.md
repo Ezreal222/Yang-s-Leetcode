@@ -172,7 +172,7 @@
 - [0349. Intersection of Two Arrays](../0349-intersection-of-two-arrays/README.md) — hash set 交集
 - [0202. Happy Number](../0202-happy-number/README.md) — hash set 判环
 - 0167\. Two Sum II - Input Array Is Sorted (待补) — 排序数组 + 对撞双指针
-- 0015\. 3Sum (待补) — 排序 + 对撞 + 去重
+- [0015. 3Sum](../../05-two-pointers/0015-3sum/README.md) — 排序 + 对撞 + 3 层去重
 - 0018\. 4Sum (待补) — 单数组 4 元组, 排序 + 双层 for + 双指针
 - [(§10 DP 折半搜索) topic-meet-in-the-middle](../../10-dp/topic-meet-in-the-middle.md) — 折半搜索的更多应用
 - 2035\. Partition Array Into Two Arrays to Minimize Sum Difference (待补) — 折半 + 二分

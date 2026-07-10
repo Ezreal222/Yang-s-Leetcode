@@ -16,3 +16,4 @@
 | 0454 | [4Sum II / 四数相加 II](./0454-4sum-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0383 | [Ransom Note / 赎金信](./0383-ransom-note/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0249 | [Group Shifted Strings / 移位字符串分组](./0249-group-shifted-strings/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 2744 | [Find Maximum Number of String Pairs / 最大字符串配对数目](./2744-find-maximum-number-of-string-pairs/README.md) | Easy | ✅ | ☐ ☐ ☐ |

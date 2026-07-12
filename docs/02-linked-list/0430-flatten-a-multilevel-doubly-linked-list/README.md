@@ -207,6 +207,6 @@
 - [0024. Swap Nodes in Pairs](../0024-swap-nodes-in-pairs/README.md) — dummy + 三指针
 - [0025. Reverse Nodes in k-Group](../0025-reverse-nodes-in-k-group/README.md) — 半开区间 + helper 返值
 - 0114\. Flatten Binary Tree to Linked List (待补) — 树版拉平, 同款"返 tail" 递归
-- 0138\. Copy List with Random Pointer (待补) — 复杂指针复制
+- [0138. Copy List with Random Pointer](../0138-copy-list-with-random-pointer/README.md) — 复杂指针复制, 3 版含 O(1) 空间
 - [0426. Convert BST to Sorted Doubly Linked List](../0426-convert-bst-to-sorted-doubly-linked-list/README.md) — 双向链表 + 中序
 - 0708\. Insert into a Sorted Circular Linked List (待补) — 循环双向链表

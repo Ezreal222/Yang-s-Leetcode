@@ -176,7 +176,7 @@
 - [0797. All Paths From Source to Target](../0797-all-paths-from-source-to-target/README.md) — DAG DFS 母题
 - [0200. Number of Islands](../0200-number-of-islands/README.md) — DFS 洪水填充
 - [0127. Word Ladder](../0127-word-ladder/README.md) — BFS 最短路径
-- 0138\. Copy List with Random Pointer (待补) — 复杂链表深拷贝, 同款 map + 先造壳
+- [0138. Copy List with Random Pointer](../../02-linked-list/0138-copy-list-with-random-pointer/README.md) — 复杂链表深拷贝, 同款 map + 穿插 O(1) 版
 - 0399\. Evaluate Division (待补) — 加权 DFS/UF
 - 0323\. Number of Connected Components in an Undirected Graph (待补) — DFS / UF
 - 1971\. Find if Path Exists in Graph — 见 §12 index

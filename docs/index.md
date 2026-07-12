@@ -10,7 +10,7 @@
 |---|---|---|---|---|
 | [00 · Prelude / 前序·打基础](./00-prelude/index.md) | 0 | 0 | 0 | 0 |
 | [01 · Array / 数组](./01-array/index.md) | 12 | 4 | 8 | 0 |
-| [02 · Linked List / 链表](./02-linked-list/index.md) | 9 | 2 | 6 | 1 |
+| [02 · Linked List / 链表](./02-linked-list/index.md) | 10 | 2 | 7 | 1 |
 | [03 · Hash Table / 哈希表](./03-hash-table/index.md) | 11 | 6 | 5 | 0 |
 | [04 · String / 字符串](./04-string/index.md) | 3 | 2 | 1 | 0 |
 | [05 · Two Pointers / 双指针法](./05-two-pointers/index.md) | 6 | 2 | 3 | 1 |
@@ -22,7 +22,7 @@
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 14 | 2 | 9 | 3 |
 | [12 · Graph / 图论](./12-graph/index.md) | 21 | 2 | 16 | 3 |
 | [13 · Binary Search / 二分查找](./13-binary-search/index.md) | 4 | 1 | 2 | 1 |
-| **Total / 合计** | **227** | **52** | **146** | **29** |
+| **Total / 合计** | **228** | **52** | **147** | **29** |
 
 ## How to navigate / 如何使用
 

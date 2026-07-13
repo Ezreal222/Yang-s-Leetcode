@@ -21,3 +21,4 @@
 | 0187 | [Repeated DNA Sequences / 重复的 DNA 序列](./0187-repeated-dna-sequences/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0208 | [Implement Trie (Prefix Tree) / 实现 Trie (前缀树)](./0208-implement-trie-prefix-tree/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0211 | [Design Add and Search Words Data Structure / 添加与搜索单词](./0211-design-add-and-search-words-data-structure/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0212 | [Word Search II / 单词搜索 II](./0212-word-search-ii/README.md) | Hard | ✅ | ☐ ☐ ☐ |

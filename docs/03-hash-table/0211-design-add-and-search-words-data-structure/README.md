@@ -245,7 +245,7 @@
 ## 相关题目
 
 - [0208. Implement Trie](../0208-implement-trie-prefix-tree/README.md) — Trie 母题
-- 0212\. Word Search II (待补) — Trie + DFS 剪枝, LC 经典
+- [0212. Word Search II](../0212-word-search-ii/README.md) — Trie + DFS 剪枝, Hard
 - 0648\. Replace Words (待补) — 前缀替换
 - 0677\. Map Sum Pairs (待补) — Trie + 前缀和
 - 0421\. Maximum XOR of Two Numbers in an Array (待补) — 01-Trie

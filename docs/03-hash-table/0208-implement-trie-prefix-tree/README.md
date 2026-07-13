@@ -287,7 +287,7 @@
 - [0187. Repeated DNA Sequences](../0187-repeated-dna-sequences/README.md) — 滑窗 + 滚动哈希
 - [0707. Design Linked List](../../02-linked-list/0707-design-linked-list/README.md) — 数据结构设计, DRY 思维
 - [0211. Design Add and Search Words Data Structure](../0211-design-add-and-search-words-data-structure/README.md) — Trie + `.` 通配符 (DFS 分支)
-- 0212\. Word Search II (待补) — Trie + DFS 剪枝 (LC 经典 Trie 应用)
+- [0212. Word Search II](../0212-word-search-ii/README.md) — Trie + DFS 剪枝 (LC 经典 Trie 应用), Hard
 - 0648\. Replace Words (待补) — Trie 前缀替换
 - 0677\. Map Sum Pairs (待补) — Trie + 前缀和
 - 0421\. Maximum XOR of Two Numbers in an Array (待补) — 01-Trie

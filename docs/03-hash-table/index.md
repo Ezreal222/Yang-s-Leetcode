@@ -18,3 +18,4 @@
 | 0249 | [Group Shifted Strings / 移位字符串分组](./0249-group-shifted-strings/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 2744 | [Find Maximum Number of String Pairs / 最大字符串配对数目](./2744-find-maximum-number-of-string-pairs/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0166 | [Fraction to Recurring Decimal / 分数到小数](./0166-fraction-to-recurring-decimal/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0187 | [Repeated DNA Sequences / 重复的 DNA 序列](./0187-repeated-dna-sequences/README.md) | Medium | ✅ | ☐ ☐ ☐ |

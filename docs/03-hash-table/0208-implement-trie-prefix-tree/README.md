@@ -286,7 +286,7 @@
 - [0128. Longest Consecutive Sequence](../0128-longest-consecutive-sequence/README.md) — hash set + 只从头扩
 - [0187. Repeated DNA Sequences](../0187-repeated-dna-sequences/README.md) — 滑窗 + 滚动哈希
 - [0707. Design Linked List](../../02-linked-list/0707-design-linked-list/README.md) — 数据结构设计, DRY 思维
-- 0211\. Design Add and Search Words Data Structure (待补) — Trie + `.` 通配符
+- [0211. Design Add and Search Words Data Structure](../0211-design-add-and-search-words-data-structure/README.md) — Trie + `.` 通配符 (DFS 分支)
 - 0212\. Word Search II (待补) — Trie + DFS 剪枝 (LC 经典 Trie 应用)
 - 0648\. Replace Words (待补) — Trie 前缀替换
 - 0677\. Map Sum Pairs (待补) — Trie + 前缀和

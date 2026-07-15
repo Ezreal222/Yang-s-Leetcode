@@ -12,3 +12,4 @@
 | 0209 | [Minimum Size Subarray Sum / 长度最小的子数组](./0209-minimum-size-subarray-sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0015 | [3Sum / 三数之和](./0015-3sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0018 | [4Sum / 四数之和](./0018-4sum/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0246 | [Strobogrammatic Number / 中心对称数](./0246-strobogrammatic-number/README.md) | Easy | ✅ | ☐ ☐ ☐ |

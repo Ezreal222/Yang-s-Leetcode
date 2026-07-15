@@ -289,7 +289,7 @@
 - [0208. Implement Trie](../0208-implement-trie-prefix-tree/README.md) — Trie 母题
 - [0211. Design Add and Search Words](../0211-design-add-and-search-words-data-structure/README.md) — Trie + `.` 通配 DFS
 - 0079\. Word Search (待补) — 单词版, 无 Trie, 纯回溯
-- 0648\. Replace Words (待补) — Trie 前缀替换
+- [0648. Replace Words](../0648-replace-words/README.md) — Trie 最短前缀替换
 - 0677\. Map Sum Pairs (待补) — Trie + 前缀和
 - 0720\. Longest Word in Dictionary (待补) — Trie 或 排序 + hash
 - [0200. Number of Islands](../../12-graph/0200-number-of-islands/README.md) — 网格 DFS 母题

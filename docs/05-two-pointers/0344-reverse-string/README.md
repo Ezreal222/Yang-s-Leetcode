@@ -161,4 +161,4 @@
 - 0541\. Reverse String II (待补) — 每 2k 反转前 k 个
 - 0125\. Valid Palindrome (待补) — 对撞判回文
 - 0917\. Reverse Only Letters (待补) — 对撞 + 只交换字母
-- 0151\. Reverse Words in a String (待补) — 整串 + 每词反转
+- [0151. Reverse Words in a String](../0151-reverse-words-in-a-string/README.md) — 整串 + 每词反转 trick, 或 stringstream 分词

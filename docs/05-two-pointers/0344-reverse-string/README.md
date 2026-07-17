@@ -158,7 +158,7 @@
 - [0206. Reverse Linked List](../../02-linked-list/0206-reverse-linked-list/README.md) — 链表反转 (三指针)
 - [0025. Reverse Nodes in k-Group](../../02-linked-list/0025-reverse-nodes-in-k-group/README.md) — 链表 k 组反转
 - 0345\. Reverse Vowels of a String (待补) — 对撞 + 只交换元音
-- 0541\. Reverse String II (待补) — 每 2k 反转前 k 个
+- [0541. Reverse String II](../0541-reverse-string-ii/README.md) — 每 2k 反转前 k 个
 - 0125\. Valid Palindrome (待补) — 对撞判回文
 - 0917\. Reverse Only Letters (待补) — 对撞 + 只交换字母
 - [0151. Reverse Words in a String](../0151-reverse-words-in-a-string/README.md) — 整串 + 每词反转 trick, 或 stringstream 分词

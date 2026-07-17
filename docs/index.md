@@ -13,7 +13,7 @@
 | [02 · Linked List / 链表](./02-linked-list/index.md) | 10 | 2 | 7 | 1 |
 | [03 · Hash Table / 哈希表](./03-hash-table/index.md) | 18 | 7 | 10 | 1 |
 | [04 · String / 字符串](./04-string/index.md) | 3 | 2 | 1 | 0 |
-| [05 · Two Pointers / 双指针法](./05-two-pointers/index.md) | 9 | 4 | 4 | 1 |
+| [05 · Two Pointers / 双指针法](./05-two-pointers/index.md) | 10 | 5 | 4 | 1 |
 | [06 · Stack & Queue / 栈与队列](./06-stack-queue/index.md) | 11 | 4 | 6 | 1 |
 | [07 · Binary Tree / 二叉树](./07-binary-tree/index.md) | 46 | 19 | 27 | 0 |
 | [08 · Backtracking / 回溯算法](./08-backtracking/index.md) | 21 | 0 | 16 | 5 |
@@ -22,7 +22,7 @@
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 14 | 2 | 9 | 3 |
 | [12 · Graph / 图论](./12-graph/index.md) | 21 | 2 | 16 | 3 |
 | [13 · Binary Search / 二分查找](./13-binary-search/index.md) | 4 | 1 | 2 | 1 |
-| **Total / 合计** | **239** | **55** | **154** | **30** |
+| **Total / 合计** | **240** | **56** | **154** | **30** |
 
 ## How to navigate / 如何使用
 

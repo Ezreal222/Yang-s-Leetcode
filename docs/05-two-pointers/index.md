@@ -16,3 +16,4 @@
 | 0344 | [Reverse String / 反转字符串](./0344-reverse-string/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0151 | [Reverse Words in a String / 反转字符串中的单词](./0151-reverse-words-in-a-string/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0541 | [Reverse String II / 反转字符串 II](./0541-reverse-string-ii/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0125 | [Valid Palindrome / 验证回文串](./0125-valid-palindrome/README.md) | Easy | ✅ | ☐ ☐ ☐ |

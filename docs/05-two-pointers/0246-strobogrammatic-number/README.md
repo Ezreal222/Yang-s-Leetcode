@@ -49,7 +49,7 @@
 
     等价: `rotate(num[n-1-i]) == num[i]` — **两端字符, rotate 一个, 跟另一个比**. **对撞双指针**每步比一对.
 
-    > **看到"回文 / 对称 / 两端配对"** → 反应对撞双指针. 跟 [0977 Squares of a Sorted Array](../0977-squares-of-a-sorted-array/README.md) / [0125 Valid Palindrome] 一族.
+    > **看到"回文 / 对称 / 两端配对"** → 反应对撞双指针. 跟 [0977 Squares of a Sorted Array](../0977-squares-of-a-sorted-array/README.md) / [0125 Valid Palindrome](../0125-valid-palindrome/README.md) 一族.
 
 3. **🔑 `i <= j` 而不是 `i < j` — 处理中位 / `<=` for odd-length center**
 
@@ -157,7 +157,7 @@
 - [0015. 3Sum](../0015-3sum/README.md) — 对撞双指针 + 3 层去重
 - [0018. 4Sum](../0018-4sum/README.md) — 对撞双指针 + 4 层去重
 - [0209. Minimum Size Subarray Sum](../0209-minimum-size-subarray-sum/README.md) — 不定长滑窗
-- 0125\. Valid Palindrome (待补) — 对撞双指针判回文
+- [0125. Valid Palindrome](../0125-valid-palindrome/README.md) — 对撞双指针判回文
 - 0009\. Palindrome Number (待补) — 数字回文
 - 0247\. Strobogrammatic Number II (待补) — 生成所有长度 n 的中心对称数
 - 0248\. Strobogrammatic Number III (待补) — 范围内计数

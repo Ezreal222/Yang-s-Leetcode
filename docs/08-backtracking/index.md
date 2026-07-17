@@ -26,3 +26,4 @@
 | 0473 | [Matchsticks to Square / 火柴拼正方形](./0473-matchsticks-to-square/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0079 | [Word Search / 单词搜索](./0079-word-search/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 3955 | [Valid Binary Strings With Cost Limit / 满足代价限制的有效二进制字符串](./3955-valid-binary-strings-with-cost-limit/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0267 | [Palindrome Permutation II / 回文排列 II](./0267-palindrome-permutation-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |

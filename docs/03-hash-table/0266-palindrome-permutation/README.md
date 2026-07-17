@@ -174,5 +174,5 @@
 - [0246. Strobogrammatic Number](../../05-two-pointers/0246-strobogrammatic-number/README.md) — 对撞判"旋转对称"
 - 0409\. Longest Palindrome (待补) — 用计数**构造** 最长回文长度
 - 0125\. Valid Palindrome (待补) — 对撞双指针判回文
-- 0267\. Palindrome Permutation II (待补) — **生成** 所有回文排列
+- [0267. Palindrome Permutation II](../../08-backtracking/0267-palindrome-permutation-ii/README.md) — **生成** 所有回文排列, 回溯
 - 0131\. Palindrome Partitioning (待补) — 划分成回文子串

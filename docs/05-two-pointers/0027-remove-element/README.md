@@ -118,5 +118,5 @@
 - 0283\. Move Zeroes (待补) — 同模板, 非零保留, 末尾补零
 - 0088\. Merge Sorted Array (待补) — 倒序双指针 + 合并
 - 0844\. Backspace String Compare (待补) — 双指针倒序模拟退格
-- 0011\. Container With Most Water (待补) — **对撞双指针** (另一类模式)
+- [0011. Container With Most Water](../0011-container-with-most-water/README.md) — **对撞双指针** (另一类模式) + 贪心
 - [0042. Trapping Rain Water](../../11-monotonic-stack/0042-trapping-rain-water/README.md) — 对撞双指针经典

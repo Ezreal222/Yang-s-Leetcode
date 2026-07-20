@@ -190,7 +190,7 @@
 
 - [0739. Daily Temperatures](../0739-daily-temperatures/README.md) — 单调栈基础
 - [0496. Next Greater Element I](../0496-next-greater-element-i/README.md) — 单调栈最小模板
-- 0011\. Container With Most Water (待补) — 同款双指针 + "谁矮谁动" 思想
+- [0011. Container With Most Water](../../05-two-pointers/0011-container-with-most-water/README.md) — 同款双指针 + "谁矮谁动" 思想
 - [0084. Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/README.md) — 单调栈经典进阶, "一次弹栈同时拿左右边界"
 - 0407\. Trapping Rain Water II (待补) — 二维版, 用最小堆
 - 0238\. Product of Array Except Self (待补) — 同款"前缀 + 后缀" 预处理思想 (跟 v3 相似)

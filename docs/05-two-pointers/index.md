@@ -18,3 +18,4 @@
 | 0541 | [Reverse String II / 反转字符串 II](./0541-reverse-string-ii/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0125 | [Valid Palindrome / 验证回文串](./0125-valid-palindrome/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0011 | [Container With Most Water / 盛最多水的容器](./0011-container-with-most-water/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0003 | [Longest Substring Without Repeating Characters / 无重复字符的最长子串](./0003-longest-substring-without-repeating-characters/README.md) | Medium | ✅ | ☐ ☐ ☐ |

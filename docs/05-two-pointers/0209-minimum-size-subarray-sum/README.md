@@ -147,7 +147,7 @@
 - [0977. Squares of a Sorted Array](../0977-squares-of-a-sorted-array/README.md) — 对撞双指针
 - [0727. Minimum Window Subsequence](../0727-minimum-window-subsequence/README.md) — 同向 + 回溯
 - 0076\. Minimum Window Substring (待补) — 滑窗 + 哈希计数, "最短" 模板进阶
-- 0003\. Longest Substring Without Repeating Characters (待补) — 滑窗 + 哈希, "最长" 模板
+- [0003. Longest Substring Without Repeating Characters](../0003-longest-substring-without-repeating-characters/README.md) — 滑窗 + hash set, "最长" 模板
 - 0904\. Fruit Into Baskets (待补) — 滑窗 + 至多 k 种
 - 0713\. Subarray Product Less Than K (待补) — 滑窗 + 计数 (正数 → 单调)
 - 0438\. Find All Anagrams in a String (待补) — 滑窗 + 字符计数

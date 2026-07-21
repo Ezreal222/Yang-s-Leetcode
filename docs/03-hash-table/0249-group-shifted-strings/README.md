@@ -181,5 +181,5 @@
 - [0383. Ransom Note](../0383-ransom-note/README.md) — subset 判定
 - [0349. Intersection of Two Arrays](../0349-intersection-of-two-arrays/README.md) — hash set 用法
 - 0169\. Majority Element (待补) — Boyer-Moore 或 hash 计数
-- 0567\. Permutation in String (待补) — 滑窗 + 频次签名
+- [0567. Permutation in String](../../05-two-pointers/0567-permutation-in-string/README.md) — 滑窗 + 频次签名
 - 0350\. Intersection of Two Arrays II (待补) — Counter 求"多集交"

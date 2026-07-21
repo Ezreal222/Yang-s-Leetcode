@@ -211,6 +211,6 @@
 - [0128. Longest Consecutive Sequence](../0128-longest-consecutive-sequence/README.md) — hash set + "只从头扩"
 - [0209. Minimum Size Subarray Sum](../../05-two-pointers/0209-minimum-size-subarray-sum/README.md) — 不定长滑窗
 - 0438\. Find All Anagrams in a String (待补) — 定长滑窗 + 计数
-- 0567\. Permutation in String (待补) — 定长滑窗 + 频次签名
+- [0567. Permutation in String](../../05-two-pointers/0567-permutation-in-string/README.md) — 定长滑窗 + 频次签名
 - 0028\. Find the Index of the First Occurrence in a String (待补) — 字符串匹配, Rabin-Karp 用滚动哈希
 - 0076\. Minimum Window Substring (待补) — 不定长滑窗 + 计数

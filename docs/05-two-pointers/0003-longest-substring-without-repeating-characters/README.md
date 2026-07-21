@@ -204,5 +204,5 @@
 - [0424. Longest Repeating Character Replacement](../0424-longest-repeating-character-replacement/README.md) — 至多 k 次替换, maxCount 不减 trick
 - 0904\. Fruit Into Baskets (待补) — 至多 2 种字符的最长子数组
 - 0438\. Find All Anagrams in a String (待补) — 定长滑窗 + 频次
-- 0567\. Permutation in String (待补) — 定长滑窗 + 频次签名
+- [0567. Permutation in String](../0567-permutation-in-string/README.md) — 定长滑窗 + 频次签名
 - 0713\. Subarray Product Less Than K (待补) — 滑窗 + 计数

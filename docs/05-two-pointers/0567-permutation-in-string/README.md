@@ -197,5 +197,5 @@
 - [0209. Minimum Size Subarray Sum](../0209-minimum-size-subarray-sum/README.md) — 最短滑窗
 - [0187. Repeated DNA Sequences](../../03-hash-table/0187-repeated-dna-sequences/README.md) — 定长滑窗 + 滚动哈希
 - 0438\. Find All Anagrams in a String (待补) — **本题的双胞胎**, 找所有起点
-- 0076\. Minimum Window Substring (待补) — 最短窗口子串, Hard
+- [0076. Minimum Window Substring](../0076-minimum-window-substring/README.md) — 最短窗口子串, Hard
 - 0030\. Substring with Concatenation of All Words (待补) — 定长滑窗 + 单词级

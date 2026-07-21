@@ -177,7 +177,7 @@
 - [0209. Minimum Size Subarray Sum](../0209-minimum-size-subarray-sum/README.md) — 最短满足和 ≥ target
 - [0011. Container With Most Water](../0011-container-with-most-water/README.md) — 对撞 + 贪心
 - [0187. Repeated DNA Sequences](../../03-hash-table/0187-repeated-dna-sequences/README.md) — 定长滑窗 + 滚动哈希
-- 0076\. Minimum Window Substring (待补) — 最短窗口子串, Hard
+- [0076. Minimum Window Substring](../0076-minimum-window-substring/README.md) — 最短窗口子串, Hard
 - [0567. Permutation in String](../0567-permutation-in-string/README.md) — 定长滑窗 + 频次签名
 - 0438\. Find All Anagrams in a String (待补) — 定长滑窗 + 频次
 - 0904\. Fruit Into Baskets (待补) — 至多 2 种字符最长子数组

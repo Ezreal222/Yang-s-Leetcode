@@ -21,3 +21,4 @@
 | 0003 | [Longest Substring Without Repeating Characters / 无重复字符的最长子串](./0003-longest-substring-without-repeating-characters/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0424 | [Longest Repeating Character Replacement / 替换后的最长重复字符](./0424-longest-repeating-character-replacement/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0567 | [Permutation in String / 字符串的排列](./0567-permutation-in-string/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0076 | [Minimum Window Substring / 最小覆盖子串](./0076-minimum-window-substring/README.md) | Hard | ✅ | ☐ ☐ ☐ |

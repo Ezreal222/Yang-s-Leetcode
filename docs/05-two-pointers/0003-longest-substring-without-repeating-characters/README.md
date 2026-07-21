@@ -200,7 +200,7 @@
 - [0187. Repeated DNA Sequences](../../03-hash-table/0187-repeated-dna-sequences/README.md) — **定长**滑窗 + 滚动哈希
 - [0128. Longest Consecutive Sequence](../../03-hash-table/0128-longest-consecutive-sequence/README.md) — hash set + "只从头扩"
 - [0242. Valid Anagram](../../03-hash-table/0242-valid-anagram/README.md) — 计数数组基础
-- 0076\. Minimum Window Substring (待补) — 最短窗口子串, Hard, 计数 + 双指针
+- [0076. Minimum Window Substring](../0076-minimum-window-substring/README.md) — 最短窗口子串, Hard, 计数 + 双指针
 - [0424. Longest Repeating Character Replacement](../0424-longest-repeating-character-replacement/README.md) — 至多 k 次替换, maxCount 不减 trick
 - 0904\. Fruit Into Baskets (待补) — 至多 2 种字符的最长子数组
 - 0438\. Find All Anagrams in a String (待补) — 定长滑窗 + 频次

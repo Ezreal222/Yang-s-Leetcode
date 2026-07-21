@@ -57,9 +57,9 @@
 
     若 s1 始终没找到 s2 作子序列 (正扫 j 永远到不了 n), `bestStart` 保持初值 -1, 最终返 "".
 
-6. **跟 0076 Minimum Window Substring (待补) 的对比 / vs 0076**
+6. **跟 [0076 Minimum Window Substring](../0076-minimum-window-substring/README.md) 的对比 / vs 0076**
 
-    | | 0076 (待补) | **0727 (本题)** |
+    | | [0076](../0076-minimum-window-substring/README.md) | **0727 (本题)** |
     |---|---|---|
     | 找 | s 中**包含 t 全部字符** (含重复) 的最短子串 | s1 中**含 t 为子序列** 的最短子串 |
     | 解法 | 滑动窗口 + 哈希计数 | 两指针 + 反扫缩窗 / DP |
@@ -187,7 +187,7 @@
 ## 相关题目
 
 - [0027. Remove Element](../0027-remove-element/README.md) — 同向双指针基础
-- 0076\. Minimum Window Substring (待补) — 同款"最小窗口" 但**字符无序**, 用滑动窗口 + 哈希
+- [0076. Minimum Window Substring](../0076-minimum-window-substring/README.md) — 同款"最小窗口" 但**字符无序**, 用滑动窗口 + 哈希
 - 0392\. Is Subsequence (待补) — 判定 t 是否 s 子序列, 双指针入门
 - 0524\. Longest Word in Dictionary through Deleting (待补) — 双指针子序列匹配
 - 0792\. Number of Matching Subsequences (待补) — 多 t 子序列匹配, 桶 + 推进指针

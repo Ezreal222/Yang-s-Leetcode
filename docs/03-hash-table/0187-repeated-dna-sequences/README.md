@@ -213,4 +213,4 @@
 - 0438\. Find All Anagrams in a String (待补) — 定长滑窗 + 计数
 - [0567. Permutation in String](../../05-two-pointers/0567-permutation-in-string/README.md) — 定长滑窗 + 频次签名
 - 0028\. Find the Index of the First Occurrence in a String (待补) — 字符串匹配, Rabin-Karp 用滚动哈希
-- 0076\. Minimum Window Substring (待补) — 不定长滑窗 + 计数
+- [0076. Minimum Window Substring](../../05-two-pointers/0076-minimum-window-substring/README.md) — 不定长滑窗 + 计数, Hard

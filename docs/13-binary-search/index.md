@@ -13,3 +13,4 @@
 | 1011 | [Capacity To Ship Packages Within D Days / 在 D 天内送达包裹的能力](./1011-capacity-to-ship-packages-within-d-days/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1231 | [Divide Chocolate / 分享巧克力](./1231-divide-chocolate/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0074 | [Search a 2D Matrix / 搜索二维矩阵](./0074-search-a-2d-matrix/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0875 | [Koko Eating Bananas / 爱吃香蕉的珂珂](./0875-koko-eating-bananas/README.md) | Medium | ✅ | ☐ ☐ ☐ |

@@ -44,6 +44,7 @@
 |------|-------|------------|--------|----------|
 | 0343 | [Integer Break / 整数拆分](./0343-integer-break/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0096 | [Unique Binary Search Trees / 不同的二叉搜索树](./0096-unique-binary-search-trees/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0887 | [Super Egg Drop / 鸡蛋掉落](./0887-super-egg-drop/README.md) (dimension flip + 4 版进化) | Hard | ✅ | ☐ ☐ ☐ |
 
 ### 背包 DP / Knapsack
 

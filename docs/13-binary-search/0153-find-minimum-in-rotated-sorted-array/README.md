@@ -168,7 +168,7 @@
 - [0875. Koko Eating Bananas](../0875-koko-eating-bananas/README.md) — BSA
 - [2560. House Robber IV](../2560-house-robber-iv/README.md) — BSA
 - 0154\. Find Minimum in Rotated Sorted Array II (待补) — **允许重复** 版, 加 `r--`
-- 0033\. Search in Rotated Sorted Array (待补) — 在旋转数组里找 target
+- [0033. Search in Rotated Sorted Array](../0033-search-in-rotated-sorted-array/README.md) — 在旋转数组里找 target
 - 0081\. Search in Rotated Sorted Array II (待补) — 允许重复的找 target
 - 0162\. Find Peak Element (待补) — 二分找峰值
 - 0852\. Peak Index in a Mountain Array (待补) — 二分找山顶

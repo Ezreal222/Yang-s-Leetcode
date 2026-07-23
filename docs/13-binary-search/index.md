@@ -15,3 +15,4 @@
 | 0074 | [Search a 2D Matrix / 搜索二维矩阵](./0074-search-a-2d-matrix/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0875 | [Koko Eating Bananas / 爱吃香蕉的珂珂](./0875-koko-eating-bananas/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0153 | [Find Minimum in Rotated Sorted Array / 寻找旋转排序数组中的最小值](./0153-find-minimum-in-rotated-sorted-array/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0033 | [Search in Rotated Sorted Array / 搜索旋转排序数组](./0033-search-in-rotated-sorted-array/README.md) | Medium | ✅ | ☐ ☐ ☐ |

@@ -23,4 +23,5 @@
 | 0211 | [Design Add and Search Words Data Structure / 添加与搜索单词](./0211-design-add-and-search-words-data-structure/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0212 | [Word Search II / 单词搜索 II](./0212-word-search-ii/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0648 | [Replace Words / 单词替换](./0648-replace-words/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0472 | [Concatenated Words / 连接词](./0472-concatenated-words/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0266 | [Palindrome Permutation / 回文排列](./0266-palindrome-permutation/README.md) | Easy | ✅ | ☐ ☐ ☐ |

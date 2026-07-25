@@ -210,6 +210,6 @@
 - [1000. Minimum Cost to Merge Stones](../1000-minimum-cost-to-merge-stones/README.md) — 3D 区间 DP
 - [1547. Minimum Cost to Cut a Stick](../1547-minimum-cost-to-cut-a-stick/README.md) — 区间 + 排序
 - [0375. Guess Number Higher or Lower II](../0375-guess-number-higher-or-lower-ii/README.md) — 区间 min-max 博弈
-- 0546\. Remove Boxes (待补, Hard×2) — 区间 DP + 三维状态 (超难变体)
+- [0546. Remove Boxes](../0546-remove-boxes/README.md) — 3D 区间 DP + k 悬挂状态 (超难变体)
 - 1246\. Palindrome Removal (待补) — 区间 DP + 回文合并
 - 0087\. Scramble String (待补) — 区间 DP + memo

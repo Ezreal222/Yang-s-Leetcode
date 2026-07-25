@@ -122,6 +122,7 @@
 | 0375 | [Guess Number Higher or Lower II / 猜数字大小 II](./0375-guess-number-higher-or-lower-ii/README.md) (min-max 博弈) | Medium | ✅ | ☐ ☐ ☐ |
 | 1130 | [Minimum Cost Tree From Leaf Values / 叶值的最小代价生成树](./1130-minimum-cost-tree-from-leaf-values/README.md) (max 表预处理) | Medium | ✅ | ☐ ☐ ☐ |
 | 0664 | [Strange Printer / 奇怪的打印机](./0664-strange-printer/README.md) (合并同色打印) | Hard | ✅ | ☐ ☐ ☐ |
+| 0546 | [Remove Boxes / 移除盒子](./0546-remove-boxes/README.md) (3D 区间 DP + k 悬挂状态) | Hard | ✅ | ☐ ☐ ☐ |
 
 ### 折半搜索 / Meet in the Middle
 

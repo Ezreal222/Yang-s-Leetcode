@@ -182,7 +182,7 @@
 - [0206. Reverse Linked List](../0206-reverse-linked-list/README.md) — 链表反转, 迭代三指针母题
 - [0707. Design Linked List](../0707-design-linked-list/README.md) — 自己实现链表, dummy + size 组合拳
 - [0019. Remove Nth Node From End of List](../0019-remove-nth-node-from-end-of-list/README.md) — 快慢 gap = n + dummy
-- 0021\. Merge Two Sorted Lists (待补) — dummy head 经典
+- [0021. Merge Two Sorted Lists](../0021-merge-two-sorted-lists/README.md) — dummy head 经典 + 递归对照
 - 0083\. Remove Duplicates from Sorted List (待补) — 类似删法
 - 0082\. Remove Duplicates from Sorted List II (待补) — 删全部重复, 前驱判逻辑更绕
 - 0237\. Delete Node in a Linked List (待补) — 没有前驱时怎么删 (复制下一节点的值)

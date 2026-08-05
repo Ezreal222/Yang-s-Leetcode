@@ -225,5 +225,5 @@
 - [0203. Remove Linked List Elements](../0203-remove-linked-list-elements/README.md) — dummy head 母题
 - 0092\. Reverse Linked List II (待补) — 反转 `[left, right]` 区间, 半开区间思想同源
 - 0234\. Palindrome Linked List (待补) — 快慢找中点 + 后半反转 + 比较
-- 0143\. Reorder List (待补) — 快慢找中点 + 后半反转 + 双端 merge
+- [0143. Reorder List](../0143-reorder-list/README.md) — 快慢找中点 + 后半反转 + 双端 merge
 - 0061\. Rotate List (待补) — 部分旋转, 指针 + 长度

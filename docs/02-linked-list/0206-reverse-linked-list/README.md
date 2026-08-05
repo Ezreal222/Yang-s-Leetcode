@@ -216,5 +216,5 @@
 - [0025. Reverse Nodes in k-Group](../0025-reverse-nodes-in-k-group/README.md) — 每 k 个一组反转, Hard
 - [0024. Swap Nodes in Pairs](../0024-swap-nodes-in-pairs/README.md) — 每两个一组交换 = k=2 版
 - 0234\. Palindrome Linked List (待补) — 快慢找中点 + 后半反转 + 比较
-- 0143\. Reorder List (待补) — 快慢找中点 + 后半反转 + 双端 merge
+- [0143. Reorder List](../0143-reorder-list/README.md) — 快慢找中点 + 后半反转 + 双端 merge
 - 0061\. Rotate List (待补) — 部分旋转, 指针操作

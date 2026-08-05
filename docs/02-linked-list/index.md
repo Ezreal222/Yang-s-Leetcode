@@ -18,3 +18,4 @@
 | 0138 | [Copy List with Random Pointer / 复制带随机指针的链表](./0138-copy-list-with-random-pointer/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0021 | [Merge Two Sorted Lists / 合并两个有序链表](./0021-merge-two-sorted-lists/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0141 | [Linked List Cycle / 环形链表](./0141-linked-list-cycle/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0143 | [Reorder List / 重排链表](./0143-reorder-list/README.md) | Medium | ✅ | ☐ ☐ ☐ |

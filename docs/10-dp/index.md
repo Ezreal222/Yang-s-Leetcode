@@ -28,6 +28,8 @@
 | 3840 | [House Robber V / 打家劫舍 V](./3840-house-robber-v/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0983 | [Minimum Cost For Tickets / 最低票价](./0983-minimum-cost-for-tickets/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0091 | [Decode Ways / 解码方法](./0091-decode-ways/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 1137 | [N-th Tribonacci Number / 第 N 个泰波那契数](./1137-n-th-tribonacci-number/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0740 | [Delete and Earn / 删除并获得点数](./0740-delete-and-earn/README.md) (化简到 House Robber) | Medium | ✅ | ☐ ☐ ☐ |
 
 ### 网格 DP / Grid
 
@@ -122,6 +124,7 @@
 | 1771 | [Maximize Palindrome Length From Subsequences / 由子序列构造的最长回文串的长度](./1771-maximize-palindrome-length-from-subsequences/README.md) (LPS + 端点跨界约束) | Hard | ✅ | ☐ ☐ ☐ |
 | 0375 | [Guess Number Higher or Lower II / 猜数字大小 II](./0375-guess-number-higher-or-lower-ii/README.md) (min-max 博弈) | Medium | ✅ | ☐ ☐ ☐ |
 | 1130 | [Minimum Cost Tree From Leaf Values / 叶值的最小代价生成树](./1130-minimum-cost-tree-from-leaf-values/README.md) (max 表预处理) | Medium | ✅ | ☐ ☐ ☐ |
+| 0005 | [Longest Palindromic Substring / 最长回文子串](./0005-longest-palindromic-substring/README.md) (中心扩展 or 区间 DP) | Medium | ✅ | ☐ ☐ ☐ |
 | 0664 | [Strange Printer / 奇怪的打印机](./0664-strange-printer/README.md) (合并同色打印) | Hard | ✅ | ☐ ☐ ☐ |
 | 0546 | [Remove Boxes / 移除盒子](./0546-remove-boxes/README.md) (3D 区间 DP + k 悬挂状态) | Hard | ✅ | ☐ ☐ ☐ |
 

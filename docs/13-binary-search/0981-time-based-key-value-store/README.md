@@ -226,7 +226,7 @@
 - [0153. Find Minimum in Rotated Sorted Array](../0153-find-minimum-in-rotated-sorted-array/README.md) — 找断点
 - [0033. Search in Rotated Sorted Array](../0033-search-in-rotated-sorted-array/README.md) — 旋转数组找 target
 - 0035\. Search Insert Position (待补) — 找最小满足 arr[i] >= target
-- 0034\. Find First and Last Position of Element in Sorted Array (待补) — 找第一个/最后一个 target
+- [0034. Find First and Last Position of Element in Sorted Array](../0034-find-first-and-last-position-of-element-in-sorted-array/README.md) — 找第一个/最后一个 target (lower_bound trick)
 - 0146\. LRU Cache (待补) — 设计题, 双向链表 + 哈希
 - 1146\. Snapshot Array (待补) — 版本化数组, 同思路二分
 - 0715\. Range Module (待补) — 区间管理设计

@@ -27,3 +27,4 @@
 | KC-97 | [小明逛公园 / Floyd Park](./kc-97-floyd-park/README.md) (Floyd-Warshall 全源最短路) | Medium | ✅ | ☐ ☐ ☐ |
 | 1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance / 阈值距离内邻居最少的城市](./1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/README.md) (Floyd LC 经典) | Medium | ✅ | ☐ ☐ ☐ |
 | 0133 | [Clone Graph / 克隆图](./0133-clone-graph/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0994 | [Rotting Oranges / 腐烂的橘子](./0994-rotting-oranges/README.md) (多源 BFS) | Medium | ✅ | ☐ ☐ ☐ |

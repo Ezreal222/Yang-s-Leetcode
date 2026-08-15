@@ -19,3 +19,4 @@
 | 1047 | [Remove All Adjacent Duplicates In String / 删除字符串中的所有相邻重复项](./1047-remove-all-adjacent-duplicates-in-string/README.md) | Easy | ✅ | ☑ ☐ ☐ |
 | 1249 | [Minimum Remove to Make Valid Parentheses / 移除无效的括号](./1249-minimum-remove-to-make-valid-parentheses/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0856 | [Score of Parentheses / 括号的分数](./0856-score-of-parentheses/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0215 | [Kth Largest Element in an Array / 数组中的第 K 个最大元素](./0215-kth-largest-element-in-an-array/README.md) | Medium | ✅ | ☐ ☐ ☐ |

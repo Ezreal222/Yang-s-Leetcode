@@ -51,6 +51,97 @@
 
 **后序递归. Base case 撞到 `null / p / q` 就向上传; 当前节点根据左右两侧返回值汇总: 两侧都非空 → 我是 LCA; 一侧非空 → 把那侧传上去. 关键是不能短路, 必须左右都跑完.**
 
+## Interview Walkthrough (Speak Out Loud)
+
+*What I'd literally say while pair-programming this with an interviewer. 5-8 min out loud.*
+
+### 1. Clarify (30s)
+
+> "So I need to find the **lowest common ancestor** of two nodes `p` and `q` in a binary tree. 'Lowest' meaning the **deepest** node that has both `p` and `q` in its subtree. And a node is considered its own descendant — so if `p` is `q`'s ancestor, then `p` itself is the LCA. Let me confirm a couple of things:"
+
+- "Is this a **BST** or a **general** binary tree?" *(general — that's the harder version, no ordering property.)*
+- "Are `p` and `q` both **guaranteed to exist** in the tree?" *(yes — simplifies the code.)*
+- "Do nodes have **parent pointers**?" *(no — pure top-down.)*
+- "Are node values **unique**?" *(yes — so pointer equality and value equality are the same, but I'll use pointer comparison to be safe.)*
+
+### 2. Brainstorm approaches (1 min)
+
+> "Let me think through a few options.
+>
+> **Approach 1 — naive**: for each node, check if both `p` and `q` are in its subtree, take the deepest. That's O(n²). Too slow.
+>
+> **Approach 2 — path comparison**: find the root-to-`p` path, find the root-to-`q` path, then walk them until they diverge. That's O(n) time, O(h) space, works fine but requires two full traversals and explicit path storage.
+>
+> **Approach 3 — recursive post-order**, which is the cleanest. The insight is: at every node, I ask *'what did my left subtree find? what did my right subtree find?'* If left found one target and right found the other, **I'm the LCA** — I'm the first node where `p` and `q` split. Otherwise I propagate up whichever side found something."
+
+> "I'll go with approach 3. Single traversal, no extra data structures."
+
+### 3. Sketch the algorithm before coding (1 min)
+
+> "The recursive function:
+>
+> - **Base case**: if the current node is `null`, return `null`. If it's `p` or `q`, return itself — this acts as a **signal** to the parent: 'I saw one target here.'
+> - **Recurse both sides** — I can't short-circuit; I need to know what both sides found.
+> - **Combine**:
+>   - If **both** sides returned non-null → `p` and `q` are split across my two subtrees → **I am the LCA**, return me.
+>   - If **only one** side is non-null → return that one (it's either a target itself, or an already-found LCA deeper down).
+>   - If both null → return null.
+>
+> Key subtlety: once the LCA is found deep in the tree, it just bubbles up unchanged — every ancestor above it sees `(non-null, null)` and forwards it."
+
+### 4. Code while narrating (2 min)
+
+> "Let me write it out."
+
+```cpp
+TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+    // Base case: null, or hit one of the targets
+    if (!root || root == p || root == q) return root;
+
+    // Post-order: fully explore both sides before deciding
+    TreeNode* left  = lowestCommonAncestor(root->left,  p, q);
+    TreeNode* right = lowestCommonAncestor(root->right, p, q);
+
+    // Combine
+    if (left && right) return root;    // split → I'm the LCA
+    return left ? left : right;         // forward the non-null side
+}
+```
+
+> "That's it — surprisingly compact. The magic is in what the return value *means* at each level: 'something my subtree found that's relevant to the answer.'"
+
+### 5. Trace an example (1 min)
+
+> "Let me sanity-check with a small tree, `[3, 5, 1, 6, 2, 0, 8]`, and find the LCA of **5 and 1**:
+>
+> - At node 3: recurse left, recurse right.
+> - Left recurses to node 5 → base case hits (`root == p`) → returns 5.
+> - Right recurses to node 1 → base case hits → returns 1.
+> - Both non-null at node 3 → return 3. ✓
+>
+> Now a trickier case: LCA of **5 and 4**, where 4 is a descendant of 5.
+>
+> - At node 3: right subtree has neither, returns null.
+> - Left recurses down; node 5 hits base case and returns itself — we **don't keep searching for 4 inside 5's subtree**.
+> - Node 3 sees `(left=5, right=null)` → returns 5.
+> - Correct — 5 is the LCA of 5 and 4 because 5 is its own descendant."
+
+> "That second case is the subtle one — the base case treating `root == p` as a stopping point is what makes 'ancestor is also allowed to be the LCA' work naturally."
+
+### 6. Complexity (20s)
+
+> "**Time O(n)** — every node visited exactly once. **Space O(h)** for the recursion stack — O(log n) for balanced, O(n) worst case for a skewed tree."
+
+### 7. Edge cases + follow-ups (1 min)
+
+> "Two things worth flagging:
+>
+> 1. **This assumes both `p` and `q` are in the tree.** If that weren't guaranteed, this code would return a false positive when only one exists — it'd return the one it found, thinking it was the LCA. To handle that, I'd add a second pass to verify, or change the recursion to return a `(node, found_p, found_q)` tuple. That's the follow-up problem 1644.
+>
+> 2. **For a BST, there's a much simpler O(h) solution** — we can walk one path using the ordering: if both `p` and `q` are less than root, go left; if both greater, go right; otherwise root is the LCA. That's 0235. Worth mentioning if the interviewer wants to see that I know the specialization."
+
+> "Any follow-ups you'd like me to code?"
+
 ## Solution
 
 === "C++"

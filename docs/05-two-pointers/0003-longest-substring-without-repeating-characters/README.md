@@ -93,6 +93,117 @@
 
     > 双指针家族的三大姿势各有对应场景. 记牢分类.
 
+## Interview Walkthrough (Speak Out Loud)
+
+*What I'd literally say while pair-programming this with an interviewer. 5-8 min out loud.*
+
+### 1. Clarify (30s)
+
+> "So I need to find the length of the **longest substring** of `s` where **every character appears at most once**. Let me confirm a few things:"
+
+- "**Substring** meaning contiguous, right? Not subsequence." *(yes)*
+- "What's the character set — **ASCII, lowercase letters, or full Unicode**?" *(usually ASCII 128 in LC — affects space bound.)*
+- "**Case sensitive**? `'A'` and `'a'` are different?" *(yes.)*
+- "What about **empty string** — return 0?" *(yes.)*
+
+### 2. Brainstorm approaches (1 min)
+
+> "Let me think about a few options.
+>
+> **Approach 1 — brute force**: try every substring `s[i..j]`, check if it has all unique chars using a set. That's O(n³) — n² substrings × O(n) check. Way too slow.
+>
+> **Approach 2 — sliding window with a set**: this is the natural fit. Maintain a window `[left, right]` where all chars inside are unique. Extend `right` when I can; when a duplicate appears, shrink `left` until the window is valid again. Track the max window size along the way. That's **O(n)** amortized — every character enters and leaves the set at most once.
+>
+> **Approach 3 — sliding window with a hash map of last-seen index**: instead of shrinking one step at a time, jump `left` directly to `last[s[right]] + 1`. Same O(n) but tighter constant, only one pass.
+>
+> I'll go with **approach 2** first — it's the cleanest way to explain the logic. If time permits, I'll show the map optimization as a follow-up."
+
+### 3. Sketch the algorithm before coding (1 min)
+
+> "The sliding-window loop:
+>
+> - `left = 0`, `maxLen = 0`, empty set as the window.
+> - For each `right` from 0 to n-1:
+>   - **While** `s[right]` is already in the window, **evict** `s[left]` from the set and advance `left`.
+>   - Add `s[right]` to the set.
+>   - Update `maxLen = max(maxLen, right - left + 1)`.
+> - Return `maxLen`.
+>
+> Key detail: I use `while`, not `if`, because in principle `left` may need to advance multiple positions — though for **this specific problem** at most one, since the invariant is 'window has unique chars' and we only just added the duplicate. Still, `while` is the safer general template and doesn't hurt correctness."
+
+> "Two subtler points worth naming out loud:
+>
+> 1. **'longest' vs 'shortest' sliding-window are mirror opposites**: for shortest (like Min Size Subarray Sum), you shrink **while the window is still valid**, recording min inside the while. Here you shrink **while the window is invalid**, and record max **after** the while — because every `right` corresponds to at most one valid window of maximum size ending there.
+> 2. **Amortized O(n)**: even with a `while` inside a `for`, each character enters the set once and leaves once, so total work is bounded by 2n."
+
+### 4. Code while narrating (2 min)
+
+> "Let me write it out."
+
+```cpp
+int lengthOfLongestSubstring(string s) {
+    unordered_set<char> window;
+    int left = 0, maxLen = 0;
+    for (int right = 0; right < (int)s.size(); right++) {
+        // Shrink until s[right] is no longer in the window
+        while (window.count(s[right])) {
+            window.erase(s[left]);
+            left++;
+        }
+        window.insert(s[right]);
+        maxLen = max(maxLen, right - left + 1);
+    }
+    return maxLen;
+}
+```
+
+> "That's about 10 lines. Nothing tricky — the loop invariant is what carries the correctness."
+
+### 5. Trace an example (1 min)
+
+> "Let me trace with `s = "abcabcbb"` to verify:
+>
+> | `right` | `s[right]` | window before | action | window after | maxLen |
+> |---|---|---|---|---|---|
+> | 0 | 'a' | {} | add | {a} | 1 |
+> | 1 | 'b' | {a} | add | {a,b} | 2 |
+> | 2 | 'c' | {a,b} | add | {a,b,c} | **3** |
+> | 3 | 'a' | {a,b,c} | evict a → {b,c}, add a | {b,c,a} | 3 |
+> | 4 | 'b' | {b,c,a} | evict b → {c,a}, add b | {c,a,b} | 3 |
+> | 5 | 'c' | {c,a,b} | evict c → {a,b}, add c | {a,b,c} | 3 |
+> | 6 | 'b' | {a,b,c} | evict a → {b,c}, evict b → {c}, add b | {c,b} | 3 |
+> | 7 | 'b' | {c,b} | evict c → {b}, evict b → {}, add b | {b} | 3 |
+>
+> Final answer: 3, which matches — the longest unique substring is `'abc'` (or `'bca'`, or `'cab'`)."
+
+### 6. Complexity (20s)
+
+> "**Time O(n)** amortized — each character is inserted and erased at most once. **Space O(min(m, n))** where `m` is the character set size — for ASCII input the set holds at most 128 entries, so it's O(1) in practice."
+
+### 7. Optimization + follow-ups (1 min)
+
+> "One optimization worth mentioning: I can replace the set with a **hash map of char → last-seen index**. Then instead of shrinking one step at a time inside a `while`, I jump `left` directly:"
+
+```cpp
+int lengthOfLongestSubstring(string s) {
+    unordered_map<char, int> last;
+    int left = 0, maxLen = 0;
+    for (int right = 0; right < (int)s.size(); right++) {
+        if (last.count(s[right]))
+            left = max(left, last[s[right]] + 1);  // jump, but never rewind
+        last[s[right]] = right;
+        maxLen = max(maxLen, right - left + 1);
+    }
+    return maxLen;
+}
+```
+
+> "The `max(left, ...)` guard is important — the last seen index of `s[right]` might already be **before** `left`, meaning that duplicate is already outside the window. Without the guard, `left` would rewind and count invalid characters."
+
+> "Related problems I'd expect as follow-ups: **0424** — longest substring where we can **replace up to k characters** to make it uniform — same window shape but with a `maxCount` trick. **0076** — **shortest** window covering all characters of a target — mirror problem. Same template, different bookkeeping. And **0567 / 0438** — fixed-length window variants for permutation matching."
+
+> "Any follow-ups you'd like me to code?"
+
 ## Solution
 
 === "C++"

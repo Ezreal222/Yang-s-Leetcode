@@ -153,6 +153,6 @@
 - [0239. Sliding Window Maximum](../0239-sliding-window-maximum/README.md) — 单调队列 (另一种"动态最值")
 - [1049. Last Stone Weight II](../../10-dp/1049-last-stone-weight-ii/README.md) — **一字之差, DP 版**
 - 0703\. Kth Largest Element in a Stream (待补) — 流式版
-- 0973\. K Closest Points to Origin (待补) — max-heap of k
+- [0973. K Closest Points to Origin](../0973-k-closest-points-to-origin/README.md) — max-heap of k, distance² 优化
 - 0295\. Find Median from Data Stream (待补) — 双堆维护中位数
 - 0692\. Top K Frequent Words (待补) — 频次 + 字典序

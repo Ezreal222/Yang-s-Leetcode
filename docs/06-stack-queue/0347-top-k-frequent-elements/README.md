@@ -276,7 +276,7 @@ A 写起来最快, B 是 Top-K 的通用招式 (适合流式 / k 远小于 n), C
 - [0239. Sliding Window Maximum / 滑动窗口最大值](../0239-sliding-window-maximum/README.md) — 单调队列, 另一种"维护极值"
 - 0703\. Kth Largest Element in a Stream (待补) — 流式版, min-heap of size k 直接应用
 - [0215. Kth Largest Element in an Array](../0215-kth-largest-element-in-an-array/README.md) — Top-K 单值, min-heap + quickselect 两版
-- 0973\. K Closest Points to Origin (待补) — 同款 min-heap-of-k, 改 key
+- [0973. K Closest Points to Origin](../0973-k-closest-points-to-origin/README.md) — 同款 heap-of-k, key = 距离²
 - 0451\. Sort Characters By Frequency (待补) — 桶排的另一道
 - [0242. Valid Anagram](../../03-hash-table/0242-valid-anagram/README.md) — 计数数组基础
 - [0049. Group Anagrams](../../03-hash-table/0049-group-anagrams/README.md) — 哈希分桶模式

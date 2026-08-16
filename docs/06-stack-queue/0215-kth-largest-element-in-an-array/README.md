@@ -237,7 +237,7 @@
 - [0239. Sliding Window Maximum](../0239-sliding-window-maximum/README.md) — 单调队列
 - [0155. Min Stack](../0155-min-stack/README.md) — 栈设计
 - 0703\. Kth Largest Element in a Stream (待补) — **流式版**, min-heap of k 直接应用
-- 0973\. K Closest Points to Origin (待补) — 同款 min-heap of k, 换 key
+- [0973. K Closest Points to Origin](../0973-k-closest-points-to-origin/README.md) — 同款 heap of k, key = 距离²
 - 0692\. Top K Frequent Words (待补) — 频次 Top-K + 字典序
 - 0378\. Kth Smallest Element in a Sorted Matrix (待补) — 二分答案 or 堆
 - 0295\. Find Median from Data Stream (待补) — 双堆维护中位数

@@ -270,7 +270,7 @@ vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
 - [0215. Kth Largest Element in an Array](../0215-kth-largest-element-in-an-array/README.md) — Top-K 单值, min-heap + quickselect
 - [1046. Last Stone Weight](../1046-last-stone-weight/README.md) — max-heap 模拟
 - [0239. Sliding Window Maximum](../0239-sliding-window-maximum/README.md) — 单调队列
-- 0703\. Kth Largest Element in a Stream (待补) — 流式版
+- [0703. Kth Largest Element in a Stream](../0703-kth-largest-element-in-a-stream/README.md) — 流式版
 - 0692\. Top K Frequent Words (待补) — 频次 + 字典序
 - 0378\. Kth Smallest Element in a Sorted Matrix (待补) — 矩阵 + 堆
 - 0295\. Find Median from Data Stream (待补) — 双堆维护中位数

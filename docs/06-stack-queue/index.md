@@ -65,3 +65,4 @@
 | 0215 | [Kth Largest Element in an Array / 数组中的第 K 个最大元素](./0215-kth-largest-element-in-an-array/README.md) (min-heap + quickselect) | Medium | ✅ | ☐ ☐ ☐ |
 | 1046 | [Last Stone Weight / 最后一块石头的重量](./1046-last-stone-weight/README.md) (max-heap 模拟) | Easy | ✅ | ☐ ☐ ☐ |
 | 0973 | [K Closest Points to Origin / 最接近原点的 K 个点](./0973-k-closest-points-to-origin/README.md) (max-heap of k) | Medium | ✅ | ☐ ☐ ☐ |
+| 0703 | [Kth Largest Element in a Stream / 数据流中的第 K 大元素](./0703-kth-largest-element-in-a-stream/README.md) (流式 min-heap) | Easy | ✅ | ☐ ☐ ☐ |

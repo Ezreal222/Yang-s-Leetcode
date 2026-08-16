@@ -5,7 +5,7 @@
     - **Tags**: Monotonic Stack, Array · 单调栈, 数组
     - **Link**: [LeetCode](https://leetcode.com/problems/daily-temperatures/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 
@@ -61,6 +61,99 @@
 5. **复杂度 O(n) 摊销 / Amortized O(n)**
 
     每个索引最多入栈一次, 出栈一次. 总操作 O(n). **单调栈所有题的复杂度论证都是这个套路**.
+
+## Interview Walkthrough (Speak Out Loud)
+
+*What I'd literally say while pair-programming this with an interviewer. 5-8 min out loud.*
+
+### 1. Clarify (30s)
+
+> "So I'm given a list of daily temperatures, and for each day I need to return **how many days I have to wait until a warmer temperature**. If no future day is warmer, return 0 for that day. Let me confirm a few things:"
+
+- "The output is the **same length** as the input?" *(yes.)*
+- "**Strictly greater**, not `>=`?" *(yes — strict.)*
+- "**Temperature range** — could there be ties matter for overflow? just checking." *(usually 30–100, no overflow concern.)*
+- "Any constraint on `n`? Just so I can pick the right complexity." *(usually up to 10⁵ — rules out O(n²).)*
+
+### 2. Brainstorm approaches (1 min)
+
+> "Two ways I'd think about this.
+>
+> **Approach 1 — brute force**: for each day, scan forward until I find a warmer day. That's O(n²). At n = 10⁵ that's 10¹⁰ operations — TLE.
+>
+> **Approach 2 — monotonic stack**. The key observation: when I see a temperature `t[i]`, I can look **backward** at all pending days that were **cooler** and instantly tell them 'your answer is today'. Once a day gets its answer, I never need it again. So I keep a **stack of days waiting for a warmer future** — the stack stays **monotonically decreasing** in temperature.
+>
+> Approach 2 is O(n) amortized — each index is pushed once and popped once. That's my pick."
+
+### 3. Sketch the algorithm before coding (1 min)
+
+> "The core loop:
+>
+> - Stack holds **indices** (not values) of days still waiting for an answer, in decreasing-temperature order.
+> - For each new day `i`:
+>   - While the stack isn't empty **and** `t[i] > t[stack.top()]`: pop the top — that day's answer is `i - top`.
+>   - Push `i` onto the stack.
+> - Any indices left in the stack at the end have no warmer future — their answer stays 0 (init default).
+>
+> Two design choices worth flagging out loud:
+>
+> 1. **Store indices, not temperatures.** Because I need to compute the *distance* `i - j` when a day gets resolved, I have to know its original index. Comparing values is easy: just `t[i]` vs `t[stack.top()]`.
+> 2. **Start the loop at `i = 0`**, not `i = 1`. Common bug: if you start at 1 assuming 'nothing to compare yet', index 0 never enters the stack and its answer is stuck at 0 even if day 1 is warmer. Starting at 0 lets the invariant handle everything uniformly."
+
+### 4. Code while narrating (2 min)
+
+```cpp
+vector<int> dailyTemperatures(vector<int>& t) {
+    int n = t.size();
+    vector<int> res(n, 0);         // default 0 means "no warmer future"
+    stack<int> stk;                 // stack of indices, temperatures decreasing top→bottom
+    for (int i = 0; i < n; i++) {
+        while (!stk.empty() && t[i] > t[stk.top()]) {
+            int j = stk.top(); stk.pop();
+            res[j] = i - j;         // answer for day j is today
+        }
+        stk.push(i);
+    }
+    return res;
+}
+```
+
+> "About 10 lines. The `while` inside `for` looks like it could be O(n²), but each index is popped at most once across the entire run — that's the amortization argument."
+
+### 5. Trace an example (1 min)
+
+> "Let me trace `t = [73, 74, 75, 71, 69, 72, 76, 73]`:
+>
+> | i | t[i] | Stack before | Pops (with answers) | Stack after |
+> |---|---|---|---|---|
+> | 0 | 73 | [] | — | [0] |
+> | 1 | 74 | [0] | pop 0 → res[0]=1 | [1] |
+> | 2 | 75 | [1] | pop 1 → res[1]=1 | [2] |
+> | 3 | 71 | [2] | — | [2,3] |
+> | 4 | 69 | [2,3] | — | [2,3,4] |
+> | 5 | 72 | [2,3,4] | pop 4 → res[4]=1; pop 3 → res[3]=2 | [2,5] |
+> | 6 | 76 | [2,5] | pop 5 → res[5]=1; pop 2 → res[2]=4 | [6] |
+> | 7 | 73 | [6] | — | [6,7] |
+>
+> End of loop: stack [6, 7] — days 6 and 7 have no warmer future, so res[6] = res[7] = 0 by default.
+>
+> Result: `[1, 1, 4, 2, 1, 1, 0, 0]`. Matches the expected output."
+
+### 6. Complexity (20s)
+
+> "**Time O(n)** amortized — every index is pushed once and popped at most once, so the total work inside the `while` across the whole loop is bounded by n. **Space O(n)** worst case — if the input is strictly decreasing, everything stays on the stack."
+
+### 7. Follow-ups + related (1 min)
+
+> "A few natural extensions:
+>
+> 1. **Next Greater Element I & II** (0496, 0503) — same monotonic-stack template, just with a mapping table or a circular array (traverse `2n` for the circular case).
+> 2. **Online Stock Span** (0901) — streaming version, stack holds `(price, span)` pairs so we can batch-collapse consecutive smaller prices.
+> 3. **Largest Rectangle in Histogram** (0084) — same idea taken further: monotonic stack tells you, for each bar, how far you can extend left/right, then compute area.
+>
+> All of these share the same amortization argument: 'each element enters and leaves the stack once.' Once you internalize the 'next greater' template, the family opens up."
+
+> "Any follow-ups you'd like me to code?"
 
 ## Solution
 

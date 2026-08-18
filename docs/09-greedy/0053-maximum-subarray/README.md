@@ -5,7 +5,7 @@
     - **Tags**: Greedy, DP, Divide and Conquer · 贪心, 动态规划, 分治
     - **Link**: [LeetCode](https://leetcode.com/problems/maximum-subarray/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 
@@ -74,6 +74,100 @@ num: -2  1   -3  4   -1  2   1   -5  4
 sum: -2  1   -2  4   3   5   6   1   5      (sum<0 重置点: i=0 后, i=2 后)
 res: -2  1   1   4   4   5   6   6   6      → 6 ([4,-1,2,1])
 ```
+
+## Interview Walkthrough (Speak Out Loud)
+
+*What I'd literally say while pair-programming this with an interviewer. 5-8 min out loud.*
+
+### 1. Clarify (30s)
+
+> "So I need to find the **contiguous subarray** with the **largest sum** in `nums`. Let me confirm a few things:"
+
+- "**Contiguous**, right? Not subsequence." *(yes.)*
+- "Must the subarray be **non-empty**? So if all numbers are negative, I return the least-negative single element, not zero?" *(yes — non-empty.)*
+- "Any constraint on `n`? Just to pick the right complexity." *(usually up to 10⁵ — O(n) needed.)*
+- "**Value range** — could sums overflow?" *(usually 32-bit int fits, but for very long arrays I'd use `long long`.)*
+
+### 2. Brainstorm approaches (1 min)
+
+> "Three approaches worth mentioning, from slowest to fastest.
+>
+> **Approach 1 — brute force**: try every `(i, j)` pair, sum the subarray. O(n³) with naive sum, O(n²) with a running sum. Way too slow for 10⁵.
+>
+> **Approach 2 — divide and conquer**: recurse on left half, right half, and 'crossing the middle' — take the max. O(n log n). Classic textbook, but there's better.
+>
+> **Approach 3 — greedy / Kadane's algorithm**: single pass, O(n). At each index, either **extend** the current subarray or **restart** from here. If the running sum ever goes negative, throw it away — carrying a negative prefix into the future always hurts.
+>
+> Approach 3 is O(n), O(1) space. That's my pick."
+
+### 3. Sketch the algorithm before coding (1 min)
+
+> "The greedy state is a single running variable `sum`. On each element:
+>
+> 1. **Add** it to `sum`.
+> 2. **Update** the best answer: `res = max(res, sum)`.
+> 3. **Reset** `sum = 0` if it went negative.
+>
+> Two design choices worth flagging out loud:
+>
+> - **The three-step order is load-bearing**: `+= → max → if reset`. If I reset *before* updating `res`, I miss the case where the current element itself is the peak — think `[-1]`, the answer should be `-1`, not some sentinel.
+> - **Initial `res = INT_MIN`, not 0.** Because 'non-empty' means all-negative arrays must return their max element, not 0."
+
+### 4. Code while narrating (2 min)
+
+```cpp
+int maxSubArray(vector<int>& nums) {
+    int sum = 0, res = INT_MIN;
+    for (int x : nums) {
+        sum += x;                  // 1. extend
+        res = max(res, sum);       // 2. record best
+        if (sum < 0) sum = 0;      // 3. reset if negative
+    }
+    return res;
+}
+```
+
+> "Seven lines. The whole insight lives in step 3 — the greedy 'drop a negative prefix' choice."
+
+### 5. Prove the greedy step (30s)
+
+> "One thing worth saying out loud, since greedy always needs justification: **why is resetting when `sum < 0` correct?**
+>
+> If my prefix sum is negative, then for *any* future suffix `S`, `prefix + S < S`. So starting fresh from the next element is strictly better than carrying the negative prefix forward. That's the local-optimal-implies-global-optimal argument for Kadane's."
+
+### 6. Trace an example (1 min)
+
+> "Let me trace `nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]`:
+>
+> | i | nums[i] | sum after `+=` | res | reset? |
+> |---|---|---|---|---|
+> | 0 | -2 | -2 | **-2** | yes → 0 |
+> | 1 | 1 | 1 | 1 | no |
+> | 2 | -3 | -2 | 1 | yes → 0 |
+> | 3 | 4 | 4 | 4 | no |
+> | 4 | -1 | 3 | 4 | no |
+> | 5 | 2 | 5 | 5 | no |
+> | 6 | 1 | 6 | **6** | no |
+> | 7 | -5 | 1 | 6 | no |
+> | 8 | 4 | 5 | 6 | no |
+>
+> Answer: **6**, from the subarray `[4, -1, 2, 1]`. The reset points (after i=0 and i=2) each represent 'that prefix was hurting; drop it.'"
+
+### 7. Complexity + follow-ups (1 min)
+
+> "**Time O(n)**, **space O(1)** — one pass, three scalar variables.
+>
+> A few natural follow-ups:
+>
+> 1. **DP framing**: this is equivalent to Kadane's DP where `dp[i] = max(nums[i], dp[i-1] + nums[i])` — 'extend or restart.' The greedy `sum < 0 reset` is that same choice, expressed in-place.
+>
+> 2. **Return the subarray indices** (not just the sum): add two variables `start, end`. Set `start = i + 1` at each reset, and update `end = i` whenever `res` improves.
+>
+> 3. **Circular version** (0918): rotate through the end. Trick — either the answer is a normal max subarray, *or* it wraps around, which is `total_sum − min_subarray`. Take max of the two, with an edge case when all values are negative.
+>
+> 4. **Product version** (0152): can't use Kadane directly because a big negative × a big negative = big positive. Track both current max **and** current min at each step.
+>
+> Any follow-ups you'd like me to code?"
 
 ## Solution
 

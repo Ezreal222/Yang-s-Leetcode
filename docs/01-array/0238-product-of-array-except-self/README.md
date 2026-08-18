@@ -173,5 +173,5 @@
 - [0304. Range Sum Query 2D - Immutable](../0304-range-sum-query-2d-immutable/README.md) — 二维前缀和
 - 0152\. Maximum Product Subarray (待补) — 乘积版"最大子数组", 需处理负号翻转
 - 0042\. Trapping Rain Water (待补 - 已存) — 双向预处理母题, 左右最大值替换"积"
-- 0560\. Subarray Sum Equals K (待补) — 前缀和 + 哈希
+- [0560. Subarray Sum Equals K](../0560-subarray-sum-equals-k/README.md) — 前缀和 + 哈希
 - 1352\. Product of the Last K Numbers (待补) — 流式前缀积

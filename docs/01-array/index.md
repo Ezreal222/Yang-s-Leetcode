@@ -18,3 +18,4 @@
 | 3954 | [Sum of Compatible Numbers in Range I / 范围内兼容数字的和 I](./3954-sum-of-compatible-numbers-in-range-i/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0059 | [Spiral Matrix II / 螺旋矩阵 II](./0059-spiral-matrix-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0238 | [Product of Array Except Self / 除自身以外数组的乘积](./0238-product-of-array-except-self/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0560 | [Subarray Sum Equals K / 和为 K 的子数组](./0560-subarray-sum-equals-k/README.md) | Medium | ✅ | ☐ ☐ ☐ |

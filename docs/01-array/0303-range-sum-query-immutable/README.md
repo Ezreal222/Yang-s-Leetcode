@@ -52,7 +52,7 @@
 
     - 0307\. Range Sum Mutable (待补) → 数组会变 → 前缀和重算太贵 → **树状数组 / 线段树**, O(log n) 查 + 改.
     - 0304 Range Sum 2D (待补) → 二维前缀和, `prefix[i][j] = 矩形 (0,0)-(i-1,j-1) 之和`.
-    - 0560 Subarray Sum Equals K (待补) → 前缀和 + 哈希表反查.
+    - [0560 Subarray Sum Equals K](../0560-subarray-sum-equals-k/README.md) → 前缀和 + 哈希表反查.
 
 ## Solution
 
@@ -122,6 +122,6 @@
 - [1094. Car Pooling](../1094-car-pooling/README.md) — 同族的对偶: 差分数组 + 前缀和验容量
 - [0304. Range Sum Query 2D - Immutable](../0304-range-sum-query-2d-immutable/README.md) — 二维版, 容斥原理 + 哨兵
 - 0307\. Range Sum Query - Mutable (待补) — 数组可变 → 树状数组 / 线段树
-- 0560\. Subarray Sum Equals K (待补) — 前缀和 + 哈希
+- [0560. Subarray Sum Equals K](../0560-subarray-sum-equals-k/README.md) — 前缀和 + 哈希
 - 0724\. Find Pivot Index (待补) — 前缀和入门变种
 - 0974\. Subarray Sums Divisible by K (待补) — 前缀和 + 余数哈希

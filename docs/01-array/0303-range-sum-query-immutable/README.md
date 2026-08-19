@@ -124,4 +124,4 @@
 - 0307\. Range Sum Query - Mutable (待补) — 数组可变 → 树状数组 / 线段树
 - [0560. Subarray Sum Equals K](../0560-subarray-sum-equals-k/README.md) — 前缀和 + 哈希
 - 0724\. Find Pivot Index (待补) — 前缀和入门变种
-- 0974\. Subarray Sums Divisible by K (待补) — 前缀和 + 余数哈希
+- [0974. Subarray Sums Divisible by K](../0974-subarray-sums-divisible-by-k/README.md) — 前缀和 + 余数哈希

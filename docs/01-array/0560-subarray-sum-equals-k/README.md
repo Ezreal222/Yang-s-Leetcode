@@ -178,8 +178,8 @@
 - [0304. Range Sum Query 2D - Immutable](../0304-range-sum-query-2d-immutable/README.md) — 二维前缀和
 - [0238. Product of Array Except Self](../0238-product-of-array-except-self/README.md) — 前缀积
 - [0454. 4Sum II](../../03-hash-table/0454-4sum-ii/README.md) — 分组哈希 (同源思维)
-- 0974\. Subarray Sums Divisible by K (待补) — prefix mod + hash
+- [0974. Subarray Sums Divisible by K](../0974-subarray-sums-divisible-by-k/README.md) — prefix mod + hash count
 - [0523. Continuous Subarray Sum](../0523-continuous-subarray-sum/README.md) — prefix mod 判倍数 (存首次 boundary)
-- 0525\. Contiguous Array (待补) — 换 mapping (0→-1) + prefix + hash 最长子数组
+- [0525. Contiguous Array](../0525-contiguous-array/README.md) — mapping trick (0→-1) + prefix + first index 最长子数组
 - 0325\. Maximum Size Subarray Sum Equals k (待补) — 求"最长" 版
 - 1074\. Number of Submatrices That Sum to Target (待补) — 二维版, 压行 + 本题

@@ -286,7 +286,7 @@ bool checkSubarraySum(vector<int>& nums, int k) {
 - [0303. Range Sum Query - Immutable](../0303-range-sum-query-immutable/README.md) — 前缀和母题
 - [0304. Range Sum Query 2D - Immutable](../0304-range-sum-query-2d-immutable/README.md) — 二维前缀和
 - [0238. Product of Array Except Self](../0238-product-of-array-except-self/README.md) — 前缀积
-- 0974\. Subarray Sums Divisible by K (待补) — 数被 k 整除的子数组**个数** (换 count map)
-- 0525\. Contiguous Array (待补) — 0 和 1 相等的**最长** 子数组 (mapping trick)
+- [0974. Subarray Sums Divisible by K](../0974-subarray-sums-divisible-by-k/README.md) — 数被 k 整除的子数组**个数** (换 count map)
+- [0525. Contiguous Array](../0525-contiguous-array/README.md) — 0 和 1 相等的**最长** 子数组 (mapping trick)
 - 0325\. Maximum Size Subarray Sum Equals k (待补) — 求"最长" 和 == k
 - 1590\. Make Sum Divisible by P (待补) — 求"最短" 删除后被整除

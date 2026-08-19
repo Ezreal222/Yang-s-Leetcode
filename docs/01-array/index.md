@@ -22,3 +22,4 @@
 | 0523 | [Continuous Subarray Sum / 连续的子数组和](./0523-continuous-subarray-sum/README.md) | Medium | ✅ | ☑ ☐ ☐ |
 | 0974 | [Subarray Sums Divisible by K / 和可被 K 整除的子数组](./0974-subarray-sums-divisible-by-k/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0525 | [Contiguous Array / 连续数组](./0525-contiguous-array/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 1248 | [Count Number of Nice Subarrays / 统计「优美子数组」](./1248-count-number-of-nice-subarrays/README.md) | Medium | ✅ | ☐ ☐ ☐ |

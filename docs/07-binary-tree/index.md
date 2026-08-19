@@ -42,6 +42,7 @@ Compute/check structural properties of a binary tree — depth, balance, symmetr
 | 0112 | [Path Sum / 路径总和](./0112-path-sum/README.md) | Easy | ✅ | ☑ ☐ ☐ |
 | 0129 | [Sum Root to Leaf Numbers / 求根节点到叶节点数字之和](./0129-sum-root-to-leaf-numbers/README.md) | Medium | ✅ | ☑ ☐ ☐ |
 | 0113 | [Path Sum II / 路径总和 II](./0113-path-sum-ii/README.md) | Medium | ✅ | ☑ ☐ ☐ |
+| 0437 | [Path Sum III / 路径总和 III](./0437-path-sum-iii/README.md) (prefix + hash + 回溯) | Medium | ✅ | ☐ ☐ ☐ |
 
 ## 3 · 修改与构造 / Modification & Construction
 

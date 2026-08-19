@@ -5,7 +5,7 @@
     - **Tags**: Prefix Sum, Hash Map, Math (Mod) · 前缀和, 哈希表, 模运算
     - **Link**: [LeetCode](https://leetcode.com/problems/continuous-subarray-sum/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## TL;DR / 一句话
 
@@ -109,6 +109,99 @@
 
     - Time: 一遍扫, hash O(1).
     - Space: mod 值只有 k 种 → hash 最多 min(n, k) 项.
+
+## Interview Walkthrough (Speak Out Loud)
+
+*What I'd literally say while pair-programming this with an interviewer. 5-8 min out loud.*
+
+### 1. Clarify (30s)
+
+> "I need to decide whether there's a **contiguous subarray of length at least 2** whose sum is a **multiple of k**. Let me nail down a few things:"
+
+- "Does '**multiple of k**' include **zero**? So a subarray summing to 0 counts even if `k ≠ 0`?" *(yes — 0 = k × 0.)*
+- "**k is positive**? And **nums** are non-negative integers?" *(LC constraint — yes to both.)*
+- "**Length exactly ≥ 2** — subarrays of length 1 don't qualify even if `nums[i] % k == 0`, right?" *(correct, ≥ 2.)*
+- "Just checking for **existence**, not counting or returning the subarray?" *(yes, bool.)*
+
+### 2. Brainstorm approaches (1 min)
+
+> "Two ways I'd think about this.
+>
+> **Approach 1 — brute force**: enumerate all `(i, j)` pairs with `j ≥ i + 1`, compute sum, check divisibility. O(n²) with running sum, O(n³) with naive. n up to 10⁵ → TLE.
+>
+> **Approach 2 — prefix sum + mod + hash**. The core observation is a **modular arithmetic identity**:
+>
+> ```
+> sum(i..j) is divisible by k
+> ⇔ prefix[j+1] − prefix[i] ≡ 0 (mod k)
+> ⇔ prefix[j+1] % k == prefix[i] % k
+> ```
+>
+> So the question becomes: *have I seen this same mod value before, and was that far enough back to give me a subarray of length ≥ 2?* One-pass O(n) with a hash map. That's my pick."
+
+### 3. Sketch the algorithm before coding (1 min)
+
+> "Two design choices worth flagging out loud before I code:
+>
+> 1. **Store the *first* boundary each mod appears at, and never overwrite.** Why? I want to maximize the distance between the two matching prefixes so the length-≥-2 constraint is as likely to hold. If I overwrote with a later boundary, I might shrink a valid answer into an invalid one.
+> 2. **Seed `firstIdx[0] = 0`.** This handles subarrays starting at index 0 — the 'empty prefix' has sum 0 and lives at boundary 0. Without it I'd miss `nums = [3, 3], k = 6` (whole array is a 6-multiple).
+>
+> Also, I'll use **boundary = i + 1** — the position *after consuming* `nums[i]` — because subarray length maps cleanly to `boundary − stored_boundary`. Boundaries live between elements; indices live on elements. Keeping them straight avoids off-by-one bugs."
+
+### 4. Code while narrating (2 min)
+
+```cpp
+bool checkSubarraySum(vector<int>& nums, int k) {
+    unordered_map<int, int> firstIdx;
+    firstIdx[0] = 0;                      // sentinel: empty prefix at boundary 0
+    int sum = 0;
+    for (int i = 0; i < (int)nums.size(); ++i) {
+        sum = (sum + nums[i]) % k;
+        if (sum < 0) sum += k;            // defensive: C++ % can go negative
+        int boundary = i + 1;
+        auto it = firstIdx.find(sum);
+        if (it != firstIdx.end()) {
+            if (boundary - it->second >= 2) return true;
+            // else: same mod but too close — don't overwrite; keep the earlier one
+        } else {
+            firstIdx[sum] = boundary;
+        }
+    }
+    return false;
+}
+```
+
+> "About 12 lines. The interesting logic is the two-branch check after `find`: either we've seen this mod far enough back to succeed, or we ignore this occurrence entirely so the earliest boundary stays."
+
+### 5. Trace an example (1 min)
+
+> "Let me trace `nums = [23, 2, 4, 6, 7], k = 6`:
+>
+> | i | nums[i] | sum after % | boundary | firstIdx before | action |
+> |---|---|---|---|---|---|
+> | — | — | 0 | 0 | {} | seed: {0: 0} |
+> | 0 | 23 | 23 % 6 = 5 | 1 | {0:0} | new → {0:0, 5:1} |
+> | 1 | 2 | (5+2) % 6 = 1 | 2 | {0:0, 5:1} | new → add {1:2} |
+> | 2 | 4 | (1+4) % 6 = 5 | 3 | {0:0, 5:1, 1:2} | **match** mod 5 at boundary 1 → 3 − 1 = 2 ≥ 2 → **return true** ✓ |
+>
+> The winning subarray is `nums[1..2] = [2, 4]`, sum 6.
+>
+> Trickier edge case worth checking: `nums = [5, 0, 0], k = 6`. Sum stays 5 mod 6 the whole time. At boundary 2, `5 − 1 = 1 < 2` → don't return, don't overwrite. At boundary 3, `5 − 1 = 2 ≥ 2` → return true. **The 'don't overwrite' rule is what saves us here** — if we'd bumped firstIdx[5] to boundary 2 on the middle step, we'd have gotten `3 − 2 = 1 < 2` at the end and returned false incorrectly."
+
+### 6. Complexity (20s)
+
+> "**Time O(n)** — one pass, hash O(1) amortized. **Space O(min(n, k))** — there are at most k distinct mod values."
+
+### 7. Follow-ups + related (1 min)
+
+> "A few natural extensions:
+>
+> 1. **Count divisible subarrays** (0974) — same prefix-mod trick but store **count per mod**, not first index. Just like the parallel between 0560 (count) and 0523 (existence).
+> 2. **Longest subarray with sum divisible by k** — again same skeleton, but `store the earliest, take max distance on every match`. Never break out of the loop.
+> 3. **Longest subarray with equal 0s and 1s** (0525) — a slick mapping trick: replace 0 with -1, then it becomes 'longest subarray with sum 0', which is exactly this pattern with `k` implicit.
+> 4. **Watch out for `k = 0` or negative nums** if the problem relaxes constraints. Zero-k means 'find a subarray with sum exactly 0.' Negatives mean the C++ `%` guard actually matters — Python's `%` is fine.
+>
+> Any follow-ups you'd like me to code?"
 
 ## Solution
 

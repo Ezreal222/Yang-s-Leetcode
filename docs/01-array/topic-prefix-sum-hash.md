@@ -22,14 +22,23 @@ return answer
 
 ## 📊 6 题一览表 / One-Table Comparison
 
-| # | 题 | 求什么 | 累加规则 | Hash 存什么 | 查什么 | 结束操作 |
-|---|---|---|---|---|---|---|
-| **0560** | Subarray Sum == K | **个数** | `sum += x` | `count[sum]` | `res += cnt[sum − k]` | `cnt[sum]++` |
-| **0523** | 存在 sum 是 k 倍数 (长 ≥ 2) | **bool** | `sum = (sum + x) % k` | `firstIdx[sum]` | 若已存: `boundary − stored ≥ 2` ⇒ true | 只在首次插入, 不覆盖 |
-| **0974** | 个数 sum 被 k 整除 | **个数** | `sum = ((sum + x) % k + k) % k` | `count[sum]` | `res += cnt[sum]` (**同 mod**) | `cnt[sum]++` |
-| **0525** | **最长** 0/1 平衡 | **最长长度** | `sum += (x == 1 ? 1 : -1)` (mapping) | `firstIdx[sum]` | `maxLen = max(maxLen, i − stored)` | 只在首次插入, 不覆盖 |
-| **1248** | 恰含 k 个奇数子数组 | **个数** | `sum += (x & 1)` (mapping) | `count[sum]` | `res += cnt[sum − k]` | `cnt[sum]++` |
-| **0437** | 树上向下路径 sum == k 个数 | **个数** | DFS 上 `cur += node.val` | `count[cur]` | `res += cnt[cur − k]` | 进入 `++`, **离开 `--`** (回溯) |
+| # | 题 | 求什么 | 累加规则 | Hash 存什么 | **Base case (哨兵)** | 查什么 | 结束操作 |
+|---|---|---|---|---|---|---|---|
+| **0560** | Subarray Sum == K | **个数** | `sum += x` | `count[sum]` | **`cnt[0] = 1`** | `res += cnt[sum − k]` | `cnt[sum]++` |
+| **0523** | 存在 sum 是 k 倍数 (长 ≥ 2) | **bool** | `sum = (sum + x) % k` | `firstIdx[sum]` | **`firstIdx[0] = 0`** | 若已存: `boundary − stored ≥ 2` ⇒ true | 只在首次插入, 不覆盖 |
+| **0974** | 个数 sum 被 k 整除 | **个数** | `sum = ((sum + x) % k + k) % k` | `count[sum]` | **`cnt[0] = 1`** | `res += cnt[sum]` (**同 mod**) | `cnt[sum]++` |
+| **0525** | **最长** 0/1 平衡 | **最长长度** | `sum += (x == 1 ? 1 : -1)` (mapping) | `firstIdx[sum]` | **`firstIdx[0] = -1`** ⚠️ | `maxLen = max(maxLen, i − stored)` | 只在首次插入, 不覆盖 |
+| **1248** | 恰含 k 个奇数子数组 | **个数** | `sum += (x & 1)` (mapping) | `count[sum]` | **`cnt[0] = 1`** | `res += cnt[sum − k]` | `cnt[sum]++` |
+| **0437** | 树上向下路径 sum == k 个数 | **个数** | DFS 上 `cur += node.val` | `count[cur]` | **`cnt[0] = 1`** | `res += cnt[cur − k]` | 进入 `++`, **离开 `--`** (回溯) |
+
+**Base case 归类**:
+
+- **count 类** (0560 / 0974 / 1248 / 0437): 全是 **`cnt[0] = 1`** — "空前缀存在过 1 次".
+- **first-index 类** (0523 / 0525):
+  - **0523**: `firstIdx[0] = 0` — boundary 0 是"消耗 0 个元素之前" 的位置, 让 `curr_boundary − 0 = curr_boundary` 正是当前区间长度.
+  - **0525**: `firstIdx[0] = -1` ⚠️ — 用 **-1** 让 `i − (−1) = i + 1` 正好是"从 0 到 i" 的长度. 若写 0 则少 1.
+
+**记忆**: **count 全是 `[0]=1`; first-index 看长度公式选 `[0]=0` (boundary) or `[0]=-1` (index)**.
 
 ---
 
@@ -111,6 +120,104 @@ return answer
 4. **first-index 类不能覆盖** — 求距离最大化, 必须保留最早的 index.
 5. **0437 backtrack** — 少 `--cnt[cur]` 就跨兄弟污染. 是**树上专属** 陷阱.
 6. **哨兵的数字选择** — count 用 1 (代表"空前缀存在过一次"); first-index 用 0 或 -1 (**看长度公式咬合**).
+
+---
+
+## 🎤 通用 Interview Walkthrough / Family Speak-Out-Loud Template
+
+*One 7-step script that adapts to **any** problem in this family. Swap in the specific variant during step 3.*
+
+### 1. Clarify (30s) — 定义边界
+
+> "So this looks like a **subarray / path + sum condition** problem. Let me nail down a few things before I dive in:"
+
+- "**Subarray** meaning contiguous, not subsequence?" *(usually yes.)*
+- "What's the **sum condition** exactly — sum equals k? sum divisible by k? sum of a mapped value?" *(this determines which encoding I use.)*
+- "**Value range** — could sums overflow int? Any negatives?" *(negatives ⇒ mod needs the `((x % k) + k) % k` guard.)*
+- "**What do I return** — a count, a bool, or the longest length?" *(this determines count-map vs first-index-map.)*
+- "For tree variants: is the path constrained to **root → leaf**, or any **ancestor → descendant**?" *(only 0437: ancestor→descendant means we can start & end anywhere on the chain.)*
+
+### 2. Brainstorm approaches (1 min)
+
+> "Two natural approaches.
+>
+> **Approach 1 — brute force**: enumerate every subarray (or every start-end path pair on the tree), compute sum, check condition. O(n²) at best. TLE for n ≥ 10⁴.
+>
+> **Approach 2 — prefix sum + hash map**. The core identity is:
+>
+> ```
+> sum(i..j) has property P
+> ⇔ prefix[j+1] and prefix[i] satisfy some hash-friendly relation
+> ```
+>
+> For 'sum == k': `prefix[i] == prefix[j+1] − k`. For 'divisible by k': `prefix[j+1] % k == prefix[i] % k`. Either way, one pass through the array + hash reverse-lookup = **O(n)**. That's my pick."
+
+### 3. Pick the right hash pattern (30s) — 这题的关键决策
+
+> "Three questions decide the exact hash setup:"
+
+1. **What do I count / find?**
+   - Count → **`count[key] → int`** hash.
+   - Longest / most distant / existence with distance constraint → **`firstIdx[key] → int`** hash (never overwrite).
+2. **What's the mapping (accumulator rule)?**
+   - Plain sum → `sum += x`.
+   - Divisibility → `sum = ((sum + x) % k + k) % k`.
+   - 0/1 balance → `sum += (x == 1 ? 1 : -1)`.
+   - Odd/even count → `sum += (x & 1)`.
+3. **What's the base case (sentinel)?**
+   - count-map → `cnt[0] = 1`.
+   - first-index-map on **boundary** → `firstIdx[0] = 0` (like 0523).
+   - first-index-map on **element index** → `firstIdx[0] = -1` (like 0525, so `i − (−1) = i + 1` is the length).
+
+> "For **this** problem, that's `[fill in]`, `[fill in]`, `[fill in]`. Now the loop writes itself."
+
+### 4. Code while narrating (2 min)
+
+> "The template is the same 5-6 lines across the family — I just swap the accumulator, the hash type, and the query."
+
+```cpp
+// Skeleton — swap the 3 highlighted lines per variant
+unordered_map<int, int> hash;
+hash[0] = SENTINEL_VALUE;                      // ← step 3.3
+int sum = 0, ans = INIT;
+for (int x : nums) {                            // or DFS the tree
+    sum += ENCODE(x);                           // ← step 3.2 (mapping)
+    // QUERY: read answer from hash
+    UPDATE_ANS_FROM(hash, sum);                 // ← step 3.1 (count add or dist max or bool check)
+    // WRITE: record this prefix
+    UPDATE_HASH(hash, sum);                     // count: hash[sum]++;  first-index: if (!hash.count(sum)) hash[sum] = i;
+}
+return ans;
+```
+
+> "**Order matters**: read the hash **before** writing this step's sum — otherwise a count-map can self-match when `k == 0`, and a first-index-map can register `i` and immediately claim distance 0. Always **query first, update second**.
+>
+> For tree (0437), one extra rule: **backtrack the hash write** on the way out (`--cnt[cur]`) — otherwise sibling subtrees pollute each other."
+
+### 5. Trace an example (1 min)
+
+> "Let me sanity-check with a small case. [Pick the example fitting the variant.]
+>
+> Walk through 3-5 iterations, showing `sum` after mapping, `hash` before query, what's added to `ans`, then `hash` after write. Highlight the sentinel firing on the first 'from-index-0' subarray — that's the moment people forget to seed.
+>
+> [Example for 0560: `nums=[1,1,1], k=2` — trace shows `cnt[0]=1` firing when `sum=2` on i=1, then again when `sum-k=1` matches at i=2, giving res=2.]"
+
+### 6. Complexity (20s)
+
+> "**Time O(n)** — one pass, hash O(1) amortized. **Space O(min(n, K))** where K is the key range — for mod problems, at most k unique keys; for plain sum, at most n."
+
+### 7. Follow-ups + related family (1 min)
+
+> "This problem is one node in a small family — six that I keep in a cheatsheet:
+>
+> 1. **Change 'count' to 'longest'** (0560 → 0325): swap count-map for first-index-map, take max distance.
+> 2. **Change '== k' to 'divisible by k'** (0560 → 0974): swap `sum += x` for `sum = mod`, adjust query.
+> 3. **Change 'sum' to 'balance'** (0560 → 0525): remap values (0 → -1, 1 → +1), then it's 'longest with sum = 0'.
+> 4. **Move to a tree** (0560 → 0437): same hash, but add **backtrack undo** to enforce 'ancestor → descendant only'.
+>
+> All the same recipe. The trick is recognizing which knobs to turn."
+
+> "Any follow-ups you'd like me to code?"
 
 ---
 

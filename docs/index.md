@@ -14,7 +14,7 @@
 | [03 · Hash Table / 哈希表](./03-hash-table/index.md) | 19 | 7 | 10 | 2 |
 | [04 · String / 字符串](./04-string/index.md) | 4 | 3 | 1 | 0 |
 | [05 · Two Pointers / 双指针法](./05-two-pointers/index.md) | 16 | 6 | 8 | 2 |
-| [06 · Stack & Queue / 栈与队列](./06-stack-queue/index.md) | 15 | 6 | 8 | 1 |
+| [06 · Stack & Queue / 栈与队列](./06-stack-queue/index.md) | 16 | 6 | 9 | 1 |
 | [07 · Binary Tree / 二叉树](./07-binary-tree/index.md) | 47 | 19 | 28 | 0 |
 | [08 · Backtracking / 回溯算法](./08-backtracking/index.md) | 22 | 0 | 16 | 6 |
 | [09 · Greedy / 贪心算法](./09-greedy/index.md) | 22 | 3 | 17 | 2 |
@@ -22,7 +22,7 @@
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 14 | 2 | 9 | 3 |
 | [12 · Graph / 图论](./12-graph/index.md) | 22 | 2 | 17 | 3 |
 | [13 · Binary Search / 二分查找](./13-binary-search/index.md) | 10 | 1 | 8 | 1 |
-| **Total / 合计** | **278** | **63** | **178** | **37** |
+| **Total / 合计** | **279** | **63** | **179** | **37** |
 
 ## How to navigate / 如何使用
 

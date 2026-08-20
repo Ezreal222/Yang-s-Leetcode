@@ -205,4 +205,4 @@
 - 0295\. Find Median from Data Stream (待补) — **双堆**维护中位数 (流式设计进阶)
 - 0480\. Sliding Window Median (待补) — 双堆 + 延迟删除
 - 0378\. Kth Smallest Element in a Sorted Matrix (待补) — 矩阵 + 堆
-- 0692\. Top K Frequent Words (待补) — 频次 + 字典序
+- [0692. Top K Frequent Words](../0692-top-k-frequent-words/README.md) — 频次 + 字典序 tiebreak

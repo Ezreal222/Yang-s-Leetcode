@@ -5,7 +5,7 @@
     - **Tags**: Linked List, Hash Map, DFS, Interleaving · 链表, 哈希表, 深度优先, 穿插技巧
     - **Link**: [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## TL;DR / 一句话
 
@@ -124,6 +124,97 @@
 
     - **Time**: O(n) 三版都是.
     - **Space**: v1/v2 O(n), **v3 O(1) extra**.
+
+## Interview Walkthrough (Speak Out Loud)
+
+*What I'd literally say while pair-programming this with an interviewer. 5-8 min out loud.*
+
+### 1. Clarify (30s)
+
+> "So I need to **deep-copy a linked list** where each node has a `next` pointer *and* a `random` pointer that can point to **any node in the list — or `null`**. The output should be a completely independent copy: same values, same structure, but zero shared nodes with the original. A few things to confirm:"
+
+- "Can `random` point to **any node, including itself or a node before the current one**?" *(yes — that's the whole difficulty.)*
+- "Are node values **unique**? Not that I'd use them for identity, but just checking." *(usually not guaranteed. I'll use pointer identity, not value.)*
+- "How's the list terminated — `null` for both `next` and `random`?" *(yes.)*
+- "Any **memory constraint**? Because there's a well-known O(1) extra-space trick if you want to see it." *(if they say 'try to optimize', I know they want v3.)*
+
+### 2. Brainstorm approaches (1 min)
+
+> "Three approaches worth naming.
+>
+> **Approach 1 — DFS + hash map**: treat the list as a graph (each node has two outgoing edges: `next` and `random`) and do a standard clone-graph DFS with a `visited` map from original → clone. O(n) time, O(n) space plus recursion stack. This is basically Clone Graph on a linked list.
+>
+> **Approach 2 — two-pass with a hash map**: first pass creates all clone nodes and stores `orig → clone` mapping (walking only `next`). Second pass wires up `next` and `random` on each clone using the map. O(n) time, O(n) space, no recursion — cleanest for production code.
+>
+> **Approach 3 — interleaving trick** for **O(1) extra space**: temporarily weave each clone right after its original (`A → A' → B → B' → C → C'`), so the clone of `X.random` is always `X.random.next`. Wire the randoms, then split the two lists apart. It's a beautiful pointer dance but denser to explain.
+>
+> I'd default to **approach 2** — it's the most maintainable. If they want O(1) space, I'll walk through **approach 3**."
+
+### 3. Sketch the algorithm before coding (1 min)
+
+> "Two design choices worth flagging before writing v2:
+>
+> 1. **Map key must be the pointer, not the value.** Values can repeat, but each node is a distinct entity in the copy. `unordered_map<Node*, Node*>` — pointer to pointer.
+> 2. **Clean up the null case with a bonus:** In C++, `unordered_map<Node*, Node*>::operator[]` **returns the default-constructed value if the key is missing**, which for pointer types is `nullptr`. So `mp[nullptr]` is automatically `nullptr` — I can write `mp[p]->next = mp[p->next]` without a separate null check for `p->next`.
+>
+> The plan:
+>
+> - **Pass 1**: walk with `p = head`, create `new Node(p->val)` for each `p`, store `mp[p] = new_clone`.
+> - **Pass 2**: walk again, set `mp[p]->next = mp[p->next]` and `mp[p]->random = mp[p->random]`.
+> - Return `mp[head]`."
+
+### 4. Code while narrating (2 min)
+
+```cpp
+Node* copyRandomList(Node* head) {
+    if (!head) return nullptr;
+    unordered_map<Node*, Node*> mp;
+    // Pass 1: create all clones (only follow next)
+    for (Node* p = head; p; p = p->next)
+        mp[p] = new Node(p->val);
+    // Pass 2: wire next and random using the map
+    for (Node* p = head; p; p = p->next) {
+        mp[p]->next   = mp[p->next];      // mp[nullptr] returns nullptr automatically
+        mp[p]->random = mp[p->random];
+    }
+    return mp[head];
+}
+```
+
+> "About 10 lines. Two clean sweeps — the first handles allocation, the second handles pointer wiring. The `mp[nullptr] == nullptr` trick removes what would otherwise be four `if` guards."
+
+### 5. Trace an example (1 min)
+
+> "Let me trace with a tiny list: three nodes A, B, C where `A.random = C`, `B.random = A`, `C.random = null`.
+>
+> **Pass 1**: mp becomes `{A: A', B: B', C: C'}`.
+>
+> **Pass 2**:
+> - At A: `A'.next = mp[B] = B'`; `A'.random = mp[C] = C'`. ✓
+> - At B: `B'.next = mp[C] = C'`; `B'.random = mp[A] = A'`. ✓
+> - At C: `C'.next = mp[null] = null` (that's the trick working); `C'.random = mp[null] = null`. ✓
+>
+> Return `mp[A] = A'`. Fully independent copy — walking A' gives A'→B'→C' with random pointers into the new list. No pointer accidentally references the original."
+
+### 6. Complexity (20s)
+
+> "**Time O(n)** — two passes, hash lookups O(1) amortized. **Space O(n)** — the map holds n entries.
+>
+> If the interviewer asks for O(1) extra space, approach 3 gives that at the cost of temporarily mutating the input list."
+
+### 7. Follow-up: O(1) space via interleaving (1 min)
+
+> "Quick sketch of the O(1) trick if they want it:
+>
+> **Step 1** — Weave clones into the original: for each node `X`, create `X'` and insert right after: `X → X' → next(X) → …`. Result: `A → A' → B → B' → C → C'`.
+>
+> **Step 2** — Wire randoms using the invariant '`X'` sits right after `X`, so the clone of any `random target` is at `target.next`': for each original `X`, `X'.random = X.random ? X.random.next : nullptr`.
+>
+> **Step 3** — Un-weave: separate the two interleaved lists, restoring the original and extracting the copy.
+>
+> **O(1) extra space** — no map, just three linear passes over the (temporarily doubled) list. The insight is that interleaving encodes the mapping *in the structure itself*."
+
+> "Related problem worth mentioning: [Clone Graph (0133)](../../12-graph/0133-clone-graph/README.md) is approach 1 taken to its natural home — an arbitrary graph. Same map-based DFS. Any follow-ups you'd like me to code?"
 
 ## Solution
 

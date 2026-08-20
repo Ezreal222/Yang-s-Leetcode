@@ -271,7 +271,7 @@ vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
 - [1046. Last Stone Weight](../1046-last-stone-weight/README.md) — max-heap 模拟
 - [0239. Sliding Window Maximum](../0239-sliding-window-maximum/README.md) — 单调队列
 - [0703. Kth Largest Element in a Stream](../0703-kth-largest-element-in-a-stream/README.md) — 流式版
-- 0692\. Top K Frequent Words (待补) — 频次 + 字典序
+- [0692. Top K Frequent Words](../0692-top-k-frequent-words/README.md) — 频次 + 字典序 tiebreak
 - 0378\. Kth Smallest Element in a Sorted Matrix (待补) — 矩阵 + 堆
 - 0295\. Find Median from Data Stream (待补) — 双堆维护中位数
 - 0658\. Find K Closest Elements (待补) — 排序数组 + 二分定位 + 窗口

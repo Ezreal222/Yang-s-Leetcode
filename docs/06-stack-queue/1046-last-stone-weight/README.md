@@ -155,4 +155,4 @@
 - [0703. Kth Largest Element in a Stream](../0703-kth-largest-element-in-a-stream/README.md) — 流式版
 - [0973. K Closest Points to Origin](../0973-k-closest-points-to-origin/README.md) — max-heap of k, distance² 优化
 - 0295\. Find Median from Data Stream (待补) — 双堆维护中位数
-- 0692\. Top K Frequent Words (待补) — 频次 + 字典序
+- [0692. Top K Frequent Words](../0692-top-k-frequent-words/README.md) — 频次 + 字典序 tiebreak

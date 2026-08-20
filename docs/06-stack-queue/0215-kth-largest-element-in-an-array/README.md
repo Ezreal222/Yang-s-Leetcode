@@ -238,6 +238,6 @@
 - [0155. Min Stack](../0155-min-stack/README.md) — 栈设计
 - [0703. Kth Largest Element in a Stream](../0703-kth-largest-element-in-a-stream/README.md) — **流式版**, min-heap of k 直接应用
 - [0973. K Closest Points to Origin](../0973-k-closest-points-to-origin/README.md) — 同款 heap of k, key = 距离²
-- 0692\. Top K Frequent Words (待补) — 频次 Top-K + 字典序
+- [0692. Top K Frequent Words](../0692-top-k-frequent-words/README.md) — 频次 Top-K + 字典序 tiebreak
 - 0378\. Kth Smallest Element in a Sorted Matrix (待补) — 二分答案 or 堆
 - 0295\. Find Median from Data Stream (待补) — 双堆维护中位数

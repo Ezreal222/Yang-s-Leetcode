@@ -20,3 +20,4 @@
 | 0141 | [Linked List Cycle / 环形链表](./0141-linked-list-cycle/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0143 | [Reorder List / 重排链表](./0143-reorder-list/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0002 | [Add Two Numbers / 两数相加](./0002-add-two-numbers/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0445 | [Add Two Numbers II / 两数相加 II](./0445-add-two-numbers-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |

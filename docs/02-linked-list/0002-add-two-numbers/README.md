@@ -189,6 +189,6 @@
 - [0415. Add Strings](../../04-string/0415-add-strings/README.md) — 字符串加法, 正序从尾加
 - [0067. Add Binary](../../04-string/0067-add-binary/README.md) — 二进制加法
 - 0369\. Plus One Linked List (待补) — 链表 +1, 需要反转或递归
-- 0445\. Add Two Numbers II (待补) — **正序** 链表加法, 反转 / 栈
+- [0445. Add Two Numbers II](../0445-add-two-numbers-ii/README.md) — **正序** 链表加法, 反转 / 栈
 - 0043\. Multiply Strings (待补) — 字符串乘法, carry 可 > 1
 - 0989\. Add to Array-Form of Integer (待补) — 数组版加法

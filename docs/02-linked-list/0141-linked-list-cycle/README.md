@@ -146,6 +146,6 @@
 - [0202. Happy Number](../../03-hash-table/0202-happy-number/README.md) — Floyd 用在数字序列
 - [0021. Merge Two Sorted Lists](../0021-merge-two-sorted-lists/README.md) — 双指针合并
 - [0206. Reverse Linked List](../0206-reverse-linked-list/README.md) — 反转母题
-- 0287\. Find the Duplicate Number (待补) — Floyd 用在数组
+- [0287. Find the Duplicate Number](../0287-find-the-duplicate-number/README.md) — Floyd 用在数组
 - 0876\. Middle of the Linked List (待补) — 2×/1× 找中点
 - 0457\. Circular Array Loop (待补) — 环检测变体

@@ -215,7 +215,7 @@
 
 - [0142. Linked List Cycle II](../../02-linked-list/0142-linked-list-cycle-ii/README.md) — Floyd 龟兔母题
 - [0141. Linked List Cycle](../../02-linked-list/0141-linked-list-cycle/README.md) — 只判环
-- 0287\. Find the Duplicate Number (待补) — **Floyd 判环用在数组上**, 神应用
+- [0287. Find the Duplicate Number](../../02-linked-list/0287-find-the-duplicate-number/README.md) — **Floyd 判环用在数组上**, 神应用
 - [0349. Intersection of Two Arrays](../0349-intersection-of-two-arrays/README.md) — hash set 用法
 - [0242. Valid Anagram](../0242-valid-anagram/README.md) — 计数数组基础
 - [0128. Longest Consecutive Sequence](../0128-longest-consecutive-sequence/README.md) — hash set + "只从头扩"

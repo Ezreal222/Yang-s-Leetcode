@@ -350,5 +350,5 @@ Node* copyRandomList(Node* head) {
 - [0025. Reverse Nodes in k-Group](../0025-reverse-nodes-in-k-group/README.md) — 半开区间反转
 - 0116\. Populating Next Right Pointers in Each Node (待补) — 树的 next 指针填充
 - 0117\. Populating Next Right Pointers II (待补) — 非完美二叉树版
-- 0287\. Find the Duplicate Number (待补) — Floyd 判环用在数组
+- [0287. Find the Duplicate Number](../0287-find-the-duplicate-number/README.md) — Floyd 判环用在数组
 - 1490\. Clone N-ary Tree (待补) — N 叉树深拷贝

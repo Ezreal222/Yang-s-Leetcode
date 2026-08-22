@@ -21,3 +21,4 @@
 | 0143 | [Reorder List / 重排链表](./0143-reorder-list/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0002 | [Add Two Numbers / 两数相加](./0002-add-two-numbers/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0445 | [Add Two Numbers II / 两数相加 II](./0445-add-two-numbers-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0287 | [Find the Duplicate Number / 寻找重复数](./0287-find-the-duplicate-number/README.md) (Floyd on array) | Medium | ✅ | ☐ ☐ ☐ |

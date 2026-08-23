@@ -5,7 +5,7 @@
     - **Tags**: Stack, Design · 栈, 设计
     - **Link**: [LeetCode](https://leetcode.com/problems/min-stack/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 
@@ -86,6 +86,92 @@ graph TD
 | pop  | `[3,5,2]` | `[3,2]` (popped 2 == aux.top, pop aux) | 2 |
 
 注意 push 第二个 2 时**必须**也压进辅助栈 —— 否则之后 pop 一个 2, 辅助栈也跟着 pop, 就把"原来那个 2 时的最小值"也丢了. 后面 Pitfalls 里展开.
+
+## Interview Walkthrough (Speak Out Loud)
+
+*What I'd literally say while pair-programming this with an interviewer. 5-8 min out loud.*
+
+### 1. Clarify (30s)
+
+> "So I need to build a stack that supports `push`, `pop`, `top`, and `getMin` — **all in O(1)**. Let me confirm a few things:"
+
+- "**All four operations must be O(1)** — including `getMin`?" *(yes, that's the whole trick.)*
+- "Are `pop`, `top`, `getMin` **only called on a non-empty stack**, or should I handle the empty case?" *(LC usually guarantees non-empty; if not I'd throw or return sentinel.)*
+- "Can values **repeat**?" *(yes — critical for the optimized variant.)*
+- "Any bound on values / operations count?" *(usually 10⁴ ops, standard int values — nothing to worry about.)*
+
+### 2. Brainstorm approaches (1 min)
+
+> "The tension is: a vanilla stack supports `push/pop/top` in O(1), but `getMin` would need to scan — O(n). So I need to **cache the min at every state**.
+>
+> Two natural approaches:
+>
+> **Variant A — pair stack**: each element on the stack carries `(value, min_so_far)`. On push, compute the new min from the previous top plus the incoming value. `getMin` just reads `top().second`. Dead simple, O(n) memory.
+>
+> **Variant C — two stacks with optimized aux**: keep a separate 'min-history' stack that only gets pushed when a **new minimum arrives**. Uses less memory when the min doesn't change often.
+>
+> I'd go with **Variant A** in the interview — shortest, hardest to mess up. If they ask about memory, I'll upgrade to Variant C."
+
+### 3. Sketch the algorithm before coding (1 min)
+
+> "The core insight: **stacks are 'time machines'** — popping restores state exactly to what it was before the corresponding push. So if I attach a piece of derived data to each push (here, 'the min as of this moment'), popping automatically restores that too. No recomputation.
+>
+> For Variant A:
+>
+> - `push(v)`: compute `curMin = stack empty ? v : min(v, prev top's min)`. Push `(v, curMin)`.
+> - `pop()`: pop the pair.
+> - `top()`: read `top().first`.
+> - `getMin()`: read `top().second`.
+>
+> That's it — every operation is a couple of instructions."
+
+### 4. Code while narrating (1.5 min)
+
+```cpp
+class MinStack {
+    stack<pair<int, int>> st;   // (value, min_so_far)
+public:
+    void push(int val) {
+        int curMin = st.empty() ? val : min(val, st.top().second);
+        st.push({val, curMin});
+    }
+    void pop()   { st.pop(); }
+    int  top()   { return st.top().first; }
+    int  getMin(){ return st.top().second; }
+};
+```
+
+> "About 10 lines. The trick is entirely in the `push`: we cache the min-so-far right there. Everything else is trivial."
+
+### 5. Trace an example (1 min)
+
+> "Let me trace `push 3, push 5, push 2, push 2, getMin, pop, getMin`:
+>
+> | op | stack (value, min) | getMin |
+> |---|---|---|
+> | push 3 | `[(3, 3)]` | — |
+> | push 5 | `[(3, 3), (5, 3)]` | — |
+> | push 2 | `[(3, 3), (5, 3), (2, 2)]` | — |
+> | push 2 | `[(3, 3), (5, 3), (2, 2), (2, 2)]` | **2** |
+> | pop | `[(3, 3), (5, 3), (2, 2)]` | **2** (still — key point!) |
+>
+> **The pop is the magic**: it removed the second 2, and getMin is still correctly 2 because the pair below it caches the 'min as of that push' — no recomputation."
+
+### 6. Complexity (20s)
+
+> "**All four operations are O(1)** — no loops, no scans. **Space is O(n)** for the stack itself. Variant C could reduce that when the min changes rarely, but Big-O is the same."
+
+### 7. Follow-ups + related (1 min)
+
+> "Two directions worth flagging:
+>
+> 1. **Save memory with the optimized two-stack variant**: keep a separate 'min history' stack, push to it only when `val <= aux.top()` (using `<=`, not `<`, so duplicate mins are recorded). Pop it only when the value being popped equals `aux.top()`. The `<=` is the classic bug — if you write `<`, popping a duplicate min will drop the wrong entry.
+>
+> 2. **Max Stack** (0716) is the mirror problem — swap `min` for `max`. Same shape.
+>
+> 3. **This pattern generalizes** to any O(1)-queryable aggregate over a growable-and-shrinkable-at-one-end structure. Prefix-min arrays are the immutable version; monotonic stacks (0496, 0739) are the pruned version; monotonic deques (0239) handle both ends.
+>
+> Any follow-ups you'd like me to code?"
 
 ## Solution
 

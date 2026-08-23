@@ -5,7 +5,7 @@
     - **Tags**: Heap, Hash Map, Bucket Sort, Priority Queue · 堆, 哈希表, 桶排序, 优先队列
     - **Link**: [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☑ ☐ ☐
+    - **Reviewed**: ☑ ☑ ☐
 
 ## TL;DR / 一句话
 
@@ -67,6 +67,97 @@ return heap contents    # the k largest
 ```
 
 > **为啥是 min-heap 不是 max-heap?** 我们想**只留前 k 大**, 所以堆里要能快速找"目前最差的一个" 把它踢掉. min-heap 顶就是堆里最小, O(1) 查, O(log k) 踢.
+
+## Interview Walkthrough (Speak Out Loud)
+
+*What I'd literally say while pair-programming this with an interviewer. 5-8 min out loud.*
+
+### 1. Clarify (30s)
+
+> "So I need to return the **k most frequent elements** in `nums`. A few things to confirm:"
+
+- "**Return order matters?** Do they need to be sorted by frequency, or is any order fine?" *(usually any order — that unlocks options.)*
+- "**Guaranteed unique answer?** i.e., no ties at rank k that force a choice?" *(LC guarantees the answer is unique. If ties mattered, we'd need a tiebreaker like [0692 Top K Frequent Words](../0692-top-k-frequent-words/README.md).)*
+- "Bound on n?" *(up to ~10⁵ — need at least O(n log k), ideally O(n).)*
+- "**k vs n?** Any guarantee `k ≤ number of unique elements`?" *(yes.)*
+
+### 2. Brainstorm approaches (1 min)
+
+> "Step 1 is always the same: **count frequencies with a hash map** — O(n). Then step 2 is where the choice matters. Three options:
+>
+> **Variant A — sort by count, take first k**: O(n log n). Simplest, but sorts more than needed.
+>
+> **Variant B — min-heap of size k**: iterate through frequency entries, push each into a min-heap keyed by count. When size exceeds k, pop — that kicks the least frequent. At the end the heap contains the top k. **O(n log k)**, O(k) space. This is the streaming-friendly classical answer.
+>
+> **Variant C — bucket sort**: since counts are bounded by n, allocate `buckets[0..n]` where `buckets[c]` holds all values with frequency c. Walk buckets from high to low, collect k. **O(n)** — asymptotically optimal, works because 'count is bounded by input size' gives us a natural finite bucket space.
+>
+> I'd lead with **Variant B** (heap) — most robust template. If they want optimal, I'll do **Variant C**."
+
+### 3. Sketch the algorithm before coding (1 min)
+
+> "For the heap approach, two design details worth calling out:
+>
+> 1. **Min-heap, not max-heap.** Sounds counterintuitive — we want the *most* frequent, so why the *min* heap? Because we're maintaining 'the top k so far' as a set, and to keep size ≤ k, we need to **kick out the worst** on overflow. 'The worst' among current top-k is the **least frequent** — a min-heap gives us O(1) access to that.
+> 2. **Heap element is `(count, value)`.** Frequency is the sort key, so it goes first. In C++ `pair<int, int>` sorts by first lexicographically, which matches.
+>
+> The loop: for each `(value, count)` in the freq map — push `(count, value)`, then if heap size > k, pop. At the end, the heap contains exactly the k most frequent values."
+
+### 4. Code while narrating (2 min)
+
+```cpp
+vector<int> topKFrequent(vector<int>& nums, int k) {
+    unordered_map<int, int> freq;
+    for (int x : nums) freq[x]++;
+
+    // min-heap of (count, value)
+    priority_queue<pair<int, int>,
+                   vector<pair<int, int>>,
+                   greater<>> pq;
+    for (auto& [val, cnt] : freq) {
+        pq.push({cnt, val});
+        if ((int)pq.size() > k) pq.pop();
+    }
+    vector<int> res;
+    while (!pq.empty()) {
+        res.push_back(pq.top().second);
+        pq.pop();
+    }
+    return res;
+}
+```
+
+> "About 15 lines. The `greater<>` template makes it a min-heap. The push-then-maybe-pop pattern is the top-K workhorse."
+
+### 5. Trace an example (1 min)
+
+> "Let me trace `nums = [1,1,1,2,2,3], k = 2`:
+>
+> - After counting: `freq = {1:3, 2:2, 3:1}`.
+> - Iterate (order doesn't matter — say `(1,3), (2,2), (3,1)`):
+>   - Push `(3, 1)` → heap `[(3, 1)]`. Size 1 ≤ 2.
+>   - Push `(2, 2)` → heap `[(2, 2), (3, 1)]` (min-heap orders by first). Size 2 ≤ 2.
+>   - Push `(1, 3)` → heap `[(1, 3), (3, 1), (2, 2)]`. Size 3 > 2 → pop `(1, 3)` (lowest count kicked). Heap `[(2, 2), (3, 1)]`.
+> - Extract: `[2, 1]`. ✓ These are the two most frequent — 1 (count 3) and 2 (count 2). Order doesn't matter."
+
+### 6. Complexity (20s)
+
+> "**Time O(n log k)** — n frequency entries × O(log k) per heap op. **Space O(n + k)** — n for the frequency map, k for the heap.
+>
+> Bucket sort variant is **O(n)** time, O(n) space — better when we want the absolute optimum, and it's not much more code."
+
+### 7. Follow-ups + related (1 min)
+
+> "A few directions:
+>
+> 1. **Bucket sort for optimal O(n)**: `vector<vector<int>> buckets(n+1)`; for each `(val, cnt)`, put val in `buckets[cnt]`. Walk from `buckets[n]` down, collect until we have k. Simple, no heap.
+>
+> 2. **Streaming version**: if elements arrive one at a time and we want top-k on demand, the min-heap adapts naturally — same push-then-maybe-pop.
+>
+> 3. **Add a tiebreaker** (like [0692 Top K Frequent Words](../0692-top-k-frequent-words/README.md)): switch to a custom comparator so same-count elements sort by lex order (or whatever the tie rule is). The push-pop template stays.
+>
+> 4. **Quickselect** for a Kth Element flavor ([0215 Kth Largest](../0215-kth-largest-element-in-an-array/README.md)): expected O(n), but doesn't fit as cleanly when we need the top *set*, not just a rank.
+>
+> Any follow-ups you'd like me to code?"
 
 ## Solution
 

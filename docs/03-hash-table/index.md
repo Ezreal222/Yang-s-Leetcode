@@ -25,3 +25,4 @@
 | 0648 | [Replace Words / 单词替换](./0648-replace-words/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0472 | [Concatenated Words / 连接词](./0472-concatenated-words/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0266 | [Palindrome Permutation / 回文排列](./0266-palindrome-permutation/README.md) | Easy | ✅ | ☐ ☐ ☐ |
+| 0706 | [Design HashMap / 设计哈希映射](./0706-design-hashmap/README.md) (separate chaining) | Easy | ✅ | ☐ ☐ ☐ |

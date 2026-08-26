@@ -26,3 +26,4 @@
 | 0472 | [Concatenated Words / 连接词](./0472-concatenated-words/README.md) | Hard | ✅ | ☐ ☐ ☐ |
 | 0266 | [Palindrome Permutation / 回文排列](./0266-palindrome-permutation/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0706 | [Design HashMap / 设计哈希映射](./0706-design-hashmap/README.md) (separate chaining) | Easy | ✅ | ☐ ☐ ☐ |
+| 0146 | [LRU Cache / LRU 缓存](./0146-lru-cache/README.md) (hash + 双向链表) | Medium | ✅ | ☐ ☐ ☐ |

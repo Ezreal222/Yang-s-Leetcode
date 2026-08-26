@@ -253,6 +253,6 @@
 - [0208. Implement Trie](../0208-implement-trie-prefix-tree/README.md) — 另一种 lookup 结构设计
 - [0707. Design Linked List](../../02-linked-list/0707-design-linked-list/README.md) — 数据结构 API 设计, DRY 母题
 - 0705\. Design HashSet (待补) — 姐妹题, 只存 key
-- 0146\. LRU Cache (待补) — hash + 双向链表, 更复杂设计
+- [0146. LRU Cache](../0146-lru-cache/README.md) — hash + 双向链表, 更复杂设计
 - 0460\. LFU Cache (待补) — hash + 频次桶 + 双向链表
 - 0432\. All O`one Data Structure (待补) — hash + 双向链表

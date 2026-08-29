@@ -27,3 +27,4 @@
 | 0266 | [Palindrome Permutation / 回文排列](./0266-palindrome-permutation/README.md) | Easy | ✅ | ☐ ☐ ☐ |
 | 0706 | [Design HashMap / 设计哈希映射](./0706-design-hashmap/README.md) (separate chaining) | Easy | ✅ | ☐ ☐ ☐ |
 | 0146 | [LRU Cache / LRU 缓存](./0146-lru-cache/README.md) (hash + 双向链表) | Medium | ✅ | ☐ ☐ ☐ |
+| 0380 | [Insert Delete GetRandom O(1) / O(1) 时间插入、删除和获取随机元素](./0380-insert-delete-getrandom-o1/README.md) (hash + vector, swap-with-last) | Medium | ✅ | ☐ ☐ ☐ |

@@ -28,3 +28,4 @@
 | 0253 | [Meeting Rooms II / 会议室 II](./0253-meeting-rooms-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0659 | [Split Array into Consecutive Subsequences / 分割数组为连续子序列](./0659-split-array-into-consecutive-subsequences/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0846 | [Hand of Straights / 一手顺子](./0846-hand-of-straights/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0621 | [Task Scheduler / 任务调度器](./0621-task-scheduler/README.md) (frame formula) | Medium | ✅ | ☐ ☐ ☐ |

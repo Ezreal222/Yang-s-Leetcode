@@ -5,7 +5,7 @@
     - **Tags**: DP, Binary Search, Patience Sorting · 动态规划, 二分, 耐心排序
     - **Link**: [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 
@@ -148,6 +148,83 @@
 
 - **Time**: O(n²) (v1) / O(n log n) (v2).
 - **Space**: O(n).
+
+## Interview Walkthrough
+
+7-step speak-out-loud script for the LIS interview.
+
+### 1. Clarify
+
+> "Just to confirm: strictly increasing, right? So `[1, 3, 3, 5]` — the LIS is 3 (`1, 3, 5`), not 4. And it's a subsequence, so elements don't have to be contiguous — I can skip. Any constraints on n? If it's up to 10⁴ or 10⁵, I want to aim for O(n log n)."
+
+Nail down: **strict vs non-strict** (changes lower_bound / upper_bound), **subsequence vs subarray** (subsequence = skip allowed), **return length or the actual sequence** (they usually want length).
+
+### 2. Brainstorm
+
+> "Two obvious approaches. **Brute force** — try every subsequence, check increasing, O(2ⁿ). Dies at n = 20. **DP** — for each i, `dp[i]` = longest LIS ending at i. Transition: look at every j < i, if `nums[j] < nums[i]`, `dp[i] = max(dp[i], dp[j] + 1)`. That's O(n²). Good enough for n = 2500.
+>
+> "There's also a clever **O(n log n)** approach using a `tails` array + binary search — patience sorting. Want me to code the DP first for clarity, then optimize?"
+
+**Signal you know both.** Interviewer picks. If they say "just do the fast one", go straight to v2.
+
+### 3. Sketch
+
+For v1 DP:
+
+> "`dp[i]` = LIS length ending at i, forced to include i. Init all to 1 (self). For each i from 1 to n-1, scan j from 0 to i-1: if `nums[j] < nums[i]`, `dp[i] = max(dp[i], dp[j] + 1)`. Answer is `max(dp)`, NOT `dp[n-1]` — because LIS can end anywhere."
+
+For v2 patience:
+
+> "I keep a `tails` array where `tails[k]` = smallest possible tail of any LIS of length `k+1`. Key invariants: **tails is strictly increasing**, and **`tails.size()` equals current LIS length**.
+>
+> "For each num: binary-search the first `tails[k] ≥ num`. If found: **replace** it with num (shorter tail = more room later). If not found: **append** num (LIS just grew by 1)."
+
+### 4. Code + narrate
+
+Pick v2 unless interviewer asks for DP first:
+
+```cpp
+int lengthOfLIS(vector<int>& nums) {
+    vector<int> tails;
+    for (int num : nums) {
+        auto it = lower_bound(tails.begin(), tails.end(), num);
+        if (it == tails.end()) tails.push_back(num);
+        else                   *it = num;
+    }
+    return tails.size();
+}
+```
+
+Narrate: **"`lower_bound` for strict increasing — I want to replace equal values, not stack them. If it were non-decreasing, I'd use `upper_bound`."** That one sentence proves you know the edge.
+
+### 5. Trace
+
+`nums = [10, 9, 2, 5, 3, 7, 101, 18]`:
+
+| step | num | tails before | action | tails after |
+|---|---|---|---|---|
+| 1 | 10 | [] | append | [10] |
+| 2 | 9  | [10] | replace idx 0 | [9] |
+| 3 | 2  | [9] | replace idx 0 | [2] |
+| 4 | 5  | [2] | append | [2, 5] |
+| 5 | 3  | [2, 5] | replace idx 1 | [2, 3] |
+| 6 | 7  | [2, 3] | append | [2, 3, 7] |
+| 7 | 101 | [2, 3, 7] | append | [2, 3, 7, 101] |
+| 8 | 18 | [2, 3, 7, 101] | replace idx 3 | [2, 3, 7, 18] |
+
+Answer: 4. **Callout: `[2, 3, 7, 18]` is NOT the actual LIS** — the real one is `[2, 5, 7, 101]` or `[2, 3, 7, 101]`. Tails is only the length invariant.
+
+### 6. Complexity
+
+> "Time is O(n log n) — for each of n elements, one binary search O(log n). Space O(n) for tails. Compared to v1 DP: n² → n log n, which for n = 10⁵ is 10¹⁰ vs 10⁶·⁵ — night and day."
+
+### 7. Follow-ups
+
+- **"Return the actual LIS, not just length"**: augment with parent pointers — each element that goes into tails records its predecessor's index; at the end, walk back from the last-appended element. Answer becomes O(n log n) time, O(n) extra space.
+- **"Non-decreasing version"**: switch `lower_bound` to `upper_bound`. One-token change.
+- **"Number of LIS"** ([0673](待补)): DP with `(length, count)` per index, aggregate max length + summed count.
+- **"2D LIS — Russian Doll Envelopes"** ([0354](待补)): sort by width asc, **tie-break height desc** (to prevent same-width envelopes from stacking), then run LIS on the height array.
+- **"Longest chain of pairs / longest bitonic"**: same skeleton, different comparator.
 
 ## 相关题目
 

@@ -209,7 +209,7 @@
 - [0692. Top K Frequent Words](../../06-stack-queue/0692-top-k-frequent-words/README.md) — heap + tie-break
 - [0135. Candy](../0135-candy/README.md) — 结构约束 + 双向扫贪心
 - [0763. Partition Labels](../0763-partition-labels/README.md) — 用位置骨架分段贪心
-- 0767\. Reorganize String (待补) — 直接同款, "字符不相邻" 版本
+- [0767. Reorganize String](../0767-reorganize-string/README.md) — 直接同款, "字符不相邻" 版本
 - 1054\. Distant Barcodes (待补) — heap 模拟排列
 - 0358\. Rearrange String k Distance Apart (待补) — n 更一般化
 - 1405\. Longest Happy String (待补) — heap + 冷却 3 种字符

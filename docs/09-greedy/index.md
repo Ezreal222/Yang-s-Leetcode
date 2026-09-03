@@ -29,3 +29,4 @@
 | 0659 | [Split Array into Consecutive Subsequences / 分割数组为连续子序列](./0659-split-array-into-consecutive-subsequences/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0846 | [Hand of Straights / 一手顺子](./0846-hand-of-straights/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0621 | [Task Scheduler / 任务调度器](./0621-task-scheduler/README.md) (frame formula) | Medium | ✅ | ☐ ☐ ☐ |
+| 0767 | [Reorganize String / 重构字符串](./0767-reorganize-string/README.md) (heap greedy, top-2 交替) | Medium | ✅ | ☐ ☐ ☐ |

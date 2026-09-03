@@ -5,7 +5,7 @@
     - **Tags**: Tree, DFS, Recursion, Divide and Conquer, Hash Map · 二叉树, 深度优先搜索, 递归, 分治, 哈希表
     - **Link**: [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☑ ☐ ☐
+    - **Reviewed**: ☑ ☑ ☐
 
 ## Problem
 
@@ -19,56 +19,94 @@
 
 **[0106](../0106-construct-binary-tree-from-inorder-and-postorder-traversal/README.md) 的对偶版 —— 把"postorder 末尾是根"换成"**preorder 开头是根**". 区间约定、切两边数组的同步逻辑、hashmap 优化全部复用.**
 
-跟 0106 的唯一差别:
+### Core idea
+
+**Preorder 头 = 根**, 用 inorder 里根的位置**切分左右**. 递归构造. 关键优化: **hashmap 存 `inorder value → index`**, 找根 O(1), 总复杂度 **O(n)** (原始线性扫是 O(n²) 最坏).
+
+### Key insights
+
+- **Preorder 首元素定根** — 而 0106 是 postorder 末元素定根.
+- **Inorder 里根的左边 = 左子树, 右边 = 右子树** — 这是所有 preorder/postorder + inorder 重建题的共通钥匙.
+- **左子树大小 `leftSize = k - inL`** — 一旦知道左子树多长, preorder 就能切: 头是根, `[preL+1, preL+leftSize]` 是左, `[preL+leftSize+1, preR]` 是右.
+- **`unordered_map<value, index>` 一次预处理** — 把每步 O(n) 找根降到 O(1).
+- **闭区间 `[preL, preR]` vs 半开 `[begin, end)`** — Yang 的新版用**闭区间** + `preL > preR` 判空, 比半开少 1 次 +1 心智负担.
+
+### Transferable thinking
+
+**"Root defines the split"** — 任何一对包含"根位置线索"和"左右分界线索"的两种遍历, 都可以用此模式重建. 也见 [0106](../0106-construct-binary-tree-from-inorder-and-postorder-traversal/README.md) (postorder+inorder), [0889 Preorder+Postorder](待补). **切左右子树时, 两个数组必须同步切** —— 左 inorder 长度 = 左 preorder 长度, 这是同步锚点.
+
+### One-liner
+
+> **Preorder 头定根, inorder 位切两半, 左右递归; hashmap 让"找根" O(1).**
+
+### 跟 0106 的对比
 
 | 步骤 | 0106 (postorder + inorder) | 0105 (preorder + inorder) |
 |---|---|---|
-| 根的位置 | `postorder[postorderEnd - 1]` (末尾) | `preorder[preorderBegin]` (开头) |
-| 左 X 区间 | `[postorderBegin, +leftSize)` | `[preorderBegin + 1, +1+leftSize)` (跳过根) |
-| 右 X 区间 | `[+leftSize, postorderEnd - 1)` (去掉末尾根) | `[+1+leftSize, preorderEnd)` |
+| 根的位置 | `postorder[postR]` (末尾) | `preorder[preL]` (开头) |
+| 左 X 区间 | `[postL, postL + leftSize - 1]` | `[preL + 1, preL + leftSize]` (跳过根) |
+| 右 X 区间 | `[postL + leftSize, postR - 1]` | `[preL + leftSize + 1, preR]` |
 
-`leftSize = delimiterIndex - inorderBegin` —— 跟 0106 一字不差.
+`leftSize = k - inL` —— 跟 0106 一字不差.
 
 ## Solution
 
-=== "C++"
+=== "C++ (推荐: hashmap + 闭区间 + 指针共享)"
     ```cpp
     class Solution {
     public:
-        // 全程 [begin, end) 半开区间, 同 0106
+        unordered_map<int, int> pos;        // inorder value → index, O(1) 找根
+        vector<int>* pre;                    // 指针避免每次递归传引用, 减栈开销
+
+        // 闭区间 [preL, preR], [inL, inR]
+        TreeNode* build(int preL, int preR, int inL, int inR) {
+            if (preL > preR) return nullptr;
+
+            int rootVal = (*pre)[preL];      // preorder 头 = 根
+            TreeNode* root = new TreeNode(rootVal);
+
+            int k = pos[rootVal];            // 根在 inorder 的位置, O(1)
+            int leftSize = k - inL;          // 左子树大小 = 根左边 inorder 长度
+
+            root->left  = build(preL + 1,             preL + leftSize, inL,    k - 1);
+            root->right = build(preL + leftSize + 1,  preR,            k + 1,  inR);
+            return root;
+        }
+
+        TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+            int n = inorder.size();
+            for (int i = 0; i < n; i++) pos[inorder[i]] = i;   // 预处理: O(n)
+            pre = &preorder;
+            return build(0, n - 1, 0, n - 1);
+        }
+    };
+    ```
+
+=== "C++ (v1 教学: 半开区间 + 线性扫)"
+    ```cpp
+    class Solution {
+    public:
+        // 全程 [begin, end) 半开区间, 同 0106; 每次线性扫找根 → O(n²) 最坏
         TreeNode* traversal(vector<int>& preorder, int preorderBegin, int preorderEnd,
                             vector<int>& inorder,  int inorderBegin,  int inorderEnd) {
             if (preorderBegin == preorderEnd) return nullptr;
 
-            // preorder 开头 = 根 (注意是 preorderBegin 不是 0!)
             int rootValue = preorder[preorderBegin];
             TreeNode* root = new TreeNode(rootValue);
-
             if (preorderEnd - preorderBegin == 1) return root;
 
-            // 在 inorder 里找根 (注意索引 inorder, 不是 preorder!)
             int delimiterIndex;
             for (delimiterIndex = inorderBegin; delimiterIndex < inorderEnd; delimiterIndex++) {
                 if (inorder[delimiterIndex] == rootValue) break;
             }
 
-            // 切 inorder
-            int leftInorderBegin  = inorderBegin;
-            int leftInorderEnd    = delimiterIndex;
-            int rightInorderBegin = delimiterIndex + 1;
-            int rightInorderEnd   = inorderEnd;
-
-            // 切 preorder: 跳过开头的根, 左半长度 = 左 inorder 长度
             int leftSize = delimiterIndex - inorderBegin;
-            int leftPreorderBegin  = preorderBegin + 1;
-            int leftPreorderEnd    = preorderBegin + 1 + leftSize;
-            int rightPreorderBegin = leftPreorderEnd;
-            int rightPreorderEnd   = preorderEnd;
-
-            root->left  = traversal(preorder, leftPreorderBegin,  leftPreorderEnd,
-                                    inorder,  leftInorderBegin,   leftInorderEnd);
-            root->right = traversal(preorder, rightPreorderBegin, rightPreorderEnd,
-                                    inorder,  rightInorderBegin,  rightInorderEnd);
+            root->left  = traversal(preorder, preorderBegin + 1,
+                                    preorderBegin + 1 + leftSize,
+                                    inorder,  inorderBegin, delimiterIndex);
+            root->right = traversal(preorder, preorderBegin + 1 + leftSize,
+                                    preorderEnd,
+                                    inorder,  delimiterIndex + 1, inorderEnd);
             return root;
         }
         TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
@@ -81,45 +119,47 @@
     ```python
     class Solution:
         def buildTree(self, preorder: list[int], inorder: list[int]) -> 'TreeNode | None':
-            # value → index 哈希表, 找根 O(1) → 总复杂度 O(n)
-            idx = {v: i for i, v in enumerate(inorder)}
+            # dict comprehension: value → index 哈希表, O(1) 找根
+            # {v: i for i, v in enumerate(...)} 是 Python 一行建 map 的惯用招
+            # 相当于 C++ for (int i = 0; i < n; i++) pos[inorder[i]] = i
+            pos = {v: i for i, v in enumerate(inorder)}
 
-            def build(pre_lo: int, pre_hi: int, in_lo: int, in_hi: int) -> 'TreeNode | None':
-                if pre_lo == pre_hi:
+            # 闭区间 [preL, preR], [inL, inR]
+            def build(preL: int, preR: int, inL: int, inR: int) -> 'TreeNode | None':
+                if preL > preR:
                     return None
-                root_val = preorder[pre_lo]              # 注意 pre_lo, 不是 0
+                root_val = preorder[preL]                # preorder 头 = 根
                 root = TreeNode(root_val)
-                k = idx[root_val]
-                left_size = k - in_lo
-                root.left  = build(pre_lo + 1, pre_lo + 1 + left_size, in_lo, k)
-                root.right = build(pre_lo + 1 + left_size, pre_hi, k + 1, in_hi)
+                k = pos[root_val]
+                left_size = k - inL
+                root.left  = build(preL + 1,             preL + left_size, inL,    k - 1)
+                root.right = build(preL + left_size + 1, preR,             k + 1,  inR)
                 return root
 
-            return build(0, len(preorder), 0, len(inorder))
+            return build(0, len(preorder) - 1, 0, len(inorder) - 1)
     ```
 
 === "JavaScript"
     ```javascript
-    /**
-     * @param {number[]} preorder
-     * @param {number[]} inorder
-     * @return {TreeNode}
-     */
     var buildTree = function(preorder, inorder) {
-        const idx = new Map();
-        inorder.forEach((v, i) => idx.set(v, i));
+        // Map: JS 的哈希表. forEach((v, i) => ...) 同时拿值和索引
+        // 相当于 C++ 的 unordered_map<int,int> + for 循环填
+        const pos = new Map();
+        inorder.forEach((v, i) => pos.set(v, i));
 
-        const build = (preLo, preHi, inLo, inHi) => {
-            if (preLo === preHi) return null;
-            const rootVal = preorder[preLo];
+        // 闭区间 [preL, preR], [inL, inR]
+        // Arrow function 保留外层 preorder 的闭包访问, 不用传参
+        const build = (preL, preR, inL, inR) => {
+            if (preL > preR) return null;
+            const rootVal = preorder[preL];              // preorder 头 = 根
             const root = new TreeNode(rootVal);
-            const k = idx.get(rootVal);
-            const leftSize = k - inLo;
-            root.left  = build(preLo + 1,             preLo + 1 + leftSize, inLo,  k);
-            root.right = build(preLo + 1 + leftSize,  preHi,                k + 1, inHi);
+            const k = pos.get(rootVal);
+            const leftSize = k - inL;
+            root.left  = build(preL + 1,             preL + leftSize, inL,    k - 1);
+            root.right = build(preL + leftSize + 1,  preR,            k + 1,  inR);
             return root;
         };
-        return build(0, preorder.length, 0, inorder.length);
+        return build(0, preorder.length - 1, 0, inorder.length - 1);
     };
     ```
 
@@ -130,11 +170,8 @@
 
 ## 易错点
 
-- **`preorder[preorderBegin]` 不是 `preorder[0]`**: Yang flagged. 只有第一次入口调用时 `preorderBegin == 0`, 递归进子树就不是了 —— 写 `preorder[0]` 永远拿到整树的根, 子树构造直接错.
-- **`inorder[delimiterIndex]` 不是 `preorder[delimiterIndex]`**: 也 flagged. 找根的位置要在 **inorder** 里找; `delimiterIndex` 是 inorder 的下标, 不是 preorder 的.
-- **左 preorder 多 +1**: 跟 0106 不同, preorder **开头**是根, 切左 preorder 时要 `+1` 跳过去 (`preorderBegin + 1`). 0106 的 postorder 是**末尾**是根, 所以右 postorder 才需要 `-1`.
-- **重复值不能用此法**: 题目保证无重复. 有重复就无法在 inorder 里唯一定位根.
-- **0106 + 0105 共有的纪律**: 区间约定全程一致 (这里都是 `[begin, end)`), 区间约定一旦混用立刻全盘错位.
+- **`preorder[preL]` 不是 `preorder[0]`**: 只有第一次入口 `preL == 0`, 递归进子树就不是了 —— 写 `preorder[0]` 永远拿整树的根, 子树直接错.
+- **左子树大小是 `k - inL`, 不是 `k`**: `k` 是根在 inorder 的**绝对下标**, 左子树大小要减去当前段起点 `inL`. 忘减 → 递归越界或死循环.
 
 ## 相关题目
 

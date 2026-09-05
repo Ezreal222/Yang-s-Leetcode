@@ -22,3 +22,4 @@
 | 0002 | [Add Two Numbers / 两数相加](./0002-add-two-numbers/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0445 | [Add Two Numbers II / 两数相加 II](./0445-add-two-numbers-ii/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0287 | [Find the Duplicate Number / 寻找重复数](./0287-find-the-duplicate-number/README.md) (Floyd on array) | Medium | ✅ | ☐ ☐ ☐ |
+| 0023 | [Merge k Sorted Lists / 合并 K 个升序链表](./0023-merge-k-sorted-lists/README.md) (两两归并 / 堆) | Hard | ✅ | ☐ ☐ ☐ |

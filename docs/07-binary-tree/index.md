@@ -58,6 +58,7 @@ Build new trees, merge trees, invert / prune / delete-subtree operations. The `r
 | 0814 | [Binary Tree Pruning / 二叉树剪枝](./0814-binary-tree-pruning/README.md) | Medium | ✅ | ☑ ☐ ☐ |
 | 1325 | [Delete Leaves With a Given Value / 删除给定值的叶子节点](./1325-delete-leaves-with-a-given-value/README.md) | Medium | ✅ | ☑ ☐ ☐ |
 | 1110 | [Delete Nodes And Return Forest / 删点成林](./1110-delete-nodes-and-return-forest/README.md) | Medium | ✅ | ☑ ☐ ☐ |
+| 0297 | [Serialize and Deserialize Binary Tree / 二叉树的序列化与反序列化](./0297-serialize-and-deserialize-binary-tree/README.md) (前序 DFS + `#` 标 null) | Hard | ✅ | ☐ ☐ ☐ |
 
 ## 4 · 求 BST 的属性 / BST Properties
 

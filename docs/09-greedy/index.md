@@ -30,3 +30,4 @@
 | 0846 | [Hand of Straights / 一手顺子](./0846-hand-of-straights/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0621 | [Task Scheduler / 任务调度器](./0621-task-scheduler/README.md) (frame formula) | Medium | ✅ | ☐ ☐ ☐ |
 | 0767 | [Reorganize String / 重构字符串](./0767-reorganize-string/README.md) (heap greedy, top-2 交替) | Medium | ✅ | ☐ ☐ ☐ |
+| 0252 | [Meeting Rooms / 会议室](./0252-meeting-rooms/README.md) (排序 + 相邻不重叠) | Easy | ✅ | ☐ ☐ ☐ |

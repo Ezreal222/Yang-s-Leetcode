@@ -230,6 +230,107 @@
 | serialize | O(n) | O(n) 输出 + O(h) 栈 |
 | deserialize | O(n) | O(n) tokens + O(h) 栈 |
 
+## Interview Walkthrough
+
+7-step speak-out-loud script.
+
+### 1. Clarify
+
+> "A few questions. **Value range** — can node values be negative or multi-digit? Because that decides my delimiter. **Format** — do you want it to match LeetCode's bracket format `[1,2,3,null,null,4,5]`, or can I invent one, as long as it round-trips? And **is the tree normal binary or BST?** If it's a BST I can save space by skipping null markers, since inorder + BST invariants would reconstruct."
+
+Nail down: **any int**, **any format ok**, **general binary tree**. Now I can pick preorder DFS + `#`.
+
+### 2. Brainstorm
+
+> "Two approaches. **BFS level-order with null padding** — matches LC's UI but takes ~40 lines with a queue and edge cases. **DFS preorder with `#` for null** — takes ~20 lines, purely recursive, very symmetric between serialize and deserialize. I'll go DFS unless you need the LC format specifically.
+>
+> "The key insight either way: **you need markers for null children**. Preorder without them isn't unique — that's why [0105](../0105-construct-binary-tree-from-preorder-and-inorder-traversal/README.md) needs inorder too. Adding N+1 null markers turns preorder alone into a bijection with tree structure."
+
+### 3. Sketch
+
+Serialize:
+
+> "Recursive DFS. If node is null, append `#,`. Else append `val,` then recurse left, then recurse right. So the string is `root, left-subtree-serialized, right-subtree-serialized`."
+
+Deserialize:
+
+> "Wrap the string in a stream. Read one comma-separated token: if `#`, return null. Else make a node, then `node.left = build(stream)` (which consumes exactly the left subtree's tokens), then `node.right = build(stream)`. The stream cursor stays in sync because left recursion consumes exactly what serialize wrote for the left subtree."
+
+**Sell the stream idea:** "The stream is basically an implicit index — I don't have to pass a `pos` int by reference. Just pass the stream by reference."
+
+### 4. Code + narrate
+
+```cpp
+class Codec {
+public:
+    void dfs(TreeNode* node, string& out) {
+        if (!node) { out += "#,"; return; }
+        out += to_string(node->val) + ',';
+        dfs(node->left, out);
+        dfs(node->right, out);
+    }
+    TreeNode* build(istringstream& in) {
+        string tok;
+        if (!getline(in, tok, ',')) return nullptr;
+        if (tok == "#") return nullptr;
+        TreeNode* node = new TreeNode(stoi(tok));
+        node->left  = build(in);
+        node->right = build(in);
+        return node;
+    }
+    string serialize(TreeNode* root)  { string s; dfs(root, s); return s; }
+    TreeNode* deserialize(string data){ istringstream in(data); return build(in); }
+};
+```
+
+Narrate the two tricks:
+
+- **"`getline(in, tok, ',')` with a delimiter argument is the standard C++ way to tokenize a CSV-like string one field at a time."**
+- **"`istringstream&` — I pass by reference so the cursor advances globally. Passing by value would copy the stream and reset the cursor, infinite loop."**
+
+### 5. Trace
+
+Tree `[1, 2, 3, null, null, 4, 5]`:
+
+```
+    1
+   / \
+  2   3
+     / \
+    4   5
+```
+
+Serialize (preorder with null markers):
+
+- visit 1 → out = `"1,"`
+- visit 2 → out = `"1,2,"`
+- 2.left null → `"1,2,#,"`
+- 2.right null → `"1,2,#,#,"`
+- visit 3 → `"1,2,#,#,3,"`
+- visit 4 → `"1,2,#,#,3,4,"`
+- 4.left null → `"1,2,#,#,3,4,#,"`
+- 4.right null → `"1,2,#,#,3,4,#,#,"`
+- visit 5 → `"1,2,#,#,3,4,#,#,5,"`
+- 5.left null → `...5,#,`
+- 5.right null → `...5,#,#,`
+
+Final: `"1,2,#,#,3,4,#,#,5,#,#,"` — 11 tokens (5 nodes + 6 nulls = 2n+1 ✓).
+
+Deserialize consumes in the same order and rebuilds. Cursor after `build` for `node=2` has consumed exactly `2, #, #` — three tokens — leaving `3, 4, #, #, 5, #, #` for `1.right`.
+
+### 6. Complexity
+
+> "Time O(n) both ways — each node touched once. Space O(n) for the output string plus O(h) recursion stack, where h is tree height (worst case n for skewed). Token count is 2n+1 — that's the theoretical minimum for encoding an unlabeled binary tree structure plus values."
+
+### 7. Follow-ups
+
+- **"Make it work for a BST"** ([0449](待补)): drop the null markers — save ~50% space. Use only preorder values; on deserialize, use a range `[lo, hi]` recursion: if next token fits `[lo, hi]`, consume and recurse `[lo, val-1]` then `[val+1, hi]`. The BST property makes structure recoverable.
+- **"Values can contain commas"**: switch to a length-prefix format: `3:val,3:val,1:#,...` or JSON encode each value.
+- **"Reduce the string size"**: use **layer-order without trailing nulls** — LC's format. Slightly smaller for near-complete trees, worse for skewed.
+- **"Handle N-ary trees"** ([0428](待补)): serialize as `val,childCount,children...`. Child count replaces null markers.
+- **"Detect duplicate subtrees"** ([0652](待补)): use the serialized string of each subtree as a hash key. Same string = same shape + values.
+- **"Concurrent deserialization"**: split by top-level subtree once, spawn a worker per subtree. Preorder makes the split point cheap to find.
+
 ## 相关题目
 
 - [0105. Construct Binary Tree from Preorder and Inorder](../0105-construct-binary-tree-from-preorder-and-inorder-traversal/README.md) — 无 null marker 版本, 需两种遍历

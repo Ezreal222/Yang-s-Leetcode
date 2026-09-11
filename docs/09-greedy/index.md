@@ -31,3 +31,5 @@
 | 0621 | [Task Scheduler / 任务调度器](./0621-task-scheduler/README.md) (frame formula) | Medium | ✅ | ☐ ☐ ☐ |
 | 0767 | [Reorganize String / 重构字符串](./0767-reorganize-string/README.md) (heap greedy, top-2 交替) | Medium | ✅ | ☐ ☐ ☐ |
 | 0252 | [Meeting Rooms / 会议室](./0252-meeting-rooms/README.md) (排序 + 相邻不重叠) | Easy | ✅ | ☐ ☐ ☐ |
+| 0057 | [Insert Interval / 插入区间](./0057-insert-interval/README.md) (3-phase sweep) | Medium | ✅ | ☐ ☐ ☐ |
+| 0986 | [Interval List Intersections / 区间列表的交集](./0986-interval-list-intersections/README.md) (双指针 max/min) | Medium | ✅ | ☐ ☐ ☐ |

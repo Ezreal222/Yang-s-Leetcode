@@ -5,7 +5,7 @@
     - **Tags**: DP, Complete Knapsack, String, Hash Table · 动态规划, 完全背包, 字符串, 哈希表
     - **Link**: [LeetCode](https://leetcode.com/problems/word-break/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 
@@ -165,6 +165,96 @@
 
 - **Time**: O(n × W × L), n=`|s|`, W=`wordDict.size`, L= avg word len (v1). v2 是 O(n² × L).
 - **Space**: O(n) + 字典存储.
+
+## Interview Walkthrough
+
+7-step speak-out-loud script.
+
+### 1. Clarify
+
+> "Just to nail down: **can words be reused?** — usually yes, unlimited reuse (complete knapsack). **Dictionary size and word lengths?** — determines whether I enumerate words or enumerate cut points. **Just true/false, or the actual decomposition?** — 0139 wants boolean; the sibling [0140](待补) wants all decompositions. And **any characters outside `[a-z]`?** — probably not, but affects if I want to prefilter."
+
+Nail down: **reuse allowed**, **just boolean**, **all lowercase**. Now DP fits.
+
+### 2. Brainstorm
+
+> "Three shapes:
+>
+> "**Brute-force recursion**: at each position, try every word as prefix, recurse on suffix. O(2ⁿ) worst — TLE.
+>
+> "**Recursion + memo**: memoize the answer for each starting position. That's already O(n · W · L).
+>
+> "**Bottom-up DP**: `dp[j]` = 'can `s[0..j)` be broken?'. Two flavors of the inner loop:
+>
+> - **Enumerate words**: for each end position j, try each word — is `s[j-len..j) == word` and `dp[j-len]` true?
+> - **Enumerate cut points**: for each end j, try each split point i in `[0, j)` — is `dp[i]` true AND `s[i..j)` in the dictionary hash set?
+>
+> "Pick based on dict size. Small dict + long strings → enumerate words. Large dict → enumerate cut points + hash set. I'll code the cut-point version; it generalizes better."
+
+**Signal you know both.** Interviewer often steers.
+
+### 3. Sketch
+
+> "`dp` array of size `n+1`, all false. `dp[0] = true` — empty prefix is trivially breakable. That's the base case.
+>
+> "For `j` from 1 to n: try every split point `i` in `[0, j)`. If `dp[i]` is true AND the substring `s[i..j)` is in the dict set, set `dp[j] = true` and break out of the inner loop — one witness is enough.
+>
+> "Return `dp[n]`."
+
+### 4. Code + narrate
+
+```cpp
+bool wordBreak(string s, vector<string>& wordDict) {
+    unordered_set<string> dict(wordDict.begin(), wordDict.end());
+    int n = s.size();
+    vector<bool> dp(n + 1, false);
+    dp[0] = true;
+    for (int j = 1; j <= n; j++) {
+        for (int i = 0; i < j; i++) {
+            if (dp[i] && dict.count(s.substr(i, j - i))) {
+                dp[j] = true;
+                break;                  // one witness is enough
+            }
+        }
+    }
+    return dp[n];
+}
+```
+
+Narrate the two tricks:
+
+- **"`break` after the first witness"** — we only need existence; further scans waste time.
+- **"`substr` allocates; if the dict is huge and hot, I'd switch to `s.compare(i, j-i, word)` on the enumerate-words variant to skip the temp string."**
+
+### 5. Trace
+
+`s = "leetcode"`, `dict = {"leet", "code"}`:
+
+| j | s[0..j) | try each split i, check dp[i] && s[i..j) in dict | dp[j] |
+|---|---|---|---|
+| 0 | "" | base | true |
+| 1 | "l" | i=0: dp[0]=T, "l" ∉ dict | false |
+| 2 | "le" | i=0: "le" ∉; i=1: dp[1]=F | false |
+| 3 | "lee" | all i fail | false |
+| 4 | "leet" | i=0: dp[0]=T, "leet" ∈ dict ✓ | true |
+| 5..7 | ... | dp[i] false or substring not in dict | false |
+| 8 | "leetcode" | i=4: dp[4]=T, "code" ∈ dict ✓ | true |
+
+Answer: `dp[8] = true`.
+
+**Callout: `dp[0] = true` is what makes `dp[4] = true` work** — the empty prefix is the anchor for the first word.
+
+### 6. Complexity
+
+> "Time: outer loop n, inner loop up to n, substring hash O(L) → **O(n² · L)**. Space: `dp` O(n), dict O(sum of word lengths). If dict is small (say W ≤ 30) and words are short, the enumerate-words variant is O(n · W · L) — often faster because W is a tiny constant."
+
+### 7. Follow-ups
+
+- **"Return all valid decompositions"** ([0140](待补)): recursion + memo where memo stores `list<string>` per starting position. Backtrack from the DP table.
+- **"What if `s` is huge, dict small"**: prefer enumerate-words with `s.compare(...)` — avoids substr allocations. Add a **Trie** if words share prefixes to prune matches early.
+- **"What if dict has millions of words"**: precompute the set of allowed word lengths — inner loop only checks those lengths. Cuts most misses.
+- **"Concatenated words"** ([0472](../../03-hash-table/0472-concatenated-words/README.md)): find dict words that are themselves breakable into other dict words. Reduces to Word Break per candidate, with a smaller dict (self excluded).
+- **"Add wildcards or regex"**: falls apart — need trie with wildcard matching or NFA. Different problem shape.
 
 ## 相关题目
 

@@ -5,7 +5,7 @@
     - **Tags**: Greedy, Heap, Sort, Sweep Line, Interval · 贪心, 堆, 排序, 扫描线, 区间
     - **Link**: [LeetCode](https://leetcode.com/problems/meeting-rooms-ii/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## Problem
 
@@ -181,11 +181,92 @@
 - **Time**: O(n log n) — sort 主导; heap 操作 O(log n) × n.
 - **Space**: O(n) — heap / starts+ends 数组.
 
+## Interview Walkthrough
+
+7-step speak-out-loud script.
+
+### 1. Clarify
+
+> "A few things. **Half-open or closed intervals?** — LC uses `[s, e)`, so a meeting ending at 10 and another starting at 10 can share a room. If closed, they'd conflict. **Are the intervals already sorted?** — I'll assume no. **What's n?** — determines whether O(n log n) is fine or I need to be cleverer. And **do you want the min room count or the schedule?** — usually the count."
+
+Nail down: **half-open**, **unsorted**, **just the count**. Now heap or sweep are both fair game.
+
+### 2. Brainstorm
+
+> "This is 'max concurrent events on a timeline'. Three common shapes:
+>
+> "**Brute force**: for every timestamp, count how many meetings cover it. O(n · T) where T is the time range — dies if timestamps are large.
+>
+> "**Heap of end times**: sort by start; walk through meetings; for each new one, if the earliest-ending room is free (its `end ≤ curr.start`), reuse it (pop + push new end), else open a new room (push). Answer = heap size at end. O(n log n).
+>
+> "**Sweep line / chronological events**: separate starts and ends, sort each, merge two pointers — starts fire +1, ends fire -1, track max. Also O(n log n).
+>
+> "I'll code the heap version because the meaning is very clear — 'each element in the heap represents an active room'."
+
+**Show you know both** — interviewer might swap to "now do it the other way".
+
+### 3. Sketch
+
+> "Sort intervals by start ascending. min-heap of end times, empty.
+>
+> "For each `[s, e]`:
+>
+> - If heap is non-empty AND `heap.top() ≤ s`: the earliest-ending room is now free → pop.
+> - Push `e` (this meeting takes a room — either the freed one or a fresh one).
+>
+> "Answer = `heap.size()`.
+>
+> "The heap size at any moment = number of rooms currently in use. It only ever grows when we push without popping, i.e. when we must open a new room. Peak = final size."
+
+### 4. Code + narrate
+
+```cpp
+int minMeetingRooms(vector<vector<int>>& intervals) {
+    sort(intervals.begin(), intervals.end(),
+         [](auto& a, auto& b){ return a[0] < b[0]; });
+    priority_queue<int, vector<int>, greater<int>> ends;  // min-heap
+    for (auto& iv : intervals) {
+        if (!ends.empty() && ends.top() <= iv[0]) ends.pop();  // reuse
+        ends.push(iv[1]);
+    }
+    return ends.size();
+}
+```
+
+Narrate:
+
+- **"`priority_queue<int, vector<int>, greater<int>>` — third template arg is the comparator; `greater` flips the default max-heap to min-heap."**
+- **"`ends.top() ≤ iv[0]` — `≤` (not `<`) because half-open intervals mean end == start is a legal handoff."**
+
+### 5. Trace
+
+`intervals = [[0,30], [5,10], [15,20]]`:
+
+| step | interval | heap before | action | heap after | rooms |
+|---|---|---|---|---|---|
+| 1 | [0, 30] | [] | push 30 | [30] | 1 |
+| 2 | [5, 10] | [30] | 30 > 5, no reuse; push 10 | [10, 30] | 2 |
+| 3 | [15, 20] | [10, 30] | 10 ≤ 15, reuse; pop, push 20 | [20, 30] | 2 |
+
+Answer: 2. Meeting 2 needs a new room; meeting 3 reuses meeting 2's room.
+
+### 6. Complexity
+
+> "Sort is O(n log n). Loop is n iterations, each heap op O(log n) → O(n log n) total. Space O(n) worst case (all meetings overlap → heap holds all n end times). Same asymptote as sweep line, but heap version is more transferable — it generalizes to CPU scheduling, resource allocation, task assignment."
+
+### 7. Follow-ups
+
+- **"Print which room each meeting uses"**: heap stores `(end, roomId)` tuples instead of bare ints; when popping to reuse, that popped roomId gets reassigned. Assign incrementing IDs when pushing without popping.
+- **"Meetings can be canceled mid-stream (online)"**: heap alone isn't enough — you need a `multiset<int>` (or sorted structure) of end times so you can `erase` specific values, not just min. C++: `multiset::erase(iterator)` is O(log n).
+- **"Max concurrent over a query range `[L, R]`"**: precompute the running "active count" array via difference (start = +1, end = -1), then range-max with a segment tree or sparse table.
+- **"Coordinate compression when timestamps are huge"**: sweep-line version already sidesteps this — it operates purely on events, not on the raw time axis. Heap version has no issue either.
+- **"Return the count without opening / closing individual rooms"** (compact): sweep line's max over the +1/-1 running sum is the cleanest one-liner.
+
 ## 相关题目
 
 - [0056. Merge Intervals](../0056-merge-intervals/README.md) — 合并重叠区间
 - [0435. Non-overlapping Intervals](../0435-non-overlapping-intervals/README.md) — 删最少使不重叠
 - [0452. Minimum Number of Arrows to Burst Balloons](../0452-minimum-number-of-arrows-to-burst-balloons/README.md) — 最少箭 / 最少分组
-- 0252\. Meeting Rooms (待补) — 本题简化版, 只问能不能开完
+- [0252. Meeting Rooms](../0252-meeting-rooms/README.md) — 本题简化版, 只问能不能开完
 - 1851\. Minimum Interval to Include Each Query (待补) — 同款 heap + 区间
 - 0630\. Course Schedule III (待补) — heap + 区间贪心

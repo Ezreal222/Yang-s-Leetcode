@@ -5,7 +5,7 @@
     - **Tags**: Binary Search, Rotated Array · 二分查找, 旋转数组
     - **Link**: [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/)
     - **Status**: ✅ Solved
-    - **Reviewed**: ☐ ☐ ☐
+    - **Reviewed**: ☑ ☐ ☐
 
 ## TL;DR / 一句话
 
@@ -111,7 +111,7 @@
 
 ## Solution
 
-=== "C++"
+=== "C++ (v1: 判右端, target 在升序段内)"
     ```cpp
     class Solution {
     public:
@@ -138,6 +138,47 @@
         }
     };
     ```
+
+=== "C++ (v2: 判左端, 反向逻辑 — Yang 复习版)"
+    ```cpp
+    // 跟 v1 等价, 两点不同:
+    // 1. 判"左半升序" 用 nums[mid] >= nums[l] (跟左端比, 非右端)
+    // 2. 内层判"target 不在升序半" 反过来写 → 短路 || 更省字
+    // 优点: 少一个变量 (无 nums[left] <= target && ...), 只判 target 的位置关系
+    class Solution {
+    public:
+        int search(vector<int>& nums, int target) {
+            int l = 0, r = nums.size() - 1;
+            while (l <= r) {
+                int mid = (l + r) / 2;
+                if (nums[mid] == target) return mid;
+                if (nums[mid] >= nums[l]) {                        // 左半升序 (含 mid == l 边界)
+                    // target 不在 [l, mid] 区间: 太大 (> mid) 或 太小 (< l)
+                    if (target > nums[mid] || target < nums[l]) l = mid + 1;
+                    else                                          r = mid - 1;
+                } else {                                            // 右半升序
+                    // target 不在 [mid, r]: 太小 (< mid) 或 太大 (> r)
+                    if (target < nums[mid] || target > nums[r]) r = mid - 1;
+                    else                                          l = mid + 1;
+                }
+            }
+            return -1;
+        }
+    };
+    ```
+
+**v1 vs v2**:
+
+|  | v1 | v2 |
+|---|---|---|
+| 判升序半 | `nums[mid] > nums[right]` → 左半 | `nums[mid] >= nums[l]` → 左半 |
+| 内层判据 | **"在升序半内"** → 进升序半 | **"不在升序半"** → 出升序半 |
+| 边界 `==` | `nums[mid] > nums[r]` 严格; mid==r 时走右分支 | `nums[mid] >= nums[l]` 含等; 保证单元素段也算升序 |
+| 认知负担 | 双条件 `nums[l] ≤ t && t < nums[mid]` | 单方向 or `t > mid` \|\| `t < l` |
+
+**为啥 v2 用 `>=` 而 v1 用 `>`**: v1 的 `nums[mid] > nums[right]` 严格大于是**排除掉退化情况** (mid == right → 只 1 元素); v2 的 `nums[mid] >= nums[l]` 允许**等于** — 因为当左半只剩 1 个元素 (mid == l), 它自身就是"升序段".
+
+**面试推 v2**: 反向排除 (`||`) 比正向包含 (`&&`) 少一次逻辑翻转, 也少出错.
 
 === "Python"
     ```python

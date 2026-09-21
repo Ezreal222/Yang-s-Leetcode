@@ -27,3 +27,4 @@
 | 0974 | [Subarray Sums Divisible by K / 和可被 K 整除的子数组](./0974-subarray-sums-divisible-by-k/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 0525 | [Contiguous Array / 连续数组](./0525-contiguous-array/README.md) | Medium | ✅ | ☐ ☐ ☐ |
 | 1248 | [Count Number of Nice Subarrays / 统计「优美子数组」](./1248-count-number-of-nice-subarrays/README.md) | Medium | ✅ | ☐ ☐ ☐ |
+| 0442 | [Find All Duplicates in an Array / 数组中重复的数据](./0442-find-all-duplicates-in-an-array/README.md) (负号标记, O(1) 空间) | Medium | ✅ | ☐ ☐ ☐ |

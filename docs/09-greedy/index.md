@@ -33,3 +33,4 @@
 | 0252 | [Meeting Rooms / 会议室](./0252-meeting-rooms/README.md) (排序 + 相邻不重叠) | Easy | ✅ | ☐ ☐ ☐ |
 | 0057 | [Insert Interval / 插入区间](./0057-insert-interval/README.md) (3-phase sweep) | Medium | ✅ | ☐ ☐ ☐ |
 | 0986 | [Interval List Intersections / 区间列表的交集](./0986-interval-list-intersections/README.md) (双指针 max/min) | Medium | ✅ | ☐ ☐ ☐ |
+| 0918 | [Maximum Sum Circular Subarray / 环形子数组的最大和](./0918-maximum-sum-circular-subarray/README.md) (双 Kadane + 补集招) | Medium | ✅ | ☐ ☐ ☐ |

@@ -20,9 +20,9 @@
 | [09 · Greedy / 贪心算法](./09-greedy/index.md) | 28 | 4 | 22 | 2 |
 | [10 · DP / 动态规划](./10-dp/index.md) | 57 | 6 | 35 | 16 |
 | [11 · Monotonic Stack / 单调栈](./11-monotonic-stack/index.md) | 14 | 2 | 9 | 3 |
-| [12 · Graph / 图论](./12-graph/index.md) | 22 | 2 | 17 | 3 |
+| [12 · Graph / 图论](./12-graph/index.md) | 23 | 2 | 18 | 3 |
 | [13 · Binary Search / 二分查找](./13-binary-search/index.md) | 10 | 1 | 8 | 1 |
-| **Total / 合计** | **294** | **65** | **190** | **39** |
+| **Total / 合计** | **295** | **65** | **191** | **39** |
 
 ## How to navigate / 如何使用
 

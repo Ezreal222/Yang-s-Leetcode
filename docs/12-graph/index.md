@@ -30,3 +30,4 @@
 | 0994 | [Rotting Oranges / 腐烂的橘子](./0994-rotting-oranges/README.md) (多源 BFS) | Medium | ✅ | ☐ ☐ ☐ |
 | 0542 | [01 Matrix / 01 矩阵](./0542-01-matrix/README.md) (多源 BFS, -1 兼作 unvisited) | Medium | ✅ | ☐ ☐ ☐ |
 | 0773 | [Sliding Puzzle / 滑动谜题](./0773-sliding-puzzle/README.md) (状态空间 BFS, 局面 → string) | Hard | ✅ | ☐ ☐ ☐ |
+| 0752 | [Open the Lock / 打开转盘锁](./0752-open-the-lock/README.md) (状态空间 BFS + deadends) | Medium | ✅ | ☐ ☐ ☐ |

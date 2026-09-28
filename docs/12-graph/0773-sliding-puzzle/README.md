@@ -233,7 +233,7 @@
 - [0127. Word Ladder](../0127-word-ladder/README.md) — 状态空间 BFS 母题, 节点 = 单词
 - [0542. 01 Matrix](../0542-01-matrix/README.md) — 网格 BFS (节点 = 格子), 对比本题
 - [0994. Rotting Oranges](../0994-rotting-oranges/README.md) — 多源网格 BFS
-- 0752\. Open the Lock (待补) — 状态空间 BFS, 4 位转盘 + deadends, 同款最直接
+- [0752. Open the Lock](../0752-open-the-lock/README.md) — 状态空间 BFS, 4 位转盘 + deadends, 同款最直接
 - 0433\. Minimum Genetic Mutation (待补) — 0127 的小号版本
 - 0854\. K-Similar Strings (待补) — 字符串交换状态 BFS
 - 1091\. Shortest Path in Binary Matrix (待补) — 8 方向网格 BFS

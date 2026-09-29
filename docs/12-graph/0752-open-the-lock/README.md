@@ -84,12 +84,19 @@
     - 生成时判 target → 返 `turns + 1`, 少扩一层.
     - 开头 `target == "0000"` 返 0, 补上 0 步的边界.
 
-6. **🔑 进阶: 双向 BFS / Bidirectional BFS**
+6. **🔑 进阶: 双向 BFS (v2) / Bidirectional BFS**
 
-    从 `"0000"` 和 `target` 两头同时扩, 每次扩**较小**的那一侧, 两个 frontier 相交即返. 分支因子 8, 深度 d → 搜索量从 8^d 降到约 2·8^(d/2).
+    从 `"0000"` 和 `target` 两头同时扩, 两个 frontier 相交即返. 分支因子 8, 深度 d → 搜索量从 8^d 降到约 2·8^(d/2).
 
-    - 本题 10⁴ 状态, 单向已够快.
-    - 面试追问"能更快吗" → 提双向 BFS, 讲清"每次扩小的那头" 这个细节即可.
+    Yang v2 的几个关键点:
+
+    - **两个 frontier 用 `unordered_set`, 不用 queue** — 因为要 O(1) 判"新生成的状态在不在对面 frontier 里" (`endSet.count(s)`).
+    - **`if (beginSet.size() > endSet.size()) swap(...)`** — 永远扩**较小**的那头. 这是双向 BFS 真正省时间的地方; 不 swap 的话一头涨得快, 退化成单向.
+    - **先判相遇, 再判 dead / visited** — `endSet.count(s)` 放在最前. 若先判 visited, 对面 frontier 里的状态已经在 visited 里, 会被跳过, **相遇就漏了**.
+    - **target 在 deadends 里要提前返 -1** — 单向版里 target 被 dead 挡住自然走不到; 双向版 target 是起点之一, 必须手动判.
+    - `beginSet = move(next)` — 整个 set 转移所有权, 不拷贝.
+
+    > 本题 10⁴ 状态, 单向已够快; 双向是面试追问"能更快吗"时的标准答案, 也是大状态空间 (0127 Word Ladder) 的实战优化.
 
 7. **🔑 复杂度 / Complexity**
 
@@ -110,7 +117,7 @@
 
 ## Solution
 
-=== "C++"
+=== "C++ (v1: 单向 BFS)"
     ```cpp
     class Solution {
     public:
@@ -142,6 +149,47 @@
                     }
                 }
                 ++turns;
+            }
+            return -1;
+        }
+    };
+    ```
+
+=== "C++ (v2: 双向 BFS)"
+    ```cpp
+    class Solution {
+    public:
+        int openLock(vector<string>& deadends, string target) {
+            unordered_set<string> dead(deadends.begin(), deadends.end());
+            const string start = "0000";
+
+            if (dead.count(start) || dead.count(target)) return -1;   // target 也是起点之一
+            if (start == target) return 0;
+
+            unordered_set<string> beginSet{start};
+            unordered_set<string> endSet{target};
+            unordered_set<string> visited{start, target};
+            int turns = 0;
+
+            while (!beginSet.empty() && !endSet.empty()) {
+                if (beginSet.size() > endSet.size()) swap(beginSet, endSet);  // 扩小的那头
+                ++turns;
+
+                unordered_set<string> next;
+                for (const string& cur : beginSet) {
+                    string s = cur;
+                    for (int i = 0; i < 4; ++i) {
+                        char c = s[i];
+                        for (int d : {1, -1}) {
+                            s[i] = '0' + ((c - '0' + d + 10) % 10);
+                            if (endSet.count(s)) return turns;            // 先判相遇
+                            if (!dead.count(s) && visited.insert(s).second)
+                                next.insert(s);
+                        }
+                        s[i] = c;
+                    }
+                }
+                beginSet = move(next);
             }
             return -1;
         }
@@ -224,8 +272,10 @@
 
 ## Complexity
 
-- **Time**: O(N · A · L) — N = 10⁴ 状态, A = 8 邻居, L = 4.
-- **Space**: O(N · L).
+| 版本 | Time | Space |
+|---|---|---|
+| 单向 BFS | O(N · A · L), N = 10⁴, A = 8, L = 4 | O(N · L) |
+| 双向 BFS | 同上界; 实际约 2·A^(d/2) 个状态 (d = 答案步数) | 同上界 |
 
 ## 相关题目
 
